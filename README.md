@@ -1,2 +1,2 @@
-# lengyuner.github.io
-personal website
+# HomePage
+Jizheng Dong's HomePage
