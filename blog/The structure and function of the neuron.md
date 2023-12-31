@@ -1,5 +1,7 @@
 # The structure and function of the neuron
 
+It is a collection of papers about the structure and function.
+
 ## Hacking brain development to test models of sensory coding  
 https://www.biorxiv.org/content/10.1101/2023.01.25.525425v1   
 E. Josephine Clowney  

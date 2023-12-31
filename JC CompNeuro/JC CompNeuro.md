@@ -7,26 +7,23 @@ synaptic plasticity
 bayesian model
 
 learning and memory on hippocampus  
-> [cortex, striatum, and hippocampus Striatal activity topographically reflects cortical activity](https://www.nature.com/articles/s41586-020-03166-8)
 
-oscillations 
-> theta oscillations in the hippocampus
+cortex, striatum, and hippocampus: [Striatal activity topographically reflects cortical activity](https://www.nature.com/articles/s41586-020-03166-8)
 
-connectome anaylsis
+oscillations: 
+theta oscillations in the hippocampus
+
+connectome anaylsis 
 
 the sensory integration
 
 the implementation of CPG(central pattern generator)
 
 cognitive map (place cell, ring...)   
-> O'Keefe 2022 nature [Hippocampal place cells have goal-oriented vector fields during navigation](https://www.nature.com/articles/s41586-022-04913-9) 
+> O'Keefe 2022 nature: [Hippocampal place cells have goal-oriented vector fields during navigation](https://www.nature.com/articles/s41586-022-04913-9) 
 
 
-
-
-
-
-
+ 
 
 
 ## Past Meetings
