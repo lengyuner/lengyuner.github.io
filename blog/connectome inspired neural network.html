@@ -2,7 +2,7 @@
         <html>
         <head>
             <meta charset="UTF-8">
-            <title></title>
+            <title>Human</title>
             <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -37,29 +37,141 @@
     pointer-events: none;
 }
 </style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
         
         </head>
         <body class="vscode-body vscode-light">
-            <p><a href="https://arxiv.org/abs/1904.01569">Exploring Randomly Wired Neural Networks for Image Recognition</a><br>
-Saining Xie, Alexander Kirillov, Ross Girshick, Kaiming He</p>
-<p><a href="https://openreview.net/forum?id=BJg6EmYL8B">Deep Connectomics Networks: Neural Network Architectures Inspired by Neuronal Networks</a><br>
-Nicholas Roberts, Dian Ang Yap, Vinay Uday Prabhu<br>
-Real Neurons &amp; Hidden Units @ NeurIPS 2019 Poster</p>
-<p><a href="https://arxiv.org/abs/2209.14406">Biological connectomes as a representation for the architecture of artificial neural networks</a><br>
-ICLR 2023 Conference Withdrawn Submission</p>
-<p><a href="https://www.sciencedirect.com/science/article/pii/S295016282300005X">When brain-inspired AI meets AGI</a><br>
-Review<br>
-Meta-Radiology</p>
+            <h2 id="human">Human</h2>
+<p><a href="https://openreview.net/forum?id=X7GEA3KiJiH">Learning Dynamic Graph Representation of Brain Connectome with Spatio-Temporal Attention</a><br>
+NeurIPS 2021 Poster</p>
+<p><a href="https://arxiv.org/abs/2301.00148">Mapping effective connectivity by virtually perturbing a surrogate brain</a><br>
+<a href="https://arxiv.org/abs/2301.00148v1">Effective Brain Connectome: the whole-brain effective connectivity from neural perturbational inference</a><br>
+Quanying Liu</p>
+<h2 id="c-elegans">C Elegans</h2>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0925231224003692">Elegans-AI: How the connectome of a living organism could model artificial neural networks</a><br>
+Francesco Bardozzo, Andrea Terlizzi, Claudio Simoncini, Pietro Lió, Roberto Tagliaferri</p>
 <p><a href="https://openreview.net/forum?id=HygPD4H22N">Deep connectomics networks: Results from neural network architectures inspired from network neuroscience</a><br>
 Nicholas Roberts, Vinay Uday Prabhu<br>
 ICML Deep Phenomena 2019</p>
-<p><a href="https://www.youtube.com/watch?v=Cn2HYpWg3GE&amp;t=1404s&amp;ab_channel=MITCBMM">The Simplest Neural Model and a Hypothesis for Language</a><br>
-Daniel Mitropolsky, Columbia University</p>
-<p><a href="https://openreview.net/forum?id=X7GEA3KiJiH">Learning Dynamic Graph Representation of Brain Connectome with Spatio-Temporal Attention</a><br>
-NeurIPS 2021 Poster</p>
+<p><a href="https://openreview.net/forum?id=BJg6EmYL8B">Deep Connectomics Networks: Neural Network Architectures Inspired by Neuronal Networks</a><br>
+Nicholas Roberts, Dian Ang Yap, Vinay Uday Prabhu<br>
+Real Neurons &amp; Hidden Units @ NeurIPS 2019 Poster<br>
+C. Elegans and the mouse visual cortex</p>
+<p><a href="https://arxiv.org/abs/2209.14406">Biological connectomes as a representation for the architecture of artificial neural networks</a><br>
+Samuel Schmidgall, Catherine Schuman, Maryam Parsa<br>
+ICLR 2023 Conference Withdrawn Submission</p>
+<h2 id="drosophila">Drosophila</h2>
+<p><a href="https://doi.org/10.1101/2023.03.11.532232">Connectome-constrained deep mechanistic networks predict neural responses across the fly visual system at single-neuron resolution</a><br>
+Srinivas C. Turaga<br>
+<strong>!!!</strong></p>
+<h2 id="theory-based">theory-based</h2>
 <p><a href="https://openreview.net/forum?id=HklfNQFL8H">Learning to Learn with Feedback and Local Plasticity</a><br>
 Real Neurons &amp; Hidden Units @ NeurIPS 2019 Oral<br>
 Jack Lindsey, Columbia University</p>
+<p><a href="https://www.youtube.com/watch?v=Cn2HYpWg3GE&amp;t=1404s&amp;ab_channel=MITCBMM">The Simplest Neural Model and a Hypothesis for Language</a><br>
+Daniel Mitropolsky, Columbia University</p>
+<h2 id="others">others</h2>
+<h3 id="basic-architecture">basic architecture</h3>
+<p><a href="https://arxiv.org/abs/1904.01569">Exploring Randomly Wired Neural Networks for Image Recognition</a><br>
+Saining Xie, Alexander Kirillov, Ross Girshick, Kaiming He</p>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S295016282300005X">When brain-inspired AI meets AGI</a><br>
+Review<br>
+Meta-Radiology</p>
 
             
             
