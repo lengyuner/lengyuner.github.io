@@ -1,3 +1,11 @@
+# Connectome inspired neural network
+
+## Drosophila
+
+[Connectome-constrained deep mechanistic networks predict neural responses across the fly visual system at single-neuron resolution](https://doi.org/10.1101/2023.03.11.532232)    
+Srinivas C. Turaga  
+**!!!**
+
 
 
 ## Human 
@@ -28,14 +36,6 @@ C. Elegans and the mouse visual cortex
 [Biological connectomes as a representation for the architecture of artificial neural networks](https://arxiv.org/abs/2209.14406)   
 Samuel Schmidgall, Catherine Schuman, Maryam Parsa  
 ICLR 2023 Conference Withdrawn Submission   
-
-
-## Drosophila
-
-[Connectome-constrained deep mechanistic networks predict neural responses across the fly visual system at single-neuron resolution](https://doi.org/10.1101/2023.03.11.532232)    
-Srinivas C. Turaga  
-**!!!**
-
 
 
 
