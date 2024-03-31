@@ -41,6 +41,7 @@ ICLR 2023 Conference Withdrawn Submission
 [Inferring brain-wide interactions using data-constrained recurrent neural network models](https://www.biorxiv.org/content/10.1101/2020.12.18.423348v2)
 Kanaka Rajan, Mount Sinai
 
+> CURBD allows the total activity of each region to be decomposed into a set of source currents from all other regions
 
 ## theory-based
 [Learning to Learn with Feedback and Local Plasticity](https://openreview.net/forum?id=HklfNQFL8H)  
