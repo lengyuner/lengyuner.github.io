@@ -19,7 +19,6 @@ NeurIPS 2021 Poster
 Quanying Liu
 
 
-
 ## C Elegans
 [Elegans-AI: How the connectome of a living organism could model artificial neural networks](https://www.sciencedirect.com/science/article/pii/S0925231224003692)  
 Francesco Bardozzo, Andrea Terlizzi, Claudio Simoncini, Pietro Lió, Roberto Tagliaferri
@@ -37,6 +36,10 @@ C. Elegans and the mouse visual cortex
 Samuel Schmidgall, Catherine Schuman, Maryam Parsa  
 ICLR 2023 Conference Withdrawn Submission   
 
+## rodent
+
+[Inferring brain-wide interactions using data-constrained recurrent neural network models](https://www.biorxiv.org/content/10.1101/2020.12.18.423348v2)
+Kanaka Rajan, Mount Sinai
 
 
 ## theory-based
