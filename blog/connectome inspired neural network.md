@@ -54,6 +54,9 @@ Daniel Mitropolsky, Columbia University
 
 
 ## others
+[The structural connectome constrains fast brain dynamics](https://elifesciences.org/articles/67400)
+
+
 ### basic architecture
 [Exploring Randomly Wired Neural Networks for Image Recognition](https://arxiv.org/abs/1904.01569)  
 Saining Xie, Alexander Kirillov, Ross Girshick, Kaiming He
