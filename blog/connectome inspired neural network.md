@@ -18,6 +18,13 @@ NeurIPS 2021 Poster
 [Effective Brain Connectome: the whole-brain effective connectivity from neural perturbational inference](https://arxiv.org/abs/2301.00148v1)  
 Quanying Liu
 
+[Individualized perturbation of the human connectome reveals reproducible biomarkers of network dynamics relevant to cognition](https://www.pnas.org/doi/full/10.1073/pnas.1911240117)
+TMS EEG
+
+
+[A Prefrontal Cortex-inspired Architecture for Planning in Large Language
+Models](https://arxiv.org/abs/2310.00194)
+
 
 ## C Elegans
 [Elegans-AI: How the connectome of a living organism could model artificial neural networks](https://www.sciencedirect.com/science/article/pii/S0925231224003692)  
@@ -36,11 +43,20 @@ C. Elegans and the mouse visual cortex
 Samuel Schmidgall, Catherine Schuman, Maryam Parsa  
 ICLR 2023 Conference Withdrawn Submission   
 
+[A machine learning toolbox for the analysis of sharp-wave ripples reveals common waveform features across species](https://www.nature.com/articles/s42003-024-05871-w)
+analysis toolbox
+
+
+### dataset
+[eural signal propagation atlas of Caenorhabditis elegans](https://www.nature.com/articles/s41586-023-06683-4)
+
+
+
 ## rodent
 
 [Inferring brain-wide interactions using data-constrained recurrent neural network models](https://www.biorxiv.org/content/10.1101/2020.12.18.423348v2)
-Kanaka Rajan, Mount Sinai
-
+Kanaka Rajan, Mount Sinai  
+RNN  
 > CURBD allows the total activity of each region to be decomposed into a set of source currents from all other regions
 
 ## theory-based
