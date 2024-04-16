@@ -5,7 +5,9 @@
 Srinivas C. Turaga  
 **!!!**
 
-[](https://arxiv.org/abs/1806.04793)
+previous work: [A Connectome Based Hexagonal Lattice Convolutional Network Model of the Drosophila Visual System](https://arxiv.org/abs/1806.04793)
+
+
 
 [One-to-one mapping between deep network units and real neurons uncovers a visual population code for social behavior](https://www.biorxiv.org/content/10.1101/2022.07.18.500505v2)  
 Jonathan W. Pillow, Mala Murthy
@@ -48,6 +50,7 @@ ICLR 2023 Conference Withdrawn Submission
 [A machine learning toolbox for the analysis of sharp-wave ripples reveals common waveform features across species](https://www.nature.com/articles/s42003-024-05871-w)
 analysis toolbox
 
+[Elegans-AI: How the connectome of a living organism could model artificial neural networks](https://www.sciencedirect.com/science/article/pii/S0925231224003692)
 
 ### dataset
 [eural signal propagation atlas of Caenorhabditis elegans](https://www.nature.com/articles/s41586-023-06683-4)
