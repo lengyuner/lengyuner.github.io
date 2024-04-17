@@ -18,16 +18,25 @@ Jonathan W. Pillow, Mala Murthy
 Byung-Hoon Kim, Jong Chul Ye, Jae-Jin Kim  
 NeurIPS 2021 Poster
 
-[Mapping effective connectivity by virtually perturbing a surrogate brain](https://arxiv.org/abs/2301.00148)  
-[Effective Brain Connectome: the whole-brain effective connectivity from neural perturbational inference](https://arxiv.org/abs/2301.00148v1)  
+
+
+
+[A Prefrontal Cortex-inspired Architecture for **Planning** in Large Language Models](https://arxiv.org/abs/2310.00194)  
+Ida Momennejad
+
+
+
+#### perturbation
+[Mapping effective connectivity by virtually **perturbing** a surrogate brain](https://arxiv.org/abs/2301.00148)  
+[Effective Brain Connectome: the whole-brain effective connectivity from neural **perturbational** inference](https://arxiv.org/abs/2301.00148v1)  
 Quanying Liu
 
-[Individualized perturbation of the human connectome reveals reproducible biomarkers of network dynamics relevant to cognition](https://www.pnas.org/doi/full/10.1073/pnas.1911240117)
+[Mapping **dysfunctional** circuits in the frontal cortex using deep brain stimulation](https://www.nature.com/articles/s41593-024-01570-1)
+Andreas Horn
+
+[Individualized **perturbation** of the human connectome reveals reproducible biomarkers of network dynamics relevant to cognition](https://www.pnas.org/doi/full/10.1073/pnas.1911240117)
 TMS EEG
 
-
-[A Prefrontal Cortex-inspired Architecture for Planning in Large Language
-Models](https://arxiv.org/abs/2310.00194)
 
 
 ## C Elegans
@@ -73,6 +82,10 @@ Jack Lindsey, Columbia University
 Daniel Mitropolsky, Columbia University  
 
 
+[Prediction of neural activity in connectome-constrained recurrent networks](https://www.biorxiv.org/content/10.1101/2024.02.22.581667v1) Manuel Beiran, Ashok Litwin-Kumar
+> Is the connectome insufficient to constrain the dynamics?
+
+
 
 ## others
 [The structural connectome constrains fast brain dynamics](https://elifesciences.org/articles/67400)
@@ -93,5 +106,8 @@ Meta-Radiology
 
 
 
+
+### researcher
+[Andreas Horn](http://www.netstim.org/)
 
 
