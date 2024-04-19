@@ -61,6 +61,11 @@ analysis toolbox
 
 [Elegans-AI: How the connectome of a living organism could model artificial neural networks](https://www.sciencedirect.com/science/article/pii/S0925231224003692)
 
+
+[Learning dynamic representations of the functional connectome in neurobiological networks](https://arxiv.org/abs/2402.14102v2)
+
+
+
 ### dataset
 [eural signal propagation atlas of Caenorhabditis elegans](https://www.nature.com/articles/s41586-023-06683-4)
 
