@@ -71,7 +71,7 @@ MIDL 2022
 **Yoo2023** T4_T5
 
 
-**bilinear** [Uncovering the genetic blueprint of the C. elegans nervous system](https://www.pnas.org/doi/abs/10.1073/pnas.2009093117) 
+**bilinear** [Uncovering the genetic blueprint of the C. elegans nervous system](https://www.pnas.org/doi/full/10.1073/pnas.2009093117) 
 István A. Kovács, Dániel L. **Barabási**, and Albert-László **Barabási**  PNAS
 
 
