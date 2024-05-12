@@ -13,6 +13,9 @@ previous work: [A Connectome Based Hexagonal Lattice Convolutional Network Model
 Jonathan W. Pillow, Mala Murthy
 
 
+[The connectome predicts resting-state functional connectivity across the Drosophila brain](https://www.sciencedirect.com/science/article/pii/S0960982221003432)
+
+
 ## Human 
 [Learning Dynamic Graph Representation of Brain Connectome with Spatio-Temporal Attention](https://openreview.net/forum?id=X7GEA3KiJiH)  
 Byung-Hoon Kim, Jong Chul Ye, Jae-Jin Kim  
@@ -23,6 +26,8 @@ NeurIPS 2021 Poster
 
 [A Prefrontal Cortex-inspired Architecture for **Planning** in Large Language Models](https://arxiv.org/abs/2310.00194)  
 Ida Momennejad
+
+[BrainGNN: Interpretable Brain Graph Neural Network for fMRI Analysis](https://www.sciencedirect.com/science/article/pii/S1361841521002784)
 
 
 
