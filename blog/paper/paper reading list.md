@@ -89,7 +89,15 @@ Dániel L. Barabási 1, Albert-László Barabási
 [A complete temporal transcription factor series in the fly visual system](https://www.nature.com/articles/s41586-022-04564-w)
 Claude Desplan 
 
+#### logical gene for connectome 
+[Discovering Symbolic Models from Deep Learning with Inductive Biases](https://arxiv.org/abs/2006.11287)
 
+[On scientific understanding with artificial intelligence](https://www.nature.com/articles/s42254-022-00518-3)
+[End-to-end symbolic regression with transformers](https://arxiv.org/abs/2204.10532)
+
+[nterpretable Machine Learning for Science with PySR and SymbolicRegression.jl](https://arxiv.org/abs/2305.01582)
+
+[KAN: Kolmogorov-Arnold Networks](https://arxiv.org/abs/2404.19756)
 
 #### application
 [Encoding innate ability through a genomic bottleneck](https://www.biorxiv.org/content/10.1101/2021.03.16.435261v2)
