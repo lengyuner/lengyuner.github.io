@@ -1,3 +1,5 @@
+new/
+
 ./new/*
 /old/*
 .DS_Store 
