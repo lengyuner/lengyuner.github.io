@@ -1,4 +1,4 @@
-/* latin-ext */
+w3-container w3-padding-32/* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
@@ -129,7 +129,8 @@ background: #ffffff;
 .navbar {
   height: 40px;
   line-height: 40px;
-  background: #003264;
+  /* background: #003264; */
+  background: #CDB2E2;
   position: fixed;
   top: 0;
   width: 100%;
