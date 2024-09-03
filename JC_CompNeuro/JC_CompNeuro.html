@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Journal Club of Computational Neuroscience</title>
-        <style>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Journal Club of Computational Neuroscience</title>
+            <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
@@ -11,12 +11,14 @@
  *--------------------------------------------------------------------------------------------*/
 
 .vscode-dark img[src$=\#gh-light-mode-only],
-.vscode-light img[src$=\#gh-dark-mode-only] {
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
 	display: none;
 }
 
 </style>
-        
+            
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 <style>
@@ -37,10 +39,106 @@
     pointer-events: none;
 }
 </style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
         
-    </head>
-    <body class="vscode-body vscode-light">
-        <h1 id="journal-club-of-computational-neuroscience">Journal Club of Computational Neuroscience</h1>
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="journal-club-of-computational-neuroscience">Journal Club of Computational Neuroscience</h1>
 <h2 id="potential-topics">Potential Topics</h2>
 <p>synaptic plasticity</p>
 <p>bayesian model</p>
@@ -51,11 +149,22 @@ theta oscillations in the hippocampus</p>
 <p>connectome anaylsis</p>
 <p>the sensory integration</p>
 <p>the implementation of CPG(central pattern generator)</p>
-<p>cognitive map (place cell, ring...)</p>
-<blockquote>
-<p>O'Keefe 2022 nature: <a href="https://www.nature.com/articles/s41586-022-04913-9">Hippocampal place cells have goal-oriented vector fields during navigation</a></p>
-</blockquote>
+<p>cognitive map (place cell, ring...): <a href="https://www.nature.com/articles/s41586-022-04913-9">Hippocampal place cells have goal-oriented vector fields during navigation</a></p>
+<!-- > O'Keefe 2022 nature:  -->
 <h2 id="past-meetings">Past Meetings</h2>
+<h3 id="5-hci-8th-cn-chat">5. HCI (8th CN Chat)</h3>
+<p>10:00 (New York), 22:00 (Beijing)<br>
+Jul 28,2024</p>
+<h4 id="yuxuan-liu-xuyue-zhang-wentao-qiu-shuyang-yao">Yuxuan Liu, Xuyue Zhang, Wentao Qiu, Shuyang Yao</h4>
+<h3 id="4-synaptic-plasticity">4. Synaptic Plasticity</h3>
+<p>10:00 (New York), 22:00 (Beijing)<br>
+May 4,2024</p>
+<h4 id="jingzhi-zhao"><a href="">Jingzhi Zhao</a></h4>
+<p>Pre and post synaptic inhibition of opioids on inspiration rhythms (breathing) (7th CN Chat)</p>
+<h3 id="3-neuroai-5th-cn-chat">3. NeuroAI (5th CN Chat)</h3>
+<p>22:00 (New York)<br>
+Apr 13, 2023</p>
+<h4 id="zitong-lu-zhaoze-wang-xinquan-lu-hanbo-xie">Zitong Lu, Zhaoze Wang, Xinquan Lu, Hanbo Xie</h4>
 <h3 id="2-neuronal-morphology-in-drosophila">2. Neuronal Morphology in Drosophila</h3>
 <p>10:00 (New York), 22:00 (Beijing)<br>
 Sep 09, 2023</p>
@@ -65,11 +174,11 @@ Sep 09, 2023</p>
 <p><a href="https://link.springer.com/article/10.1007/s00359-019-01375-9">How fly neurons compute the direction of visual motion</a></p>
 <h3 id="1-brainpy">1. BrainPy</h3>
 <p>10:00 (New York), 22:00 (Beijing)<br>
-Aug05, 2023</p>
+Aug 05, 2023</p>
 <h4 id="tianqiu-zhang"><a href="https://ztqakita.github.io/">Tianqiu Zhang</a></h4>
 <p>Introduction to <a href="https://brainpy.readthedocs.io/en/latest/">BrainPy</a> | <a href="https://github.com/brainpy/BrainPy">GitHub</a></p>
 
-        
-        
-    </body>
-    </html>
+            
+            
+        </body>
+        </html>

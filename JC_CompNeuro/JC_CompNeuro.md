@@ -19,20 +19,37 @@ the sensory integration
 
 the implementation of CPG(central pattern generator)
 
-cognitive map (place cell, ring...)   
-> O'Keefe 2022 nature: [Hippocampal place cells have goal-oriented vector fields during navigation](https://www.nature.com/articles/s41586-022-04913-9) 
-
+cognitive map (place cell, ring...): [Hippocampal place cells have goal-oriented vector fields during navigation](https://www.nature.com/articles/s41586-022-04913-9) 
+<!-- > O'Keefe 2022 nature:  -->
 
  
 
 
 ## Past Meetings
 
-### 2. Neuronal Morphology in Drosophila
+### 5. HCI (8th CN Chat)
+10:00 (New York), 22:00 (Beijing)    
+Jul 28,2024   
+#### Yuxuan Liu, Xuyue Zhang, Wentao Qiu, Shuyang Yao  
+
+
+### 4. Synaptic Plasticity
 
 10:00 (New York), 22:00 (Beijing)  
-Sep 09, 2023 
+May 4,2024 
+#### [Jingzhi Zhao]()
 
+Pre and post synaptic inhibition of opioids on inspiration rhythms (breathing) (7th CN Chat)
+
+### 3. NeuroAI (5th CN Chat) 
+22:00 (New York)   
+Apr 13, 2023 
+#### Zitong Lu, Zhaoze Wang, Xinquan Lu, Hanbo Xie
+
+
+### 2. Neuronal Morphology in Drosophila 
+10:00 (New York), 22:00 (Beijing)  
+Sep 09, 2023 
 
 #### [Jizheng Dong](https://lengyuner.github.io/) 
 [Multisensory learning binds neurons into a cross-modal memory engram](https://www.nature.com/articles/s41586-023-06013-8)
@@ -48,7 +65,7 @@ Sep 09, 2023
 ### 1. BrainPy
   
 10:00 (New York), 22:00 (Beijing)  
-Aug05, 2023
+Aug 05, 2023
 
 #### [Tianqiu Zhang](https://ztqakita.github.io/)
 
