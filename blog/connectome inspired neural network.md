@@ -36,10 +36,10 @@ Ida Momennejad
 [Effective Brain Connectome: the whole-brain effective connectivity from neural **perturbational** inference](https://arxiv.org/abs/2301.00148v1)  
 Quanying Liu
 
-[Mapping **dysfunctional** circuits in the frontal cortex using deep brain stimulation](https://www.nature.com/articles/s41593-024-01570-1)
+[Mapping **dysfunctional** circuits in the frontal cortex using deep brain stimulation](https://www.nature.com/articles/s41593-024-01570-1)   
 Andreas Horn
 
-[Individualized **perturbation** of the human connectome reveals reproducible biomarkers of network dynamics relevant to cognition](https://www.pnas.org/doi/full/10.1073/pnas.1911240117)
+[Individualized **perturbation** of the human connectome reveals reproducible biomarkers of network dynamics relevant to cognition](https://www.pnas.org/doi/full/10.1073/pnas.1911240117)  
 TMS EEG
 
 
@@ -61,7 +61,7 @@ C. Elegans and the mouse visual cortex
 Samuel Schmidgall, Catherine Schuman, Maryam Parsa  
 ICLR 2023 Conference Withdrawn Submission   
 
-[A machine learning toolbox for the analysis of sharp-wave ripples reveals common waveform features across species](https://www.nature.com/articles/s42003-024-05871-w)
+[A machine learning toolbox for the analysis of sharp-wave ripples reveals common waveform features across species](https://www.nature.com/articles/s42003-024-05871-w)  
 analysis toolbox
 
 [Elegans-AI: How the connectome of a living organism could model artificial neural networks](https://www.sciencedirect.com/science/article/pii/S0925231224003692)
@@ -69,20 +69,22 @@ analysis toolbox
 
 [Learning dynamic representations of the functional connectome in neurobiological networks](https://arxiv.org/abs/2402.14102v2)
 
-
+[Connectome-constrained Latent Variable Model of Whole-Brain Neural Activity ](https://openreview.net/forum?id=CJzi3dRlJE-)  
+Srinivas C Turaga
 
 ### dataset
-[eural signal propagation atlas of Caenorhabditis elegans](https://www.nature.com/articles/s41586-023-06683-4)
+[Neural signal propagation atlas of Caenorhabditis elegans](https://www.nature.com/articles/s41586-023-06683-4)
 
 
 
 ## rodent
 
-[Inferring brain-wide interactions using data-constrained recurrent neural network models](https://www.biorxiv.org/content/10.1101/2020.12.18.423348v2)
+[Inferring brain-wide interactions using data-constrained recurrent neural network models](https://www.biorxiv.org/content/10.1101/2020.12.18.423348v2)  
 Kanaka Rajan, Mount Sinai  
 RNN  
-> CURBD allows the total activity of each region to be decomposed into a set of source currents from all other regions
-
+```
+CURBD allows the total activity of each region to be decomposed into a set of source currents from all other regions
+```
 ## theory-based
 [Learning to Learn with Feedback and Local Plasticity](https://openreview.net/forum?id=HklfNQFL8H)  
 Real Neurons & Hidden Units @ NeurIPS 2019 Oral  
@@ -92,9 +94,12 @@ Jack Lindsey, Columbia University
 Daniel Mitropolsky, Columbia University  
 
 
-[Prediction of neural activity in connectome-constrained recurrent networks](https://www.biorxiv.org/content/10.1101/2024.02.22.581667v1) Manuel Beiran, Ashok Litwin-Kumar
-> Is the connectome insufficient to constrain the dynamics?
+[Prediction of neural activity in connectome-constrained recurrent networks](https://www.biorxiv.org/content/10.1101/2024.02.22.581667v1)  
+Manuel Beiran, Ashok Litwin-Kumar
 
+```
+Is the connectome insufficient to constrain the dynamics?
+```
 
 
 ## others
@@ -111,8 +116,6 @@ Review
 Meta-Radiology  
 
 [Catalyzing next-generation Artificial Intelligence through NeuroAI](https://www.nature.com/articles/s41467-023-37180-x)
-
-
 
 
 
