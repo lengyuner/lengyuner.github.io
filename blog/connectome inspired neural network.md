@@ -25,7 +25,7 @@
 
 - [BrainGNN: Interpretable Brain Graph Neural Network for fMRI Analysis](https://www.sciencedirect.com/science/article/pii/S1361841521002784)
 
-### Perturbation
+#### Perturbation
 
 - [Mapping effective connectivity by virtually **perturbing** a surrogate brain](https://arxiv.org/abs/2301.00148)  
 - [Effective Brain Connectome: the whole-brain effective connectivity from neural **perturbational** inference](https://arxiv.org/abs/2301.00148v1)  
