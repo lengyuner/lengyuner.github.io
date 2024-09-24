@@ -25,6 +25,11 @@
 
 - [BrainGNN: Interpretable Brain Graph Neural Network for fMRI Analysis](https://www.sciencedirect.com/science/article/pii/S1361841521002784)
 
+- [sinergia connectomics summer school](https://sinergia-connectomics-summerschool-2021.github.io/)
+
+- [Connectome-Based Attractor Dynamics Underlie Brain Activity in Rest, Task, and Disease](https://elifesciences.org/reviewed-preprints/98725v1)
+
+
 #### Perturbation
 
 - [Mapping effective connectivity by virtually **perturbing** a surrogate brain](https://arxiv.org/abs/2301.00148)  
