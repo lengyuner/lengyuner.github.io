@@ -88,7 +88,7 @@
 - [The Simplest Neural Model and a Hypothesis for Language](https://www.youtube.com/watch?v=Cn2HYpWg3GE&t=1404s&ab_channel=MITCBMM)  
   Daniel Mitropolsky, Columbia University
 
-- [Prediction of neural activity in connectome-constrained recurrent networks](https://www.biorxiv.org/content/10.1101/2024.02.22.581667v1)  
+- [Prediction of neural activity in connectome-constrained recurrent networks](https://www.biorxiv.org/content/10.1101/2024.02.22.581667v2)  
   Manuel Beiran, Ashok Litwin-Kumar
 
   - Is the connectome insufficient to constrain the dynamics?
