@@ -110,6 +110,12 @@
 - [Exploring Randomly Wired Neural Networks for Image Recognition](https://arxiv.org/abs/1904.01569)  
   Saining Xie, Alexander Kirillov, Ross Girshick, Kaiming He
 
+- [Single cortical neurons as deep artificial neural networks](https://www.sciencedirect.com/science/article/pii/S0896627321005018)
+  - Cortical neurons are well approximated by a deep neural network (DNN) with 5–8 layers
+  - DNN’s depth arises from the interaction between NMDA receptors and dendritic morphology
+
+
+
 ### Review
 
 - [When brain-inspired AI meets AGI](https://www.sciencedirect.com/science/article/pii/S295016282300005X)  
