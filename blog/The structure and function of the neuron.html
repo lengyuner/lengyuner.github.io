@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>The structure and function of the neuron</title>
-        <style>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>The structure and function of the neuron</title>
+            <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
@@ -11,12 +11,14 @@
  *--------------------------------------------------------------------------------------------*/
 
 .vscode-dark img[src$=\#gh-light-mode-only],
-.vscode-light img[src$=\#gh-dark-mode-only] {
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
 	display: none;
 }
 
 </style>
-        
+            
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 <style>
@@ -37,10 +39,106 @@
     pointer-events: none;
 }
 </style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
         
-    </head>
-    <body class="vscode-body vscode-light">
-        <h1 id="the-structure-and-function-of-the-neuron">The structure and function of the neuron</h1>
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="the-structure-and-function-of-the-neuron">The structure and function of the neuron</h1>
 <p>It is a collection of papers about the structure and function.</p>
 <h2 id="hacking-brain-development-to-test-models-of-sensory-coding">Hacking brain development to test models of sensory coding</h2>
 <p><a href="https://www.biorxiv.org/content/10.1101/2023.01.25.525425v1">https://www.biorxiv.org/content/10.1101/2023.01.25.525425v1</a><br>
@@ -100,8 +198,30 @@ More importantly, the place for connection(information integration) is DAN, a ty
 并且这个连接的地方还是DAN,dopamine neuron 
 
 Learning and memory的基础  -->
-
-        
-        
-    </body>
-    </html>
+<h2 id="single-cortical-neurons-as-deep-artificial-neural-networks">Single cortical neurons as deep artificial neural networks</h2>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0896627321005018">https://www.sciencedirect.com/science/article/pii/S0896627321005018</a></p>
+<ul>
+<li>Cortical neurons are well approximated by a deep neural network (DNN) with 5–8 layers</li>
+<li>DNN’s depth arises from the interaction between NMDA receptors and dendritic morphology</li>
+<li>Dendritic branches can be conceptualized as a set of spatiotemporal pattern detectors</li>
+<li>We provide a unified method to assess the computational complexity of any neuron type</li>
+</ul>
+<!-- ### comment:  -->
+<h2 id="blue-brain-project">Blue Brain Project</h2>
+<p><a href="https://www.cell.com/fulltext/S0092-8674(15)01191-5">Reconstruction and Simulation of Neocortical Microcircuitry</a></p>
+<p><a href="https://neurosciencenews.com/3d-brain-model-memory-connectivity-28102/">3D Brain Models Unlock New Insights Into Memory and Connectivity</a><br>
+the report mentioned the recent works of BBP:</p>
+<!-- 这篇报道提到BBP最近的几篇工作， -->
+<p><a href="https://doi.org/10.1371/journal.pbio.3002861">Community-based reconstruction and simulation of a full-scale model of the rat <strong>hippocampus</strong> CA1 region</a></p>
+<!-- 海马的仿真 -->
+<p><a href="https://elifesciences.org/reviewed-preprints/99688v1">Modeling and Simulation of Neocortical Micro- and Mesocircuitry. Part I: Anatomy</a>
+<a href="https://elifesciences.org/reviewed-preprints/99693v1">Modeling and Simulation of Neocortical Micro- and Mesocircuitry. Part II: Physiology and Experimentation</a>
+connection and simulation for somatosensory cortex</p>
+<!-- 体感皮层的连接与仿真  -->
+<p><a href="https://elifesciences.org/reviewed-preprints/101850v1">Assemblies, synapse clustering and network topology interact with <strong>plasticity</strong> to explain structure-function relationships of the cortical connectome</a>
+synapse plasticity</p>
+<!-- 可塑性  -->
+            
+            
+        </body>
+        </html>

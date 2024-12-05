@@ -103,3 +103,34 @@ It might be a toy model for associate learning( the most important function of t
 Learning and memory的基础  -->
 
 
+
+## Single cortical neurons as deep artificial neural networks
+https://www.sciencedirect.com/science/article/pii/S0896627321005018
+- Cortical neurons are well approximated by a deep neural network (DNN) with 5–8 layers
+- DNN’s depth arises from the interaction between NMDA receptors and dendritic morphology
+- Dendritic branches can be conceptualized as a set of spatiotemporal pattern detectors
+- We provide a unified method to assess the computational complexity of any neuron type
+
+
+
+
+## Blue Brain Project
+[Reconstruction and Simulation of Neocortical Microcircuitry](https://www.cell.com/fulltext/S0092-8674(15)01191-5)
+
+[3D Brain Models Unlock New Insights Into Memory and Connectivity](https://neurosciencenews.com/3d-brain-model-memory-connectivity-28102/)  
+the report mentioned the recent works of BBP:
+<!-- 这篇报道提到BBP最近的几篇工作， -->
+
+[Community-based reconstruction and simulation of a full-scale model of the rat **hippocampus** CA1 region](https://doi.org/10.1371/journal.pbio.3002861)
+<!-- 海马的仿真 -->
+
+
+[Modeling and Simulation of Neocortical Micro- and Mesocircuitry. Part I: Anatomy](https://elifesciences.org/reviewed-preprints/99688v1)
+[Modeling and Simulation of Neocortical Micro- and Mesocircuitry. Part II: Physiology and Experimentation](https://elifesciences.org/reviewed-preprints/99693v1)
+connection and simulation for somatosensory cortex
+<!-- 体感皮层的连接与仿真  -->
+
+
+[Assemblies, synapse clustering and network topology interact with **plasticity** to explain structure-function relationships of the cortical connectome](https://elifesciences.org/reviewed-preprints/101850v1)
+synapse plasticity
+<!-- 可塑性  -->

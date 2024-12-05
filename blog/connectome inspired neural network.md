@@ -103,17 +103,18 @@
 
 ## Others
 
+<!-- - [Single cortical neurons as deep artificial neural networks](https://www.sciencedirect.com/science/article/pii/S0896627321005018)
+  - Cortical neurons are well approximated by a deep neural network (DNN) with 5–8 layers
+  - DNN’s depth arises from the interaction between NMDA receptors and dendritic morphology -->
+
+
+
 - [The structural connectome constrains fast brain dynamics](https://elifesciences.org/articles/67400)
 
 ### Basic Architecture
 
 - [Exploring Randomly Wired Neural Networks for Image Recognition](https://arxiv.org/abs/1904.01569)  
   Saining Xie, Alexander Kirillov, Ross Girshick, Kaiming He
-
-- [Single cortical neurons as deep artificial neural networks](https://www.sciencedirect.com/science/article/pii/S0896627321005018)
-  - Cortical neurons are well approximated by a deep neural network (DNN) with 5–8 layers
-  - DNN’s depth arises from the interaction between NMDA receptors and dendritic morphology
-
 
 
 ### Review
