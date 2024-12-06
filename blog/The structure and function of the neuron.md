@@ -112,6 +112,9 @@ https://www.sciencedirect.com/science/article/pii/S0896627321005018
 - We provide a unified method to assess the computational complexity of any neuron type
 
 
+## Emergence of robust global modules from local interactions and smooth gradients
+https://www.biorxiv.org/content/10.1101/2021.10.28.466284v6
+Mikail Khona, Sarthak Chandra, Ila Fiete
 
 
 ## Blue Brain Project
