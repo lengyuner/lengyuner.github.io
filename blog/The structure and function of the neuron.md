@@ -116,6 +116,11 @@ https://www.sciencedirect.com/science/article/pii/S0896627321005018
 https://www.biorxiv.org/content/10.1101/2021.10.28.466284v6
 Mikail Khona, Sarthak Chandra, Ila Fiete
 
+refer to this answer from zhihu: 人为什么会有指纹？ - 吃虾要吃带籽虾的回答 - 知乎  
+https://www.zhihu.com/question/19962632/answer/3289200022
+
+other related papers: 
+Pattern formation mechanisms of self-organizing reaction-diffusion systems
 
 ## Blue Brain Project
 [Reconstruction and Simulation of Neocortical Microcircuitry](https://www.cell.com/fulltext/S0092-8674(15)01191-5)
