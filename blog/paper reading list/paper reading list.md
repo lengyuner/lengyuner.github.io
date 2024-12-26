@@ -15,41 +15,42 @@
 
 ## Connectome
 
-[Neuronal wiring diagram of an adult brain](https://www.nature.com/articles/s41586-024-07558-y)
+- [Neuronal wiring diagram of an adult brain](https://www.nature.com/articles/s41586-024-07558-y)
 
-[Deep Connectomics Networks: Neural Network Architectures Inspired by Neuronal Networks](https://arxiv.org/abs/1912.08986)
+- [Deep Connectomics Networks: Neural Network Architectures Inspired by Neuronal Networks](https://arxiv.org/abs/1912.08986)
 
-[Not everything, not everywhere, not all at once: a study of brain-wide encoding of movement](https://www.biorxiv.org/content/10.1101/2023.06.08.544257v1)
+- [Not everything, not everywhere, not all at once: a study of brain-wide encoding of movement](https://www.biorxiv.org/content/10.1101/2023.06.08.544257v1)
 
 
-[Synaptic architecture of leg and wing motor control networks in Drosophila](https://www.biorxiv.org/content/10.1101/2023.05.30.542725v1)
+- [Synaptic architecture of leg and wing motor control networks in Drosophila](https://www.biorxiv.org/content/10.1101/2023.05.30.542725v1)
 
 
  
-[NeuroCave: A web-based immersive visualization platform for exploring connectome datasets](https://doi.org/10.1162/netn_a_00044)
+- [NeuroCave: A web-based immersive visualization platform for exploring connectome datasets](https://doi.org/10.1162/netn_a_00044)
 
 
 
-[Accelerating with FlyBrainLab the discovery of the functional logic of the Drosophila brain in the connectomic and synaptomic era](https://elifesciences.org/articles/62362)
+- [Accelerating with FlyBrainLab the discovery of the functional logic of the Drosophila brain in the connectomic and synaptomic era](https://elifesciences.org/articles/62362)
 
 
-[Deciphering the Genetic Code of Neuronal Type Connectivity: A Bilinear Modeling Approach](https://elifesciences.org/reviewed-preprints/91532#tab-content)
+- [Deciphering the Genetic Code of Neuronal Type Connectivity: A Bilinear Modeling Approach](https://elifesciences.org/reviewed-preprints/91532#tab-content)
 bilinear + Mu Qiao
 
 
-[How deep is the brain? The shallow brain hypothesis](https://www.nature.com/articles/s41583-023-00756-z)
-
-[Mapping of neuronal and glial primary cilia contactome and connectome in the human cerebral cortex](https://www.cell.com/neuron/fulltext/S0896-6273(23)00719-5)
+- [How deep is the brain? The shallow brain hypothesis](https://www.nature.com/articles/s41583-023-00756-z)
 
 
-[Connectome-driven neural inventory of a complete visual system](https://www.biorxiv.org/content/10.1101/2024.04.16.589741v2)
+- [Mapping of neuronal and glial primary cilia contactome and connectome in the human cerebral cortex](https://www.cell.com/neuron/fulltext/S0896-6273(23)00719-5)
+
+
+- [Connectome-driven neural inventory of a complete visual system](https://www.biorxiv.org/content/10.1101/2024.04.16.589741v2)
 Janelia
 a new connectome of the right optic lobe from a male Drosophila central nervous system FIB-SEM volume
 
-[Generating brain-wide connectome using synthetic axonal morphologies](https://www.biorxiv.org/content/10.1101/2024.10.04.616605v2)
+- [Generating brain-wide connectome using synthetic axonal morphologies](https://www.biorxiv.org/content/10.1101/2024.10.04.616605v2)
 Blue Brain Project
 
-[The cell-type underpinnings of the human functional cortical connectome](https://www.nature.com/articles/s41593-024-01812-2)
+- [The cell-type underpinnings of the human functional cortical connectome](https://www.nature.com/articles/s41593-024-01812-2)
 
 
 

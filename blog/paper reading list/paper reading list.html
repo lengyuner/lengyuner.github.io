@@ -1,371 +1,144 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>paper reading list.md</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-
-<style>
-/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>paper reading list</title>
+            <style>
+/* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-body {
-	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
-	font-size: var(--vscode-markdown-font-size, 14px);
-	padding: 0 26px;
-	line-height: var(--vscode-markdown-line-height, 22px);
-	word-wrap: break-word;
-}
-
-#code-csp-warning {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: white;
-	margin: 16px;
-	text-align: center;
-	font-size: 12px;
-	font-family: sans-serif;
-	background-color:#444444;
-	cursor: pointer;
-	padding: 6px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
-}
-
-#code-csp-warning:hover {
-	text-decoration: none;
-	background-color:#007acc;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-}
-
-body.scrollBeyondLastLine {
-	margin-bottom: calc(100vh - 22px);
-}
-
-body.showEditorSelection .code-line {
-	position: relative;
-}
-
-body.showEditorSelection .code-active-line:before,
-body.showEditorSelection .code-line:hover:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -12px;
-	height: 100%;
-}
-
-body.showEditorSelection li.code-active-line:before,
-body.showEditorSelection li.code-line:hover:before {
-	left: -30px;
-}
-
-.vscode-light.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.15);
-}
-
-.vscode-light.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.40);
-}
-
-.vscode-light.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-dark.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.4);
-}
-
-.vscode-dark.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.60);
-}
-
-.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-high-contrast.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 160, 0, 0.7);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 160, 0, 1);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	outline: 1px solid -webkit-focus-ring-color;
-	outline-offset: -1px;
-}
-
-hr {
-	border: 0;
-	height: 2px;
-	border-bottom: 2px solid;
-}
-
-h1 {
-	padding-bottom: 0.3em;
-	line-height: 1.2;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-table > thead > tr > th {
-	text-align: left;
-	border-bottom: 1px solid;
-}
-
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td {
-	padding: 5px 10px;
-}
-
-table > tbody > tr + tr > td {
-	border-top: 1px solid;
-}
-
-blockquote {
-	margin: 0 7px 0 5px;
-	padding: 0 16px 0 10px;
-	border-left-width: 5px;
-	border-left-style: solid;
-}
-
-code {
-	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
-	font-size: 1em;
-	line-height: 1.357em;
-}
-
-body.wordWrap pre {
-	white-space: pre-wrap;
-}
-
-pre:not(.hljs),
-pre.hljs code > div {
-	padding: 16px;
-	border-radius: 3px;
-	overflow: auto;
-}
-
-pre code {
-	color: var(--vscode-editor-foreground);
-	tab-size: 4;
-}
-
-/** Theming */
-
-.vscode-light pre {
-	background-color: rgba(220, 220, 220, 0.4);
-}
-
-.vscode-dark pre {
-	background-color: rgba(10, 10, 10, 0.4);
-}
-
-.vscode-high-contrast pre {
-	background-color: rgb(0, 0, 0);
-}
-
-.vscode-high-contrast h1 {
-	border-color: rgb(0, 0, 0);
-}
-
-.vscode-light table > thead > tr > th {
-	border-color: rgba(0, 0, 0, 0.69);
-}
-
-.vscode-dark table > thead > tr > th {
-	border-color: rgba(255, 255, 255, 0.69);
-}
-
-.vscode-light h1,
-.vscode-light hr,
-.vscode-light table > tbody > tr + tr > td {
-	border-color: rgba(0, 0, 0, 0.18);
-}
-
-.vscode-dark h1,
-.vscode-dark hr,
-.vscode-dark table > tbody > tr + tr > td {
-	border-color: rgba(255, 255, 255, 0.18);
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
 }
 
 </style>
-
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 <style>
-/* Tomorrow Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-	color: #8e908c;
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
 }
 
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-	color: #c82829;
-}
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-	color: #f5871f;
-}
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-	color: #eab700;
-}
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-	color: #718c00;
-}
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-	color: #4271ae;
-}
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-	color: #8959a8;
-}
-
-.hljs {
-	display: block;
-	overflow-x: auto;
-	color: #4d4d4c;
-	padding: 0.5em;
-}
-
-.hljs-emphasis {
-	font-style: italic;
-}
-
-.hljs-strong {
-	font-weight: bold;
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
 }
 </style>
-
 <style>
-/*
- * Markdown PDF CSS
- */
-
- body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
-	padding: 0 12px;
-}
-
-pre {
-	background-color: #f8f8f8;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
-	overflow-x: auto;
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
-}
-
-pre:not(.hljs) {
-	padding: 23px;
-	line-height: 19px;
-}
-
-blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.emoji {
-	height: 1.4em;
-}
-
-code {
-	font-size: 14px;
-	line-height: 19px;
-}
-
-/* for inline code */
-:not(pre):not(.hljs) > code {
-	color: #C9AE75; /* Change the old color so it seems less like an error */
-	font-size: inherit;
-}
-
-/* Page Break : use <div class="page"/> to insert page break
--------------------------------------------------------- */
-.page {
-	page-break-after: always;
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
 }
 
 </style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
 
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-</head>
-<body>
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
-          ? 'dark'
-          : 'default'
-    });
-  </script>
-<h1 id="paper-reading-list">paper reading list</h1>
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="paper-reading-list">paper reading list</h1>
 <!--  test
 ## lab and people 
  
@@ -375,22 +148,48 @@ code {
 
 [Jonathan Pillow](https://scholar.google.com/citations?user=-ElvJ9wAAAAJ&hl=en) -->
 <h2 id="connectome">Connectome</h2>
+<ul>
+<li>
 <p><a href="https://www.nature.com/articles/s41586-024-07558-y">Neuronal wiring diagram of an adult brain</a></p>
+</li>
+<li>
 <p><a href="https://arxiv.org/abs/1912.08986">Deep Connectomics Networks: Neural Network Architectures Inspired by Neuronal Networks</a></p>
+</li>
+<li>
 <p><a href="https://www.biorxiv.org/content/10.1101/2023.06.08.544257v1">Not everything, not everywhere, not all at once: a study of brain-wide encoding of movement</a></p>
+</li>
+<li>
 <p><a href="https://www.biorxiv.org/content/10.1101/2023.05.30.542725v1">Synaptic architecture of leg and wing motor control networks in Drosophila</a></p>
+</li>
+<li>
 <p><a href="https://doi.org/10.1162/netn_a_00044">NeuroCave: A web-based immersive visualization platform for exploring connectome datasets</a></p>
+</li>
+<li>
 <p><a href="https://elifesciences.org/articles/62362">Accelerating with FlyBrainLab the discovery of the functional logic of the Drosophila brain in the connectomic and synaptomic era</a></p>
+</li>
+<li>
 <p><a href="https://elifesciences.org/reviewed-preprints/91532#tab-content">Deciphering the Genetic Code of Neuronal Type Connectivity: A Bilinear Modeling Approach</a>
 bilinear + Mu Qiao</p>
+</li>
+<li>
 <p><a href="https://www.nature.com/articles/s41583-023-00756-z">How deep is the brain? The shallow brain hypothesis</a></p>
+</li>
+<li>
 <p><a href="https://www.cell.com/neuron/fulltext/S0896-6273(23)00719-5">Mapping of neuronal and glial primary cilia contactome and connectome in the human cerebral cortex</a></p>
+</li>
+<li>
 <p><a href="https://www.biorxiv.org/content/10.1101/2024.04.16.589741v2">Connectome-driven neural inventory of a complete visual system</a>
 Janelia
 a new connectome of the right optic lobe from a male Drosophila central nervous system FIB-SEM volume</p>
+</li>
+<li>
 <p><a href="https://www.biorxiv.org/content/10.1101/2024.10.04.616605v2">Generating brain-wide connectome using synthetic axonal morphologies</a>
 Blue Brain Project</p>
+</li>
+<li>
 <p><a href="https://www.nature.com/articles/s41593-024-01812-2">The cell-type underpinnings of the human functional cortical connectome</a></p>
+</li>
+</ul>
 <h3 id="technology-of-connectome">technology of connectome</h3>
 <p><a href="https://openreview.net/forum?id=lHDVYDy5S9l">Bridging the Gap: Point Clouds for Merging Neurons in Connectomics</a>
 MIDL 2022</p>
@@ -444,10 +243,10 @@ binding specificity of DIP/Dpr subgroups is controlled by “negative constraint
 <li><a href="https://www.biorxiv.org/content/10.1101/2024.07.08.602367v2.abstract">Nematode Extracellular Protein Interactome Expands Connections between Signaling Pathways</a></li>
 </ul>
 <h4 id="result-verification">result verification</h4>
-<p>[A conserved fertilization complex bridges sperm and egg in vertebrates](https://www.cell.com/cell/fulltext/S0092-8674
+<p>[A conserved fertilization complex bridges sperm and egg in vertebrates](<a href="https://www.cell.com/cell/fulltext/S0092-8674">https://www.cell.com/cell/fulltext/S0092-8674</a>
 (24)01093-6) <strong>AlphaFold-Multimer</strong><br>
 This approach employs structural predictions of pairwise protein-protein interactions between each bait protein and the candidate proteins. A high interface-predicted template modeling score (<strong>ipTM score</strong>) reflects high confidence in the relative positioning of the interfaces.</p>
-<p><img src="image.png" alt="alt text"></p>
+<p><img src="file:///d:\GitHub\lengyuner.github.io\blog\paper reading list\image.png" alt="alt text"></p>
 <h4 id="data-mapping-between-transcriptome-and-connectome">data mapping between transcriptome and connectome</h4>
 <p><a href="https://elifesciences.org/articles/13222">Bicoid gradient formation and function in the Drosophila pre-syncytial blastoderm</a></p>
 <p><a href="https://genesdev.cshlp.org/content/11/15/1963">An anteroposterior Dorsal gradient in theDrosophila embryo</a></p>
@@ -495,12 +294,12 @@ Nature reviews neuroscience</p>
 <p>Honey, C., Thivierge JP, Sporns O (2010). Can structure predict function in the human brain? Neuroimage 52(3): 766-776.
 Deco, G., McIntosh, A. R., Shen, K., Hutchison, R. M., Menon, R. S., Everling, S., Hagmann, P., &amp; Jirsa, V. K. (2014). Identification of optimal structural connectivity using functional connectivity and neural modeling. The Journal of neuroscience : the official journal of the Society for Neuroscience, 34(23), 7910–7916.</p>
 <p>Dawson, DA, Cha K, Lewis LB, Mendola JD, Shmuel A (2013). &quot;Evaluation and calibration of functional network modeling methods based on known anatomical connections.&quot; Neuroimage 67: 331-343.</p>
-<p>Predicting brain structural network using functional connectivity. Medical image analysis, 79, 102463. https://doi.org/10.1016/j.media.2022.102463.</p>
+<p>Predicting brain structural network using functional connectivity. Medical image analysis, 79, 102463. <a href="https://doi.org/10.1016/j.media.2022.102463">https://doi.org/10.1016/j.media.2022.102463</a>.</p>
 <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S1361841522001104">Predicting brain structural network using functional connectivity</a>j.media<br>
 multi-GCN based GAN, AD</p>
 <h3 id="connectome-visualization">connectome visualization</h3>
 <p><a href="https://www.biorxiv.org/content/10.1101/2023.07.26.550598v1">CAVE: Connectome Annotation Versioning Engine</a>
-https://vcg.seas.harvard.edu/publications/cave</p>
+<a href="https://vcg.seas.harvard.edu/publications/cave">https://vcg.seas.harvard.edu/publications/cave</a></p>
 <p><a href="https://www.biorxiv.org/content/10.1101/2023.10.05.561103v1">SmartEM: machine-learning guided electron microscopy</a></p>
 <p>BOOK: <a href="https://link.springer.com/chapter/10.1007/978-1-4471-6497-5_21">Visualization in Connectomics</a></p>
 <p><a href="https://www.pnas.org/doi/full/10.1073/pnas.1103583108">A Unified attentional bottleneck in the human brain</a>
@@ -512,7 +311,7 @@ connection bottleneck</p>
 <p><a href="https://arxiv.org/abs/2212.13345">The Forward-Forward Algorithm: Some Preliminary Investigations</a>
 Geoffrey Hinton</p>
 <h3 id="connectome--ann">Connectome &amp; ANN</h3>
-<p><a href="connectome%20inspired%20neural%20network.md">connectome inspired neural network</a><br>
+<p><a href="connectome%20inspired%20neural%20network.html">connectome inspired neural network</a><br>
 html <a href="https://lengyuner.github.io/blog/connectome%20inspired%20neural%20network.html">connectome inspired neural network</a></p>
 <h3 id="geometry">geometry</h3>
 <p><a href="https://openreview.net/forum?id=dqWobzlAGb">Modelling brain connectomes networks: Solv is a worthy competitor to hyperbolic geometry!</a>
@@ -664,7 +463,7 @@ Klaus M. Stiefel1, andTerrence J. Sejnowski</p>
 <!-- [Exact Solution of P-dispersion Problems](https://www.semanticscholar.org/paper/Exact-Solution-of-P-dispersion-Problems-Pisinger/1eb3810077c0af9d46ed5ff2b0819d954c97dcae) -->
 <p><a href="https://www.sciencedirect.com/science/article/pii/S0305054804002552">Upper bounds and exact algorithms for p-dispersion problems
 </a>
-http://yalma.fime.uanl.mx/~roger/work/teaching/class_tso/docs_project/problems/PDP/cor-2006-Pisinger.pdf</p>
+<a href="http://yalma.fime.uanl.mx/~roger/work/teaching/class_tso/docs_project/problems/PDP/cor-2006-Pisinger.pdf">http://yalma.fime.uanl.mx/~roger/work/teaching/class_tso/docs_project/problems/PDP/cor-2006-Pisinger.pdf</a></p>
 <p><a href="https://www.sciencedirect.com/science/article/pii/S0377221721006548">A review on discrete diversity and dispersion maximization from an OR perspective</a></p>
 <p><a href="https://pubsonline.informs.org/doi/abs/10.1287/opre.42.2.299">Heuristic and special case algorithms for dispersion problems</a></p>
 <p><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/net.3230120206">A network flow solution to some nonlinear 0-1 programming problems, with applications to graph theory</a></p>
@@ -711,17 +510,17 @@ Chris Ying, Aaron Klein, Esteban Real, Eric Christiansen, Kevin Murphy, Frank Hu
 <p><a href="https://arxiv.org/abs/1311.2901">Visualizing and Understanding Convolutional Networks</a></p>
 <h3 id="sparse-decoding">sparse decoding</h3>
 <p>Identifiable Deep Generative Models via Sparse Decoding
-https://arxiv.org/abs/2110.10804</p>
+<a href="https://arxiv.org/abs/2110.10804">https://arxiv.org/abs/2110.10804</a></p>
 <p>UFLDL Tutorial
 Sparse Coding
-http://ufldl.stanford.edu/tutorial/unsupervised/SparseCoding/</p>
+<a href="http://ufldl.stanford.edu/tutorial/unsupervised/SparseCoding/">http://ufldl.stanford.edu/tutorial/unsupervised/SparseCoding/</a></p>
 <p>Sensing Matrix Optimization for Block-Sparse Decoding
-https://ieeexplore.ieee.org/abstract/document/5872076</p>
+<a href="https://ieeexplore.ieee.org/abstract/document/5872076">https://ieeexplore.ieee.org/abstract/document/5872076</a></p>
 <p>A Tutorial on Decoding Techniques of Sparse Code Multiple Access
-https://ieeexplore.ieee.org/abstract/document/9782313</p>
+<a href="https://ieeexplore.ieee.org/abstract/document/9782313">https://ieeexplore.ieee.org/abstract/document/9782313</a></p>
 <p>On the iterative decoding of sparse quantum codes
-https://arxiv.org/abs/0801.1241</p>
-<h3 id="others">others</h3>
+<a href="https://arxiv.org/abs/0801.1241">https://arxiv.org/abs/0801.1241</a></p>
+<h3 id="others-1">others</h3>
 <p><a href="https://www.biorxiv.org/content/10.1101/2024.01.27.577215v1">Mapping the developmental structure of stereotyped and individual-unique behavioral spaces in C. elegans</a></p>
 <p><a href="https://arxiv.org/abs/1910.01312">A sparse semismooth Newton based augmented Lagrangian method for large-scale support vector machines</a> SVM</p>
 <p><a href="https://www.annualreviews.org/doi/abs/10.1146/annurev.neuro.31.060407.125555">Vestibular System: The Many Facets of a Multimodal Sense</a></p>
@@ -769,7 +568,7 @@ S. Lawrence Zipursky &amp; Gwyneth M. Card</p>
 </li>
 </ul>
 
-</body>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });</script>
-</html>
+            
+            
+        </body>
+        </html>
