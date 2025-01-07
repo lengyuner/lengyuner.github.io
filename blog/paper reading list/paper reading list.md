@@ -158,11 +158,10 @@ binding specificity of DIP/Dpr subgroups is controlled by “negative constraint
 
 #### result verification 
 
-[A conserved fertilization complex bridges sperm and egg in vertebrates](https://www.cell.com/cell/fulltext/S0092-8674
-(24)01093-6) **AlphaFold-Multimer**  
+[A conserved fertilization complex bridges sperm and egg in vertebrates](https://www.cell.com/cell/fulltext/S0092-8674(24)01093-6) **AlphaFold-Multimer**
     This approach employs structural predictions of pairwise protein-protein interactions between each bait protein and the candidate proteins. A high interface-predicted template modeling score (**ipTM score**) reflects high confidence in the relative positioning of the interfaces.
 
-![alt text](image.png)
+![alt text|50%](image.png)
 
 #### data mapping between transcriptome and connectome
 [Bicoid gradient formation and function in the Drosophila pre-syncytial blastoderm](https://elifesciences.org/articles/13222)
