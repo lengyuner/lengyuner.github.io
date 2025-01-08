@@ -138,7 +138,8 @@ the benefits of stochasticity in the development of neural wiring
 [DIP/Dpr interactions and the evolutionary design of specificity in protein families](https://www.nature.com/articles/s41467-020-15981-8)
 binding specificity of DIP/Dpr subgroups is controlled by “negative constraints”, which interfere with binding
 
-
+#### experiment support
+[Spatial patterning controls neuron numbers in the Drosophila visual system](https://www.sciencedirect.com/science/article/pii/S1534580724001485?via%3Dihub)
 
 ### cell-cell communication and interaction
 [CellPhoneDB: inferring **cell–cell communication** from combined expression of multi-subunit ligand–receptor complexes](https://www.nature.com/articles/s41596-020-0292-x)
@@ -163,7 +164,7 @@ binding specificity of DIP/Dpr subgroups is controlled by “negative constraint
 
 ![alt text|50%](image.png)
 
-#### data mapping between transcriptome and connectome
+### data mapping between transcriptome and connectome
 [Bicoid gradient formation and function in the Drosophila pre-syncytial blastoderm](https://elifesciences.org/articles/13222)
 
 [An anteroposterior Dorsal gradient in theDrosophila embryo](https://genesdev.cshlp.org/content/11/15/1963)
@@ -171,6 +172,17 @@ binding specificity of DIP/Dpr subgroups is controlled by “negative constraint
 [Variation in the Dorsal Gradient Distribution Is a Source for Modified Scaling of Germ Layers in Drosophila](https://www.sciencedirect.com/science/article/pii/S0960982213003333)
 
 [Gradient-Based DNA Transcription Control in Animals](https://www.nature.com/scitable/topicpage/gradient-based-dna-transcription-control-in-animals-1062/)
+
+
+[Cell lineage predicts neural connectivity beyond cell type](https://www.biorxiv.org/content/10.1101/2022.11.01.514680v1.abstract)
+Konrad P. Kording
+
+[Inferring causal connectivity from pairwise recordings and optogenetics](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011574)
+Konrad P. Kording
+
+[Opportunities and challenges of single-cell and spatially resolved genomics methods for neuroscience discovery](https://www.nature.com/articles/s41593-024-01806-0)
+
+[Homogenized C. elegans Neural Activity and Connectivity Data](https://arxiv.org/pdf/2411.12091)
 
 ### gene data
 [Neuronal diversity and convergence in a visual system developmental atlas](https://www.nature.com/articles/s41586-020-2879-3)
@@ -327,6 +339,9 @@ Tirthabir Biswas, Tianzhi Lambus Li, James E. Fitzgerald
 
 ## neural data recording
 
+
+
+
 ### whole brain imaging
 [The spatial and temporal structure of neural activity across the fly brain](https://www.nature.com/articles/s41467-023-41261-2)
 Evan S. Schaffer ... L. F. Abbott & Richard Axel 
@@ -424,6 +439,14 @@ Fabian Kloosterman, Stuart P. Layton, Zhe Chen, and Matthew A. Wilson
 
 LFADS: [Inferring single-trial neural population dynamics using sequential auto-encoders](https://www.nature.com/articles/s41592-018-0109-9)  
 [LFADS (method part)](https://arxiv.org/abs/1608.06315)
+
+
+MtM: [Towards a "Universal Translator" for Neural Dynamics at Single-Cell, Single-Spike Resolution](https://openreview.net/forum?id=nRRJsDahEg)
+Yizi, Liam, Cole
+
+NEMO: [In vivo cell-type and brain region classification via multimodal contrastive learning](https://www.biorxiv.org/content/10.1101/2024.11.05.622159v1)
+
+[POYO-1: A Unified, Scalable Framework for Neural Population Decoding](https://poyo-brain.github.io/)
 
 
 
