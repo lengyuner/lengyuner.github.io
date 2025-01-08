@@ -242,8 +242,12 @@ nature neuroscience review 2024
 
 [The Genomic Code: The genome instantiates a generative model of the organism](https://arxiv.org/abs/2407.15908)
 
+### Spiking neural network
+[Exploring Loss Functions for Time-based Training Strategy in Spiking Neural Networks](https://openreview.net/pdf?id=8IvW2k5VeA)
+
 
 ### functional and structure conenctome
+
 [Complex brain networks: graph theoretical analysis of structural and functional systems](https://www.nature.com/articles/nrn2575)
 Ed Bullmore & Olaf Sporns (2009).  
 Nature reviews neuroscience 
