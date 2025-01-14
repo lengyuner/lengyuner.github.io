@@ -141,6 +141,11 @@ binding specificity of DIP/Dpr subgroups is controlled by “negative constraint
 #### experiment support
 [Spatial patterning controls neuron numbers in the Drosophila visual system](https://www.sciencedirect.com/science/article/pii/S1534580724001485?via%3Dihub)
 
+
+[Whole-cortex in situ sequencing reveals input-dependent area identity](https://www.nature.com/articles/s41586-024-07221-6)
+Zador lab
+
+
 ### cell-cell communication and interaction
 [CellPhoneDB: inferring **cell–cell communication** from combined expression of multi-subunit ligand–receptor complexes](https://www.nature.com/articles/s41596-020-0292-x)
 
