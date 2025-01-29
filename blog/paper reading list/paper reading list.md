@@ -288,7 +288,7 @@ connection bottleneck
 
 [Cell2Cell: Explorative Cell Interaction Analysis in Multi-Volumetric Tissue Data](https://vcg.seas.harvard.edu/publications/cell2cell)
 
-
+[Computation and visualization of cell–cell signaling topologies in single-cell systems data using Connectome](https://www.nature.com/articles/s41598-022-07959-x)
 
 ## NeuroAI
 
@@ -428,6 +428,10 @@ Phate
 
 ### activity analysis 
 [Neural signal propagation atlas of Caenorhabditis elegans](https://www.nature.com/articles/s41586-023-06683-4) Andrew M. Leifer
+
+[Dynamical constraints on neural population activity](https://www.nature.com/articles/s41593-024-01845-7)
+Byron M. Yu & Aaron P. Batista
+
 
 
 ## encoding and decoding
