@@ -17,6 +17,8 @@
 
 - [Neuronal wiring diagram of an adult brain](https://www.nature.com/articles/s41586-024-07558-y)
 
+- [The connectome of an insect brain](https://www.science.org/doi/10.1126/science.add9330)
+
 - [Deep Connectomics Networks: Neural Network Architectures Inspired by Neuronal Networks](https://arxiv.org/abs/1912.08986)
 
 - [Not everything, not everywhere, not all at once: a study of brain-wide encoding of movement](https://www.biorxiv.org/content/10.1101/2023.06.08.544257v1)
@@ -24,9 +26,8 @@
 
 - [Synaptic architecture of leg and wing motor control networks in Drosophila](https://www.biorxiv.org/content/10.1101/2023.05.30.542725v1)
 
+- [Synaptic architecture of leg and wing premotor control networks in Drosophila](https://www.nature.com/articles/s41586-024-07600-z)  John C. Tuthill
 
- 
-- [NeuroCave: A web-based immersive visualization platform for exploring connectome datasets](https://doi.org/10.1162/netn_a_00044)
 
 
 
@@ -52,7 +53,9 @@ Blue Brain Project
 
 - [The cell-type underpinnings of the human functional cortical connectome](https://www.nature.com/articles/s41593-024-01812-2)
 
+[Evolution of connectivity architecture in the Drosophila mushroom body](https://www.biorxiv.org/content/10.1101/2023.02.10.528036v3)
 
+[The connectome of the adult Drosophila mushroom body provides insights into function](https://elifesciences.org/articles/62576)
 
 ### technology of connectome
 [Bridging the Gap: Point Clouds for Merging Neurons in Connectomics](https://openreview.net/forum?id=lHDVYDy5S9l)
@@ -96,6 +99,10 @@ MIDL 2022
 [The Multilayer Connectome of Caenorhabditis **elegans**](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005283)
 
 
+[Exploring the Brain Characteristics of Structure-informed Functional Connectivity through Graph Attention Network](https://www.biorxiv.org/content/10.1101/2023.11.30.569343v1.abstract)
+
+
+
 ### connectome and gene
 [Molecular topography of an entire nervous system](https://www.sciencedirect.com/science/article/pii/S0092867421007583)
 **key_and_lock**
@@ -119,7 +126,7 @@ Dániel L. Barabási 1, Albert-László Barabási
 **Mu Qiao**
 
 
-[**Constructive connectomics**: How neuronal axons get from here to there using gene- expression maps derived from their family trees](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010382)
+[**Constructive connectomics**: How neuronal axons get from here to there using gene- expression maps derived from their family trees](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010382) 
 
 
 [Cell-type-Specific Patterned Stimulus-Independent Neuronal Activity in the Drosophila Visual System during Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627319300091)
@@ -134,9 +141,9 @@ Dániel L. Barabási 1, Albert-László Barabási
 connection probabilities between discrete cell types are genetically specified, to investigate
 the benefits of stochasticity in the development of neural wiring
 
+[Dissecting origins of wiring specificity in dense cortical connectomes](https://www.biorxiv.org/content/10.1101/2024.12.14.628490v1)
 
-[DIP/Dpr interactions and the evolutionary design of specificity in protein families](https://www.nature.com/articles/s41467-020-15981-8)
-binding specificity of DIP/Dpr subgroups is controlled by “negative constraints”, which interfere with binding
+[Connectome gradient dysfunction in major depression and its association with gene expression profiles and treatment outcomes](https://www.nature.com/articles/s41380-022-01519-5)
 
 #### experiment support
 [Spatial patterning controls neuron numbers in the Drosophila visual system](https://www.sciencedirect.com/science/article/pii/S1534580724001485?via%3Dihub)
@@ -146,20 +153,48 @@ binding specificity of DIP/Dpr subgroups is controlled by “negative constraint
 Zador lab
 
 
+
+[Cell-type-Specific Patterned Stimulus-Independent Neuronal Activity in the Drosophila Visual System during Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627319300091)
+
+
 ### cell-cell communication and interaction
 [CellPhoneDB: inferring **cell–cell communication** from combined expression of multi-subunit ligand–receptor complexes](https://www.nature.com/articles/s41596-020-0292-x)
 
 [Deciphering cell–cell interactions and communication from gene expression](https://www.nature.com/articles/s41576-020-00292-x)
 
+[Deciphering cell–cell communication at single-cell resolution for spatial transcriptomics with subgraph-based graph attention network](https://www.nature.com/articles/s41467-024-51329-2)
+
+
+
+
+
+### protein interaction
+[PPI (Protein-Protein Interactions (PPI))](https://paperswithcode.com/dataset/ppi)
+
+#### experiment support
+[DIP/Dpr interactions and the evolutionary design of specificity in protein families](https://www.nature.com/articles/s41467-020-15981-8)
+binding specificity of DIP/Dpr subgroups is controlled by “negative constraints”, which interfere with binding
 
 [Nematode Extracellular Protein Interactome Expands Connections between Signaling Pathways](https://www.biorxiv.org/content/10.1101/2024.07.08.602367v2)
 
 
-[Nematode Extracellular Protein Interactome Expands Connections between Signaling Pathways](https://www.biorxiv.org/content/10.1101/2024.07.08.602367v2)
 
-- [Nematode Extracellular Protein Interactome Expands Connections between Signaling Pathways](https://www.biorxiv.org/content/10.1101/2024.07.08.602367v2.abstract)
+[A comprehensive dataset of protein-protein interactions and ligand binding pockets for advancing drug discovery](https://www.nature.com/articles/s41597-024-03233-z)
+**PPIs**
 
 
+[Attentive cross-modal paratope prediction](https://arxiv.org/abs/1806.04398)
+Antibodies 
+
+#### deep learning methods
+paper with code: https://paperswithcode.com/dataset/ppi
+
+
+[Powerful antibiotics discovered using AI](https://www.nature.com/articles/d41586-020-00018-3)
+
+[Struct2Graph: a graph attention network for structure based predictions of protein–protein interactions](https://link.springer.com/article/10.1186/s12859-022-04910-9)
+
+[Accurate protein function prediction via graph attention networks with predicted structure information](https://academic.oup.com/bib/article/23/1/bbab502/6457163)
 
 
 #### result verification 
@@ -170,6 +205,10 @@ Zador lab
 ![alt text|50%](image.png)
 
 ### data mapping between transcriptome and connectome
+
+[Integrated Morphoelectric and Transcriptomic Classification of Cortical GABAergic Cells](https://www.sciencedirect.com/science/article/pii/S009286742031254X)
+Cell2020, **all kinds of neurons!!!**
+
 [Bicoid gradient formation and function in the Drosophila pre-syncytial blastoderm](https://elifesciences.org/articles/13222)
 
 [An anteroposterior Dorsal gradient in theDrosophila embryo](https://genesdev.cshlp.org/content/11/15/1963)
@@ -215,6 +254,7 @@ two new axes of biological variation: cell-intrinsic regulation of cell states a
 
 nature neuroscience review 2024
 
+[Science Forum: The Human Cell Atlas](https://elifesciences.org/articles/27041)
 
 #### logical gene for connectome 
 [Discovering Symbolic Models from Deep Learning with Inductive Biases](https://arxiv.org/abs/2006.11287)
@@ -233,7 +273,8 @@ nature neuroscience review 2024
 
 <!-- [Gene regulatory network inference in the era of single-cell multi-omics](https://www.nature.com/articles/s41576-023-00618-5) -->
 
-[Gene regulatory network inference in the era of single-cell multi-omics](https://www.nature.com/articles/s41576-023-00618-5)
+[Gene regulatory network inference in the era of single-cell multi-omics](https://www.nature.com/articles/s41576-023-00618-5)Julio Saez-Rodriguez 
+Nature Reviews Genetics 
 
 [Decoding gene regulation in the fly brain](https://www.nature.com/articles/s41586-021-04262-z)
 
@@ -241,11 +282,15 @@ nature neuroscience review 2024
 
 [Inferring gene regulatory networks from single-cell multiome data using atlas-scale external data](https://www.nature.com/articles/s41587-024-02182-7)
 
+[Genome-wide identification of neuronal activity-regulated genes in Drosophila](https://elifesciences.org/articles/19942)
 
 #### application
 [Encoding innate ability through a genomic bottleneck](https://www.biorxiv.org/content/10.1101/2021.03.16.435261v2)
 
 [The Genomic Code: The genome instantiates a generative model of the organism](https://arxiv.org/abs/2407.15908)
+
+
+
 
 ### Spiking neural network
 [Exploring Loss Functions for Time-based Training Strategy in Spiking Neural Networks](https://openreview.net/pdf?id=8IvW2k5VeA)
@@ -290,6 +335,78 @@ connection bottleneck
 
 [Computation and visualization of cell–cell signaling topologies in single-cell systems data using Connectome](https://www.nature.com/articles/s41598-022-07959-x)
 
+
+**human connectome** 
+- [NeuroCave: A web-based immersive visualization platform for exploring connectome datasets](https://doi.org/10.1162/netn_a_00044)
+
+
+## graph
+
+JC: https://docs.google.com/spreadsheets/d/10R6poOIIqA4OCsiSGs5mK4Zkq9pm8aPxk1IQ3Zl0NPU
+
+
+DGL 2.0: Streamlining Your GNN Data Pipeline from Bottleneck to Boost
+https://www.dgl.ai/
+https://github.com/dmlc/dgl/blob/master/examples/README.md#agnn
+
+
+[The Graph Neural Network Model](https://ieeexplore.ieee.org/document/4700287)
+
+[Variational Graph Auto-Encoders](https://arxiv.org/abs/1611.07308)
+Bayesian Deep Learning Workshop (NIPS 2016)
+
+code: https://github.com/DaehanKim/vgae_pytorch
+
+
+[Graph Attention Networks](https://arxiv.org/abs/1710.10903)
+Yoshua Bengio
+
+[Graph Attention Networks](https://petar-v.com/GAT/)
+
+[Attention-based Graph Neural Network for Semi-supervised Learning](https://arxiv.org/abs/1803.03735)
+
+
+
+## Link prediction
+https://paperswithcode.com/task/link-prediction
+
+
+GraphSAGE: [Inductive Representation Learning on Large Graphs](https://arxiv.org/abs/1706.02216v4)
+GraphSAGE, a general, inductive framework that leverages node feature information (e.g., text attributes) to efficiently generate node embeddings for previously unseen data.
+
+
+
+### Graph Embedding
+[LINE: Large-scale Information Network Embedding](https://arxiv.org/abs/1503.03578)
+
+[GraphVite - graph embedding at high speed and large scale]()
+
+### review 
+[A Comprehensive Survey on Graph Neural Networks](https://arxiv.org/abs/1901.00596)
+Cited by 11155
+
+[Graph neural networks: A review of methods and applications](https://www.sciencedirect.com/science/article/pii/S2666651021000012)
+Cited by 6966
+
+[Graph Learning: A Survey](https://ieeexplore.ieee.org/abstract/document/9416834)
+
+[papers with code: Graph Models](https://paperswithcode.com/methods/category/graph-models) 
+
+
+
+### disease gene
+[GANLDA: Graph attention network for lncRNA-disease associations prediction](https://www.sciencedirect.com/science/article/pii/S0925231221011012)
+
+
+[Genome-wide prediction of dominant and recessive neurodevelopmental disorder risk genes](https://www.biorxiv.org/content/10.1101/2022.11.21.517436v1)
+
+
+
+[Mantis-ml: Disease-Agnostic Gene Prioritization from High-Throughput Genomic Screens by Stochastic Semi-supervised Learning](https://www.cell.com/ajhg/fulltext/S0002-9297(20)30108-7)
+
+
+
+
 ## NeuroAI
 
 [In vitro neurons learn and exhibit sentience when embodied in a simulated game-world](https://www.cell.com/neuron/fulltext/S0896-6273(22)00806-6#%20)
@@ -297,8 +414,9 @@ connection bottleneck
 
 [The Forward-Forward Algorithm: Some Preliminary Investigations](https://arxiv.org/abs/2212.13345)
 Geoffrey Hinton
-
-
+[Constraining computational models using electron microscopy wiring diagrams](https://www.sciencedirect.com/science/article/pii/S0959438818302174)
+Ashok Litwin-Kumar , Srinivas C Turaga 
+Current Opinion in Neurobiology, 2019
 
 ### Connectome & ANN
 [connectome inspired neural network](<connectome inspired neural network.md>)  
@@ -384,6 +502,13 @@ Plos Biology
 [3DeeCellTracker, a deep learning-based pipeline for segmenting and tracking cells in 3D time lapse images](https://elifesciences.org/articles/59187)
 
 
+
+### wormid
+
+[Unifying community whole-brain imaging datasets enables robust neuron identification and reveals determinants of neuron position in C. elegans](https://www.sciencedirect.com/science/article/pii/S2667237524003540)
+Daniel Y. Sprague,..., Saul Kato
+
+
 ## neural data analysis
 
 
@@ -432,7 +557,13 @@ Phate
 [Dynamical constraints on neural population activity](https://www.nature.com/articles/s41593-024-01845-7)
 Byron M. Yu & Aaron P. Batista
 
+[Preserved neural dynamics across animals performing similar behaviour](https://www.nature.com/articles/s41586-023-06714-0)
 
+
+[Dynamical constraints on neural population activity](https://www.nature.com/articles/s41593-024-01845-7)
+Byron M. Yu & Aaron P. Batista 
+
+[]
 
 ## encoding and decoding
 
@@ -511,6 +642,11 @@ T4 and T5 neuron
 
 [Social state alters vision using three circuit mechanisms in Drosophila](https://www.nature.com/articles/s41586-024-08255-6) 
 Vanessa Ruta & Gerald M. Rubin 
+
+
+### drosophila
+[The Neural Substrate of Spectral Preference in Drosophila](https://www.sciencedirect.com/science/article/pii/S0896627308007058)
+
 
 
 ## others
