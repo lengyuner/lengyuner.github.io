@@ -132,7 +132,8 @@ Dániel L. Barabási 1, Albert-László Barabási
 [Cell-type-Specific Patterned Stimulus-Independent Neuronal Activity in the Drosophila Visual System during Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627319300091)
 **S. Lawrence Zipursky** 
 
-
+[Bayesian Sparse Regression Analysis Documents the Diversity of Spinal Inhibitory Interneurons](https://www.sciencedirect.com/science/article/pii/S0092867416300034)
+**Bayesian method**
 
 [Genome-wide identification of neuronal activity-regulated genes in Drosophila](https://elifesciences.org/articles/19942)
 
@@ -367,7 +368,7 @@ Yoshua Bengio
 
 
 
-## Link prediction
+### Link prediction
 https://paperswithcode.com/task/link-prediction
 
 
