@@ -380,7 +380,7 @@ GraphSAGE, a general, inductive framework that leverages node feature informatio
 ### Graph Embedding
 [LINE: Large-scale Information Network Embedding](https://arxiv.org/abs/1503.03578)
 
-[GraphVite - graph embedding at high speed and large scale]()
+[GraphVite - graph embedding at high speed and large scale](https://github.com/DeepGraphLearning/graphvite)
 
 ### review 
 [A Comprehensive Survey on Graph Neural Networks](https://arxiv.org/abs/1901.00596)
