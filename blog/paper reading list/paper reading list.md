@@ -162,6 +162,7 @@ Zador lab
 
 
 
+- [Cell2Cell: Explorative Cell Interaction Analysis in Multi-Volumetric Tissue Data](https://vcg.seas.harvard.edu/publications/cell2cell)
 
 
 ### protein interaction
@@ -281,6 +282,29 @@ http://yalma.fime.uanl.mx/~roger/work/teaching/class_tso/docs_project/problems/P
 - [A network flow solution to some nonlinear 0-1 programming problems, with applications to graph theory](https://onlinelibrary.wiley.com/doi/abs/10.1002/net.3230120206)
 
 
+### connectome visualization
+
+- [FlyWire visualization tools](https://flywire.ai/apps)
+
+- [CAVE: Connectome Annotation Versioning Engine](https://www.biorxiv.org/content/10.1101/2023.07.26.550598v1)
+https://vcg.seas.harvard.edu/publications/cave
+
+- [SmartEM: machine-learning guided electron microscopy](https://www.biorxiv.org/content/10.1101/2023.10.05.561103v1)
+
+- BOOK: [Visualization in Connectomics](https://link.springer.com/chapter/10.1007/978-1-4471-6497-5_21)
+
+- [A Unified attentional bottleneck in the human brain](https://www.pnas.org/doi/full/10.1073/pnas.1103583108)
+connection bottleneck
+
+
+- [Computation and visualization of cell–cell signaling topologies in single-cell systems data using Connectome](https://www.nature.com/articles/s41598-022-07959-x)
+
+- ViMO [ - Visual Analysis of Neuronal Connectivity Motifs](https://ieeexplore.ieee.org/document/10298029)
+
+**human connectome** 
+- [NeuroCave: A web-based immersive visualization platform for exploring connectome datasets](https://doi.org/10.1162/netn_a_00044)
+
+
 
 ### gene data
 - [Neuronal diversity and convergence in a visual system developmental atlas](https://www.nature.com/articles/s41586-020-2879-3)
@@ -391,26 +415,6 @@ Nature reviews neuroscience
 
 - [Predicting brain structural network using functional connectivity](https://www.sciencedirect.com/science/article/abs/pii/S1361841522001104)j.media   
 multi-GCN based GAN, AD
-
-### connectome visualization
-- [CAVE: Connectome Annotation Versioning Engine](https://www.biorxiv.org/content/10.1101/2023.07.26.550598v1)
-https://vcg.seas.harvard.edu/publications/cave
-
-- [SmartEM: machine-learning guided electron microscopy](https://www.biorxiv.org/content/10.1101/2023.10.05.561103v1)
-
-BOOK: - [Visualization in Connectomics](https://link.springer.com/chapter/10.1007/978-1-4471-6497-5_21)
-
-- [A Unified attentional bottleneck in the human brain](https://www.pnas.org/doi/full/10.1073/pnas.1103583108)
-connection bottleneck
-
-- [Cell2Cell: Explorative Cell Interaction Analysis in Multi-Volumetric Tissue Data](https://vcg.seas.harvard.edu/publications/cell2cell)
-
-- [Computation and visualization of cell–cell signaling topologies in single-cell systems data using Connectome](https://www.nature.com/articles/s41598-022-07959-x)
-
-
-**human connectome** 
-- [NeuroCave: A web-based immersive visualization platform for exploring connectome datasets](https://doi.org/10.1162/netn_a_00044)
-
 
 ## graph
 
