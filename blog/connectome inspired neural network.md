@@ -101,6 +101,41 @@
   Gang Yan
 
 
+
+
+### cognitive inspired (collected by Ruizhe Zhou)
+
+- [Bridging the data gap between children and large language models](https://www.sciencedirect.com/science/article/pii/S1364661323002036)   
+   Frank, M. C. (2023)
+
+- [Cognitive science in the era of artificial intelligence: A roadmap for reverse-engineering the infant language-learner](https://doi.org/10.1016/j.cognition.2017.11.008)  
+   Dupoux, E. (2018)  
+
+- [Findings of the BabyLM Challenge: Sample-Efficient Pretraining on Developmentally Plausible Corpora](https://aclanthology.org/2023.conll-babylm.1/)  
+   Warstadt, A. et al. (2023) 
+
+- [MEWL: Few-shot multimodal word learning](https://arxiv.org/abs/2306.00503)  
+   Jiang, G. et al. (2023)
+
+- [Lexicon-Level Contrastive Visual-Grounding Improves Language Modeling](https://arxiv.org/abs/2403.14551)  
+   Zhuang, C. et al. (2024)
+
+- [Visual Grounding Helps Learn Word Meanings in Low-Data Regimes](https://arxiv.org/abs/2310.13257)  
+   Zhuang, C. et al. (2023)
+
+- [Context Limitations Make Neural Language Models More Human-Like](https://arxiv.org/abs/2205.11463)  
+   Kuribayashi, T. et al. (2022)
+
+- [Does Vision Accelerate Hierarchical Generalization in Neural Language Learners?](https://arxiv.org/abs/2302.00667)  
+   Kuribayashi, T. (2023)
+
+- [Emergent Word Order Universals from Cognitively-Motivated Language Models](https://arxiv.org/abs/2402.12363) 
+   Tatsuki Kuribayashi, Ryo Ueda, Ryo Yoshida, Yohei Oseki, Ted Briscoe, Timothy Baldwin 
+
+
+
+
+
 ## Others
 
 <!-- - [Single cortical neurons as deep artificial neural networks](https://www.sciencedirect.com/science/article/pii/S0896627321005018)
@@ -126,8 +161,6 @@
 
 - [Deciphering the Blueprint of the Fruit Fly’s Brain](https://physics.aps.org/articles/v17/136)
 
-### Researcher
+### Researcher (TODO)
 
 - [Andreas Horn](http://www.netstim.org/)
-
-
