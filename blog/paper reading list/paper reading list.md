@@ -355,6 +355,12 @@ nature neuroscience review 2024
 
 <!-- - [Gene regulatory network inference in the era of single-cell multi-omics](https://www.nature.com/articles/s41576-023-00618-5) -->
 
+
+
+- [SCENIC: single-cell regulatory network inference and clustering](https://www.nature.com/articles/nmeth.4463)  
+- [SCENIC+: single-cell multiomic inference of enhancers and gene regulatory networks](https://www.nature.com/articles/s41592-023-01938-4)
+
+
 - [Gene regulatory network inference in the era of single-cell multi-omics](https://www.nature.com/articles/s41576-023-00618-5)Julio Saez-Rodriguez 
 Nature Reviews Genetics 
 
@@ -366,6 +372,9 @@ Nature Reviews Genetics
 
 - [Genome-wide identification of neuronal activity-regulated genes in Drosophila](https://elifesciences.org/articles/19942)
 
+
+
+- [Control of Gene Regulatory Networks Using Bayesian Inverse Reinforcement Learning](https://ieeexplore.ieee.org/abstract/document/8350274)
 #### application
 - [Encoding innate ability through a genomic bottleneck](https://www.biorxiv.org/content/10.1101/2021.03.16.435261v2)
 
@@ -374,6 +383,9 @@ Nature Reviews Genetics
 
 - [TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics](https://arxiv.org/abs/2002.04461)
 
+
+- [A Comprehensive Drosophila melanogaster Transcription Factor Interactome](https://www.sciencedirect.com/science/article/pii/S2211124719304012)
+ 
 ### gene normalization 
 - [Scanpy – Single-Cell Analysis in Python](https://scanpy.readthedocs.io/en/stable/)
 - [scanpy Preprocessing and clustering](https://scanpy.readthedocs.io/en/stable/tutorials/basics/clustering.html)
@@ -416,6 +428,12 @@ Nature reviews neuroscience
 - [Predicting brain structural network using functional connectivity](https://www.sciencedirect.com/science/article/abs/pii/S1361841522001104)j.media   
 multi-GCN based GAN, AD
 
+
+### other connectome model:
+
+Modelling brain connectomes networks: Solv is a worthy competitor to hyperbolic geometry!
+https://openreview.net/forum?id=dqWobzlAGb
+
 ## graph
 
 - JC: https://docs.google.com/spreadsheets/d/10R6poOIIqA4OCsiSGs5mK4Zkq9pm8aPxk1IQ3Zl0NPU
@@ -447,9 +465,7 @@ https://paperswithcode.com/task/link-prediction
 
 - GraphSAGE: [Inductive Representation Learning on Large Graphs](https://arxiv.org/abs/1706.02216v4)
 GraphSAGE, a general, inductive framework that leverages node feature information (e.g., text attributes) to efficiently generate node embeddings for previously unseen data.
-
-
-
+ 
 ### Graph Embedding
 - [LINE: Large-scale Information Network Embedding](https://arxiv.org/abs/1503.03578)
  
@@ -695,7 +711,11 @@ Vanessa Ruta & Gerald M. Rubin
 
 ### gene 
 
-- [Bayesian Sparse Regression Analysis Documents the Diversity of Spinal Inhibitory Interneurons](https://www.sciencedirect.com/science/article/pii/S0092867416300034)
+- [Bayesian Sparse Regression Analysis Documents the Diversity of Spinal Inhibitory Interneurons](https://www.sciencedirect.com/science/article/pii/S0092867416300034)  
+[SI](https://ars.els-cdn.com/content/image/1-s2.0-S0092867416300034-mmc2.pdf) 
+$$
+p(\mathbf{y} \mid Q, \mathbf{f}) \propto e^{-\frac{1}{2} \mathbf{f}^{\prime} \mathbf{M f}+\mathbf{y}^{\prime} Q \mathbf{f}}
+$$
 
 - [HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution](https://arxiv.org/abs/2306.15794)   Transformer + gene
 
