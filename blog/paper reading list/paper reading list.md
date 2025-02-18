@@ -654,6 +654,20 @@ Yizi, Liam, Cole
 - [GUST: Combinatorial Generalization by Unsupervised Grouping with Neuronal Coherence](https://openreview.net/forum?id=90O5cvFZkZ)
 NeurIPS 2023 poster
 
+#### diffusion model/ visual Stimulus
+- [Decoding What People See from Where They Look: Predicting Visual Stimuli from Scanpaths](https://link.springer.com/chapter/10.1007/978-3-642-00582-4_2)
+
+- [Natural scene reconstruction from fMRI signals using generative latent diffusion](https://www.nature.com/articles/s41598-023-42891-8)
+Scientific Report, 2023
+
+- [Neural Decoding of Visual Imagery During Sleep](https://www.science.org/doi/10.1126/science.1234330)
+Science, 2013
+
+- [Seeing Beyond the Brain: Conditional Diffusion Model with Sparse Masked Modeling for Vision Decoding](https://arxiv.org/abs/2211.06956)
+CVPR, 2023
+
+
+
 ## behavior
 - GLM-HMM: [Unsupervised identification of the internal states that shape natural behavior](https://www.nature.com/articles/s41593-019-0533-x)  
 - [Mice alternate between discrete strategies during perceptual decision-making](https://www.nature.com/articles/s41593-021-01007-z)
