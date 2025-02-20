@@ -103,8 +103,11 @@
 
 
 
-### cognitive inspired (collected by Ruizhe Zhou)
+### cognitive inspired 
 
+- [TopoNets: High performing vision and language models with brain-like topography](https://arxiv.org/abs/2501.16396)
+- 
+**the following arecollected by Ruizhe Zhou**
 - [Bridging the data gap between children and large language models](https://www.sciencedirect.com/science/article/pii/S1364661323002036)   
    Frank, M. C. (2023)
 
@@ -131,7 +134,6 @@
 
 - [Emergent Word Order Universals from Cognitively-Motivated Language Models](https://arxiv.org/abs/2402.12363) 
    Tatsuki Kuribayashi, Ryo Ueda, Ryo Yoshida, Yohei Oseki, Ted Briscoe, Timothy Baldwin 
-
 
 
 

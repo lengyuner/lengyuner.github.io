@@ -337,6 +337,10 @@ nature neuroscience review 2024
 #### analysis
 - [Inference of cell state transitions and cell fate plasticity from single-cell with MARGARET](https://academic.oup.com/nar/article/50/15/e86/6593121?login=false)
 
+- [Single-cell RNA sequencing technologies and applications: A brief overview](https://onlinelibrary.wiley.com/doi/10.1002/ctm2.694)
+
+- [Methods and applications for single-cell and spatial multi-omics](https://www.nature.com/articles/s41576-023-00580-2)
+Nature Reviews Genetics (2023)
 
 #### logical gene for connectome 
 - [Discovering Symbolic Models from Deep Learning with Inductive Biases](https://arxiv.org/abs/2006.11287)
@@ -349,32 +353,39 @@ nature neuroscience review 2024
 
 - [KAN: Kolmogorov-Arnold Networks](https://arxiv.org/abs/2404.19756)
 
-#### gene regulatory network
-<!-- - [Inferring transcription factor regulatory networks from single-cell ATAC-seq data based on graph neural networks](https://www.nature.com/articles/s42256-022-00469-5) -->
- 
+#### gene regulatory network 
 
-<!-- - [Gene regulatory network inference in the era of single-cell multi-omics](https://www.nature.com/articles/s41576-023-00618-5) -->
-
-
-
-- [SCENIC: single-cell regulatory network inference and clustering](https://www.nature.com/articles/nmeth.4463)  
-- [SCENIC+: single-cell multiomic inference of enhancers and gene regulatory networks](https://www.nature.com/articles/s41592-023-01938-4)
-
-
-- [Gene regulatory network inference in the era of single-cell multi-omics](https://www.nature.com/articles/s41576-023-00618-5)Julio Saez-Rodriguez 
-Nature Reviews Genetics 
 
 - [Decoding gene regulation in the fly brain](https://www.nature.com/articles/s41586-021-04262-z)
 
 - [Inferring transcription factor regulatory networks from single-cell ATAC-seq data based on graph neural networks](https://www.nature.com/articles/s42256-022-00469-5)
+Nature Machine Intelligence, 2022
 
-- [Inferring gene regulatory networks from single-cell multiome data using atlas-scale external data](https://www.nature.com/articles/s41587-024-02182-7)
 
-- [Genome-wide identification of neuronal activity-regulated genes in Drosophila](https://elifesciences.org/articles/19942)
-
+- [Genome-wide identification of neuronal activity-regulated genes in Drosophila](https://elifesciences.org/articles/19942) Brandeis
+eLife, 2016
 
 
 - [Control of Gene Regulatory Networks Using Bayesian Inverse Reinforcement Learning](https://ieeexplore.ieee.org/abstract/document/8350274)
+
+#### review paper 
+
+- [Gene regulatory network inference in the era of single-cell multi-omics](https://www.nature.com/articles/s41576-023-00618-5)Julio Saez-Rodriguez 
+Nature Reviews Genetics 
+
+- [Gene regulatory network reconstruction: harnessing the power of single-cell multi-omic data](https://www.nature.com/articles/s41540-023-00312-6)
+npj Systems Biology and Applications
+
+- [A comprehensive survey of regulatory network inference methods using single cell RNA sequencing data](https://academic.oup.com/bib/article/22/3/bbaa190/5904505)
+Briefings in Bioinformatics, 2021
+
+#### sota models
+- [SCENIC: single-cell regulatory network inference and clustering](https://www.nature.com/articles/nmeth.4463)  
+- [SCENIC+: single-cell multiomic inference of enhancers and gene regulatory networks](https://www.nature.com/articles/s41592-023-01938-4)
+
+- LINGER: [Inferring gene regulatory networks from single-cell multiome data using atlas-scale external data](https://www.nature.com/articles/s41587-024-02182-7)
+
+
 #### application
 - [Encoding innate ability through a genomic bottleneck](https://www.biorxiv.org/content/10.1101/2021.03.16.435261v2)
 
