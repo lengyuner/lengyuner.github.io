@@ -50,10 +50,10 @@ Blue Brain Project
 
 - [Mapping of neuronal and glial primary cilia contactome and connectome in the human cerebral cortex](https://www.cell.com/neuron/fulltext/S0896-6273(23)00719-5)
 
-
+- [Whole-brain annotation and multi-connectome cell typing of Drosophila](https://www.nature.com/articles/s41586-024-07686-5)  Nature 2024
 
 ### technology of connectome
-- [Bridging the Gap: Point Clouds for Merging Neurons in Connectomics](https://openreview.net/forum?id=lHDVYDy5S9l)
+- [Bridging the Gap: Point Clouds for Merging Neurons in Connectomics](https://openreview.net/forum?id=lHDVYDy5S9l)  
 MIDL 2022
 
 - [Automatic detection of synaptic partners in a whole-brain Drosophila electron microscopy data set](https://www.nature.com/articles/s41592-021-01183-7)
@@ -99,6 +99,9 @@ MIDL 2022
 
 
 ### connectome and gene
+
+- [Building a small brain with a simple **stochastic generative model**](https://www.biorxiv.org/content/10.1101/2024.07.01.601562v1)
+  
 - [Molecular topography of an entire nervous system](https://www.sciencedirect.com/science/article/pii/S0092867421007583)
 **key_and_lock**
 - [The Prop1-like homeobox gene unc-42 specifies the identity of synaptically connected neurons](https://elifesciences.org/articles/64903#metrics)
@@ -140,6 +143,11 @@ the benefits of stochasticity in the development of neural wiring
 - [Dissecting origins of wiring specificity in dense cortical connectomes](https://www.biorxiv.org/content/10.1101/2024.12.14.628490v1)
 
 - [Connectome gradient dysfunction in major depression and its association with gene expression profiles and treatment outcomes](https://www.nature.com/articles/s41380-022-01519-5)
+
+
+data:
+- [Hub connectivity, neuronal diversity, and gene expression in the Caenorhabditis elegans connectome](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005989)
+
 
 #### experiment support
 - [Spatial patterning controls neuron numbers in the Drosophila visual system](https://www.sciencedirect.com/science/article/pii/S1534580724001485?via%3Dihub)
