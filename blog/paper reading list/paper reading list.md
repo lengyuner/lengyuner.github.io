@@ -41,16 +41,23 @@ Blue Brain Project
 
 ### connectome dataset
 - [Neuronal wiring diagram of an adult brain](https://www.nature.com/articles/s41586-024-07558-y)
+**flywire, female**
 
 - [The connectome of an insect brain](https://www.science.org/doi/10.1126/science.add9330)
+**larval brain**
 
-<!-- - [Synaptic architecture of leg and wing motor control networks in Drosophila](https://www.biorxiv.org/content/10.1101/2023.05.30.542725v1) -->
 
 - [Synaptic architecture of leg and wing premotor control networks in Drosophila](https://www.nature.com/articles/s41586-024-07600-z)  John C. Tuthill
+**motor**
 
 - [Mapping of neuronal and glial primary cilia contactome and connectome in the human cerebral cortex](https://www.cell.com/neuron/fulltext/S0896-6273(23)00719-5)
+human
 
 - [Whole-brain annotation and multi-connectome cell typing of Drosophila](https://www.nature.com/articles/s41586-024-07686-5)  Nature 2024
+
+- [Connectome-driven neural inventory of a complete visual system](https://www.biorxiv.org/content/10.1101/2024.04.16.589741v2)  
+a new connectome of the right optic lobe from a male Drosophila central nervous system FIB-SEM volume and a comprehensive inventory of the fly’s visual neurons
+
 
 ### technology of connectome
 - [Bridging the Gap: Point Clouds for Merging Neurons in Connectomics](https://openreview.net/forum?id=lHDVYDy5S9l)  
@@ -75,6 +82,8 @@ MIDL 2022
 
 - [A connectome and analysis of the adult Drosophila central brain](https://elifesciences.org/articles/57443)  
 **hemibrain**
+
+
 
 - [Connectomic analysis of the Drosophila lateral neuron clock cells reveals the synaptic basis of functional pacemaker classes](https://elifesciences.org/articles/79139)
 
