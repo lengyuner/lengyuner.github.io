@@ -39,6 +39,10 @@ Blue Brain Project
 - [The connectome of the adult Drosophila mushroom body provides insights into function](https://elifesciences.org/articles/62576)
 
 
+- [Fly connectome over the wire](https://www.nature.com/articles/s41583-024-00879-x)
+**Review, October 2024**
+
+
 ### connectome dataset
 - [Neuronal wiring diagram of an adult brain](https://www.nature.com/articles/s41586-024-07558-y)
 **flywire, female**
@@ -106,6 +110,8 @@ MIDL 2022
 - [Exploring the Brain Characteristics of Structure-informed Functional Connectivity through Graph Attention Network](https://www.biorxiv.org/content/10.1101/2023.11.30.569343v1.abstract)
 
 
+- [The fly connectome reveals a path to the **effectome**](https://www.nature.com/articles/s41586-024-07982-0)  
+Gregory S. X. E. Jefferis, Mala Murthy & Jonathan W. Pillow 
 
 ### connectome and gene
 
