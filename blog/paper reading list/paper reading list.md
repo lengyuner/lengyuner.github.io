@@ -46,6 +46,8 @@ Blue Brain Project
 ### connectome dataset
 - [Neuronal wiring diagram of an adult brain](https://www.nature.com/articles/s41586-024-07558-y)
 **flywire, female**
+- [Whole-brain annotation and multi-connectome cell typing of Drosophila](https://www.nature.com/articles/s41586-024-07686-5)  Nature 2024
+FlyWire
 
 - [The connectome of an insect brain](https://www.science.org/doi/10.1126/science.add9330)
 **larval brain**
@@ -57,7 +59,8 @@ Blue Brain Project
 - [Mapping of neuronal and glial primary cilia contactome and connectome in the human cerebral cortex](https://www.cell.com/neuron/fulltext/S0896-6273(23)00719-5)
 human
 
-- [Whole-brain annotation and multi-connectome cell typing of Drosophila](https://www.nature.com/articles/s41586-024-07686-5)  Nature 2024
+
+
 
 - [Connectome-driven neural inventory of a complete visual system](https://www.biorxiv.org/content/10.1101/2024.04.16.589741v2)  
 a new connectome of the right optic lobe from a male Drosophila central nervous system FIB-SEM volume and a comprehensive inventory of the fly’s visual neurons
@@ -164,6 +167,8 @@ data:
 - [Hub connectivity, neuronal diversity, and gene expression in the Caenorhabditis elegans connectome](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005989)
 
 
+- [Building a small brain with a simple stochastic generative model](https://www.biorxiv.org/content/10.1101/2024.07.01.601562v1)
+
 #### experiment support
 - [Spatial patterning controls neuron numbers in the Drosophila visual system](https://www.sciencedirect.com/science/article/pii/S1534580724001485?via%3Dihub)
 
@@ -259,6 +264,13 @@ Xiaowei Zhuang
 ### morphology
 - [Mapping Function Onto Neuronal Morphology](https://journals.physiology.org/doi/full/10.1152/jn.00865.2006)
 Klaus M. Stiefel1, andTerrence J. Sejnowski 
+
+
+- [Development of Dendritic Form and Function](https://www.annualreviews.org/content/journals/10.1146/annurev-cellbio-100913-013020)
+  review paper, 2015, Julie L. Lefebvre1,2, Joshua R. Sanes3, and Jeremy N. Kay4
+
+- [One Rule to Grow Them All: A General Theory of Neuronal Branching and Its Practical Application](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000877)
+- 
 
 - [Synaptic Connectivity and Neuronal Morphology: Two Sides of the Same Coin](https://www.cell.com/fulltext/S0896-6273(04)00498-2)
 
@@ -365,6 +377,8 @@ nature neuroscience review 2024
 - [Methods and applications for single-cell and spatial multi-omics](https://www.nature.com/articles/s41576-023-00580-2)
 Nature Reviews Genetics (2023)
 
+- [Gene2vec: distributed representation of genes based on co-expression](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-5370-x)
+
 #### logical gene for connectome 
 - [Discovering Symbolic Models from Deep Learning with Inductive Biases](https://arxiv.org/abs/2006.11287)
 
@@ -379,6 +393,7 @@ Nature Reviews Genetics (2023)
 #### gene regulatory network 
 
 
+
 - [Decoding gene regulation in the fly brain](https://www.nature.com/articles/s41586-021-04262-z)
 
 - [Inferring transcription factor regulatory networks from single-cell ATAC-seq data based on graph neural networks](https://www.nature.com/articles/s42256-022-00469-5)
@@ -391,13 +406,20 @@ eLife, 2016
 
 - [Control of Gene Regulatory Networks Using Bayesian Inverse Reinforcement Learning](https://ieeexplore.ieee.org/abstract/document/8350274)
 
+- [Shared regulation and functional relevance of local gene co-expression revealed by single cell analysis](https://www.nature.com/articles/s42003-022-03831-w)  
+gene coexpression in scCOP and bulkCOP
+$$
+\begin{array}{|c|c|c|} \hline \text { Gene pairs } & \text { scCOPs } & \neg \text { scCOPs } \\
+\hline \text { bulkCOPs } & 313 & 2993 \\ \hline \neg \text { bulkCOPs } & 3245 & 232603 \\ \hline \end{array}
+$$
+
 #### review paper 
 
 - [Gene regulatory network inference in the era of single-cell multi-omics](https://www.nature.com/articles/s41576-023-00618-5)Julio Saez-Rodriguez 
-Nature Reviews Genetics 
+Nature Reviews Genetics, 2023
 
 - [Gene regulatory network reconstruction: harnessing the power of single-cell multi-omic data](https://www.nature.com/articles/s41540-023-00312-6)
-npj Systems Biology and Applications
+npj Systems Biology and Applications, review, 2023
 
 - [A comprehensive survey of regulatory network inference methods using single cell RNA sequencing data](https://academic.oup.com/bib/article/22/3/bbaa190/5904505)
 Briefings in Bioinformatics, 2021
@@ -577,7 +599,11 @@ Tirthabir Biswas, Tianzhi Lambus Li, James E. Fitzgerald
 
 ## neural data recording
 
+
 ### whole brain imaging
+
+- [In vivo autofluorescence lifetime imaging of the Drosophila brain captures metabolic shifts associated with memory formation](https://www.biorxiv.org/content/10.1101/2025.01.27.635185v1.full)
+
 - [The spatial and temporal structure of neural activity across the fly brain](https://www.nature.com/articles/s41467-023-41261-2)
 Evan S. Schaffer ... L. F. Abbott & Richard Axel 
 
