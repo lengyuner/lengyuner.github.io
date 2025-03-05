@@ -25,10 +25,6 @@ bilinear + Mu Qiao
 
 
 
-- [Connectome-driven neural inventory of a complete visual system](https://www.biorxiv.org/content/10.1101/2024.04.16.589741v2)
-Janelia
-a new connectome of the right optic lobe from a male Drosophila central nervous system FIB-SEM volume
-
 - [Generating brain-wide connectome using synthetic axonal morphologies](https://www.biorxiv.org/content/10.1101/2024.10.04.616605v2)
 Blue Brain Project
 
@@ -61,8 +57,9 @@ human
 
 
 
-
-- [Connectome-driven neural inventory of a complete visual system](https://www.biorxiv.org/content/10.1101/2024.04.16.589741v2)  
+ 
+- [Connectome-driven neural inventory of a complete visual system](https://www.biorxiv.org/content/10.1101/2024.04.16.589741v2)
+Janelia
 a new connectome of the right optic lobe from a male Drosophila central nervous system FIB-SEM volume and a comprehensive inventory of the fly’s visual neurons
 
 
@@ -151,6 +148,9 @@ Dániel L. Barabási 1, Albert-László Barabási
 - [Bayesian Sparse Regression Analysis Documents the Diversity of Spinal Inhibitory Interneurons](https://www.sciencedirect.com/science/article/pii/S0092867416300034)
 **Bayesian method**
 
+
+
+
 - [Genome-wide identification of neuronal activity-regulated genes in Drosophila](https://elifesciences.org/articles/19942)
 
 
@@ -162,12 +162,36 @@ the benefits of stochasticity in the development of neural wiring
 
 - [Connectome gradient dysfunction in major depression and its association with gene expression profiles and treatment outcomes](https://www.nature.com/articles/s41380-022-01519-5)
 
-
 data:
 - [Hub connectivity, neuronal diversity, and gene expression in the Caenorhabditis elegans connectome](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005989)
 
 
+#### other methods to reconstruct connectome
+
+
 - [Building a small brain with a simple stochastic generative model](https://www.biorxiv.org/content/10.1101/2024.07.01.601562v1)
+Oren Richter, Elad Schneidman
+
+- [A framework for modeling the growth and development of neurons and networks](https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/neuro.10.025.2009/full)
+Frederic Zubler and Rodney Douglas(ETH Zurich)
+
+
+
+
+
+
+#### human connectome
+
+- [Topographic Axes of Wiring Space Converge to Genetic Topography in Shaping the Human Cortical Layout](https://www.jneurosci.org/content/45/7/e1510242024)
+**3GCs(global connectopies)**
+
+- [A practical guide to linking brain-wide gene expression and neuroimaging data](https://www.sciencedirect.com/science/article/pii/S1053811919300114) 
+seven major steps to link expression measures and neuroimaging data
+
+- [Molecular logic of neocortical projection neuron specification, development and diversity](https://www.nature.com/articles/nrn3586)
+- 
+Neocortical projection neurons  
+![alt text|80](<figs/Neocortical projection neurons.png>)
 
 #### experiment support
 - [Spatial patterning controls neuron numbers in the Drosophila visual system](https://www.sciencedirect.com/science/article/pii/S1534580724001485?via%3Dihub)
@@ -179,6 +203,12 @@ Zador lab
 
 
 - [Cell-type-Specific Patterned Stimulus-Independent Neuronal Activity in the Drosophila Visual System during Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627319300091)
+
+- [Pattern formation in the Drosophila eye](https://www.sciencedirect.com/science/article/pii/S0959437X07000937)  
+Review, 2007, Richard W Carthew, Northwestern University
+
+- [Novel brain wiring functions for classical morphogens: a role as graded positional cues in axon guidance](https://journals.biologists.com/dev/article/132/10/2251/42750/Novel-brain-wiring-functions-for-classical)  
+morphogen gradients also serve to guide axonal pathfinding during development of the nervous system
 
 
 ### cell-cell communication and interaction
@@ -211,6 +241,23 @@ binding specificity of DIP/Dpr subgroups is controlled by "negative constraints"
 - [Attentive cross-modal paratope prediction](https://arxiv.org/abs/1806.04398)
 Antibodies 
 
+- [Principles of branch dynamics governing shape characteristics of cerebellar Purkinje cell dendrites](https://journals.biologists.com/dev/article/139/18/3442/45247/Principles-of-branch-dynamics-governing-shape)
+Growing dendrites are retracted or stalled by contacts with other dendrites. 
+
+
+- [Making Connections in the Fly Visual System](https://www.sciencedirect.com/science/article/pii/S0896627302008760)
+Review, 2002, [Thomas R Clandinin](https://flyvisionlab.weebly.com/), S.Lawrence Zipursky 
+
+- [Neuropil Pattern Formation and Regulation of Cell Adhesion Molecules in Drosophila Optic Lobe Development Depend on Synaptobrevin](https://www.jneurosci.org/content/19/17/7548)
+1999
+
+- [Teneurins instruct synaptic partner matching in an olfactory map](https://www.nature.com/articles/nature10926)
+Weizhe Hong, Timothy J. Mosca & Liqun Luo    
+Teneurins instruct matching specificity between synaptic partners through homophilic attraction.
+
+- [Beyond Molecular Codes: Simple Rules to Wire Complex Brains](https://www.sciencedirect.com/science/article/pii/S0092867415011939)
+Review,2015, Bassem A. Hassan, P. Robin Hiesinger
+
 #### deep learning methods
 - paper with code: https://paperswithcode.com/dataset/ppi
 
@@ -227,7 +274,7 @@ Antibodies
 - [A conserved fertilization complex bridges sperm and egg in vertebrates](https://www.cell.com/cell/fulltext/S0092-8674(24)01093-6) **AlphaFold-Multimer**
     This approach employs structural predictions of pairwise protein-protein interactions between each bait protein and the candidate proteins. A high interface-predicted template modeling score (**ipTM score**) reflects high confidence in the relative positioning of the interfaces.
 
-![alt text|30%](image.png)
+![alt text|30%](<figs/sperm and egg.png>)
 
 ### data mapping between transcriptome and connectome
 
@@ -263,14 +310,18 @@ Xiaowei Zhuang
 
 ### morphology
 - [Mapping Function Onto Neuronal Morphology](https://journals.physiology.org/doi/full/10.1152/jn.00865.2006)
-Klaus M. Stiefel1, andTerrence J. Sejnowski 
+Klaus M. Stiefel, Terrence J. Sejnowski  
+We used a Lindenmayer-system (L-system) (Lindenmayer 1968) for the algorithmic construction of model neuron morphologies. Simulations of electrophysiological dynamics were carried out in the neuronal simulation language NEURON (version 5.7) (Hines and Carnevale 1997, 2000).
 
 
 - [Development of Dendritic Form and Function](https://www.annualreviews.org/content/journals/10.1146/annurev-cellbio-100913-013020)
-  review paper, 2015, Julie L. Lefebvre1,2, Joshua R. Sanes3, and Jeremy N. Kay4
+Review paper, 2015, Julie L. Lefebvre, Joshua R. Sanes, and Jeremy N. Kay
 
 - [One Rule to Grow Them All: A General Theory of Neuronal Branching and Its Practical Application](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000877)
-- 
+2010
+
+- [Molecular mechanisms of dendrite morphogenesis](https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2012.00061/full) 
+review, 2012, Jyothi Arikkath
 
 - [Synaptic Connectivity and Neuronal Morphology: Two Sides of the Same Coin](https://www.cell.com/fulltext/S0896-6273(04)00498-2)
 
@@ -279,6 +330,11 @@ Klaus M. Stiefel1, andTerrence J. Sejnowski
 - [L-Measure: a web-accessible tool for the analysis, comparison and search of digital reconstructions of neuronal morphologies](https://www.nature.com/articles/nprot.2008.51)
 
 - [TreeMoCo: Contrastive Neuron Morphology Representation Learning](https://openreview.net/forum?id=p6hArCtwLAU)
+
+
+- [Principles of branch dynamics governing shape characteristics of cerebellar Purkinje cell dendrites](https://journals.biologists.com/dev/article/139/18/3442/45247/Principles-of-branch-dynamics-governing-shape)
+Growing dendrites are retracted or stalled by contacts with other dendrites. 
+
 
 
 #### maximum weighted independent set (MWIS)
@@ -324,6 +380,8 @@ http://yalma.fime.uanl.mx/~roger/work/teaching/class_tso/docs_project/problems/P
 - [CAVE: Connectome Annotation Versioning Engine](https://www.biorxiv.org/content/10.1101/2023.07.26.550598v1)
 https://vcg.seas.harvard.edu/publications/cave
 
+- [NeuroCave: A web-based immersive visualization platform for exploring connectome datasets](https://direct.mit.edu/netn/article/2/3/344/5434/NeuroCave-A-web-based-immersive-visualization)
+
 - [SmartEM: machine-learning guided electron microscopy](https://www.biorxiv.org/content/10.1101/2023.10.05.561103v1)
 
 - BOOK: [Visualization in Connectomics](https://link.springer.com/chapter/10.1007/978-1-4471-6497-5_21)
@@ -340,6 +398,8 @@ connection bottleneck
 - [NeuroCave: A web-based immersive visualization platform for exploring connectome datasets](https://doi.org/10.1162/netn_a_00044)
 
 
+- [Visualizing the PHATE of Neural Networks](https://arxiv.org/abs/1908.02831)   
+[Table 1. A survey of neuroimaging connectomic software. ](https://direct.mit.edu/view-large/figure/1188158/00044fx01.tif)
 
 ### gene data
 - [Neuronal diversity and convergence in a visual system developmental atlas](https://www.nature.com/articles/s41586-020-2879-3)

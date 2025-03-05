@@ -42,6 +42,17 @@
 - [Individualized **perturbation** of the human connectome reveals reproducible biomarkers of network dynamics relevant to cognition](https://www.pnas.org/doi/full/10.1073/pnas.1911240117)  
   TMS EEG
 
+## monkey
+- [Compact deep neural network models of visual cortex](https://www.biorxiv.org/content/10.1101/2023.11.22.568315v1)  
+Jonathan W. Pillow, Matthew A. Smith
+
+## Rodent
+
+- [Inferring brain-wide interactions using data-constrained recurrent neural network models](https://www.biorxiv.org/content/10.1101/2020.12.18.423348v2)  
+  Kanaka Rajan, Mount Sinai  
+  RNN  
+  - CURBD allows the total activity of each region to be decomposed into a set of source currents from all other regions
+  - 
 ## C. Elegans
 
 - [Elegans-AI: How the connectome of a living organism could model artificial neural networks](https://www.sciencedirect.com/science/article/pii/S0925231224003692)  
@@ -72,12 +83,6 @@
 
 - [Neural signal propagation atlas of Caenorhabditis elegans](https://www.nature.com/articles/s41586-023-06683-4)
 
-## Rodent
-
-- [Inferring brain-wide interactions using data-constrained recurrent neural network models](https://www.biorxiv.org/content/10.1101/2020.12.18.423348v2)  
-  Kanaka Rajan, Mount Sinai  
-  RNN  
-  - CURBD allows the total activity of each region to be decomposed into a set of source currents from all other regions
 
 ## Theory-Based
 
@@ -153,6 +158,7 @@
 - [Exploring Randomly Wired Neural Networks for Image Recognition](https://arxiv.org/abs/1904.01569)  
   Saining Xie, Alexander Kirillov, Ross Girshick, Kaiming He
 
+- [Optimal structure and parameter learning of **Ising** models](https://www.science.org/doi/10.1126/sciadv.1700791)
 
 ### Review
 
