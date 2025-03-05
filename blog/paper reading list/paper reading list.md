@@ -115,22 +115,9 @@ Gregory S. X. E. Jefferis, Mala Murthy & Jonathan W. Pillow
 
 ### connectome and gene
 
-- [Building a small brain with a simple **stochastic generative model**](https://www.biorxiv.org/content/10.1101/2024.07.01.601562v1)
-  
-- [Molecular topography of an entire nervous system](https://www.sciencedirect.com/science/article/pii/S0092867421007583)
-**key_and_lock**
-- [The Prop1-like homeobox gene unc-42 specifies the identity of synaptically connected neurons](https://elifesciences.org/articles/64903#metrics)
-
-- [Brain wiring determinants uncovered by integrating connectomes and transcriptomes](https://www.sciencedirect.com/science/article/pii/S0960982223010631)
-**Yoo2023** T4_T5
-
-- [Transcriptional Programs of Circuit Assembly in the Drosophila Visual System](https://www.cell.com/neuron/fulltext/S0896-6273(20)30774-1) **S. Lawrence Zipursky**
-
-
-
+**computational methods**
 - **bilinear** [Uncovering the genetic blueprint of the C. elegans nervous system](https://www.pnas.org/doi/full/10.1073/pnas.2009093117) 
 István A. Kovács, Dániel L. **Barabási**, and Albert-László **Barabási**  PNAS
-
 
 - **biclique motifs** [A Genetic Model of the Connectome](https://www.sciencedirect.com/science/article/pii/S0896627319309262)
 Dániel L. Barabási 1, Albert-László Barabási
@@ -138,15 +125,29 @@ Dániel L. Barabási 1, Albert-László Barabási
 - **bilinear** [Deciphering the Genetic Code of Neuronal Type Connectivity: A Bilinear Modeling Approach](https://elifesciences.org/reviewed-preprints/91532)
 **Mu Qiao**
 
-
 - [**Constructive connectomics**: How neuronal axons get from here to there using gene- expression maps derived from their family trees](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010382) 
 
+- [Building a small brain with a simple **stochastic generative model**](https://www.biorxiv.org/content/10.1101/2024.07.01.601562v1)
+  Oren Richter, Elad Schneidman
+
+- [A framework for modeling the growth and development of neurons and networks](https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/neuro.10.025.2009/full)
+Frederic Zubler and Rodney Douglas(ETH Zurich)
+
+<!-- - [Bayesian Sparse Regression Analysis Documents the Diversity of Spinal Inhibitory Interneurons](https://www.sciencedirect.com/science/article/pii/S0092867416300034)
+**Bayesian method** -->
+**experimental test**
+- [Brain wiring determinants uncovered by integrating connectomes and transcriptomes](https://www.sciencedirect.com/science/article/pii/S0960982223010631)
+**Yoo2023** T4_T5
+
+- [Molecular topography of an entire nervous system](https://www.sciencedirect.com/science/article/pii/S0092867421007583)
+**key_and_lock**
+
+- [The Prop1-like homeobox gene unc-42 specifies the identity of synaptically connected neurons](https://elifesciences.org/articles/64903#metrics)
+**C. elegans**
 
 - [Cell-type-Specific Patterned Stimulus-Independent Neuronal Activity in the Drosophila Visual System during Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627319300091)
 **S. Lawrence Zipursky** 
 
-- [Bayesian Sparse Regression Analysis Documents the Diversity of Spinal Inhibitory Interneurons](https://www.sciencedirect.com/science/article/pii/S0092867416300034)
-**Bayesian method**
 
 
 
@@ -162,6 +163,10 @@ the benefits of stochasticity in the development of neural wiring
 
 - [Connectome gradient dysfunction in major depression and its association with gene expression profiles and treatment outcomes](https://www.nature.com/articles/s41380-022-01519-5)
 
+**data**
+- [Transcriptional Programs of Circuit Assembly in the Drosophila Visual System](https://www.cell.com/neuron/fulltext/S0896-6273(20)30774-1) **S. Lawrence Zipursky**
+
+
 data:
 - [Hub connectivity, neuronal diversity, and gene expression in the Caenorhabditis elegans connectome](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005989)
 
@@ -172,8 +177,6 @@ data:
 - [Building a small brain with a simple stochastic generative model](https://www.biorxiv.org/content/10.1101/2024.07.01.601562v1)
 Oren Richter, Elad Schneidman
 
-- [A framework for modeling the growth and development of neurons and networks](https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/neuro.10.025.2009/full)
-Frederic Zubler and Rodney Douglas(ETH Zurich)
 
 
 
@@ -278,6 +281,9 @@ Review,2015, Bassem A. Hassan, P. Robin Hiesinger
 
 ### data mapping between transcriptome and connectome
 
+- [Bayesian Sparse Regression Analysis Documents the Diversity of Spinal Inhibitory Interneurons](https://www.sciencedirect.com/science/article/pii/S0092867416300034)
+**Bayesian method**
+
 - [Integrated Morphoelectric and Transcriptomic Classification of Cortical GABAergic Cells](https://www.sciencedirect.com/science/article/pii/S009286742031254X)
 Cell2020, **all kinds of neurons!!!**
 
@@ -301,6 +307,7 @@ Konrad P. Kording
 - [Homogenized C. elegans Neural Activity and Connectivity Data](https://arxiv.org/pdf/2411.12091)
 
 
+
 #### neural type 
 - [Molecularly defined and spatially resolved cell atlas of the whole mouse brain](https://www.nature.com/articles/s41586-023-06808-9)
 Xiaowei Zhuang 
@@ -313,15 +320,17 @@ Xiaowei Zhuang
 Klaus M. Stiefel, Terrence J. Sejnowski  
 We used a Lindenmayer-system (L-system) (Lindenmayer 1968) for the algorithmic construction of model neuron morphologies. Simulations of electrophysiological dynamics were carried out in the neuronal simulation language NEURON (version 5.7) (Hines and Carnevale 1997, 2000).
 
+- [Neuronal contact predicts connectivity in the C. elegans brain](<https://www.cell.com/current-biology/fulltext/S0960-9822(23)00553-5>)  
+Peters’ rule explains synaptic specificity throughout the C. elegans nervous system
 
-- [Development of Dendritic Form and Function](https://www.annualreviews.org/content/journals/10.1146/annurev-cellbio-100913-013020)
+- [Development of Dendritic Form and Function](https://www.annualreviews.org/content/journals/10.1146/annurev-cellbio-100913-013020)  
 Review paper, 2015, Julie L. Lefebvre, Joshua R. Sanes, and Jeremy N. Kay
 
-- [One Rule to Grow Them All: A General Theory of Neuronal Branching and Its Practical Application](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000877)
+- [One Rule to Grow Them All: A General Theory of Neuronal Branching and Its Practical Application](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000877)  
 2010
 
 - [Molecular mechanisms of dendrite morphogenesis](https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2012.00061/full) 
-review, 2012, Jyothi Arikkath
+Review, 2012, Jyothi Arikkath
 
 - [Synaptic Connectivity and Neuronal Morphology: Two Sides of the Same Coin](https://www.cell.com/fulltext/S0896-6273(04)00498-2)
 
@@ -544,6 +553,12 @@ Nature reviews neuroscience
 - [Predicting brain structural network using functional connectivity](https://www.sciencedirect.com/science/article/abs/pii/S1361841522001104)j.media   
 multi-GCN based GAN, AD
 
+- [Prediction of brain sex from EEG: using large-scale heterogeneous dataset for developing a highly accurate and interpretable ML model](https://www.sciencedirect.com/science/article/pii/S1053811923006456)
+  
+- [Topographic Axes of Wiring Space Converge to Genetic Topography in Shaping the Human Cortical Layout](https://www.jneurosci.org/content/45/7/e1510242024#page=14.33)
+- A practical guide to linking brain-wide gene expression and neuroimaging data
+https://www.sciencedirect.com/science/article/abs/pii/S1053811919300114
+
 
 ### other connectome model:
 
@@ -581,7 +596,16 @@ https://paperswithcode.com/task/link-prediction
 
 - GraphSAGE: [Inductive Representation Learning on Large Graphs](https://arxiv.org/abs/1706.02216v4)
 GraphSAGE, a general, inductive framework that leverages node feature information (e.g., text attributes) to efficiently generate node embeddings for previously unseen data.
+
+- [Inductive Link Prediction via Interactive Learning Across Relations in Multiplex Networks](https://ieeexplore.ieee.org/document/9787711)
+
+- [Community-guided link prediction in **multiplex** networks](https://www.sciencedirect.com/science/article/abs/pii/S1751157721000493)
+
+#### review 
+- [A Survey of Link Prediction in Complex Networks](https://dl.acm.org/doi/10.1145/3012704)
  
+- [Link prediction in complex networks: A survey](https://www.sciencedirect.com/science/article/abs/pii/S037843711000991X)
+
 ### Graph Embedding
 - [LINE: Large-scale Information Network Embedding](https://arxiv.org/abs/1503.03578)
  
@@ -589,6 +613,10 @@ GraphSAGE, a general, inductive framework that leverages node feature informatio
 [GraphVite github](https://github.com/DeepGraphLearning/graphvite)
 
 ### review 
+- [A Comprehensive Survey of Graph Embedding](https://arxiv.org/abs/1709.07604)
+
+- [Network Structure Inference, A Survey: Motivations, Methods, and Applications](https://dl.acm.org/doi/10.1145/3154524)
+ 
 - [A Comprehensive Survey on Graph Neural Networks](https://arxiv.org/abs/1901.00596)
 Cited by 11155
 

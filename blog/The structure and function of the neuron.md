@@ -122,6 +122,21 @@ https://www.zhihu.com/question/19962632/answer/3289200022
 other related papers: 
 Pattern formation mechanisms of self-organizing reaction-diffusion systems
 
+## The connectome predicts resting-state functional connectivity across the Drosophila brain
+https://www.cell.com/current-biology/fulltext/S0960-9822(21)00343-2
+Maxwell H. Turner, Kevin Mann, Thomas R. Clandinin
+
+- Functional correlations are predicted by structural connectivity in the connectome
+- Correlations are well captured by the number of cells connecting two regions
+- Mesoscale networks in the Drosophila brain share topological features with cortex
+- Indirect pathways differentially shape functional correlations across the brain
+
+
+
+
+
+
+
 ## Blue Brain Project
 [Reconstruction and Simulation of Neocortical Microcircuitry](https://www.cell.com/fulltext/S0092-8674(15)01191-5)
 
