@@ -163,9 +163,6 @@ the benefits of stochasticity in the development of neural wiring
 
 - [Connectome gradient dysfunction in major depression and its association with gene expression profiles and treatment outcomes](https://www.nature.com/articles/s41380-022-01519-5)
 
-**data**
-- [Transcriptional Programs of Circuit Assembly in the Drosophila Visual System](https://www.cell.com/neuron/fulltext/S0896-6273(20)30774-1) **S. Lawrence Zipursky**
-
 
 data:
 - [Hub connectivity, neuronal diversity, and gene expression in the Caenorhabditis elegans connectome](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005989)
@@ -411,16 +408,6 @@ connection bottleneck
 [Table 1. A survey of neuroimaging connectomic software. ](https://direct.mit.edu/view-large/figure/1188158/00044fx01.tif)
 
 ### gene data
-- [Neuronal diversity and convergence in a visual system developmental atlas](https://www.nature.com/articles/s41586-020-2879-3)
-Claude Desplan NYU
-
-- [A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain](https://www.cell.com/cell/fulltext/S0092-8674(18)30720-7)
-
-- [Decoding gene regulation in the fly brain](https://www.nature.com/articles/s41586-021-04262-z)
- 
-
-- [A complete temporal transcription factor series in the fly visual system](https://www.nature.com/articles/s41586-022-04564-w)
-Claude Desplan 
 
 - [Isoforms of Terminal Selector Mamo Control Axon Guidance during Adult Drosophila Memory Center Construction via Semaphorin-1a](https://www.sciencedirect.com/science/article/abs/pii/S001216062400160X)
 
@@ -437,6 +424,24 @@ two new axes of biological variation: cell-intrinsic regulation of cell states a
 nature neuroscience review 2024
 
 - [Science Forum: The Human Cell Atlas](https://elifesciences.org/articles/27041)
+
+#### gene data for Drosophila 
+- [Transcriptional Programs of Circuit Assembly in the Drosophila Visual System](https://www.cell.com/neuron/fulltext/S0896-6273(20)30774-1) 
+**S. Lawrence Zipursky**
+
+- [Neuronal diversity and convergence in a visual system developmental atlas](https://www.nature.com/articles/s41586-020-2879-3)
+Claude Desplan NYU, 2020
+
+- [Morphological and functional convergence of visual projection neurons from diverse neurogenic origins in Drosophila](https://www.nature.com/articles/s41467-025-56059-7)
+Mehmet Neset Özel & Claude Desplan, January 2025,Nature Communications  
+
+- [A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain](https://www.cell.com/cell/fulltext/S0092-8674(18)30720-7)
+
+- [Decoding gene regulation in the fly brain](https://www.nature.com/articles/s41586-021-04262-z)
+Stein Aerts, Nature, 2022
+
+- [A complete temporal **transcription factor** series in the fly visual system](https://www.nature.com/articles/s41586-022-04564-w)
+Claude Desplan 
 
 #### analysis
 - [Inference of cell state transitions and cell fate plasticity from single-cell with MARGARET](https://academic.oup.com/nar/article/50/15/e86/6593121?login=false)
