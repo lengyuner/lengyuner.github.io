@@ -668,10 +668,6 @@ NeurIPS 2023 poster
 - [Learning to Simulate Complex Physics with Graph Networks](https://arxiv.org/abs/2002.09405)  
 为了做这个，我们需要什么样的data。有wide field and the 2p microscope，是不是就可以模拟一些基础规律了
 
-#### whole brain imaging data
-- [The spatial and temporal structure of neural activity across the fly brain](https://www.nature.com/articles/s41467-023-41261-2) swept confocally-aligned planar excitation (SCAPE) microscopy, 
-1419 ± 78 stable, single-cell ROIs per animal, contained nearly all neurons within 70 μm of the dorsal surface 
-
 ### Network analysis
 BOOK [Fundamentals of Brain Network Analysis](https://www.sciencedirect.com/book/9780124079083/fundamentals-of-brain-network-analysis)
 
@@ -695,6 +691,19 @@ Tirthabir Biswas, Tianzhi Lambus Li, James E. Fitzgerald
 
 ### whole brain imaging
 
+#### drosophila data 
+- [The spatial and temporal structure of neural activity across the fly brain](https://www.nature.com/articles/s41467-023-41261-2) 
+swept confocally-aligned planar excitation (SCAPE) microscopy,  
+1419 ± 78 stable, single-cell ROIs per animal, contained nearly all neurons within 70 μm of the dorsal surface  
+https://springernature.figshare.com/articles/dataset/Flygenvectors_The_spatial_and_temporal_structure_of_neural_activity_across_the_fly_brain/23749074
+
+- [Whole-Brain Calcium Imaging Reveals an Intrinsic Functional Network in Drosophila](https://www.cell.com/current-biology/fulltext/S0960-9822(17)30813-8) 
+Current Bilogy
+https://data.mendeley.com/datasets/8b6nw2xxhn/1
+
+
+#### other data
+
 - [In vivo autofluorescence lifetime imaging of the Drosophila brain captures metabolic shifts associated with memory formation](https://www.biorxiv.org/content/10.1101/2025.01.27.635185v1.full)
 
 - [The spatial and temporal structure of neural activity across the fly brain](https://www.nature.com/articles/s41467-023-41261-2)
@@ -709,11 +718,9 @@ Review Article
 
 - [Correspondence of the brain's functional architecture during activation and rest](https://www.pnas.org/doi/full/10.1073/pnas.0905267106)
 
-- [Whole-Brain Calcium Imaging Reveals an Intrinsic Functional Network in Drosophila](https://www.cell.com/current-biology/fulltext/S0960-9822(17)30813-8)
-Current Bilogy
-
 - [Fast near-whole–brain imaging in adult Drosophila during responses to stimuli and behavior](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2006732) 
 Plos Biology
+
 
 - [Imaging through the Whole Brain of Drosophila at λ/20 Super-resolution](https://www.cell.com/iscience/fulltext/S2589-0042(19)30091-4)
 
