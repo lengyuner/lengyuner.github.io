@@ -153,8 +153,10 @@ Jonathan W. Pillow, Matthew A. Smith
 
 - [The structural connectome constrains fast brain dynamics](https://elifesciences.org/articles/67400)
 
-### Basic Architecture
+### potential model
+- [**Piecewise quadratic neuron model**: A tool for close-to-biology spiking neuronal network simulation on dedicated hardware](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2022.1069133/full)
 
+### Basic Architecture
 - [Exploring Randomly Wired Neural Networks for Image Recognition](https://arxiv.org/abs/1904.01569)  
   Saining Xie, Alexander Kirillov, Ross Girshick, Kaiming He
 
