@@ -148,8 +148,9 @@ Frederic Zubler and Rodney Douglas(ETH Zurich)
 - [Cell-type-Specific Patterned Stimulus-Independent Neuronal Activity in the Drosophila Visual System during Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627319300091)
 **S. Lawrence Zipursky** 
 
-
-
+- [The cell biology of synapse formation](https://rupress.org/jcb/article/220/7/e202103052/212258/The-cell-biology-of-synapse-formationMechanisms-of) **SAM**
+  
+![alt text](<figs/synaptic adhesion molecules.png>)
 
 
 - [Genome-wide identification of neuronal activity-regulated genes in Drosophila](https://elifesciences.org/articles/19942)
