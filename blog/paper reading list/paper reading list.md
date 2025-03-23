@@ -312,6 +312,8 @@ Xiaowei Zhuang
 
 - [Probabilistic cell typing enables fine mapping of closely related cell types in situ](https://www.nature.com/articles/s41592-019-0631-4)
 
+- [Single-neuron models linking electrophysiology, morphology, and transcriptomics across cortical cell types](https://www.sciencedirect.com/science/article/pii/S2211124722009895) 
+  9,200 models are generated that capture multimodal single-cell datasets
 
 ### morphology
 - [Mapping Function Onto Neuronal Morphology](https://journals.physiology.org/doi/full/10.1152/jn.00865.2006)

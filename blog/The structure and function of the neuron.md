@@ -103,6 +103,10 @@ It might be a toy model for associate learning( the most important function of t
 Learning and memory的基础  -->
 
 
+**single neuron modeling**
+## Modeling Single-Neuron Dynamics and Computations: A Balance of Detail and Abstraction
+https://www.science.org/doi/10.1126/science.1127240
+review, 2006
 
 ## Single cortical neurons as deep artificial neural networks
 https://www.sciencedirect.com/science/article/pii/S0896627321005018
