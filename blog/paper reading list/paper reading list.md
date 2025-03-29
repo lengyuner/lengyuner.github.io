@@ -179,9 +179,10 @@ data:
 - [Building a small brain with a simple stochastic generative model](https://www.biorxiv.org/content/10.1101/2024.07.01.601562v1)
 Oren Richter, Elad Schneidman
 
-
-
-
+- [Neurotransmitter classification from electron microscopy images at synaptic sites in Drosophila melanogaster](https://www.cell.com/cell/fulltext/S0092-8674(24)00307-6)
+- Six transmitters predicted across the whole fly brain connectome
+https://www.cell.com/cms/10.1016/j.cell.2024.03.016/asset/24723725-eb0b-40f7-b29d-10f859442e2b/main.assets/gr5_lrg.jpg
+Schematic of a neuron broken into its neuronal compartments. Inset, the proportion of presynapses in each of the four compartment types.
 
 
 
