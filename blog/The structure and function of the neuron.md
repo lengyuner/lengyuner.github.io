@@ -2,6 +2,13 @@
 
 It is a collection of papers about the structure and function.
 
+
+## The MICrONS Project
+https://www.nature.com/collections/bdigiaicbd
+
+The MICrONS Project set out to create a massively dense reconstruction of the **structural connections and functions** of an entire millimeter volume of **mouse visual cortex**, along with new artificial intelligence-driven tools.
+
+
 ## Hacking brain development to test models of sensory coding  
 https://www.biorxiv.org/content/10.1101/2023.01.25.525425v1   
 E. Josephine Clowney  
