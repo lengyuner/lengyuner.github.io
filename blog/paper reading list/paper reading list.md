@@ -844,6 +844,8 @@ https://springernature.figshare.com/articles/dataset/Flygenvectors_The_spatial_a
 Current Bilogy
 https://data.mendeley.com/datasets/8b6nw2xxhn/1
 
+- [Mapping the neural dynamics of locomotion across the Drosophila brain](https://www.cell.com/current-biology/fulltext/S0960-9822(23)01763-3)
+
 
 #### other data
 

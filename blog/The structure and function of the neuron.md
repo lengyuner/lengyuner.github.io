@@ -157,6 +157,14 @@ Konrad P Kording, Edward S Boyden
 a dataset 
 
 
+## A recurrent neural circuit in Drosophila temporally sharpens visual inputs
+https://www.cell.com/current-biology/fulltext/S0960-9822(24)01631-2
+2025
+Recurrent feedback shapes the temporal response properties of L1 and L2
+
+## Infrequent strong connections constrain connectomic predictions of neuronal function
+https://www.biorxiv.org/content/10.1101/2025.03.06.641774v1.abstract
+Timothy A. Currier, Thomas R. Clandinin
 
 
 ## Blue Brain Project
