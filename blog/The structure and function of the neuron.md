@@ -143,7 +143,18 @@ Maxwell H. Turner, Kevin Mann, Thomas R. Clandinin
 - Indirect pathways differentially shape functional correlations across the brain
 
 
+## Predicting modular functions and neural coding of behavior from a synaptic wiring diagram
+https://www.nature.com/articles/s41593-024-01784-3
+the Eyewirers 
 
+## The fly connectome reveals a path to the effectome
+https://www.nature.com/articles/s41586-024-07982-0
+Gregory S. X. E. Jefferis, Mala Murthy & Jonathan W. Pillow 
+
+## Homogenized C. elegans Neural Activity and Connectivity Data
+https://arxiv.org/abs/2411.12091
+Konrad P Kording, Edward S Boyden
+a dataset 
 
 
 

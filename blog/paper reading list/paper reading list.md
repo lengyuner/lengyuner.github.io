@@ -62,6 +62,20 @@ human
 Janelia
 a new connectome of the right optic lobe from a male Drosophila central nervous system FIB-SEM volume and a comprehensive inventory of the fly’s visual neurons
 
+- [Waves of differentiation in the fly visual system](https://www.sciencedirect.com/science/article/pii/S0012160613001875)
+Developmental Biology
+
+**MICrONS Project**
+-[Collection: The MICrONS Project](https://www.nature.com/collections/bdigiaicbd)
+-[Functional connectomics spanning multiple areas of mouse visual cortex]
+https://www.nature.com/articles/s41586-025-08790-w
+
+- [Functional connectomics reveals general wiring rule in mouse visual cortex]
+  (https://www.nature.com/articles/s41586-025-08840-3)
+- [Inhibitory specificity from a connectomic census of mouse visual cortex]
+https://www.nature.com/articles/s41586-024-07780-8
+
+
 
 ### technology of connectome
 - [Bridging the Gap: Point Clouds for Merging Neurons in Connectomics](https://openreview.net/forum?id=lHDVYDy5S9l)  
@@ -131,6 +145,11 @@ Review, 2021, from [Thomas C. Südhof](https://med.stanford.edu/sudhoflab.html)
 - [Towards an Understanding of Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627318308420)
 Review, 2018, from Thomas C. Südhof
 
+Chemoaffinity Revisited: Dscams, Protocadherins, and Neural Circuit Assembly
+https://www.cell.com/fulltext/S0092-8674(10)01145-1
+review, 2010
+S. Lawrence Zipursky, Joshua R. Sanes
+
 **computational methods**
 - **bilinear** [Uncovering the genetic blueprint of the C. elegans nervous system](https://www.pnas.org/doi/full/10.1073/pnas.2009093117) 
 István A. Kovács, Dániel L. **Barabási**, and Albert-László **Barabási**  PNAS
@@ -145,6 +164,12 @@ Dániel L. Barabási 1, Albert-László Barabási
 
 - [Building a small brain with a simple **stochastic generative model**](https://www.biorxiv.org/content/10.1101/2024.07.01.601562v1)
   Oren Richter, Elad Schneidman
+
+
+- [The structure and function of neural connectomes are shaped by a small number of design principles]
+(https://www.biorxiv.org/content/10.1101/2023.03.15.532611v1)
+Elad Schneidman
+
 
 - [A framework for modeling the growth and development of neurons and networks](https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/neuro.10.025.2009/full)
 Frederic Zubler and Rodney Douglas(ETH Zurich)
@@ -332,6 +357,12 @@ Xiaowei Zhuang
 
 - [Single-neuron models linking electrophysiology, morphology, and transcriptomics across cortical cell types](https://www.sciencedirect.com/science/article/pii/S2211124722009895) 
   9,200 models are generated that capture multimodal single-cell datasets
+
+#### neural activity and connectivity
+- [Homogenized C. elegans Neural Activity and Connectivity Data](https://arxiv.org/pdf/2411.12091)
+https://arxiv.org/abs/2411.12091
+Konrad P Kording, Edward S Boyden
+
 
 ### morphology
 - [Mapping Function Onto Neuronal Morphology](https://journals.physiology.org/doi/full/10.1152/jn.00865.2006)
@@ -555,6 +586,14 @@ Briefings in Bioinformatics, 2021
 
 
 ### functional and structure conenctome
+- [Integrating multimodal and multiscale connectivity blueprints of the human cerebral cortex in health and disease]
+https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002314
+
+- [The cell-type underpinnings of the human functional cortical connectome]
+https://www.nature.com/articles/s41593-024-01812-2
+
+
+
 
 - [Complex brain networks: graph theoretical analysis of structural and functional systems](https://www.nature.com/articles/nrn2575)
 Ed Bullmore & Olaf Sporns (2009).  
@@ -979,6 +1018,20 @@ Vanessa Ruta & Gerald M. Rubin
 - [The Neural Substrate of Spectral Preference in Drosophila](https://www.sciencedirect.com/science/article/pii/S0896627308007058)
 
 ## others
+### ML
+Logic + Reinforcement Learning + Deep Learning: A Survey
+https://www.pure.ed.ac.uk/ws/portalfiles/portal/322711194/Logic_Reinforcement_BUEFF_DOA22122022_AFV_CC_BY.pdf
+Review, 2023
+
+Learning explanatory logical rules in non-linear domains: a neuro-symbolic approach
+https://link.springer.com/article/10.1007/s10994-024-06538-7
+2024
+
+Applying Logical Rules to Reinforcement Learning for Interpretable Knowledge Graph Reasoning
+https://ieeexplore.ieee.org/document/10650177
+
+Neural Logic Reinforcement Learning
+https://proceedings.mlr.press/v97/jiang19a.html
 
 ### hippocamus
 - [Network Dynamics Underlying the Formation of Sparse, Informative Representations in the Hippocampus](https://www.jneurosci.org/content/28/52/14271.short)
@@ -1047,6 +1100,7 @@ Lyndon R. Duong, Jingyang Zhou, Josue Nassar, Jules Berman, Jeroen Olieslagers, 
 
 - [Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting](https://arxiv.org/abs/1506.04214)
 recurrent CNN
+
 
 #### NAS
 - [NAS-Bench-101: Towards Reproducible Neural Architecture Search](https://arxiv.org/abs/1902.09635)
