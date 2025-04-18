@@ -6,8 +6,6 @@
 ## Connectome
 
 
-- [Deep Connectomics Networks: Neural Network Architectures Inspired by Neuronal Networks](https://arxiv.org/abs/1912.08986)
-
 - [Not everything, not everywhere, not all at once: a study of brain-wide encoding of movement](https://www.biorxiv.org/content/10.1101/2023.06.08.544257v1)
 
 
@@ -118,9 +116,6 @@ Machine learning identifies synaptic transmitters from electron micrographs
 
 - [Hue selectivity from recurrent circuitry in Drosophila](https://www.nature.com/articles/s41593-024-01640-4)
 
-- [Diversity and wiring variability of olfactory local interneurons in the Drosophila antennal lobe](https://www.nature.com/articles/nn.2489)
-
-
 - [Multilayer network analysis of **C. elegans**: Looking into the locomotory circuitry](https://www.sciencedirect.com/science/article/pii/S0925231220317926)
 - [The Multilayer Connectome of Caenorhabditis **elegans**](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005283)
 
@@ -132,9 +127,6 @@ Machine learning identifies synaptic transmitters from electron micrographs
 Gregory S. X. E. Jefferis, Mala Murthy & Jonathan W. Pillow 
 
 
-- [Information flow, cell types and stereotypy in a full **olfactory** connectome](https://elifesciences.org/articles/66018)
-Gregory S X E Jefferis
-
 ### connectome and gene
 
 **review**
@@ -145,10 +137,18 @@ Review, 2021, from [Thomas C. Südhof](https://med.stanford.edu/sudhoflab.html)
 - [Towards an Understanding of Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627318308420)
 Review, 2018, from Thomas C. Südhof
 
-Chemoaffinity Revisited: Dscams, Protocadherins, and Neural Circuit Assembly
-https://www.cell.com/fulltext/S0092-8674(10)01145-1
-review, 2010
-S. Lawrence Zipursky, Joshua R. Sanes
+-[The Dynamic Synapse](https://www.cell.com/neuron/fulltext/S0896-6273(13)00916-1) Review, 2013, Neuron, Daniel Choquet, Antoine Triller
+
+
+- [Making Connections in the Fly Visual System](https://www.sciencedirect.com/science/article/pii/S0896627302008760)
+Review, 2002, [Thomas R Clandinin](https://flyvisionlab.weebly.com/), S.Lawrence Zipursky 
+
+
+- [Synaptic Connectivity and Neuronal Morphology: Two Sides of the Same Coin](https://www.cell.com/fulltext/S0896-6273(04)00498-2)
+
+
+- [Chemoaffinity Revisited: Dscams, Protocadherins, and Neural Circuit Assembly](https://www.cell.com/fulltext/S0092-8674(10)01145-1)
+Teview, 2010, S. Lawrence Zipursky, Joshua R. Sanes
 
 **computational methods**
 - **bilinear** [Uncovering the genetic blueprint of the C. elegans nervous system](https://www.pnas.org/doi/full/10.1073/pnas.2009093117) 
@@ -174,8 +174,7 @@ Elad Schneidman
 - [A framework for modeling the growth and development of neurons and networks](https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/neuro.10.025.2009/full)
 Frederic Zubler and Rodney Douglas(ETH Zurich)
 
-<!-- - [Bayesian Sparse Regression Analysis Documents the Diversity of Spinal Inhibitory Interneurons](https://www.sciencedirect.com/science/article/pii/S0092867416300034)
-**Bayesian method** -->
+
 **experimental test**
 - [Brain wiring determinants uncovered by integrating connectomes and transcriptomes](https://www.sciencedirect.com/science/article/pii/S0960982223010631)
 **Yoo2023** T4_T5
@@ -234,6 +233,9 @@ Neocortical projection neurons
 ![alt text|80](<figs/Neocortical projection neurons.png>)
 
 #### experiment support
+- [A Conserved Role for Drosophila Neuroglian and Human L1-CAM in Central-Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0960982205014715)
+- 2006, Current Biology
+- 
 - [Spatial patterning controls neuron numbers in the Drosophila visual system](https://www.sciencedirect.com/science/article/pii/S1534580724001485?via%3Dihub)
 
 
@@ -250,6 +252,9 @@ Review, 2007, Richard W Carthew, Northwestern University
 - [Novel brain wiring functions for classical morphogens: a role as graded positional cues in axon guidance](https://journals.biologists.com/dev/article/132/10/2251/42750/Novel-brain-wiring-functions-for-classical)  
 morphogen gradients also serve to guide axonal pathfinding during development of the nervous system
 
+
+- [Ig Superfamily Ligand and Receptor Pairs Expressed in Synaptic Partners in Drosophila](https://www.sciencedirect.com/science/article/pii/S0092867415015019)
+S. Lawrence Zipursky 2015, Cell
 
 ### cell-cell communication and interaction
 - [CellPhoneDB: inferring **cell–cell communication** from combined expression of multi-subunit ligand–receptor complexes](https://www.nature.com/articles/s41596-020-0292-x)
@@ -289,15 +294,8 @@ Antibodies
 Growing dendrites are retracted or stalled by contacts with other dendrites. 
 
 
-- [Making Connections in the Fly Visual System](https://www.sciencedirect.com/science/article/pii/S0896627302008760)
-Review, 2002, [Thomas R Clandinin](https://flyvisionlab.weebly.com/), S.Lawrence Zipursky 
-
 - [Neuropil Pattern Formation and Regulation of Cell Adhesion Molecules in Drosophila Optic Lobe Development Depend on Synaptobrevin](https://www.jneurosci.org/content/19/17/7548)
 1999
-
-- [Teneurins instruct synaptic partner matching in an olfactory map](https://www.nature.com/articles/nature10926)
-Weizhe Hong, Timothy J. Mosca & Liqun Luo    
-Teneurins instruct matching specificity between synaptic partners through homophilic attraction.
 
 - [Beyond Molecular Codes: Simple Rules to Wire Complex Brains](https://www.sciencedirect.com/science/article/pii/S0092867415011939)
 Review,2015, Bassem A. Hassan, P. Robin Hiesinger
@@ -322,9 +320,6 @@ Review,2015, Bassem A. Hassan, P. Robin Hiesinger
 
 ### data mapping between transcriptome and connectome
 
-- [Bayesian Sparse Regression Analysis Documents the Diversity of Spinal Inhibitory Interneurons](https://www.sciencedirect.com/science/article/pii/S0092867416300034)
-**Bayesian method**
-
 - [Integrated Morphoelectric and Transcriptomic Classification of Cortical GABAergic Cells](https://www.sciencedirect.com/science/article/pii/S009286742031254X)
 Cell2020, **all kinds of neurons!!!**
 
@@ -345,11 +340,13 @@ Konrad P. Kording
 
 - [Opportunities and challenges of single-cell and spatially resolved genomics methods for neuroscience discovery](https://www.nature.com/articles/s41593-024-01806-0)
 
-- [Homogenized C. elegans Neural Activity and Connectivity Data](https://arxiv.org/pdf/2411.12091)
+#### neural type  
+- [Bayesian Sparse Regression Analysis Documents the Diversity of Spinal Inhibitory Interneurons](https://www.sciencedirect.com/science/article/pii/S0092867416300034)  
+[SI](https://ars.els-cdn.com/content/image/1-s2.0-S0092867416300034-mmc2.pdf) **Bayesian method**
+$$
+p(\mathbf{y} \mid Q, \mathbf{f}) \propto e^{-\frac{1}{2} \mathbf{f}^{\prime} \mathbf{M f}+\mathbf{y}^{\prime} Q \mathbf{f}}
+$$
 
-
-
-#### neural type 
 - [Molecularly defined and spatially resolved cell atlas of the whole mouse brain](https://www.nature.com/articles/s41586-023-06808-9)
 Xiaowei Zhuang 
 
@@ -360,6 +357,8 @@ Xiaowei Zhuang
 
 #### neural activity and connectivity
 - [Homogenized C. elegans Neural Activity and Connectivity Data](https://arxiv.org/pdf/2411.12091)
+
+- [Homogenized C. elegans Neural Activity and Connectivity Data](https://arxiv.org/pdf/2411.12091)
 https://arxiv.org/abs/2411.12091
 Konrad P Kording, Edward S Boyden
 
@@ -368,6 +367,8 @@ Konrad P Kording, Edward S Boyden
 - [Mapping Function Onto Neuronal Morphology](https://journals.physiology.org/doi/full/10.1152/jn.00865.2006)
 Klaus M. Stiefel, Terrence J. Sejnowski  
 We used a Lindenmayer-system (L-system) (Lindenmayer 1968) for the algorithmic construction of model neuron morphologies. Simulations of electrophysiological dynamics were carried out in the neuronal simulation language NEURON (version 5.7) (Hines and Carnevale 1997, 2000).
+
+
 
 - [Neuronal contact predicts connectivity in the C. elegans brain](<https://www.cell.com/current-biology/fulltext/S0960-9822(23)00553-5>)  
 Peters’ rule explains synaptic specificity throughout the C. elegans nervous system
@@ -381,8 +382,6 @@ Review paper, 2015, Julie L. Lefebvre, Joshua R. Sanes, and Jeremy N. Kay
 - [Molecular mechanisms of dendrite morphogenesis](https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2012.00061/full) 
 Review, 2012, Jyothi Arikkath
 
-- [Synaptic Connectivity and Neuronal Morphology: Two Sides of the Same Coin](https://www.cell.com/fulltext/S0896-6273(04)00498-2)
-
 - [Automated analysis of neuronal morphology, synapse number and synaptic recruitment](https://www.sciencedirect.com/science/article/pii/S0165027010006758)
 
 - [L-Measure: a web-accessible tool for the analysis, comparison and search of digital reconstructions of neuronal morphologies](https://www.nature.com/articles/nprot.2008.51)
@@ -393,6 +392,8 @@ Review, 2012, Jyothi Arikkath
 - [Principles of branch dynamics governing shape characteristics of cerebellar Purkinje cell dendrites](https://journals.biologists.com/dev/article/139/18/3442/45247/Principles-of-branch-dynamics-governing-shape)
 Growing dendrites are retracted or stalled by contacts with other dendrites. 
 
+#### morphology data
+[NeuroMorpho.Org](https://neuromorpho.org/) is a centrally curated inventorys of digitally reconstructed neurons and glia
 
 
 #### maximum weighted independent set (MWIS)
@@ -478,6 +479,10 @@ nature neuroscience review 2024
 - [Science Forum: The Human Cell Atlas](https://elifesciences.org/articles/27041)
 
 #### gene data for Drosophila 
+- [A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain](https://www.sciencedirect.com/science/article/pii/S0092867418307207)
+- [A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain](https://www.cell.com/cell/fulltext/S0092-8674(18)30720-7)
+Cell, 2018
+- 
 - [Transcriptional Programs of Circuit Assembly in the Drosophila Visual System](https://www.cell.com/neuron/fulltext/S0896-6273(20)30774-1) 
 **S. Lawrence Zipursky**
 
@@ -487,7 +492,6 @@ Claude Desplan NYU, 2020
 - [Morphological and functional convergence of visual projection neurons from diverse neurogenic origins in Drosophila](https://www.nature.com/articles/s41467-025-56059-7)
 Mehmet Neset Özel & Claude Desplan, January 2025,Nature Communications  
 
-- [A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain](https://www.cell.com/cell/fulltext/S0092-8674(18)30720-7)
 
 - [Decoding gene regulation in the fly brain](https://www.nature.com/articles/s41586-021-04262-z)
 Stein Aerts, Nature, 2022
@@ -512,13 +516,11 @@ Nature Reviews Genetics (2023)
 
 - [End-to-end symbolic regression with transformers](https://arxiv.org/abs/2204.10532)
 
-- [nterpretable Machine Learning for Science with PySR and SymbolicRegression.jl](https://arxiv.org/abs/2305.01582)
+- [interpretable Machine Learning for Science with PySR and SymbolicRegression.jl](https://arxiv.org/abs/2305.01582)
 
 - [KAN: Kolmogorov-Arnold Networks](https://arxiv.org/abs/2404.19756)
 
 #### gene regulatory network 
-
-
 
 - [Decoding gene regulation in the fly brain](https://www.nature.com/articles/s41586-021-04262-z)
 
@@ -538,6 +540,8 @@ $$
 \begin{array}{|c|c|c|} \hline \text { Gene pairs } & \text { scCOPs } & \neg \text { scCOPs } \\
 \hline \text { bulkCOPs } & 313 & 2993 \\ \hline \neg \text { bulkCOPs } & 3245 & 232603 \\ \hline \end{array}
 $$
+
+- [Multiomic foundation model predicts epigenetic regulation by zero-shot](https://www.biorxiv.org/content/10.1101/2024.12.19.629561v1)
 
 #### review paper 
 
@@ -579,10 +583,6 @@ Briefings in Bioinformatics, 2021
 
 
 - [Integrating single-cell transcriptomic data across different conditions, technologies, and species](https://www.nature.com/articles/nbt.4096)
-
-
-### Spiking neural network
-- [Exploring Loss Functions for Time-based Training Strategy in Spiking Neural Networks](https://openreview.net/pdf?id=8IvW2k5VeA)
 
 
 ### functional and structure conenctome
@@ -704,12 +704,16 @@ Cited by 6966
 - [Mantis-ml: Disease-Agnostic Gene Prioritization from High-Throughput Genomic Screens by Stochastic Semi-supervised Learning](https://www.cell.com/ajhg/fulltext/S0002-9297(20)30108-7)
 
 
-
-
+ 
 ## dynamics system & Ripple 
 
 [connectome inspired neural network](<connectome inspired neural network.md>)    
 html [connectome inspired neural network](https://lengyuner.github.io/blog/connectome%20inspired%20neural%20network.html)
+
+
+### Spiking neural network
+- [Exploring Loss Functions for Time-based Training Strategy in Spiking Neural Networks](https://openreview.net/pdf?id=8IvW2k5VeA)
+
 
 ### single neuron dynamics
 - [Impact of dendritic size and dendritic topology on burst firing in pyramidal cells](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000781)
@@ -726,6 +730,8 @@ Etay Hay ,Sean Hill,Felix Schürmann,Henry Markram,Idan Segev
 
 ![Models constrained only by BAC firing may fail to respond properly to perisomatic step current.](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1002107.g001)
 
+
+
 #### HH model
 
 Hodgkin & Huxley 1952
@@ -735,7 +741,17 @@ Hodgkin & Huxley 1952
 - [Neuronal Spike Timing Adaptation Described with a **Fractional Leaky Integrate-and-Fire Model**](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003526)
 
 - [Generalized leaky integrate-and-fire models classify multiple neuron types](https://www.nature.com/articles/s41467-017-02717-4)
-- 
+
+**GLIF model**
+- [Generalized leaky integrate-and-fire models classify multiple neuron types
+https://www.nature.com/articles/s41467-017-02717-4
+
+- [An Adaptive Generalized Leaky Integrate-and-Fire Model for Hippocampal CA1 Pyramidal Neurons and Interneurons](https://link.springer.com/article/10.1007/s11538-023-01206-8)
+2023
+
+- [The Fractional order Leaky Integrate-and-Fire Model: Fractional differentiation-spiking properties](https://www.sciencedirect.com/science/article/pii/S0893608017301107)
+Neural Networks, 2017 
+
 ### synapse
 - [A role for NMDA-receptor channels in working memory](https://www.nature.com/articles/nn0898_273)
 Xiao-Jing Wang,1998
@@ -743,14 +759,21 @@ Xiao-Jing Wang,1998
 - [The Contribution of AMPA and NMDA Receptors to Persistent Firing in the Dorsolateral Prefrontal Cortex in Working Memory](https://www.jneurosci.org/content/40/12/2458) J Neurosci, 2020
 -[Synaptic AMPA Receptor Plasticity and Behavior](<https://www.cell.com/neuron/fulltext/S0896-6273(09)00082-8>) neuron, review, 2009
 ### tool
-- **Jaxley**: [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v1)
+- **Jaxley**: [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v1)   [jaxley_experiments](https://github.com/mackelab/jaxley_experiments)
 
 - [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v1)
-- another tool for neuron dynamics simulation (like NEURON
-- brian2
-- brainpy
+- another tool for neuron dynamics simulation (like  
+- brian2 
 - spikingjelly
 - )
+- 
+- [NEURON](https://nrn.readthedocs.io/en/latest/install/install_instructions.html#windows)
+
+- [BrainPy](https://brainpy.readthedocs.io/en/latest/quickstart/simulation.html)
+
+
+- [neuron morphology](https://neuron-morphology.readthedocs.io/en/latest/index.html)
+is an open-source Python package for working with single-neuron morphological reconstruction data, such as those in the Allen Cell Types Database.
 
 ### review
 - [Modeling Single-Neuron Dynamics and Computations: A Balance of Detail and Abstraction](https://www.science.org/doi/10.1126/science.1127240)
@@ -775,7 +798,20 @@ R. B. Stein and Alan Lloyd Hodgkin
 - [Generating parallel representations of position and identity in the olfactory system](https://www.cell.com/cell/fulltext/S0092-8674(23)00472-5)
 
 - [Olfactory Information Processing in Drosophila](https://www.sciencedirect.com/science/article/pii/S0960982209013013) Gregory S.X.E. Jefferis, 2009
-- 
+
+- [Diversity and wiring variability of olfactory local interneurons in the Drosophila antennal lobe](https://www.nature.com/articles/nn.2489)
+
+- [Information flow, cell types and stereotypy in a full **olfactory** connectome](https://elifesciences.org/articles/66018)
+Gregory S X E Jefferis
+
+- [Subpopulations of Projection Neurons in the Olfactory Bulb](https://www.frontiersin.org/journals/neural-circuits/articles/10.3389/fncir.2020.561822/full)
+REVIEW article,Front. Neural Circuits, 27 August 2020
+
+- [Teneurins instruct synaptic partner matching in an olfactory map](https://www.nature.com/articles/nature10926)
+Weizhe Hong, Timothy J. Mosca & Liqun Luo    
+Teneurins instruct matching specificity between synaptic partners through homophilic attraction.
+
+
 
 ## NeuroAI
 
@@ -795,6 +831,9 @@ Review, Current Opinion in Neurobiology, 2019
 ### Connectome & ANN
 [connectome inspired neural network](<connectome inspired neural network.md>)    
 html [connectome inspired neural network](https://lengyuner.github.io/blog/connectome%20inspired%20neural%20network.html)
+
+- [Deep Connectomics Networks: Neural Network Architectures Inspired by Neuronal Networks](https://arxiv.org/abs/1912.08986)
+
 
 - [Forecasting Whole-Brain Neuronal Activity from Volumetric Video](https://arxiv.org/abs/2503.00073)
 ZAPBench
@@ -820,6 +859,9 @@ Review [Neural Networks With Motivation](https://www.frontiersin.org/articles/10
 
 - [Automatic discovery of cell types and microcircuitry from neural connectomics](https://elifesciences.org/articles/04250)  
 Eric Jonas, Konrad Kording
+
+- [Modeling small networks](https://www.researchgate.net/publication/2267079_Modeling_Small_Networks)
+1998, L F Abbott, Eve Marder
 
 ### synapse plasticity
 #### STDP
@@ -1044,11 +1086,6 @@ https://proceedings.mlr.press/v97/jiang19a.html
 
 ### gene 
 
-- [Bayesian Sparse Regression Analysis Documents the Diversity of Spinal Inhibitory Interneurons](https://www.sciencedirect.com/science/article/pii/S0092867416300034)  
-[SI](https://ars.els-cdn.com/content/image/1-s2.0-S0092867416300034-mmc2.pdf) 
-$$
-p(\mathbf{y} \mid Q, \mathbf{f}) \propto e^{-\frac{1}{2} \mathbf{f}^{\prime} \mathbf{M f}+\mathbf{y}^{\prime} Q \mathbf{f}}
-$$
 
 - [HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution](https://arxiv.org/abs/2306.15794)   Transformer + gene
 
@@ -1175,4 +1212,4 @@ S. Lawrence Zipursky & Gwyneth M. Card
 - [Slingshot: cell lineage and pseudotime inference for single-cell transcriptomics](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4772-0)
 
 
-- 
+- [viewpoint Your Students are Your legacy](https://dl.acm.org/doi/pdf/10.1145/1467247.1467259#page=1.25)
