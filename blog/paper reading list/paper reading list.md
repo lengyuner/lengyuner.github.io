@@ -57,7 +57,7 @@ human
 
  
 - [Connectome-driven neural inventory of a complete visual system](https://www.biorxiv.org/content/10.1101/2024.04.16.589741v2)
-Janelia
+Janelia, 2024, 
 a new connectome of the right optic lobe from a male Drosophila central nervous system FIB-SEM volume and a comprehensive inventory of the fly’s visual neurons
 
 - [Waves of differentiation in the fly visual system](https://www.sciencedirect.com/science/article/pii/S0012160613001875)
@@ -100,8 +100,7 @@ Machine learning identifies synaptic transmitters from electron micrographs
 - [Whole-brain annotation and multi-connectome cell typing quantifies circuit stereotypy in Drosophila](https://www.biorxiv.org/content/10.1101/2023.06.27.546055v2)
 **hemibrain and flywire**
 
-- [A connectome and analysis of the adult Drosophila central brain](https://elifesciences.org/articles/57443)  
-**hemibrain**
+- [A connectome and analysis of the adult Drosophila central brain](https://elifesciences.org/articles/57443) **hemibrain**
 
 
 
@@ -131,7 +130,7 @@ Gregory S. X. E. Jefferis, Mala Murthy & Jonathan W. Pillow
 
 **review**
 - [The cell biology of synapse formation](https://rupress.org/jcb/article/220/7/e202103052/212258/The-cell-biology-of-synapse-formationMechanisms-of) **SAM**  
-Review, 2021, from [Thomas C. Südhof](https://med.stanford.edu/sudhoflab.html)
+Review, 2021, from [Thomas C. Südhof](https://med.stanford.edu/sudhoflab.html)  
 ![alt text](<figs/synaptic adhesion molecules.png>)
 
 - [Towards an Understanding of Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627318308420)
@@ -147,7 +146,7 @@ Review, 2002, [Thomas R Clandinin](https://flyvisionlab.weebly.com/), S.Lawrence
 - [Synaptic Connectivity and Neuronal Morphology: Two Sides of the Same Coin](https://www.cell.com/fulltext/S0896-6273(04)00498-2)
 
 
-- [Chemoaffinity Revisited: Dscams, Protocadherins, and Neural Circuit Assembly](https://www.cell.com/fulltext/S0092-8674(10)01145-1)
+- [Chemoaffinity Revisited: Dscams, Protocadherins, and Neural Circuit Assembly](<https://www.cell.com/fulltext/S0092-8674(10)01145-1>)
 Teview, 2010, S. Lawrence Zipursky, Joshua R. Sanes
 
 **computational methods**
@@ -165,14 +164,16 @@ Dániel L. Barabási 1, Albert-László Barabási
 - [Building a small brain with a simple **stochastic generative model**](https://www.biorxiv.org/content/10.1101/2024.07.01.601562v1)
   Oren Richter, Elad Schneidman
 
-
 - [The structure and function of neural connectomes are shaped by a small number of design principles]
 (https://www.biorxiv.org/content/10.1101/2023.03.15.532611v1)
 Elad Schneidman
 
+- [Cell lineage predicts neural connectivity beyond cell type](https://www.biorxiv.org/content/10.1101/2022.11.01.514680v1.abstract) C. elegans  
+Konrad P. Kording, 
+
 
 - [A framework for modeling the growth and development of neurons and networks](https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/neuro.10.025.2009/full)
-Frederic Zubler and Rodney Douglas(ETH Zurich)
+Frederic Zubler and Rodney Douglas(ETH Zurich), 2009 
 
 
 **experimental test**
@@ -227,9 +228,7 @@ Schematic of a neuron broken into its neuronal compartments. Inset, the proporti
 - [A practical guide to linking brain-wide gene expression and neuroimaging data](https://www.sciencedirect.com/science/article/pii/S1053811919300114) 
 seven major steps to link expression measures and neuroimaging data
 
-- [Molecular logic of neocortical projection neuron specification, development and diversity](https://www.nature.com/articles/nrn3586)
-- 
-Neocortical projection neurons  
+- [Molecular logic of neocortical projection neuron specification, development and diversity](https://www.nature.com/articles/nrn3586), Neocortical projection neurons  
 ![alt text|80](<figs/Neocortical projection neurons.png>)
 
 #### experiment support
@@ -247,7 +246,7 @@ Zador lab
 - [Cell-type-Specific Patterned Stimulus-Independent Neuronal Activity in the Drosophila Visual System during Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627319300091)
 
 - [Pattern formation in the Drosophila eye](https://www.sciencedirect.com/science/article/pii/S0959437X07000937)  
-Review, 2007, Richard W Carthew, Northwestern University
+2007, Review, 2007, Richard W Carthew, Northwestern University
 
 - [Novel brain wiring functions for classical morphogens: a role as graded positional cues in axon guidance](https://journals.biologists.com/dev/article/132/10/2251/42750/Novel-brain-wiring-functions-for-classical)  
 morphogen gradients also serve to guide axonal pathfinding during development of the nervous system
@@ -331,9 +330,6 @@ Cell2020, **all kinds of neurons!!!**
 
 - [Gradient-Based DNA Transcription Control in Animals](https://www.nature.com/scitable/topicpage/gradient-based-dna-transcription-control-in-animals-1062/)
 
-
-- [Cell lineage predicts neural connectivity beyond cell type](https://www.biorxiv.org/content/10.1101/2022.11.01.514680v1.abstract)
-Konrad P. Kording
 
 - [Inferring causal connectivity from pairwise recordings and optogenetics](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011574)
 Konrad P. Kording
