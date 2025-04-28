@@ -146,8 +146,13 @@ Review, 2002, [Thomas R Clandinin](https://flyvisionlab.weebly.com/), S.Lawrence
 - [Synaptic Connectivity and Neuronal Morphology: Two Sides of the Same Coin](https://www.cell.com/fulltext/S0896-6273(04)00498-2)
 
 
+- [Beyond Molecular Codes: Simple Rules to Wire Complex Brains](https://www.sciencedirect.com/science/article/pii/S0092867415011939) 
+Review, 2015, Bassem A. Hassan, P. Robin Hiesinger
+
+
 - [Chemoaffinity Revisited: Dscams, Protocadherins, and Neural Circuit Assembly](<https://www.cell.com/fulltext/S0092-8674(10)01145-1>)
 Teview, 2010, S. Lawrence Zipursky, Joshua R. Sanes
+
 
 **computational methods**
 - **bilinear** [Uncovering the genetic blueprint of the C. elegans nervous system](https://www.pnas.org/doi/full/10.1073/pnas.2009093117) 
@@ -229,7 +234,7 @@ Schematic of a neuron broken into its neuronal compartments. Inset, the proporti
 seven major steps to link expression measures and neuroimaging data
 
 - [Molecular logic of neocortical projection neuron specification, development and diversity](https://www.nature.com/articles/nrn3586), Neocortical projection neurons  
-![alt text|80](<figs/Neocortical projection neurons.png>)
+![alt text|200pt](<figs/Neocortical projection neurons.png>)
 
 #### experiment support
 - [A Conserved Role for Drosophila Neuroglian and Human L1-CAM in Central-Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0960982205014715)
@@ -280,7 +285,7 @@ binding specificity of DIP/Dpr subgroups is controlled by "negative constraints"
 
 - [An Extracellular Interactome of Immunoglobulin and LRR Proteins Reveals Receptor-Ligand Networks](https://www.sciencedirect.com/science/article/pii/S0092867413007083)
 cell, 2013
-![alt text|30%](<https://ars.els-cdn.com/content/image/1-s2.0-S0092867413007083-gr3_lrg.jpg>)
+![alt text|200pt](<https://ars.els-cdn.com/content/image/1-s2.0-S0092867413007083-gr3_lrg.jpg>)
 
 - [A comprehensive dataset of protein-protein interactions and ligand binding pockets for advancing drug discovery](https://www.nature.com/articles/s41597-024-03233-z)
 **PPIs**
@@ -295,9 +300,6 @@ Growing dendrites are retracted or stalled by contacts with other dendrites.
 
 - [Neuropil Pattern Formation and Regulation of Cell Adhesion Molecules in Drosophila Optic Lobe Development Depend on Synaptobrevin](https://www.jneurosci.org/content/19/17/7548)
 1999
-
-- [Beyond Molecular Codes: Simple Rules to Wire Complex Brains](https://www.sciencedirect.com/science/article/pii/S0092867415011939)
-Review,2015, Bassem A. Hassan, P. Robin Hiesinger
 
 #### deep learning methods
 - paper with code: https://paperswithcode.com/dataset/ppi
@@ -315,7 +317,7 @@ Review,2015, Bassem A. Hassan, P. Robin Hiesinger
 - [A conserved fertilization complex bridges sperm and egg in vertebrates](https://www.cell.com/cell/fulltext/S0092-8674(24)01093-6) **AlphaFold-Multimer**
     This approach employs structural predictions of pairwise protein-protein interactions between each bait protein and the candidate proteins. A high interface-predicted template modeling score (**ipTM score**) reflects high confidence in the relative positioning of the interfaces.
 
-![alt text|30%](<figs/sperm and egg.png>)
+![alt text|200pt](<figs/sperm and egg.png>)
 
 ### data mapping between transcriptome and connectome
 
@@ -337,6 +339,16 @@ Konrad P. Kording
 - [Opportunities and challenges of single-cell and spatially resolved genomics methods for neuroscience discovery](https://www.nature.com/articles/s41593-024-01806-0)
 
 #### neural type  
+
+![blog](<../connectivity_to_type.md>)
+
+- [Automatic discovery of cell types and microcircuitry from neural connectomics](https://elifesciences.org/articles/04250)  
+Eric Jonas, Konrad Kording   
+It combines the information traditionally used by biologists in a principled and probabilistically coherent manner, including connectivity, cell body location, and the spatial distribution of synapses. 
+
+- [Connectivity of single neurons classifies cell subtypes in mouse brains](https://www.nature.com/articles/s41592-024-01806-0)
+  
+
 - [Bayesian Sparse Regression Analysis Documents the Diversity of Spinal Inhibitory Interneurons](https://www.sciencedirect.com/science/article/pii/S0092867416300034)  
 [SI](https://ars.els-cdn.com/content/image/1-s2.0-S0092867416300034-mmc2.pdf) **Bayesian method**
 $$
@@ -345,6 +357,8 @@ $$
 
 - [Molecularly defined and spatially resolved cell atlas of the whole mouse brain](https://www.nature.com/articles/s41586-023-06808-9)
 Xiaowei Zhuang 
+
+- [Morphological diversity of single neurons in molecularly defined cell types](https://www.nature.com/articles/s41586-021-03941-1) 2021 Nature, Hongkui Zeng, Allen Institute
 
 - [Probabilistic cell typing enables fine mapping of closely related cell types in situ](https://www.nature.com/articles/s41592-019-0631-4)
 
@@ -724,7 +738,7 @@ W. Rall, J. Neurophysiol., 1967
 Etay Hay ,Sean Hill,Felix Schürmann,Henry Markram,Idan Segev
 
 
-![Models constrained only by BAC firing may fail to respond properly to perisomatic step current.](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1002107.g001)
+![Models constrained only by BAC firing may fail to respond properly to perisomatic step current.|200pt](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1002107.g001)
 
 
 
@@ -853,8 +867,6 @@ BOOK [Chapter 3 - Connectivity Matrices and Brain Graphs](https://www.sciencedir
 
 Review [Neural Networks With Motivation](https://www.frontiersin.org/articles/10.3389/fnsys.2020.609316/full)
 
-- [Automatic discovery of cell types and microcircuitry from neural connectomics](https://elifesciences.org/articles/04250)  
-Eric Jonas, Konrad Kording
 
 - [Modeling small networks](https://www.researchgate.net/publication/2267079_Modeling_Small_Networks)
 1998, L F Abbott, Eve Marder
