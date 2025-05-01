@@ -14,6 +14,10 @@
 
 - [The connectome predicts resting-state functional connectivity across the Drosophila brain](https://www.sciencedirect.com/science/article/pii/S0960982221003432)
 
+- [A Drosophila computational brain model reveals sensorimotor processing](https://www.nature.com/articles/s41586-024-07763-9)
+Here we create a leaky integrate-and-fire computational model of the entire Drosophila brain, on the basis of neural connectivity and neurotransmitter identity
+
+
 ## Human
 
 - [Learning Dynamic Graph Representation of Brain Connectome with Spatio-Temporal Attention](https://openreview.net/forum?id=X7GEA3KiJiH)  
