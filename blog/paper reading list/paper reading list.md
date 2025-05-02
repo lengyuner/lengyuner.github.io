@@ -124,7 +124,7 @@ Machine learning identifies synaptic transmitters from electron micrographs
 
 - [The fly connectome reveals a path to the **effectome**](https://www.nature.com/articles/s41586-024-07982-0)  
 Gregory S. X. E. Jefferis, Mala Murthy & Jonathan W. Pillow 
-
+From connectome to effectome: learning the causal interaction map of the fly brain
 
 ### connectome and gene
 
@@ -153,10 +153,16 @@ Review, 2015, Bassem A. Hassan, P. Robin Hiesinger
 - [Chemoaffinity Revisited: Dscams, Protocadherins, and Neural Circuit Assembly](<https://www.cell.com/fulltext/S0092-8674(10)01145-1>)
 Teview, 2010, S. Lawrence Zipursky, Joshua R. Sanes
 
+- [Architectures of neuronal circuits](https://www.science.org/doi/full/10.1126/science.abg7285)
+reivew, 2021, Science, Liqun Luo
+![alt text](<https://www.science.org/cms/10.1126/science.abg7285/asset/59d561d9-7d95-456d-97e5-1b811c05023f/assets/images/large/science.abg7285-f5.jpg>)
 
 **computational methods**
 - **bilinear** [Uncovering the genetic blueprint of the C. elegans nervous system](https://www.pnas.org/doi/full/10.1073/pnas.2009093117) 
 István A. Kovács, Dániel L. **Barabási**, and Albert-László **Barabási**  PNAS
+
+- [Graph similarity learning for cross-level interactions](https://www.sciencedirect.com/science/article/pii/S0306457324002917)
+“Incorporates direction attributes via a bilinear model for better adaptability to data.”
 
 - **biclique motifs** [A Genetic Model of the Connectome](https://www.sciencedirect.com/science/article/pii/S0896627319309262)
 Dániel L. Barabási 1, Albert-László Barabási
@@ -355,7 +361,7 @@ Eric Jonas, Konrad Kording
 It combines the information traditionally used by biologists in a principled and probabilistically coherent manner, including connectivity, cell body location, and the spatial distribution of synapses. 
 
 - [Connectivity of single neurons classifies cell subtypes in mouse brains](https://www.nature.com/articles/s41592-024-01806-0)
-  
+Neuronal Connectivity as a Determinant of Cell Types and Subtypes
 
 - [Bayesian Sparse Regression Analysis Documents the Diversity of Spinal Inhibitory Interneurons](https://www.sciencedirect.com/science/article/pii/S0092867416300034)  
 [SI](https://ars.els-cdn.com/content/image/1-s2.0-S0092867416300034-mmc2.pdf) **Bayesian method**
@@ -470,6 +476,12 @@ connection bottleneck
 - [Computation and visualization of cell–cell signaling topologies in single-cell systems data using Connectome](https://www.nature.com/articles/s41598-022-07959-x)
 
 - ViMO [ - Visual Analysis of Neuronal Connectivity Motifs](https://ieeexplore.ieee.org/document/10298029)
+
+Network Repository. An Interactive Scientific Network Data Repository.
+the first scientific network data repository with interactive visual analytics.
+new GraphVis: interactive visual graph mining and machine learning
+https://networkrepository.com/
+
 
 **human connectome** 
 - [NeuroCave: A web-based immersive visualization platform for exploring connectome datasets](https://doi.org/10.1162/netn_a_00044)
@@ -674,6 +686,10 @@ Yoshua Bengio
 
 - [GraphFM: A Scalable Framework for Multi-Graph Pretraining](https://arxiv.org/abs/2407.11907)
 
+- [A Survey on Learning from Graphs with Heterophily: Recent Advances and Future Directions](https://github.com/gongchenghua/Papers-Graphs-with-Heterophily)
+
+- [Revisiting Self-Supervised Heterogeneous Graph Learning from Spectral Clustering Perspective](https://arxiv.org/abs/2412.00742)
+within-community connection prediction
 
 ### Link prediction
 https://paperswithcode.com/task/link-prediction
@@ -713,6 +729,15 @@ Cited by 6966
 - [papers with code: Graph Models](https://paperswithcode.com/methods/category/graph-models) 
 
 
+
+### 
+- [Are we really making much progress? Revisiting, benchmarking, and refining heterogeneous graph neural networks](https://arxiv.org/abs/2112.14936)
+we construct the Heterogeneous Graph Benchmark (HGB), consisting of 11 diverse datasets with three tasks.
+| Dataset | Nodes | Node Types | Edges | Edge Types | Target |
+|---------|-------|------------|-------|------------|--------|
+| Amazon  | 10,099| 1          | 148,659| 2          | product-product |
+| LastFM  | 20,612| 3          | 141,521| 3          | user-artist |
+| PubMed  | 63,109| 4          | 244,986| 10         | disease-disease |
 
 ### disease gene
 - [GANLDA: Graph attention network for lncRNA-disease associations prediction](https://www.sciencedirect.com/science/article/pii/S0925231221011012)
@@ -999,6 +1024,7 @@ Fabian Kloosterman, Stuart P. Layton, Zhe Chen, and Matthew A. Wilson
 
 - [Hebbian instruction of axonal connectivity by endogenous correlated spontaneous activity](https://www.science.org/doi/10.1126/science.adh7814)
 
+
 ### deep learning method
 - [Neural Data Transformer 2: Multi-context Pretraining for Neural Spiking Activity](https://www.biorxiv.org/content/10.1101/2023.09.18.558113v1)
 
@@ -1010,6 +1036,8 @@ Yizi, Liam, Cole
 - NEMO: [In vivo cell-type and brain region classification via multimodal contrastive learning](https://www.biorxiv.org/content/10.1101/2024.11.05.622159v1)
 
 - [POYO-1: A Unified, Scalable Framework for Neural Population Decoding](https://poyo-brain.github.io/)
+
+- [EEG2Rep: Enhancing Self-supervised EEG Representation Through Informative Masked Inputs](https://arxiv.org/abs/2402.17772)
 
 #### fundation model 
 
@@ -1050,6 +1078,8 @@ NeurIPS 2022
 
 - [Spontaneous behaviour is structured by reinforcement without explicit reward](https://www.nature.com/articles/s41586-022-05611-2)
 Sandeep Robert Datta 
+ 
+- [The spinal premotor network driving scratching flexor and extensor alternation](https://www.biorxiv.org/content/10.1101/2025.01.08.631866v1.abstract)
 
 ### oscilation
 - [Brain rhythms have come of age](https://www.sciencedirect.com/science/article/pii/S0896627323002143)

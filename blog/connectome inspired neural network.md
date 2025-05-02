@@ -33,6 +33,7 @@ Here we create a leaky integrate-and-fire computational model of the entire Dros
 
 - [Connectome-Based Attractor Dynamics Underlie Brain Activity in Rest, Task, and Disease](https://elifesciences.org/reviewed-preprints/98725v1)
 
+- [Enhancer-driven cell type comparison reveals similarities between the mammalian and bird pallium](https://www.science.org/doi/10.1126/science.adp3957)
 
 #### Perturbation
 
