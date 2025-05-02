@@ -212,6 +212,14 @@ data:
 - [Hub connectivity, neuronal diversity, and gene expression in the Caenorhabditis elegans connectome](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005989)
 
 
+- [Constrained roads to complex brains](https://www.science.org/doi/10.1126/science.adv2609)
+perspective, Neural development and brain circuit evolution converged in birds and mammals
+
+- [Evolutionary convergence of sensory circuits in the pallium of amniotes](https://www.science.org/doi/10.1126/science.adp3411)
+
+- [Enhancer-driven cell type comparison reveals similarities between the mammalian and bird pallium](https://www.science.org/doi/10.1126/science.adp3957)
+- [Developmental origins and evolution of pallial cell types and structures in birds](https://www.science.org/doi/10.1126/science.adp5182)
+
 #### other methods to reconstruct connectome
 
 
