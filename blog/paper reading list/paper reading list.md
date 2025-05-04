@@ -660,6 +660,27 @@ https://www.sciencedirect.com/science/article/abs/pii/S1053811919300114
 Modelling brain connectomes networks: Solv is a worthy competitor to hyperbolic geometry!
 https://openreview.net/forum?id=dqWobzlAGb
 
+## Reinforcement learning (RL)
+Learning Symbolic Rules for Interpretable Deep Reinforcement Learning
+https://arxiv.org/abs/2103.08228
+
+Applying Logical Rules to Reinforcement Learning for Interpretable Knowledge Graph Reasoning
+https://ieeexplore.ieee.org/abstract/document/10650177
+
+A Logical Framework to Reinforcement Learning Using Hybrid Probabilistic Logic Programs
+https://link.springer.com/chapter/10.1007/978-3-540-87993-0_27
+
+A Policy Search Method For Temporal Logic Specified Reinforcement Learning Tasks
+https://ieeexplore.ieee.org/document/8431181
+
+Interpretable Model-based Hierarchical Reinforcement Learning using Inductive Logic Programming
+https://arxiv.org/abs/2106.11417
+
+Reinforcement Logic Rule Learning for Temporal Point Processes
+https://arxiv.org/abs/2308.06094
+
+
+
 ## graph
 
 - JC: https://docs.google.com/spreadsheets/d/10R6poOIIqA4OCsiSGs5mK4Zkq9pm8aPxk1IQ3Zl0NPU
