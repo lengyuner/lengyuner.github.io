@@ -42,6 +42,7 @@ Blue Brain Project
 **flywire, female**
 - [Whole-brain annotation and multi-connectome cell typing of Drosophila](https://www.nature.com/articles/s41586-024-07686-5)  Nature 2024
 FlyWire
+- [Neuronal parts list and wiring diagram for a visual system](https://www.nature.com/articles/s41586-024-07981-1) FlyWire
 
 - [The connectome of an insect brain](https://www.science.org/doi/10.1126/science.add9330)
 **larval brain**
@@ -56,9 +57,11 @@ human
 
 
  
-- [Connectome-driven neural inventory of a complete visual system](https://www.biorxiv.org/content/10.1101/2024.04.16.589741v2)
-Janelia, 2024, 
-a new connectome of the right optic lobe from a male Drosophila central nervous system FIB-SEM volume and a comprehensive inventory of the fly’s visual neurons
+- [Connectome-driven neural inventory of a complete visual system](https://www.nature.com/articles/s41586-025-08746-0)
+- [bioRxiv 2024](https://www.biorxiv.org/content/10.1101/2024.04.16.589741v2)
+Janelia, 2025, Nature, 
+a new connectome of the **right optic lobe** from a male Drosophila central nervous system FIB-SEM volume and a comprehensive inventory of the fly’s visual neurons
+
 
 - [Waves of differentiation in the fly visual system](https://www.sciencedirect.com/science/article/pii/S0012160613001875)
 Developmental Biology
@@ -1127,6 +1130,10 @@ Vanessa Ruta & Gerald M. Rubin
 
 ### drosophila
 - [The Neural Substrate of Spectral Preference in Drosophila](https://www.sciencedirect.com/science/article/pii/S0896627308007058)
+
+- [Neuronal circuits integrating visual motion information in Drosophila melanogaster](<https://www.cell.com/current-biology/fulltext/S0960-9822(22)01023-5>)
+- 
+- [Morphological and functional convergence of visual projection neurons from diverse neurogenic origins in Drosophila](https://www.nature.com/articles/s41467-025-56059-7)
 
 ## others
 ### ML
