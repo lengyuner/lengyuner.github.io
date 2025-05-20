@@ -56,6 +56,11 @@ https://link.springer.com/article/10.1007/s00359-019-01375-9
 Alexander Borst  
 (youtube.com/watch?v=p8n1XODZ1Nc) 
 
+- [The comprehensive connectome of a neural substrate for ‘ON’ motion detection in Drosophila](https://elifesciences.org/articles/24394)
+
+- [A common directional tuning mechanism of Drosophila motion-sensing neurons in the ON and in the OFF pathway](https://elifesciences.org/articles/29044)
+Juergen Haag, Abhishek Mishra, Alexander Borst
+
 ### comment: 
 The function of computing the direction is associated with the neuron's structure.
 
