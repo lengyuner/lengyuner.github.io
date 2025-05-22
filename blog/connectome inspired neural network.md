@@ -82,7 +82,11 @@ Jonathan W. Pillow, Matthew A. Smith
 - [Learning dynamic representations of the functional connectome in neurobiological networks](https://arxiv.org/abs/2402.14102v2)
 
 - [Connectome-constrained Latent Variable Model of Whole-Brain Neural Activity](https://openreview.net/forum?id=CJzi3dRlJE-)  
-  Srinivas C Turaga
+ Lu Mi, .., Srinivas C Turaga
+
+- [An integrative data-driven model simulating C. elegans brain, body and environment interactions](https://www.nature.com/articles/s43588-024-00738-w)
+Nature Computational Science, 2024
+Neuron models (Neurons were modeled by morphologically derived multicompartmental models with somatic Hodgkin–Huxley dynamics and passive neurites) + Graded synapse and gap junction models: 
 
 ### Dataset
 
