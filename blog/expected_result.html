@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Stimulus and Electrophysiology Data</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h2 id="stimulus-and-electrophysiology-data">Stimulus and Electrophysiology Data</h2>
+<p><strong>Outline:</strong><br>
+functional classification for the visual system:</p>
+<ul>
+<li>ON, OFF and luminance channels</li>
+<li>Motion</li>
+<li>Objects</li>
+<li>Color and polarization</li>
+<li>LC neuron</li>
+</ul>
+<h3 id="on-off-and-luminance-channels">ON, OFF and luminance channels</h3>
+<p><img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/41586_2024_7981_Fig4_HTML_converted.png" alt="ON, OFF and luminance channels—top inputs and outputs only"></p>
+<p>Cluster 10 and cluster 11 (Fig. 2c) both receive strong input from photoreceptors R1–6 (Extended Data Fig. 11), and we propose that they are regarded as OFF and ON channels, respectively, carrying information about light decrements (OFF stimuli) and light increments (ON stimuli).</p>
+<p>From: <a href="https://www.nature.com/articles/s41586-024-07981-1">Neuronal parts list and wiring diagram for a visual system</a></p>
+<p>OFF cells: <strong>L1, L2, L4, Tm1, Tm2 and Tm4, C2 and C3</strong>
+ON cells: <strong>L5, Mi1 and Tm3</strong></p>
+<p>The ON and OFF motion pathways were traditionally defined by working backwards from the T4 and T5 motion detectors</p>
+<p>(Cluster 10 contains the OFF cells L2, L4, Tm1, Tm2 and Tm4. Cluster 11 contains the ON cells L5, Mi1 and Tm3, and also the <strong>OFF cell L1</strong>. It makes sense to assign L1 to the ON channel even though it is an OFF cell, because L1 is inhibitory/glutamatergic, so its effects on downstream partners are similar to those of an ON excitatory cell.)</p>
+<p>Luminance channel:
+<strong>L3</strong> constitutes a separate luminance channel. L3 is the only L type with a sustained rather than transient response, and it encodes luminance rather than contrast.
+<strong>Dm4, Dm9, Dm12, Dm20 and Mi9,</strong> which all have L3 as their strongest input.</p>
+<p>Feedback: <strong>Lai, Lawf1, Lai and Lawf2</strong></p>
+<p>provides centrifugal feedback to the OFF channel</p>
+<h3 id="motion">Motion</h3>
+<p><img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/41586_2024_7981_Fig5_HTML_converted.png" alt="Motion subsystem—top inputs and outputs only"></p>
+<p>From:
+<a href="https://www.nature.com/articles/s41586-024-07981-1">Neuronal parts list and wiring diagram for a visual system</a></p>
+<p>The motion-detecting： <strong>T4</strong> and <strong>T5</strong> families<br>
+<strong>CT1</strong> and <strong>Tm9</strong> are well known to be important for motion computation</p>
+<p>It makes sense to regard <strong>Tm9</strong> as dedicated to the motion subsystem rather than part of a general-purpose OFF channel, as 80% of its output synapses are onto CT1 or T5.</p>
+<p>Cluster 16 also includes <strong>Li14</strong>, an interneuron type with T5a as the strongest input, and T5a through T5d as the strongest outputs.</p>
+<p><strong>more about T4a-T4d, T5a-T5d neurons</strong></p>
+<p><img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/lax_29044_elife-29044-fig3-v2_converted.png" alt="A common mechanism for direction selectivity in all four subtypes of T4 and T5 cells"></p>
+<p><img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/gr1_lrg.jpg" alt="EM reconstruction of the synaptic partners of T4 and T5 cells in the lobula plate"></p>
+<p><img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/T4a_neuron_from_flywire.png" alt="T4a neuron from flywire"></p>
+<h3 id="objects">Objects</h3>
+<p>T2 and T3, which have been implicated in the detection of small objects</p>
+<p><img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/41586_2024_7981_Fig6_HTML_converted.png" alt="Hypothetical object subsystem."></p>
+<p>Their downstream VPN partners LC11 and LC18 (Fig. 6) are also activated by small objects.</p>
+<p><img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/T2_neuron_from_flywire.png" alt="T2 neuron from flywire"></p>
+<h3 id="color-and-polarization">Color and polarization</h3>
+<p>The inner photoreceptors <strong>R7</strong> and <strong>R8</strong> are important for Drosophila colour vision because their responses are more narrowly tuned to the wavelength of light</p>
+<p><strong>Dm8a, Dm8b, Dm11 and DmDRA2</strong>, which are all inner photoreceptor targets</p>
+<p><img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/41586_2024_7981_Fig7_HTML_converted.png" alt="Hypothetical colour subsystem."></p>
+<p><img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/359_2019_1397_Fig4_HTML_converted.png" alt="Neuronal basis of color vision in Drosophila."></p>
+<p>From: <a href="https://link.springer.com/article/10.1007/s00359-019-01397-3">Color vision in insects: insights from Drosophila</a></p>
+<h3 id="lc-neuron">LC neuron</h3>
+<p>Locus coeruleus</p>
+<ol>
+<li>to the natural stimulus (female movement)</li>
+<li>artificial stimulus (including the looming, moving square, moving bar, grating)</li>
+</ol>
+<p><strong>1. natural stimulus (female movement)</strong></p>
+<p>From: <a href="https://www.nature.com/articles/s41586-024-07451-8">Mapping model units to visual neurons reveals population code for social behaviour</a></p>
+<p>Real LC responses and predicted responses to stimulus sequences of a moving fictive female:
+<img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/41586_2024_7451_Fig13_ESM_converted.png" alt="Real LC responses and predicted responses to stimulus sequences of a moving fictive female."></p>
+<p>Visual features of female motion are distributed across the population of <strong>model</strong> LC units:
+<img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/41586_2024_7451_Fig3_HTML_converted.png" alt="Visual features of female motion are distributed across the population of model LC units"></p>
+<p>The role of LC neurons in the sensorimotor transformation of the male fly during courtship(a summary):
+<img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/41586_2024_7451_Fig5_HTML_converted.png" alt="The role of LC neurons in the sensorimotor transformation of the male fly during courtship."></p>
+<p>they also provide the ephys data of LC neuron, which can be used to compare with the model prediction:
+(LC4, LC6, LC9, LC10ad, LC10a, LC10bc, LC10d, LC11, LC12, LC13, LC15, LC16, LC17, LC18, LC20, LC21, LC22, LC24, LC26, LC31)<br>
+<a href="https://dandiarchive.org/dandiset/000951/0.240418.2218/files?location=&amp;page=1">https://dandiarchive.org/dandiset/000951/0.240418.2218/files?location=&amp;page=1</a><br>
+<a href="https://neurosift.app/dandiset/000951?dandisetVersion=0.240418.2218">https://neurosift.app/dandiset/000951?dandisetVersion=0.240418.2218</a></p>
+<p><strong>2. artificial stimulus</strong><br>
+From: <a href="https://www.sciencedirect.com/science/article/pii/S0896627322001787">A functionally ordered visual feature map in the Drosophila brain</a><br>
+there are ∼20 anatomically distinct LC types (including LC-like visual projection cell types called lobula plate lobula columnar, or LPLC, neurons, each comprising a population of between 30 and 220 neurons)</p>
+<p>We discover novel detectors for objects smaller than the lens resolution (LC18) and for complex line motion (LC25).
+each cell integrates visual inputs within a compact region and is likely to act as a local feature detector</p>
+<p><img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/1-s2.0-S0896627322001787-gr2_lrg.jpg" alt="Each LC cell type encodes distinct visual features"></p>
+<hr>
+<!-- Dm3v, Dm3p, Dm3q, TmY4, TmY9q, TmY9q^{⟂}  -->
+<h2 id="why-component-model-for-morphology">Why Component Model for Morphology?</h2>
+<p>several reason to use the the component of the neuron instead of the point neuron:</p>
+<ol>
+<li>
+<p>the connection between the point neurons in more like full connection, compared to the component neuron, which only have less than ~5 connected component</p>
+<p>evidence from paper: connectom constrain neural networks</p>
+<p>Connectome measurements constrain neural networks in circuits with sparse connectivity:</p>
+<p><img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/41586_2024_7939_Fig5_HTML_converted.png" alt="Connectome measurements constrain neural networks in circuits with sparse connectivity.">
+<a href="https://www.nature.com/articles/s41586-024-07939-3/figures/5">https://www.nature.com/articles/s41586-024-07939-3/figures/5</a></p>
+<p>in that case, the sparse connection will have a more similar parameter between the student network and the teacher network compared to the dense connection</p>
+<!-- if we use the component model, it will have an  -->
+</li>
+<li>
+<p>morphology will influence the function of the neuron:</p>
+<ol>
+<li>the point neuron model might have a wrong prediction for the direction selectivity of T4a-T4d, T5a-T5d neuron
+<img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/41586_2024_7939_Fig3_HTML_converted.png" alt="Cluster analysis of DMN ensembles enables hypothesis generation and suggests experimental tests."><br>
+<a href="https://www.nature.com/articles/s41586-024-07939-3/figures/3">https://www.nature.com/articles/s41586-024-07939-3/figures/3</a></li>
+</ol>
+<p><img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/20250519180227.png" alt="T4a-T4d, T5a-T5d">
+from: <a href="https://link.springer.com/article/10.1007/s00359-019-01375-9">How fly neurons compute the direction of visual motion</a></p>
+<ol start="2">
+<li>the morphology of the neuron will influence the burst firing
+<img src="file:////Users/lengyuner/Desktop/Ripple/5_expected_result/pcbi.1000781.g003.png" alt="Both with somatic and with dendritic stimulation, pyramidal cell burst firing decreases as the apical dendrite becomes shorter."></li>
+</ol>
+</li>
+</ol>
+<hr>
+<h2 id="reference">reference</h2>
+<h3 id="paper-neuronal-circuits-integrating-visual-motion-information-in-drosophila-melanogaster">Paper: Neuronal circuits integrating visual motion information in Drosophila melanogaster</h3>
+<p><a href="https://www.cell.com/current-biology/fulltext/S0960-9822(22)01023-5">https://www.cell.com/current-biology/fulltext/S0960-9822(22)01023-5</a></p>
+<h3 id="paper-a-functionally-ordered-visual-feature-map-in-the-drosophila-brain">Paper: A functionally ordered visual feature map in the Drosophila brain</h3>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0896627322001787">https://www.sciencedirect.com/science/article/pii/S0896627322001787</a>
+there are ∼20 anatomically distinct LC types (including LC-like visual projection cell types called lobula plate lobula columnar, or LPLC, neurons, each comprising a population of between 30 and 220 neurons)</p>
+<p>We discover novel detectors for objects smaller than the lens resolution (LC18) and for complex line motion (LC25).
+each cell integrates visual inputs within a compact region and is likely to act as a local feature detector</p>
+<p><a href="https://ars.els-cdn.com/content/image/1-s2.0-S0896627322001787-gr2_lrg.jpg">https://ars.els-cdn.com/content/image/1-s2.0-S0896627322001787-gr2_lrg.jpg</a></p>
+<!-- ![Each LC cell type encodes distinct visual features](1-s2.0-S0896627322001787-gr2_lrg.jpg) -->
+<p>LC neurons are tuned to the size of visual objects</p>
+<p>Detecting object size by comparing contrast changes in time
+(??how to compare the contrast change in time? there might be a time-sensitive mechanism, like the delay between the synapse? the ion channel? the distance between different compoenent?)</p>
+<h3 id="paper-connectome-driven-neural-inventory-of-a-complete-visual-system">Paper: Connectome-driven neural inventory of a complete visual system</h3>
+<p><a href="https://www.nature.com/articles/s41586-025-08746-0">https://www.nature.com/articles/s41586-025-08746-0</a></p>
+<p><a href="https://www.nature.com/articles/s41586-025-08746-0/figures/6">https://www.nature.com/articles/s41586-025-08746-0/figures/6</a>
+all most all the projection neuron have to go through a bottleneck
+we can use this part to split the neuron we want to study</p>
+<h3 id="paper-predicting-visual-function-by-interpreting-a-neuronal-wiring-diagram">Paper: Predicting visual function by interpreting a neuronal wiring diagram</h3>
+<p><a href="https://www.nature.com/articles/s41586-024-07953-5">https://www.nature.com/articles/s41586-024-07953-5</a>
+H. Sebastian Seung
+Nature 2024</p>
+<p>Dm3v, Dm3p, Dm3q, TmY4, TmY9q, TmY9q^{⟂}
+check the recpetive field of those neuron, by giving them different visual input</p>
+<h3 id="paper-visual-projection-neurons-in-the-drosophila-lobula-link-feature-detection-to-distinct-behavioral-programs">Paper: Visual projection neurons in the Drosophila lobula link feature detection to distinct behavioral programs</h3>
+<p><a href="https://elifesciences.org/articles/21022">https://elifesciences.org/articles/21022</a>
+2016</p>
+<p>activate LC neuron -&gt; movement
+forward walking, jumping, reaching, backward walking and turning,</p>
+<h3 id="paper-mapping-model-units-to-visual-neurons-reveals-population-code-for-social-behaviour">Paper: Mapping model units to visual neurons reveals population code for social behaviour</h3>
+<p><a href="https://www.nature.com/articles/s41586-024-07451-8">https://www.nature.com/articles/s41586-024-07451-8</a>
+2024</p>
+<p>using female as different visual input to test the LC neuron</p>
+<p>female movement: size, position, rotation
+give use more complex visual input feature and related reaction of LC neuron</p>
+<!-- \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figs/T4T5_neurons.png}
+    \caption{Direction-selective T4 and T5 neurons in the Drosophila visual system. T4a-T4d and T5a-T5d subtypes respond to motion in different cardinal directions, with each subtype projecting to specific layers of the lobula plate. Image source: \url{https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-024-07451-8/MediaObjects/41586_2024_7451_Fig3_HTML.png}}
+    \label{fig:T4T5_neurons}
+\end{figure} -->
+<p>fly-119.png</p>
+<p>question:
+they recored the LC-silenced behavior, do they have the activity recording of the LC neuron?
+Fig 2</p>
+<p>Fig2 f:
+Different model LC units appear either to directly encode a visual parameter (for example, LC10a encodes size) or encode features derived from the parameter, such as a delay (LC17, arrows) or speed at which female size changes (LC13).</p>
+<p>data:
+only model are publishded, the lc neuron activity not</p>
+
+            
+            
+        </body>
+        </html>
