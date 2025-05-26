@@ -93,7 +93,8 @@ Machine learning identifies synaptic transmitters from electron micrographs
 #### connection reconsturction
 - [Reconstruction of Sparse Circuits Using Multi-neuronal Excitation (RESCUME)](https://arxiv.org/abs/1210.1544)
 
-
+- [Light-microscopy-based connectomic reconstruction of mammalian brain tissue](https://www.nature.com/articles/s41586-025-08985-1)
+- 
 
 
 ### connectome analysis
@@ -191,6 +192,9 @@ Frederic Zubler and Rodney Douglas(ETH Zurich), 2009
 
 
 **experimental test**
+- [Rewiring an olfactory circuit by altering the combinatorial code of cell-surface proteins](https://www.biorxiv.org/content/10.1101/2025.03.01.640986v1)
+**application** Liqun Luo
+
 - [Brain wiring determinants uncovered by integrating connectomes and transcriptomes](https://www.sciencedirect.com/science/article/pii/S0960982223010631)
 **Yoo2023** T4_T5
 
