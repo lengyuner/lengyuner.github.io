@@ -66,17 +66,13 @@ a new connectome of the **right optic lobe** from a male Drosophila central nerv
 - [Waves of differentiation in the fly visual system](https://www.sciencedirect.com/science/article/pii/S0012160613001875)
 Developmental Biology
 
-**MICrONS Project**
--[Collection: The MICrONS Project](https://www.nature.com/collections/bdigiaicbd)
--[Functional connectomics spanning multiple areas of mouse visual cortex]
-https://www.nature.com/articles/s41586-025-08790-w
+**MICrONS Project**  
+- [Collection: The MICrONS Project](https://www.nature.com/collections/bdigiaicbd)  
+- [Functional connectomics spanning multiple areas of mouse visual cortex](https://www.nature.com/articles/s41586-025-08790-w)  
+- [Functional connectomics reveals general wiring rule in mouse visual cortex](https://www.nature.com/articles/s41586-025-08840-3)  
+- [Inhibitory specificity from a connectomic census of mouse visual cortex](https://www.nature.com/articles/s41586-024-07780-8)
 
-- [Functional connectomics reveals general wiring rule in mouse visual cortex]
-  (https://www.nature.com/articles/s41586-025-08840-3)
-- [Inhibitory specificity from a connectomic census of mouse visual cortex]
-https://www.nature.com/articles/s41586-024-07780-8
-
-
+- [A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogaster](<https://www.cell.com/cell/pdf/S0092-8674(18)30787-6.pdf>)
 
 ### technology of connectome
 - [Bridging the Gap: Point Clouds for Merging Neurons in Connectomics](https://openreview.net/forum?id=lHDVYDy5S9l)  
@@ -106,7 +102,7 @@ Machine learning identifies synaptic transmitters from electron micrographs
 
 - [A connectome and analysis of the adult Drosophila central brain](https://elifesciences.org/articles/57443) **hemibrain**
 
-
+- [Brain rewiring during developmental transitions: A Comparative Analysis of **Larva and Adult** Drosophila melanogaster](https://www.biorxiv.org/content/10.1101/2024.05.01.592061v1)
 
 - [Connectomic analysis of the Drosophila lateral neuron clock cells reveals the synaptic basis of functional pacemaker classes](https://elifesciences.org/articles/79139)
 
@@ -130,13 +126,20 @@ Machine learning identifies synaptic transmitters from electron micrographs
 Gregory S. X. E. Jefferis, Mala Murthy & Jonathan W. Pillow 
 From connectome to effectome: learning the causal interaction map of the fly brain
 
+
+- [Hierarchical Modular Structure of the Drosophila Connectome](https://www.jneurosci.org/content/43/37/6384)
+We defined analogous measures for cell types. To identify cell types that may be partitioned into dense subnetworks, we introduce the Fraction of Type measure,
+
+$$
+FT(T;X) = \sum_{c \in C(X)} (\frac{n_{c\and T}}{n_T})^2
+$$
 ### connectome and gene
 
 **review**
 - [The cell biology of synapse formation](https://rupress.org/jcb/article/220/7/e202103052/212258/The-cell-biology-of-synapse-formationMechanisms-of) **SAM**  
 Review, 2021, from [Thomas C. Südhof](https://med.stanford.edu/sudhoflab.html)  
 ![alt text](<figs/synaptic adhesion molecules.png>)
-
+synaptic adhesion molecules.png
 - [Towards an Understanding of Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627318308420)
 Review, 2018, from Thomas C. Südhof
 
@@ -255,7 +258,8 @@ Schematic of a neuron broken into its neuronal compartments. Inset, the proporti
 seven major steps to link expression measures and neuroimaging data
 
 - [Molecular logic of neocortical projection neuron specification, development and diversity](https://www.nature.com/articles/nrn3586), Neocortical projection neurons  
-![alt text|200pt](<figs/Neocortical projection neurons.png>)
+<!-- ![alt text|200pt](<figs/Neocortical projection neurons.png>) -->
+![alt text|200pt](<https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn3586/MediaObjects/41583_2013_Article_BFnrn3586_Fig1_HTML.jpg?as=webp>)
 
 #### experiment support
 - [A Conserved Role for Drosophila Neuroglian and Human L1-CAM in Central-Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0960982205014715)
@@ -338,7 +342,8 @@ Growing dendrites are retracted or stalled by contacts with other dendrites.
 - [A conserved fertilization complex bridges sperm and egg in vertebrates](https://www.cell.com/cell/fulltext/S0092-8674(24)01093-6) **AlphaFold-Multimer**
     This approach employs structural predictions of pairwise protein-protein interactions between each bait protein and the candidate proteins. A high interface-predicted template modeling score (**ipTM score**) reflects high confidence in the relative positioning of the interfaces.
 
-![alt text|200pt](<figs/sperm and egg.png>)
+<!-- ![alt text|200pt](<figs/sperm and egg.png>) -->
+![alt text|200pt](<https://www.cell.com/cms/10.1016/j.cell.2024.09.035/asset/94c10a25-098f-4905-a883-7b118075f5de/main.assets/fx1_lrg.jpg>)
 
 ### data mapping between transcriptome and connectome
 
@@ -361,7 +366,7 @@ Konrad P. Kording
 
 #### neural type  
 
-![blog](<../connectivity_to_type.md>)
+[my blog on connectivity_to_type](<../connectivity_to_type.md>)
 
 - [Automatic discovery of cell types and microcircuitry from neural connectomics](https://elifesciences.org/articles/04250)  
 Eric Jonas, Konrad Kording   
@@ -726,6 +731,8 @@ within-community connection prediction
 ### Link prediction
 https://paperswithcode.com/task/link-prediction
 
+- [Link Prediction via Matrix Factorization](https://link.springer.com/chapter/10.1007/978-3-642-23783-6_28)
+- 
 
 - GraphSAGE: [Inductive Representation Learning on Large Graphs](https://arxiv.org/abs/1706.02216v4)
 GraphSAGE, a general, inductive framework that leverages node feature information (e.g., text attributes) to efficiently generate node embeddings for previously unseen data.
@@ -778,8 +785,14 @@ we construct the Heterogeneous Graph Benchmark (HGB), consisting of 11 diverse d
 
 - [Mantis-ml: Disease-Agnostic Gene Prioritization from High-Throughput Genomic Screens by Stochastic Semi-supervised Learning](https://www.cell.com/ajhg/fulltext/S0002-9297(20)30108-7)
 
+### graph and connectome
+BrainGNN: Interpretable Brain Graph Neural Network for fMRI Analysis
+https://www.sciencedirect.com/science/article/abs/pii/S1361841521002784
 
- 
+Graph Neural Networks for Brain Graph Learning: A Survey
+https://arxiv.org/abs/2406.02594
+2024
+
 ## dynamics system & Ripple 
 
 [connectome inspired neural network](<connectome inspired neural network.md>)    

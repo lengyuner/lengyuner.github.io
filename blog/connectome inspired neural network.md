@@ -15,8 +15,8 @@
 - [The connectome predicts resting-state functional connectivity across the Drosophila brain](https://www.sciencedirect.com/science/article/pii/S0960982221003432)
 
 - [A Drosophila computational brain model reveals sensorimotor processing](https://www.nature.com/articles/s41586-024-07763-9)
-Here we create a leaky integrate-and-fire computational model of the entire Drosophila brain, on the basis of neural connectivity and neurotransmitter identity
-
+Here we create a leaky integrate-and-fire computational model of the entire Drosophila brain, on the basis of neural connectivity and neurotransmitter identity.  
+Limitation: We assume each neuron is either exclusively inhibitory or excitatory. We ignore neural morphology and receptor dynamics. The underlying synapses or neurotransmitter predictions may not be fully accurate. Gap junctions cannot be identified in the electron microscopy dataset, so we ignore their possibility. 
 
 ## Human
 
@@ -84,7 +84,7 @@ Jonathan W. Pillow, Matthew A. Smith
 - [Connectome-constrained Latent Variable Model of Whole-Brain Neural Activity](https://openreview.net/forum?id=CJzi3dRlJE-)  
  Lu Mi, .., Srinivas C Turaga
 
-- [An integrative data-driven model simulating C. elegans brain, body and environment interactions](https://www.nature.com/articles/s43588-024-00738-w)
+- [An integrative data-driven model simulating **C. elegans** brain, body and environment interactions](https://www.nature.com/articles/s43588-024-00738-w)
 Nature Computational Science, 2024
 Neuron models (Neurons were modeled by morphologically derived multicompartmental models with somatic Hodgkin–Huxley dynamics and passive neurites) + Graded synapse and gap junction models: 
 
@@ -162,6 +162,10 @@ Neuron models (Neurons were modeled by morphologically derived multicompartmenta
 
 - [The structural connectome constrains fast brain dynamics](https://elifesciences.org/articles/67400)
 
+
+- [Towards Biologically Plausible Convolutional Networks](https://arxiv.org/abs/2106.13031)
+NeurIPS 2021
+
 ### potential model
 - [**Piecewise quadratic neuron model**: A tool for close-to-biology spiking neuronal network simulation on dedicated hardware](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2022.1069133/full)
 
@@ -179,6 +183,9 @@ Neuron models (Neurons were modeled by morphologically derived multicompartmenta
 - [Catalyzing next-generation Artificial Intelligence through NeuroAI](https://www.nature.com/articles/s41467-023-37180-x)
 
 - [Deciphering the Blueprint of the Fruit Fly’s Brain](https://physics.aps.org/articles/v17/136)
+
+- [人类智能如何从大脑中涌现？大脑精细模拟重塑 NeuroAI 范式](https://swarma.org/?p=55123)
+
 
 ### Researcher (TODO)
 
