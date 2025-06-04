@@ -18,6 +18,14 @@
 Here we create a leaky integrate-and-fire computational model of the entire Drosophila brain, on the basis of neural connectivity and neurotransmitter identity.  
 Limitation: We assume each neuron is either exclusively inhibitory or excitatory. We ignore neural morphology and receptor dynamics. The underlying synapses or neurotransmitter predictions may not be fully accurate. Gap junctions cannot be identified in the electron microscopy dataset, so we ignore their possibility. 
 
+- [From Synapses to Dynamics: Obtaining Function from Structure in a Connectome Constrained Model of the Head Direction Circuit](https://www.biorxiv.org/content/10.1101/2025.05.26.655406v1.abstract)
+Ila Fiete, 2025
+$$
+\tau \frac{d x_j^A(t)}{d t}=-\ell x_j^A(t)+\sigma\left(\sum_{B \in \mathcal{C}} \sum_k w_0\left(1+Z^{A B}\right) s g n^B C_{j k} x_k^B(t)+b^A+u_j(t)\right)
+$$
+reduces the number of optimized parameters from $439^{2} +439+1 = 193, 161$ to just $7^{2} +7+1 = 57$ parameters
+Total Loss: Linear Consistency Loss, Stability Loss, Minimum Speed Loss, Entropy Loss, L1 and L2 Regularization
+
 ## Human
 
 - [Learning Dynamic Graph Representation of Brain Connectome with Spatio-Temporal Attention](https://openreview.net/forum?id=X7GEA3KiJiH)  

@@ -817,6 +817,28 @@ Soma compartments and neurite compartments
 
 
 ### single neuron dynamics
+- [Learning by the Dendritic Prediction of Somatic Spiking](<https://www.cell.com/neuron/fulltext/S0896-6273(13)01127-6>)  
+Robert Urbanczik, Walter Senn, 2014, Neuron
+
+$$
+\dot{U}=-g_{\mathrm{L}} U+g_{\mathrm{D}}\left(V_{\mathbf{w}}-U\right)+I_U^{\text {som }} \\
+I_U^{\text {som }}(t)=g_{\mathrm{E}}(t)\left(E_{\mathrm{E}}-U\right)+g_{\mathrm{I}}(t)\left(E_{\mathrm{I}}-U\right) .
+$$
+
+- [Sparse bursts optimize information transmission in a multiplexed neural code](https://www.pnas.org/doi/full/10.1073/pnas.1720995115)  
+Richard Naud, Henning Sprekeler
+$$
+\begin{gathered}
+\frac{d}{d t} u_i^{(x)}=-\frac{u_i^{(x)}-E_L}{\tau_x}+\frac{g_x f\left(u_i^{(d)}\right)+c_x K\left(t-\hat{t}_i^{(s)}\right)+I_i^{(x)}+w_i^{(x)}}{C_x} \\
+\frac{d}{d t} w_i^{(x)}=-w_i^{(x)} / \tau_w^{(x)}+a_w^{(x)}\left(u_i^{(x)}-E_L\right) / \tau_w^{(x)}+b_w^{(x)} S_i^{(x)},
+\end{gathered}
+$$
+
+senn 2014 neuron
+multiplex
+
+
+
 - [Impact of dendritic size and dendritic topology on burst firing in pyramidal cells](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000781)
 E. van, A. J. Ronald and A. Ooyen,PLoS Comput. Biol., 2010   
 Morphologically simplified cells, the set of 23 neurons
