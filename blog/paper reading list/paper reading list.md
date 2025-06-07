@@ -5,6 +5,8 @@
 
 ## Connectome
 
+- [FlyWire for College Classrooms](https://codex.flywire.ai/academy_home#college)
+
 
 - [Not everything, not everywhere, not all at once: a study of brain-wide encoding of movement](https://www.biorxiv.org/content/10.1101/2023.06.08.544257v1)
 
