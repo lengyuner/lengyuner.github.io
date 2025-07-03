@@ -92,7 +92,7 @@ Machine learning identifies synaptic transmitters from electron micrographs
 - [Reconstruction of Sparse Circuits Using Multi-neuronal Excitation (RESCUME)](https://arxiv.org/abs/1210.1544)
 
 - [Light-microscopy-based connectomic reconstruction of mammalian brain tissue](https://www.nature.com/articles/s41586-025-08985-1)
-- 
+ 
 
 
 ### connectome analysis
@@ -145,7 +145,7 @@ synaptic adhesion molecules.png
 - [Towards an Understanding of Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627318308420)
 Review, 2018, from Thomas C. Südhof
 
--[The Dynamic Synapse](https://www.cell.com/neuron/fulltext/S0896-6273(13)00916-1) Review, 2013, Neuron, Daniel Choquet, Antoine Triller
+- [The Dynamic Synapse](https://www.cell.com/neuron/fulltext/S0896-6273(13)00916-1) Review, 2013, Neuron, Daniel Choquet, Antoine Triller
 
 
 - [Making Connections in the Fly Visual System](https://www.sciencedirect.com/science/article/pii/S0896627302008760)
@@ -167,7 +167,7 @@ reivew, 2021, Science, Liqun Luo
 ![alt text](<https://www.science.org/cms/10.1126/science.abg7285/asset/59d561d9-7d95-456d-97e5-1b811c05023f/assets/images/large/science.abg7285-f5.jpg>)
 
 **computational methods**
-- **bilinear** [Uncovering the genetic blueprint of the C. elegans nervous system](https://www.pnas.org/doi/full/10.1073/pnas.2009093117) 
+- **bilinear:** [Uncovering the genetic blueprint of the C. elegans nervous system](https://www.pnas.org/doi/full/10.1073/pnas.2009093117) 
 István A. Kovács, Dániel L. **Barabási**, and Albert-László **Barabási**  PNAS
 
 - [Graph similarity learning for cross-level interactions](https://www.sciencedirect.com/science/article/pii/S0306457324002917)
@@ -184,8 +184,7 @@ Dániel L. Barabási 1, Albert-László Barabási
 - [Building a small brain with a simple **stochastic generative model**](https://www.biorxiv.org/content/10.1101/2024.07.01.601562v1)
   Oren Richter, Elad Schneidman
 
-- [The structure and function of neural connectomes are shaped by a small number of design principles]
-(https://www.biorxiv.org/content/10.1101/2023.03.15.532611v1)
+- [The structure and function of neural connectomes are shaped by a small number of design principles](https://www.biorxiv.org/content/10.1101/2023.03.15.532611v1)
 Elad Schneidman
 
 - [Cell lineage predicts neural connectivity beyond cell type](https://www.biorxiv.org/content/10.1101/2022.11.01.514680v1.abstract) C. elegans  
@@ -245,7 +244,7 @@ perspective, Neural development and brain circuit evolution converged in birds a
 Oren Richter, Elad Schneidman
 
 - [Neurotransmitter classification from electron microscopy images at synaptic sites in Drosophila melanogaster](https://www.cell.com/cell/fulltext/S0092-8674(24)00307-6)
-- Six transmitters predicted across the whole fly brain connectome
+Six transmitters predicted across the whole fly brain connectome: 
 https://www.cell.com/cms/10.1016/j.cell.2024.03.016/asset/24723725-eb0b-40f7-b29d-10f859442e2b/main.assets/gr5_lrg.jpg
 Schematic of a neuron broken into its neuronal compartments. Inset, the proportion of presynapses in each of the four compartment types.
 
@@ -261,12 +260,12 @@ seven major steps to link expression measures and neuroimaging data
 
 - [Molecular logic of neocortical projection neuron specification, development and diversity](https://www.nature.com/articles/nrn3586), Neocortical projection neurons  
 <!-- ![alt text|200pt](<figs/Neocortical projection neurons.png>) -->
-![alt text|200pt](<https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn3586/MediaObjects/41583_2013_Article_BFnrn3586_Fig1_HTML.jpg?as=webp>)
+![alt text|200pt](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn3586/MediaObjects/41583_2013_Article_BFnrn3586_Fig1_HTML.jpg?as=webp)
 
 #### experiment support
-- [A Conserved Role for Drosophila Neuroglian and Human L1-CAM in Central-Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0960982205014715)
-- 2006, Current Biology
-- 
+- [A Conserved Role for Drosophila Neuroglian and Human L1-CAM in Central-Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0960982205014715)  
+2006, Current Biology
+
 - [Spatial patterning controls neuron numbers in the Drosophila visual system](https://www.sciencedirect.com/science/article/pii/S1534580724001485?via%3Dihub)
 
 
@@ -345,7 +344,7 @@ Growing dendrites are retracted or stalled by contacts with other dendrites.
     This approach employs structural predictions of pairwise protein-protein interactions between each bait protein and the candidate proteins. A high interface-predicted template modeling score (**ipTM score**) reflects high confidence in the relative positioning of the interfaces.
 
 <!-- ![alt text|200pt](<figs/sperm and egg.png>) -->
-![alt text|200pt](<https://www.cell.com/cms/10.1016/j.cell.2024.09.035/asset/94c10a25-098f-4905-a883-7b118075f5de/main.assets/fx1_lrg.jpg>)
+![alt text|200pt](https://www.cell.com/cms/10.1016/j.cell.2024.09.035/asset/94c10a25-098f-4905-a883-7b118075f5de/main.assets/fx1_lrg.jpg)
 
 ### data mapping between transcriptome and connectome
 
@@ -368,7 +367,7 @@ Konrad P. Kording
 
 #### neural type  
 
-[my blog on connectivity_to_type](<../connectivity_to_type.md>)
+[my blog on connectivity_to_type](../connectivity_to_type.md)
 
 - [Automatic discovery of cell types and microcircuitry from neural connectomics](https://elifesciences.org/articles/04250)  
 Eric Jonas, Konrad Kording   
@@ -491,10 +490,9 @@ connection bottleneck
 
 - ViMO [ - Visual Analysis of Neuronal Connectivity Motifs](https://ieeexplore.ieee.org/document/10298029)
 
-Network Repository. An Interactive Scientific Network Data Repository.
+- [Network Repository](https://networkrepository.com/). An Interactive Scientific Network Data Repository.
 the first scientific network data repository with interactive visual analytics.
-new GraphVis: interactive visual graph mining and machine learning
-https://networkrepository.com/
+new GraphVis: interactive visual graph mining and machine learning 
 
 
 **human connectome** 
@@ -516,8 +514,7 @@ https://networkrepository.com/
 
 
 - [Opportunities and challenges of single-cell and spatially resolved genomics methods for neuroscience discovery](https://www.nature.com/articles/s41593-024-01806-0)
-two new axes of biological variation: cell-intrinsic regulation of cell states and expression programs and interactions between cells. 
-
+two new axes of biological variation: cell-intrinsic regulation of cell states and expression programs and interactions between cells.  
 nature neuroscience review 2024
 
 - [Science Forum: The Human Cell Atlas](https://elifesciences.org/articles/27041)
@@ -526,7 +523,7 @@ nature neuroscience review 2024
 - [A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain](https://www.sciencedirect.com/science/article/pii/S0092867418307207)
 - [A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain](https://www.cell.com/cell/fulltext/S0092-8674(18)30720-7)
 Cell, 2018
-- 
+
 - [Transcriptional Programs of Circuit Assembly in the Drosophila Visual System](https://www.cell.com/neuron/fulltext/S0896-6273(20)30774-1) 
 **S. Lawrence Zipursky**
 
@@ -542,6 +539,11 @@ Stein Aerts, Nature, 2022
 
 - [A complete temporal **transcription factor** series in the fly visual system](https://www.nature.com/articles/s41586-022-04564-w)
 Claude Desplan 
+
+- [A High-Resolution Atlas of the Brain Predicts Lineage and Birth Order Underly Neuronal Identity](https://www.biorxiv.org/content/10.1101/2025.06.04.657818v1.abstract)
+Stephen F. Goodwin, 2025   
+we generate the first high-resolution, single-cell transcriptomic atlas of the adult Drosophila melanogaster central brain by integrating multiple datasets, achieving an unprecedented tenfold coverage of every neuron in this complex tissue.
+
 
 #### analysis
 - [Inference of cell state transitions and cell fate plasticity from single-cell with MARGARET](https://academic.oup.com/nar/article/50/15/e86/6593121?login=false)
@@ -634,11 +636,10 @@ Briefings in Bioinformatics, 2021
 
 
 ### functional and structure conenctome
-- [Integrating multimodal and multiscale connectivity blueprints of the human cerebral cortex in health and disease]
-https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002314
+- [Integrating multimodal and multiscale connectivity blueprints of the human cerebral cortex in health and disease](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002314)
 
-- [The cell-type underpinnings of the human functional cortical connectome]
-https://www.nature.com/articles/s41593-024-01812-2
+
+- [The cell-type underpinnings of the human functional cortical connectome](https://www.nature.com/articles/s41593-024-01812-2)
 
 
 
@@ -669,33 +670,24 @@ multi-GCN based GAN, AD
 - [Prediction of brain sex from EEG: using large-scale heterogeneous dataset for developing a highly accurate and interpretable ML model](https://www.sciencedirect.com/science/article/pii/S1053811923006456)
   
 - [Topographic Axes of Wiring Space Converge to Genetic Topography in Shaping the Human Cortical Layout](https://www.jneurosci.org/content/45/7/e1510242024#page=14.33)
-- A practical guide to linking brain-wide gene expression and neuroimaging data
-https://www.sciencedirect.com/science/article/abs/pii/S1053811919300114
+- [A practical guide to linking brain-wide gene expression and neuroimaging data](https://www.sciencedirect.com/science/article/abs/pii/S1053811919300114)
 
 
 ### other connectome model:
-
-Modelling brain connectomes networks: Solv is a worthy competitor to hyperbolic geometry!
-https://openreview.net/forum?id=dqWobzlAGb
+- [Modelling brain connectomes networks: Solv is a worthy competitor to hyperbolic geometry!](https://openreview.net/forum?id=dqWobzlAGb)
 
 ## Reinforcement learning (RL)
-Learning Symbolic Rules for Interpretable Deep Reinforcement Learning
-https://arxiv.org/abs/2103.08228
+- [Learning Symbolic Rules for Interpretable Deep Reinforcement Learning](https://arxiv.org/abs/2103.08228)
 
-Applying Logical Rules to Reinforcement Learning for Interpretable Knowledge Graph Reasoning
-https://ieeexplore.ieee.org/abstract/document/10650177
+- [Applying Logical Rules to Reinforcement Learning for Interpretable Knowledge Graph Reasoning](https://ieeexplore.ieee.org/abstract/document/10650177)
 
-A Logical Framework to Reinforcement Learning Using Hybrid Probabilistic Logic Programs
-https://link.springer.com/chapter/10.1007/978-3-540-87993-0_27
+- [A Logical Framework to Reinforcement Learning Using Hybrid Probabilistic Logic Programs](https://link.springer.com/chapter/10.1007/978-3-540-87993-0_27)
 
-A Policy Search Method For Temporal Logic Specified Reinforcement Learning Tasks
-https://ieeexplore.ieee.org/document/8431181
+- [A Policy Search Method For Temporal Logic Specified Reinforcement Learning Tasks](https://ieeexplore.ieee.org/document/8431181)
 
-Interpretable Model-based Hierarchical Reinforcement Learning using Inductive Logic Programming
-https://arxiv.org/abs/2106.11417
+- [Interpretable Model-based Hierarchical Reinforcement Learning using Inductive Logic Programming](https://arxiv.org/abs/2106.11417)
 
-Reinforcement Logic Rule Learning for Temporal Point Processes
-https://arxiv.org/abs/2308.06094
+- [Reinforcement Logic Rule Learning for Temporal Point Processes](https://arxiv.org/abs/2308.06094)
 
 
 
@@ -703,10 +695,10 @@ https://arxiv.org/abs/2308.06094
 
 - JC: https://docs.google.com/spreadsheets/d/10R6poOIIqA4OCsiSGs5mK4Zkq9pm8aPxk1IQ3Zl0NPU
 
+- datasests: [Gephi sample datasets](https://github.com/gephi/gephi/wiki/datasets)
 
-- DGL 2.0: Streamlining Your GNN Data Pipeline from Bottleneck to Boost
-https://www.dgl.ai/
-https://github.com/dmlc/dgl/blob/master/examples/README.md#agnn
+- DGL 2.0: [Streamlining Your GNN Data Pipeline from Bottleneck to Boost](https://www.dgl.ai/)  
+[github](https://github.com/dmlc/dgl/blob/master/examples/README.md#agnn)
 
 
 - [The Graph Neural Network Model](https://ieeexplore.ieee.org/document/4700287)
@@ -774,11 +766,13 @@ Cited by 6966
 ### 
 - [Are we really making much progress? Revisiting, benchmarking, and refining heterogeneous graph neural networks](https://arxiv.org/abs/2112.14936)
 we construct the Heterogeneous Graph Benchmark (HGB), consisting of 11 diverse datasets with three tasks.
+```
 | Dataset | Nodes | Node Types | Edges | Edge Types | Target |
 |---------|-------|------------|-------|------------|--------|
 | Amazon  | 10,099| 1          | 148,659| 2          | product-product |
 | LastFM  | 20,612| 3          | 141,521| 3          | user-artist |
 | PubMed  | 63,109| 4          | 244,986| 10         | disease-disease |
+```
 
 ### disease gene
 - [GANLDA: Graph attention network for lncRNA-disease associations prediction](https://www.sciencedirect.com/science/article/pii/S0925231221011012)
@@ -836,8 +830,8 @@ $$
 \end{gathered}
 $$
 
-senn 2014 neuron
-multiplex
+<!-- senn 2014 neuron
+multiplex -->
 
 
 
@@ -887,13 +881,9 @@ Xiao-Jing Wang,1998
 - **Jaxley**: [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v1)   [jaxley_experiments](https://github.com/mackelab/jaxley_experiments)
 
 - [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v1)
-- another tool for neuron dynamics simulation (like  
-- brian2 
-- spikingjelly
-- )
-- 
-- [NEURON](https://nrn.readthedocs.io/en/latest/install/install_instructions.html#windows)
 
+Tool for neuron dynamics simulation (like brian2, spikingjelly)  
+- [NEURON](https://nrn.readthedocs.io/en/latest/install/install_instructions.html#windows)
 - [BrainPy](https://brainpy.readthedocs.io/en/latest/quickstart/simulation.html)
 
 
@@ -932,7 +922,7 @@ R. B. Stein and Alan Lloyd Hodgkin
 - [A computational model of conditioning inspired by Drosophila olfactory system](https://www.sciencedirect.com/science/article/pii/S0893608016301666)
 
 - [Predictive olfactory learning in Drosophila](https://www.nature.com/articles/s41598-021-85841-y)
-- 
+  
 - [A vector-based strategy for **olfactory** navigation in Drosophila](https://www.biorxiv.org/content/10.1101/2025.02.15.638426v1.abstract)  L.F. Abbott, Vanessa Ruta
 
 - [Neural dynamics for working memory and evidence integration during olfactory navigation in Drosophila](https://www.biorxiv.org/content/10.1101/2024.10.05.616803v1.abstract)
@@ -979,8 +969,8 @@ html [connectome inspired neural network](https://lengyuner.github.io/blog/conne
 - [Forecasting Whole-Brain Neuronal Activity from Volumetric Video](https://arxiv.org/abs/2503.00073)
 ZAPBench
  
-- [Foundation model of neural activity predicts response to new stimulus types](https://www.nature.com/articles/s41586-025-08829-y)
-- 
+- [Foundation model of neural activity predicts response to new stimulus types](https://www.nature.com/articles/s41586-025-08829-y) 
+
 
 ### geometry
 - [Modelling brain connectomes networks: Solv is a worthy competitor to hyperbolic geometry!](https://openreview.net/forum?id=dqWobzlAGb)
@@ -1071,12 +1061,17 @@ Plos Biology
 - [Unifying community whole-brain imaging datasets enables robust neuron identification and reveals determinants of neuron position in C. elegans](https://www.sciencedirect.com/science/article/pii/S2667237524003540)
 Daniel Y. Sprague,..., Saul Kato
 
-## neural data analysis
+## neural data analysis & modeling
 
 - [Spatiotemporal conditional inference and hypothesis tests for neural ensemble spiking precision](https://direct.mit.edu/neco/article/27/1/104/8035/Spatiotemporal-Conditional-Inference-and)
 
 - [Maximum entropy models as a tool for building precise neural controls](https://www.sciencedirect.com/science/article/pii/S0959438816302689)
 Cristina Savin, Gašper Tkačik
+
+- [Unsupervised pretraining in biological neural networks](https://www.nature.com/articles/s41586-025-09180-y)
+Lin Zhong, Scott Baptista, Rachel Gattoni, Jon Arnold, Daniel Flickinger, Carsen Stringer & Marius Pachitariu 
+Nature (2025)
+
 
 ### reivew 
 - [Neural data science: accelerating the experiment-analysis-theory cycle in large-scale neuroscience ](https://www.sciencedirect.com/science/article/pii/S0959438817302428)
@@ -1117,6 +1112,18 @@ Byron M. Yu & Aaron P. Batista
 
 - [Dynamical constraints on neural population activity](https://www.nature.com/articles/s41593-024-01845-7)
 Byron M. Yu & Aaron P. Batista 
+
+
+### head direction
+- [Global inhibition in head-direction neural circuits: a systematic comparison between connectome-based spiking neural circuit models](https://link.springer.com/article/10.1007/s00359-023-01615-z)
+Ning Chang, Hsuan-Pei Huang & Chung-Chuan Lo (2023)
+
+- [Estimating orientation in natural scenes: A spiking neural network model of the insect central complex](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011913)
+
+Rachael Stentiford ,James C. Knight,Thomas Nowotny,Andrew Philippides,Paul Graham 2024
+
+- [From Synapses to Dynamics: Obtaining Function from Structure in a Connectome Constrained Model of the Head Direction Circuit](https://www.biorxiv.org/content/10.1101/2025.05.26.655406v1.abstract)
+Sunny Duan, Ling Liang Dong, Ila Fiete, 2025
 
 ## encoding and decoding
 
@@ -1215,24 +1222,22 @@ Vanessa Ruta & Gerald M. Rubin
 - [The Neural Substrate of Spectral Preference in Drosophila](https://www.sciencedirect.com/science/article/pii/S0896627308007058)
 
 - [Neuronal circuits integrating visual motion information in Drosophila melanogaster](<https://www.cell.com/current-biology/fulltext/S0960-9822(22)01023-5>)
-- 
+
 - [Morphological and functional convergence of visual projection neurons from diverse neurogenic origins in Drosophila](https://www.nature.com/articles/s41467-025-56059-7)
 
 ## others
 ### ML
-Logic + Reinforcement Learning + Deep Learning: A Survey
-https://www.pure.ed.ac.uk/ws/portalfiles/portal/322711194/Logic_Reinforcement_BUEFF_DOA22122022_AFV_CC_BY.pdf
+- [Logic + Reinforcement Learning + Deep Learning: A Survey](https://www.pure.ed.ac.uk/ws/portalfiles/portal/322711194/Logic_Reinforcement_BUEFF_DOA22122022_AFV_CC_BY.pdf)
 Review, 2023
 
-Learning explanatory logical rules in non-linear domains: a neuro-symbolic approach
-https://link.springer.com/article/10.1007/s10994-024-06538-7
+- [Learning explanatory logical rules in non-linear domains: a neuro-symbolic approach](https://link.springer.com/article/10.1007/s10994-024-06538-7)
 2024
 
-Applying Logical Rules to Reinforcement Learning for Interpretable Knowledge Graph Reasoning
-https://ieeexplore.ieee.org/document/10650177
+- [Applying Logical Rules to Reinforcement Learning for Interpretable Knowledge Graph Reasoning](https://ieeexplore.ieee.org/document/10650177)
 
-Neural Logic Reinforcement Learning
-https://proceedings.mlr.press/v97/jiang19a.html
+- [Neural Logic Reinforcement Learning](https://proceedings.mlr.press/v97/jiang19a.html)
+
+
 
 ### hippocamus
 - [Network Dynamics Underlying the Formation of Sparse, Informative Representations in the Hippocampus](https://www.jneurosci.org/content/28/52/14271.short)
