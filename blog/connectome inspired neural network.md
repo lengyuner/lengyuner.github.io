@@ -26,6 +26,11 @@ $$
 reduces the number of optimized parameters from $439^{2} +439+1 = 193, 161$ to just $7^{2} +7+1 = 57$ parameters
 Total Loss: Linear Consistency Loss, Stability Loss, Minimum Speed Loss, Entropy Loss, L1 and L2 Regularization
 
+
+- [Differential temporal filtering in the fly optic lobe](https://www.biorxiv.org/content/10.1101/2024.12.16.628613v1)
+Alexander Borst
+Taking advantage of the known connectome I simulate a network of five adjacent optical columns each comprising 65 different cell types. Each neuron is modeled as an electrically compact single compartment, conductance-based element that receives input from other neurons within its column and from its neighboring columns according to the intra- and inter-columnar connectivity matrix. 
+
 ## Human
 
 - [Learning Dynamic Graph Representation of Brain Connectome with Spatio-Temporal Attention](https://openreview.net/forum?id=X7GEA3KiJiH)  

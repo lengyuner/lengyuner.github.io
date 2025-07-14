@@ -135,6 +135,11 @@ We defined analogous measures for cell types. To identify cell types that may be
 $$
 FT(T;X) = \sum_{c \in C(X)} (\frac{n_{c\and T}}{n_T})^2
 $$
+
+- [Visual Columns Map](https://codex.flywire.ai/app/visual_columns_map?dataset=fafb)
+A comprehensive mapping of the 31 columnar cell types in the compound eye has been achieved using a computational optimization technique based on synaptic connectivity. A manuscript describing the resource and methodology is currently in preparation. The quality of this mapping can be evaluated through specially developed visualizations available below.
+
+
 ### connectome and gene
 
 **review**
@@ -877,6 +882,14 @@ Xiao-Jing Wang,1998
 - [Distinguishing theoretical synaptic potentials computed for different soma-dendritic distributions of synaptic input](https://journals.physiology.org/doi/abs/10.1152/jn.1967.30.5.1138) Wilfrid Rall, 1967
 - [The Contribution of AMPA and NMDA Receptors to Persistent Firing in the Dorsolateral Prefrontal Cortex in Working Memory](https://www.jneurosci.org/content/40/12/2458) J Neurosci, 2020
 -[Synaptic AMPA Receptor Plasticity and Behavior](<https://www.cell.com/neuron/fulltext/S0896-6273(09)00082-8>) neuron, review, 2009
+
+- [Dendritic computations captured by an effective point neuron model](https://www.pnas.org/doi/full/10.1073/pnas.1904463116)
+Songting Li, Nan Liu, Xiaohui Zhang, David W. McLaughlin, Douglas Zhou, and David Cai, 2019, PNAS 
+
+We derive an effective point neuron model, which incorporates an additional synaptic integration current arising from the nonlinear interaction between synaptic currents across spatial dendrites. 
+
+We then derive a form of synaptic integration current within the point neuron framework to capture dendritic effects.
+
 ### tool
 - **Jaxley**: [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v1)   [jaxley_experiments](https://github.com/mackelab/jaxley_experiments)
 
@@ -906,6 +919,15 @@ is an open-source Python package for working with single-neuron morphological re
 
 **temporal inhibition**  
 **timing-dependent inhibition**
+
+
+- [An arithmetic rule for **spatial summation of excitatory and inhibitory inputs** in pyramidal neurons](https://www.pnas.org/doi/full/10.1073/pnas.0912022106)
+Xiaohui Zhang, bnu, 2009, PNAS
+
+modeling:
+- [Dendritic computations captured by an effective point neuron model](https://www.bilibili.com/video/BV1S64y117m9)
+Songting Li, 2019, PNAS
+
 
 ### other
 
@@ -943,6 +965,22 @@ Weizhe Hong, Timothy J. Mosca & Liqun Luo
 Teneurins instruct matching specificity between synaptic partners through homophilic attraction.
 
 
+### mean field 
+ 
+- [Dynamics of Sparsely Connected Networks of Excitatory and Inhibitory Spiking Neurons](https://link.springer.com/article/10.1023/A:1008925309027) 
+Brunel, 2000, JofCNS
+ 
+   
+- [Macroscopic Description for Networks of Spiking Neurons](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.5.021028)
+Ernest Montbrió, Diego Pazó, and Alex Roxin, 2015  
+Quadratic IF neuron 
+
+- [Towards a theory of cortical columns: From spiking neurons to interacting neural populations of finite size](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005507) 
+Schwalger etal., 2017 
+
+- [The Cell-Type Specific Cortical Microcircuit: Relating Structure and Activity in a Full-Scale Spiking Network Model](https://academic.oup.com/cercor/article/24/3/785/398560)
+Potjans & Diesmann, 2014, Cerebral Cortex  
+Mean field for Mesocsopic 
 
 ## NeuroAI
 
@@ -1119,7 +1157,6 @@ Byron M. Yu & Aaron P. Batista
 Ning Chang, Hsuan-Pei Huang & Chung-Chuan Lo (2023)
 
 - [Estimating orientation in natural scenes: A spiking neural network model of the insect central complex](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011913)
-
 Rachael Stentiford ,James C. Knight,Thomas Nowotny,Andrew Philippides,Paul Graham 2024
 
 - [From Synapses to Dynamics: Obtaining Function from Structure in a Connectome Constrained Model of the Head Direction Circuit](https://www.biorxiv.org/content/10.1101/2025.05.26.655406v1.abstract)
@@ -1140,25 +1177,24 @@ Fabian Kloosterman, Stuart P. Layton, Zhe Chen, and Matthew A. Wilson
 
 
 ### deep learning method
-- [Neural Data Transformer 2: Multi-context Pretraining for Neural Spiking Activity](https://www.biorxiv.org/content/10.1101/2023.09.18.558113v1)
 
+- NEMO: [In vivo cell-type and brain region classification via multimodal contrastive learning](https://www.biorxiv.org/content/10.1101/2024.11.05.622159v1)
+
+- [EEG2Rep: Enhancing Self-supervised EEG Representation Through Informative Masked Inputs](https://arxiv.org/abs/2402.17772)
+
+
+- [GUST: Combinatorial Generalization by Unsupervised Grouping with Neuronal Coherence](https://openreview.net/forum?id=90O5cvFZkZ)
+NeurIPS 2023 poster
+
+#### fundation model 
 - LFADS:[Inferring single-trial neural population dynamics using sequential auto-encoders](https://www.nature.com/articles/s41592-018-0109-9) LFADS [(method part)](https://arxiv.org/abs/1608.06315)
 
 - MtM: [Towards a "Universal Translator" for Neural Dynamics at Single-Cell, Single-Spike Resolution](https://openreview.net/forum?id=nRRJsDahEg)
 Yizi, Liam, Cole
 
-- NEMO: [In vivo cell-type and brain region classification via multimodal contrastive learning](https://www.biorxiv.org/content/10.1101/2024.11.05.622159v1)
-
 - [POYO-1: A Unified, Scalable Framework for Neural Population Decoding](https://poyo-brain.github.io/)
 
-- [EEG2Rep: Enhancing Self-supervised EEG Representation Through Informative Masked Inputs](https://arxiv.org/abs/2402.17772)
-
-#### fundation model 
-
-#### ?
-- [GUST: Combinatorial Generalization by Unsupervised Grouping with Neuronal Coherence](https://openreview.net/forum?id=90O5cvFZkZ)
-NeurIPS 2023 poster
-
+ 
 #### diffusion model/ visual Stimulus
 - [Decoding What People See from Where They Look: Predicting Visual Stimuli from Scanpaths](https://link.springer.com/chapter/10.1007/978-3-642-00582-4_2)
 
