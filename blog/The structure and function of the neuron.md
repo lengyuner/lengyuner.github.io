@@ -132,6 +132,10 @@ https://www.sciencedirect.com/science/article/pii/S0896627321005018
 - We provide a unified method to assess the computational complexity of any neuron type
 
 
+<!-- potential research idea, we can model thousands of neuorns, can get their input and output,
+and then we use a uniform hLN model to get the kernel parameters from those training,
+this will lead to a uniform parameters across different neurons -->
+
 ## Emergence of robust global modules from local interactions and smooth gradients
 https://www.biorxiv.org/content/10.1101/2021.10.28.466284v6
 Mikail Khona, Sarthak Chandra, Ila Fiete
@@ -172,6 +176,7 @@ https://www.cell.com/current-biology/fulltext/S0960-9822(24)01631-2
 Recurrent feedback shapes the temporal response properties of L1 and L2
 
 ## Infrequent strong connections constrain connectomic predictions of neuronal function
+https://www.sciencedirect.com/science/article/pii/S0092867425005185  
 https://www.biorxiv.org/content/10.1101/2025.03.06.641774v1.abstract
 Timothy A. Currier, Thomas R. Clandinin
 
@@ -196,3 +201,35 @@ connection and simulation for somatosensory cortex
 [Assemblies, synapse clustering and network topology interact with **plasticity** to explain structure-function relationships of the cortical connectome](https://elifesciences.org/reviewed-preprints/101850v1)
 synapse plasticity
 <!-- 可塑性  -->
+
+
+
+
+# Others
+
+- [**Global and Multiplexed Dendritic Computations under In Vivo-like Conditions**](https://www.cell.com/neuron/fulltext/S0896-6273(18)30737-2)
+Balázs B. Ujfalussy, Judit K. Makara, Máté Lengyel, Tiago Branco 
+[Tiago Branco](https://scholar.google.com/citations?hl=en&user=PJ7kIFMAAAAJ)
+
+hLN
+
+we included 600+ excitatory (with AMPA and NMDA receptors) and 200+ inhibitory synapses (with GABA-A receptors), where the majority of the inhibitory synapses were located near the soma and all other synapses were distributed uniformly throughout the entire dendritic tree
+?? this will lead to some basis
+
+We thus created subunits that corresponded to contiguous sections of the dendritic tree, including a smaller or larger number of connected branches, depending on the complexity of the hLN model (i.e., more complex models included a higher number of smaller subunits; 
+??it can help us to test different morphology simplification methods
+
+In particular, the addition of multiplexing to hLN architectures (Figure 6A, orange versus yellow) increased predictive power more than expanding the number of subunits from 1 to 23
+??we need to choose the appropriate number of compartments
+
+but instead the entire dendritic tree behaves as a single LN unit (as in Figure 3B). This contrasts with the conclusion from experimental and modeling findings in simple-input regimes, where single dendritic branches have been suggested to perform independent nonlinear computations 
+
+- [Structure and function of a neocortical synapse](https://www.nature.com/articles/s41586-020-03134-2)
+Simone Holler, German Köstinger, Kevan A. C. Martin, Gregor F. P. Schuhknecht & Ken J. Stratford, 2021, Nature
+
+
+- [Rethinking Single Neuron Electrical Compartmentalization: Dendritic Contributions to Network Computation In Vivo](https://www.sciencedirect.com/science/article/pii/S0306452221002852)
+[Mark T. Harnett](https://scholar.google.com/citations?hl=en&user=bzoKP5wAAAAJ)
+
+
+

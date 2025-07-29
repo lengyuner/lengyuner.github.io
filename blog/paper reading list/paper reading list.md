@@ -56,6 +56,8 @@ FlyWire
 - [Mapping of neuronal and glial primary cilia contactome and connectome in the human cerebral cortex](https://www.cell.com/neuron/fulltext/S0896-6273(23)00719-5)
 human
 
+- [Connectomic reconstruction from hippocampal CA3 reveals spatially graded mossy fiber inputs and selective feedforward inhibition to pyramidal cells](https://www.biorxiv.org/content/10.1101/2025.07.09.663979v1)
+H. Sebastian Seung, David W. Tank
 
 
  
@@ -133,7 +135,7 @@ From connectome to effectome: learning the causal interaction map of the fly bra
 We defined analogous measures for cell types. To identify cell types that may be partitioned into dense subnetworks, we introduce the Fraction of Type measure,
 
 $$
-FT(T;X) = \sum_{c \in C(X)} (\frac{n_{c\and T}}{n_T})^2
+FT(T;X) = \sum_{c \in C(X)} (\frac{n_{c \And T}}{n_T})^2
 $$
 
 - [Visual Columns Map](https://codex.flywire.ai/app/visual_columns_map?dataset=fafb)
@@ -145,8 +147,9 @@ A comprehensive mapping of the 31 columnar cell types in the compound eye has be
 **review**
 - [The cell biology of synapse formation](https://rupress.org/jcb/article/220/7/e202103052/212258/The-cell-biology-of-synapse-formationMechanisms-of) **SAM**  
 Review, 2021, from [Thomas C. Südhof](https://med.stanford.edu/sudhoflab.html)  
-![alt text](<figs/synaptic adhesion molecules.png>)
+![alt text](figs/synaptic adhesion molecules.png)
 synaptic adhesion molecules.png
+
 - [Towards an Understanding of Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627318308420)
 Review, 2018, from Thomas C. Südhof
 
@@ -179,7 +182,7 @@ István A. Kovács, Dániel L. **Barabási**, and Albert-László **Barabási** 
 “Incorporates direction attributes via a bilinear model for better adaptability to data.”
 
 - **biclique motifs** [A Genetic Model of the Connectome](https://www.sciencedirect.com/science/article/pii/S0896627319309262)
-Dániel L. Barabási 1, Albert-László Barabási
+Dániel L. Barabási, Albert-László Barabási
 
 - **bilinear** [Deciphering the Genetic Code of Neuronal Type Connectivity: A Bilinear Modeling Approach](https://elifesciences.org/reviewed-preprints/91532)
 **Mu Qiao**
@@ -290,6 +293,10 @@ morphogen gradients also serve to guide axonal pathfinding during development of
 
 - [Ig Superfamily Ligand and Receptor Pairs Expressed in Synaptic Partners in Drosophila](https://www.sciencedirect.com/science/article/pii/S0092867415015019)
 S. Lawrence Zipursky 2015, Cell
+
+
+- [The developmental emergence of reliable cortical representations](https://www.nature.com/articles/s41593-024-01857-3)
+we examined this ‘nature–nurture transform’ at the single-trial level using chronic in vivo calcium imaging in **ferret** visual cortex.
 
 ### cell-cell communication and interaction
 - [CellPhoneDB: inferring **cell–cell communication** from combined expression of multi-subunit ligand–receptor complexes](https://www.nature.com/articles/s41596-020-0292-x)
@@ -508,6 +515,11 @@ new GraphVis: interactive visual graph mining and machine learning
 [Table 1. A survey of neuroimaging connectomic software. ](https://direct.mit.edu/view-large/figure/1188158/00044fx01.tif)
 
 ### gene data
+
+- [A genetic, genomic, and computational resource for exploring neural circuit function](https://elifesciences.org/articles/50901)
+eLife, 2020
+We used these tools to build a resource of high-resolution transcriptomes for 100 driver lines covering 67 cell types
+
 
 - [Isoforms of Terminal Selector Mamo Control Axon Guidance during Adult Drosophila Memory Center Construction via Semaphorin-1a](https://www.sciencedirect.com/science/article/abs/pii/S001216062400160X)
 
@@ -868,13 +880,18 @@ Hodgkin & Huxley 1952
 - [Linear leaky-integrate-and-fire neuron model based spiking neural networks and its mapping relationship to deep neural networks](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2022.857513/full)
 
 **GLIF model**
+<!-- - [Generalized leaky integrate-and-fire models classify multiple neuron types](https://www.nature.com/articles/s41467-017-02717-4) -->
+
 - [Generalized leaky integrate-and-fire models classify multiple neuron types](https://www.nature.com/articles/s41467-017-02717-4)
+Corinne Teeter, Ramakrishnan Iyer, Vilas Menon, Nathan Gouwens, David Feng, Jim Berg, Aaron Szafer, Nicholas Cain, Hongkui Zeng, Michael Hawrylycz, Christof Koch & Stefan Mihalas, 2018, Nature Communications  
+
 
 - [An Adaptive Generalized Leaky Integrate-and-Fire Model for Hippocampal CA1 Pyramidal Neurons and Interneurons](https://link.springer.com/article/10.1007/s11538-023-01206-8)
 2023
 
 - [The Fractional order Leaky Integrate-and-Fire Model: Fractional differentiation-spiking properties](https://www.sciencedirect.com/science/article/pii/S0893608017301107)
 Neural Networks, 2017 
+
 
 ### synapse
 - [A role for NMDA-receptor channels in working memory](https://www.nature.com/articles/nn0898_273)
@@ -890,10 +907,70 @@ We derive an effective point neuron model, which incorporates an additional syna
 
 We then derive a form of synaptic integration current within the point neuron framework to capture dendritic effects.
 
-### tool
-- **Jaxley**: [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v1)   [jaxley_experiments](https://github.com/mackelab/jaxley_experiments)
 
-- [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v1)
+- [**Global and Multiplexed Dendritic Computations under In Vivo-like Conditions**](https://www.cell.com/neuron/fulltext/S0896-6273(18)30737-2)
+Ujfalussy et al., 2018  
+Balázs B. Ujfalussy, Judit K. Makara, Máté Lengyel, Tiago Branco 
+[Tiago Branco](https://scholar.google.com/citations?hl=en&user=PJ7kIFMAAAAJ)
+
+hLN
+
+
+- [Voltage compartmentalization in dendritic spines in vivo](https://www.science.org/doi/10.1126/science.abg0501)
+Victor Hugo Cornejo, Netanel Ofer, Rafael Yuste,  2021, Science
+
+### experiment support
+
+- [Rethinking Single Neuron Electrical Compartmentalization: Dendritic Contributions to Network Computation In Vivo](https://www.sciencedirect.com/science/article/pii/S0306452221002852)  
+Review; Valerio Francioni, Mark T. Harnett, 2022, Neuroscience
+
+multiple recent studies indicate that dendritic activity in vivo is much less compartmentalized than what was previously hypothesized (Xu et al., 2012, Beaulieu-Laroche et al., 2019, Francioni et al., 2019, Kerlin et al., 2019, Voigts and Harnett, 2019).
+
+The first demonstrated that somatic voltage fluctuations under an in vivo-like synaptic regime are well described by a global dendritic nonlinearity that can capture up to 90% of explained variance (Ujfalussy et al., 2018).
+
+A general problem of hierarchical systems like the cortex is that computational units must encode both ascending (bottom-up) and descending (top-down) information simultaneously, possibly even routing specific information to different target units. Recent theoretical models suggest that L2/3 and L5 pyramidal neurons can multiplex bottom-up and top-down information into a single output stream in the form of simple and burst spiking, respectively (Naud and Sprekeler, 2018, Ujfalussy et al., 2018, Payeur, et al., 2020) 
+
+- [The quest for multiscale brain modeling](https://www.cell.com/trends/neurosciences/fulltext/S0166-2236(22)00125-4)
+Egidio D’Angelo， Viktor Jirsa， 2022， 
+
+- [Illuminating dendritic function with computational models](https://www.nature.com/articles/s41583-020-0301-7)
+Panayiota Poirazi & Athanasia Papoutsi, 2020, Nature Reviews Neuroscience
+
+
+- [Introducing the Dendrify framework for incorporating dendrites to spiking neural networks](https://www.nature.com/articles/s41467-022-35747-8)
+
+Michalis Pagkalos, Spyridon Chavlis & Panayiota Poirazi, 2023, Nature Communications 
+
+
+- [Dendritic integration: 60 years of progress](https://www.nature.com/articles/nn.4157)
+Greg J Stuart & Nelson Spruston, 2015, Nature Neuroscience 
+
+
+- [Dendritic Excitability and Synaptic Plasticity In Vitro and In Vivo](https://www.sciencedirect.com/science/article/pii/S0306452221006722)
+Review, Kevin C. Gonzalez, Attila Losonczy, Adrian Negrean, 2022
+
+
+- [Systematic Integration of Structural and Functional Data into Multi-scale Models of Mouse Primary Visual Cortex](https://www.sciencedirect.com/science/article/pii/S0896627320300672)  
+Yazan N. Billeh,.., Anton Arkhipov, 2020, Neuron
+Two network models of the mouse primary visual cortex are developed and released  
+One uses compartmental-neuron models and the other point-neuron models
+
+- [Systematic generation of biophysically detailed models for diverse cortical neuron types](https://www.nature.com/articles/s41467-017-02718-3)
+Nathan W. Gouwens, Jim Berg, David Feng, Staci A. Sorensen, Hongkui Zeng, Michael J. Hawrylycz, Christof Koch & Anton Arkhipov, 2018, Nature Communications  
+
+To address this challenge, several studies have described automated parameter fitting approaches with multicompartment conductance-based models9,10,11,12,13,14,15,16,17.
+
+
+### Multicompartment Hodgkin-Huxley model
+- [Real-time **multicompartment Hodgkin-Huxley** neuron emulation on SoC FPGA](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2024.1457774/full)
+
+- [Multi-compartmental Models of Neurons](https://link.springer.com/chapter/10.1007/978-94-007-3858-4_7)
+- [The impact of Hodgkin–Huxley models on dendritic research](https://physoc.onlinelibrary.wiley.com/doi/full/10.1113/JP282756)
+
+### tool
+- **Jaxley**: [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v2)   [jaxley_experiments](https://github.com/mackelab/jaxley_experiments)
+
+- [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v2)
 
 Tool for neuron dynamics simulation (like brian2, spikingjelly)  
 - [NEURON](https://nrn.readthedocs.io/en/latest/install/install_instructions.html#windows)
@@ -904,6 +981,11 @@ Tool for neuron dynamics simulation (like brian2, spikingjelly)
 is an open-source Python package for working with single-neuron morphological reconstruction data, such as those in the Allen Cell Types Database.
 
 - [A GPU-based computational framework that bridges neuron simulation and artificial intelligence](https://www.nature.com/articles/s41467-023-41553-7)
+
+- [A Python toolbox for neural circuit parameter inference](https://www.nature.com/articles/s41540-025-00527-9)
+2025, npj Systems Biology and Applications 
+
+
 
 ### review
 - [Modeling Single-Neuron Dynamics and Computations: A Balance of Detail and Abstraction](https://www.science.org/doi/10.1126/science.1127240)
@@ -1045,7 +1127,9 @@ Tirthabir Biswas, Tianzhi Lambus Li, James E. Fitzgerald
 Inhibitory potentiation occurs when either pre- or postsynaptic spikes come first  
 Excitatory and inhibitory inputs become bound together by postsynaptic spiking
  
-
+#### BTSP
+- [Behavioral time scale synaptic plasticity underlies CA1 place fields](https://www.science.org/doi/10.1126/science.aan3846)
+A different form of synaptic plasticity
 
 ## neural data recording
 
@@ -1089,6 +1173,10 @@ Plos Biology
 
 - [Coupling of activity, metabolism and behaviour across the Drosophila brain](https://www.nature.com/articles/s41586-021-03497-0) Surya Ganguli & Thomas R. Clandinin 
 
+- [Multiphoton fluorescence microscopy for in vivo imaging](https://www.cell.com/cell/article/S0092-8674(24)00830-4/fulltext)
+Na Ji jina@berkeley.edu, 2024
+
+
 ### cell tracking
 - [EMC2: A versatile algorithm for robust tracking of calcium dynamics from individual neurons in behaving animals](https://www.biorxiv.org/content/10.1101/2020.06.22.165696v3.full)
 
@@ -1128,8 +1216,11 @@ Carsen Stringer
 - [Simultaneous, cortex-wide dynamics of up to **1 million neurons** reveal unbounded scaling of dimensionality with neuron number](https://www.sciencedirect.com/science/article/abs/pii/S0896627324001211)
 
 ### dimensional reduction
-Phate: - [Visualizing structure and transitions in high-dimensional biological data](https://www.nature.com/articles/s41587-019-0336-3)
+- Phate: [Visualizing structure and transitions in high-dimensional biological data](https://www.nature.com/articles/s41587-019-0336-3)
 Phate 
+
+- [LFADS - Latent Factor Analysis via Dynamical Systems](https://arxiv.org/abs/1608.06315)
+  
 
 ### manifold reconstriction
 - [Approximation of Functions on Manifolds in High Dimension from Noisy Scattered Data](https://arxiv.org/abs/2012.13804)

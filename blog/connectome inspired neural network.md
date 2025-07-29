@@ -3,7 +3,8 @@
 
 ## Drosophila
 
-- [Connectome-constrained deep mechanistic networks predict neural responses across the fly visual system at single-neuron resolution](https://doi.org/10.1101/2023.03.11.532232)  
+- [Connectome-constrained deep mechanistic networks predict neural responses across the fly visual system at single-neuron resolution](https://doi.org/10.1101/2023.03.11.532232) 
+- https://www.nature.com/articles/s41586-024-07939-3 
   Srinivas C. Turaga  
   **!!!**
 
@@ -30,6 +31,14 @@ Total Loss: Linear Consistency Loss, Stability Loss, Minimum Speed Loss, Entropy
 - [Differential temporal filtering in the fly optic lobe](https://www.biorxiv.org/content/10.1101/2024.12.16.628613v1)
 Alexander Borst
 Taking advantage of the known connectome I simulate a network of five adjacent optical columns each comprising 65 different cell types. Each neuron is modeled as an electrically compact single compartment, conductance-based element that receives input from other neurons within its column and from its neighboring columns according to the intra- and inter-columnar connectivity matrix. 
+
+
+- [NeuroMechFly v2: simulating embodied sensorimotor control in adult Drosophila](https://www.nature.com/articles/s41592-024-02497-y)
+Sibo Wang-Chen, Victor Alfred Stimpfling, Thomas Ka Chung Lam, Pembe Gizem Özdil, Louise Genoud, Femke Hurtak & Pavan Ramdya, 2024, Nature Methods 
+
+- [Whole-body physics simulation of fruit fly locomotion](https://www.nature.com/articles/s41586-025-09029-4)
+Roman Vaxenburg, Igor Siwanowicz, Josh Merel, Alice A. Robie, Carmen Morrow, Guido Novati, Zinovia Stefanidi, Gert-Jan Both, Gwyneth M. Card, Michael B. Reiser, Matthew M. Botvinick, Kristin M. Branson, Yuval Tassa & Srinivas C. Turaga, 2025, Nature 
+
 
 ## Human
 
@@ -100,6 +109,11 @@ Jonathan W. Pillow, Matthew A. Smith
 - [An integrative data-driven model simulating **C. elegans** brain, body and environment interactions](https://www.nature.com/articles/s43588-024-00738-w)
 Nature Computational Science, 2024
 Neuron models (Neurons were modeled by morphologically derived multicompartmental models with somatic Hodgkin–Huxley dynamics and passive neurites) + Graded synapse and gap junction models: 
+
+
+
+- [Bridging the gap between the connectome and whole-brain activity in C. elegans](https://www.biorxiv.org/content/10.1101/2024.09.22.614271v2.abstract)
+Matthew S. Creamer, Andrew M. Leifer, Jonathan W. Pillow, 2024
 
 ### Dataset
 
