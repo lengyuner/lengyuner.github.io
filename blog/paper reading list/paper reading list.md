@@ -2,6 +2,11 @@
 
 
 
+wiki of drosophila:
+https://www.sdbonline.org/sites/fly/aimorph/brain3.htm
+The Interactive Fly
+
+Genes involved in tissue and organ development
 
 ## Connectome
 
@@ -1156,7 +1161,14 @@ Vanessa Ruta & Gerald M. Rubin
 - [Morphological and functional convergence of visual projection neurons from diverse neurogenic origins in Drosophila](https://www.nature.com/articles/s41467-025-56059-7)
 
 ## others
+### diffusion model
+Diffusion and Score-Based Generative Models by Yang Song, Stanford University
+https://www.youtube.com/watch?v=wMmqCMwuM2Q&ab_channel=MITCBMM 
+- [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://arxiv.org/abs/1503.03585) Surya Ganguli
+
+
 ### ML
+
 - [Logic + Reinforcement Learning + Deep Learning: A Survey](https://www.pure.ed.ac.uk/ws/portalfiles/portal/322711194/Logic_Reinforcement_BUEFF_DOA22122022_AFV_CC_BY.pdf)
 Review, 2023
 

@@ -181,6 +181,13 @@ https://www.biorxiv.org/content/10.1101/2025.03.06.641774v1.abstract
 Timothy A. Currier, Thomas R. Clandinin
 
 
+Raw imaging data, relevant connectome data, and partially processed visual responses for all 571 ROIs are available on Dryad:
+https://datadryad.org/dataset/doi:10.5061/dryad.pg4f4qs1j  
+https://datadryad.org/dataset/doi:10.5061/dryad.bnzs7h4ns
+https://datadryad.org/dataset/doi:10.5061/dryad.kh18932k1    
+
+
+
 ## Blue Brain Project
 [Reconstruction and Simulation of Neocortical Microcircuitry](https://www.cell.com/fulltext/S0092-8674(15)01191-5)
 
