@@ -39,6 +39,15 @@ Sibo Wang-Chen, Victor Alfred Stimpfling, Thomas Ka Chung Lam, Pembe Gizem Özdi
 - [Whole-body physics simulation of fruit fly locomotion](https://www.nature.com/articles/s41586-025-09029-4)
 Roman Vaxenburg, Igor Siwanowicz, Josh Merel, Alice A. Robie, Carmen Morrow, Guido Novati, Zinovia Stefanidi, Gert-Jan Both, Gwyneth M. Card, Michael B. Reiser, Matthew M. Botvinick, Kristin M. Branson, Yuval Tassa & Srinivas C. Turaga, 2025, Nature 
 
+- [Infrequent strong connections constrain connectomic predictions of neuronal function](https://www.cell.com/cell/fulltext/S0092-8674(25)00518-5)
+Timothy A. Currier, Thomas R. Clandinin
+
+
+Raw imaging data, relevant connectome data, and partially processed visual responses for all 571 ROIs are available on Dryad:
+https://datadryad.org/dataset/doi:10.5061/dryad.pg4f4qs1j  
+https://datadryad.org/dataset/doi:10.5061/dryad.bnzs7h4ns
+https://datadryad.org/dataset/doi:10.5061/dryad.kh18932k1  
+
 
 ## Human
 

@@ -127,10 +127,15 @@ Balázs B. Ujfalussy, Judit K. Makara, Máté Lengyel, Tiago Branco
 hLN
 
 
-- [Voltage compartmentalization in dendritic spines in vivo](https://www.science.org/doi/10.1126/science.abg0501)
+- [**Voltage compartmentalization in dendritic spines in vivo**](https://www.science.org/doi/10.1126/science.abg0501)
 Victor Hugo Cornejo, Netanel Ofer, Rafael Yuste,  2021, Science
 
+dentrits level voltage recording for in vivo
+
 ### experiment support
+- [**Voltage compartmentalization in dendritic spines in vivo**](https://www.science.org/doi/10.1126/science.abg0501)
+Victor Hugo Cornejo, Netanel Ofer, Rafael Yuste,  2021, Science
+dentrits level voltage recording for in vivo
 
 - [Rethinking Single Neuron Electrical Compartmentalization: Dendritic Contributions to Network Computation In Vivo](https://www.sciencedirect.com/science/article/pii/S0306452221002852)  
 Review; Valerio Francioni, Mark T. Harnett, 2022, Neuroscience
