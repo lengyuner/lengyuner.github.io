@@ -3,11 +3,6 @@
 It is a collection of papers about the structure and function.
 
 
-## The MICrONS Project
-https://www.nature.com/collections/bdigiaicbd
-
-The MICrONS Project set out to create a massively dense reconstruction of the **structural connections and functions** of an entire millimeter volume of **mouse visual cortex**, along with new artificial intelligence-driven tools.
-
 ## Infrequent strong connections constrain connectomic predictions of neuronal function
 https://www.cell.com/cell/fulltext/S0092-8674(25)00518-5
 > Strong inputs exert a disproportionately large influence on postsynaptic responses

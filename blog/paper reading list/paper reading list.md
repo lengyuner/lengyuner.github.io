@@ -71,6 +71,9 @@ H. Sebastian Seung, David W. Tank
 Janelia, 2025, Nature, 
 a new connectome of the **right optic lobe** from a male Drosophila central nervous system FIB-SEM volume and a comprehensive inventory of the fly’s visual neurons
 
+- [Eye structure shapes neuron function in Drosophila motion vision](https://www.nature.com/articles/s41586-025-09276-5)
+Janelia, 2025, Nature,  
+Davi D. Bock & Michael B. Reiser 
 
 - [Waves of differentiation in the fly visual system](https://www.sciencedirect.com/science/article/pii/S0012160613001875)
 Developmental Biology
@@ -171,6 +174,10 @@ Review, 2002, [Thomas R Clandinin](https://flyvisionlab.weebly.com/), S.Lawrence
 - [Beyond Molecular Codes: Simple Rules to Wire Complex Brains](https://www.sciencedirect.com/science/article/pii/S0092867415011939) 
 Review, 2015, Bassem A. Hassan, P. Robin Hiesinger
 
+- [Principles of synaptogenesis: Insights from Caenorhabditis elegans](https://www.sciencedirect.com/science/article/pii/S095943882500087X)
+Elisa B. Frankel, Peri T. Kurshan, 2025, Current Opinion in Neurobiology
+
+
 
 - [Chemoaffinity Revisited: Dscams, Protocadherins, and Neural Circuit Assembly](<https://www.cell.com/fulltext/S0092-8674(10)01145-1>)
 Teview, 2010, S. Lawrence Zipursky, Joshua R. Sanes
@@ -235,10 +242,6 @@ Beat/Side interactions bias cellular adjacency prior to synaptogenesis
 - [Genome-wide identification of neuronal activity-regulated genes in Drosophila](https://elifesciences.org/articles/19942)
 
 
-- [Stochastic Wiring of Cell Types Enhances Fitness by Generating Phenotypic Variability](https://www.biorxiv.org/content/10.1101/2024.08.07.606541v1) Anthony Zador  
-connection probabilities between discrete cell types are genetically specified, to investigate
-the benefits of stochasticity in the development of neural wiring
-
 - [Dissecting origins of wiring specificity in dense cortical connectomes](https://www.biorxiv.org/content/10.1101/2024.12.14.628490v1)
 
 - [Connectome gradient dysfunction in major depression and its association with gene expression profiles and treatment outcomes](https://www.nature.com/articles/s41380-022-01519-5)
@@ -248,13 +251,24 @@ data:
 - [Hub connectivity, neuronal diversity, and gene expression in the Caenorhabditis elegans connectome](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005989)
 
 
+**other spicies:**
 - [Constrained roads to complex brains](https://www.science.org/doi/10.1126/science.adv2609)
-perspective, Neural development and brain circuit evolution converged in birds and mammals
+perspective, Neural development and brain circuit evolution converged in birds and **mammals**
 
 - [Evolutionary convergence of sensory circuits in the pallium of amniotes](https://www.science.org/doi/10.1126/science.adp3411)
 
 - [Enhancer-driven cell type comparison reveals similarities between the mammalian and bird pallium](https://www.science.org/doi/10.1126/science.adp3957)
 - [Developmental origins and evolution of pallial cell types and structures in birds](https://www.science.org/doi/10.1126/science.adp5182)
+
+
+#### gene data of Drosophila
+[gene data of Drosophila](gene_data.md)
+
+#### GeneWeave application 
+- [Stochastic Wiring of Cell Types Enhances Fitness by Generating Phenotypic Variability](https://www.biorxiv.org/content/10.1101/2024.08.07.606541v1) Anthony Zador  
+connection probabilities between discrete cell types are genetically specified, to investigate
+the benefits of stochasticity in the development of neural wiring
+
 
 #### other methods to reconstruct connectome
 
@@ -281,7 +295,25 @@ seven major steps to link expression measures and neuroimaging data
 <!-- ![alt text|200pt](<figs/Neocortical projection neurons.png>) -->
 ![alt text|200pt](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn3586/MediaObjects/41583_2013_Article_BFnrn3586_Fig1_HTML.jpg?as=webp)
 
+
+
+
+- [**Benchmarking methods for mapping functional connectivity in the brain**](https://www.biorxiv.org/content/10.1101/2024.05.07.593018v1)
+Here we use a library of **239 pairwise statistics** to benchmark canonical features of **FC networks**, including hub mapping, weight–distance trade-offs, structure–function coupling, correspondence with other neurophysiological networks, individual fingerprinting and brain–behavior prediction. 
+
+
 #### experiment support
+
+- [Complex formation of immunoglobulin superfamily molecules Side-IV and Beat-IIb regulates synaptic specificity](https://www.sciencedirect.com/science/article/pii/S2211124724001268)  
+2023, Cell Reports
+  - Side-IV binding to Beat-IIb regulates synaptic specificity in vivo
+  - Side-IV/Beat-IIb forms complex with Kirre and Dsyd-1
+
+
+- [DIP/Dpr interactions and the evolutionary design of specificity in protein families](https://www.nature.com/articles/s41467-020-15981-8)
+binding specificity of **DIP/Dpr** subgroups is controlled by "negative constraints", which interfere with binding
+
+
 - [A Conserved Role for Drosophila Neuroglian and Human L1-CAM in Central-Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0960982205014715)  
 2006, Current Biology
 
@@ -327,9 +359,6 @@ we examined this ‘nature–nurture transform’ at the single-trial level usin
 - [PPI (Protein-Protein Interactions (PPI))](https://paperswithcode.com/dataset/ppi)
 
 #### experiment support
-- [DIP/Dpr interactions and the evolutionary design of specificity in protein families](https://www.nature.com/articles/s41467-020-15981-8)
-binding specificity of DIP/Dpr subgroups is controlled by "negative constraints", which interfere with binding
-
 - [Nematode Extracellular Protein Interactome Expands Connections between Signaling Pathways](https://www.biorxiv.org/content/10.1101/2024.07.08.602367v2)
 
 - [An Extracellular Interactome of Immunoglobulin and LRR Proteins Reveals Receptor-Ligand Networks](https://www.sciencedirect.com/science/article/pii/S0092867413007083)
@@ -437,7 +466,7 @@ Peters’ rule explains synaptic specificity throughout the C. elegans nervous s
 Review paper, 2015, Julie L. Lefebvre, Joshua R. Sanes, and Jeremy N. Kay
 
 - [One Rule to Grow Them All: A General Theory of Neuronal Branching and Its Practical Application](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000877)  
-2010
+Hermann Cuntz ,Friedrich Forstner,Alexander Borst,Michael Häusser, 2010
 
 - [Molecular mechanisms of dendrite morphogenesis](https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2012.00061/full) 
 Review, 2012, Jyothi Arikkath
@@ -526,28 +555,15 @@ new GraphVis: interactive visual graph mining and machine learning
 [Table 1. A survey of neuroimaging connectomic software. ](https://direct.mit.edu/view-large/figure/1188158/00044fx01.tif)
 
 ### gene data
-
-- [A genetic, genomic, and computational resource for exploring neural circuit function](https://elifesciences.org/articles/50901)
-eLife, 2020
-We used these tools to build a resource of high-resolution transcriptomes for 100 driver lines covering 67 cell types
-
-
-- [Isoforms of Terminal Selector Mamo Control Axon Guidance during Adult Drosophila Memory Center Construction via Semaphorin-1a](https://www.sciencedirect.com/science/article/abs/pii/S001216062400160X)
-
-- [SURGE: uncovering context-specific genetic-regulation of gene expression from single-cell RNA sequencing using latent-factor models](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03152-z)
-
-- [**Benchmarking methods for mapping functional connectivity in the brain**](https://www.biorxiv.org/content/10.1101/2024.05.07.593018v1)
-
-- [Cross-platform normalization enables machine learning model training on microarray and RNA-seq data simultaneously](https://www.nature.com/articles/s42003-023-04588-6)
-
-
-- [Opportunities and challenges of single-cell and spatially resolved genomics methods for neuroscience discovery](https://www.nature.com/articles/s41593-024-01806-0)
-two new axes of biological variation: cell-intrinsic regulation of cell states and expression programs and interactions between cells.  
-nature neuroscience review 2024
-
-- [Science Forum: The Human Cell Atlas](https://elifesciences.org/articles/27041)
+- [Opportunities and challenges of single-cell and spatially resolved genomics methods for neuroscience discovery](https://www.nature.com/articles/s41593-024-01806-0)  
+Nature Neuroscience volume 27, pages 2292-2309 (2024)  
+Review
 
 #### gene data for Drosophila 
+
+- [Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly](https://www.science.org/doi/abs/10.1126/science.abk2432)  
+2022, science 
+
 - [A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain](https://www.sciencedirect.com/science/article/pii/S0092867418307207)
 - [A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain](https://www.cell.com/cell/fulltext/S0092-8674(18)30720-7)
 Cell, 2018
@@ -573,7 +589,32 @@ Stephen F. Goodwin, 2025
 we generate the first high-resolution, single-cell transcriptomic atlas of the adult Drosophila melanogaster central brain by integrating multiple datasets, achieving an unprecedented tenfold coverage of every neuron in this complex tissue.
 
 
+- [A genetic, genomic, and computational resource for exploring neural circuit function](https://elifesciences.org/articles/50901)
+eLife, 2020
+We used these tools to build a resource of high-resolution transcriptomes for 100 driver lines covering 67 cell types
+
+
+
+#### other gene dataset
+
+
+- [Isoforms of Terminal Selector Mamo Control Axon Guidance during Adult Drosophila Memory Center Construction via Semaphorin-1a](https://www.sciencedirect.com/science/article/abs/pii/S001216062400160X)
+
+
+- [Cross-platform normalization enables machine learning model training on microarray and RNA-seq data simultaneously](https://www.nature.com/articles/s42003-023-04588-6)
+
+- [Science Forum: The Human Cell Atlas](https://elifesciences.org/articles/27041)
+
+
+#### review
+- [Opportunities and challenges of single-cell and spatially resolved genomics methods for neuroscience discovery](https://www.nature.com/articles/s41593-024-01806-0)
+two new axes of biological variation: cell-intrinsic regulation of cell states and expression programs and interactions between cells.  
+nature neuroscience review 2024
+
 #### analysis
+
+- [SURGE: uncovering context-specific genetic-regulation of gene expression from single-cell RNA sequencing using latent-factor models](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03152-z)
+
 - [Inference of cell state transitions and cell fate plasticity from single-cell with MARGARET](https://academic.oup.com/nar/article/50/15/e86/6593121?login=false)
 
 - [Single-cell RNA sequencing technologies and applications: A brief overview](https://onlinelibrary.wiley.com/doi/10.1002/ctm2.694)
@@ -584,6 +625,10 @@ Nature Reviews Genetics (2023)
 - [Gene2vec: distributed representation of genes based on co-expression](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-5370-x)
 
 #### logical gene for connectome 
+- [Regulatory logic of neuronal identity specification in Drosophila](https://www.biorxiv.org/content/10.1101/2025.09.01.673531v1)  
+Rose Coyne, McKenzie Treese, Yen-Chung Chen, ..., Claude Desplan, Mehmet Neset Özel, 2025, biorxiv
+
+
 - [Discovering Symbolic Models from Deep Learning with Inductive Biases](https://arxiv.org/abs/2006.11287)
 
 - [On scientific understanding with artificial intelligence](https://www.nature.com/articles/s42254-022-00518-3)
@@ -595,6 +640,11 @@ Nature Reviews Genetics (2023)
 - [KAN: Kolmogorov-Arnold Networks](https://arxiv.org/abs/2404.19756)
 
 #### gene regulatory network 
+
+- [Chapter Four - Gene regulatory networks during the development of the Drosophila visual system](https://www.sciencedirect.com/science/article/pii/S0070215320300363)
+Yen-Chung Chen, Claude Desplan, 2020, Current Topics in Developmental Biology
+> recent advances in technology have allowed electrophysiological features and gene expression to be systematically compared and have demonstrated that similarity in gene expression correlates with similarity in firing patterns (Cadwell et al., 2016; Fuzik et al., 2016).
+> The visual system of Drosophila is an ideal platform to learn about gene regulatory networks and to bridge the gap between development and terminal features that establish diversity in the nervous system. First, the neurons of the visual system have been studied extensively for decades, and as a result, the morphology and the choice of neurotransmitter of a large proportion of the neurons are characterized (Fischbach, 1989; Raghu & Borst, 2011; Raghu, Claussen, & Borst, 2013; Varija Raghu, Reiff, & Borst, 2011). Second, the high-resolution connectivity of most neuropils within the optic lobe has been actively determined by electron microscopy (Rivera-Alba et al., 2011; Shinomiya et al., 2019; Takemura et al., 2013, Takemura et al., 2015, Takemura et al., 2017).
 
 - [Decoding gene regulation in the fly brain](https://www.nature.com/articles/s41586-021-04262-z)
 
@@ -673,32 +723,40 @@ Briefings in Bioinformatics, 2021
 
 
 - [Complex brain networks: graph theoretical analysis of structural and functional systems](https://www.nature.com/articles/nrn2575)
-Ed Bullmore & Olaf Sporns (2009).  
-Nature reviews neuroscience 
+Ed Bullmore & Olaf Sporns (2009). Nature Reviews Neuroscience
 
-- Engel, A. K., Gerloff, C., Hilgetag, C. C., & Nolte, G. (2013). Intrinsic coupling modes: multiscale interactions in ongoing brain activity. Neuron, 80(4), 867-886.
+- [Intrinsic coupling modes: multiscale interactions in ongoing brain activity](https://www.cell.com/neuron/fulltext/S0896-6273(13)00847-4)
+Engel, A. K., Gerloff, C., Hilgetag, C. C., & Nolte, G. (2013). Neuron, 80(4), 867-886.
 
-- Biswal, B., F. Zerrin Yetkin, Victor M. Haughton, James S. Hyde (1995). Functional connectivity in the motor cortex of resting human brain using echo-planar mri. Magnetic Resonance in Medicine 34(4): 537-541.
+- [Functional connectivity in the motor cortex of resting human brain using echo-planar mri](https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.1910340409)
+Biswal, B., F. Zerrin Yetkin, Victor M. Haughton, James S. Hyde (1995). Magnetic Resonance in Medicine 34(4): 537-541.
 
-- Markov NT, et al. (2014) A weighted and directed interareal connectivity matrix for macaque cerebral cortex. Cereb Cortex 24:17–36.
+- [A weighted and directed interareal connectivity matrix for macaque cerebral cortex](https://academic.oup.com/cercor/article/24/1/17/311346)
+Markov NT, et al. (2014). Cereb Cortex 24:17–36.
 
-- Donahue, C.J., Sotiropoulos, S.N., Jbabdi, S., Hernandez-Fernandez, M., Behrens, T.E., Dyrby, T.B., Coalson, T., Kennedy, H., Knoblauch, K., Van Essen, D.C., Glasser, M.F. (2016). Using diffusion tractography to predict cortical connection strength and distance: a quantitative comparison with tracers in the monkey. J. Neurosci. 36, 6758–6770. doi:10.1523/JNEUROSCI.0493-16.2016.
+- [Using diffusion tractography to predict cortical connection strength and distance: a quantitative comparison with tracers in the monkey](https://www.jneurosci.org/content/36/21/6758)
+Donahue, C.J., Sotiropoulos, S.N., Jbabdi, S., Hernandez-Fernandez, M., Behrens, T.E., Dyrby, T.B., Coalson, T., Kennedy, H., Knoblauch, K., Van Essen, D.C., Glasser, M.F. (2016). J. Neurosci. 36, 6758–6770.
 
-- Honey, C., Thivierge JP, Sporns O (2010). Can structure predict function in the human brain? Neuroimage 52(3): 766-776.
+- [Can structure predict function in the human brain?](https://www.sciencedirect.com/science/article/pii/S1053811910002344)
+Honey, C., Thivierge JP, Sporns O (2010). Neuroimage 52(3): 766-776.
 
-- Deco, G., McIntosh, A. R., Shen, K., Hutchison, R. M., Menon, R. S., Everling, S., Hagmann, P., & Jirsa, V. K. (2014). Identification of optimal structural connectivity using functional connectivity and neural modeling. The Journal of neuroscience : the official journal of the Society for Neuroscience, 34(23), 7910–7916.
+- [Identification of optimal structural connectivity using functional connectivity and neural modeling](https://www.jneurosci.org/content/34/23/7910)
+Deco, G., McIntosh, A. R., Shen, K., Hutchison, R. M., Menon, R. S., Everling, S., Hagmann, P., & Jirsa, V. K. (2014). The Journal of neuroscience, 34(23), 7910–7916.
 
-- Dawson, DA, Cha K, Lewis LB, Mendola JD, Shmuel A (2013). "Evaluation and calibration of functional network modeling methods based on known anatomical connections." Neuroimage 67: 331-343.
+- [Evaluation and calibration of functional network modeling methods based on known anatomical connections](https://www.sciencedirect.com/science/article/pii/S1053811913000260)
+Dawson, DA, Cha K, Lewis LB, Mendola JD, Shmuel A (2013). Neuroimage 67: 331-343.
 
-- Predicting brain structural network using functional connectivity. Medical image analysis, 79, 102463. https://doi.org/10.1016/j.media.2022.102463.
-
-- [Predicting brain structural network using functional connectivity](https://www.sciencedirect.com/science/article/abs/pii/S1361841522001104)j.media   
-multi-GCN based GAN, AD
+- [Predicting brain structural network using functional connectivity](https://www.sciencedirect.com/science/article/abs/pii/S1361841522001104)
+multi-GCN based GAN, AD (2022). Medical Image Analysis, 79, 102463.
 
 - [Prediction of brain sex from EEG: using large-scale heterogeneous dataset for developing a highly accurate and interpretable ML model](https://www.sciencedirect.com/science/article/pii/S1053811923006456)
-  
+(2023). NeuroImage
+
 - [Topographic Axes of Wiring Space Converge to Genetic Topography in Shaping the Human Cortical Layout](https://www.jneurosci.org/content/45/7/e1510242024#page=14.33)
+(2024). Journal of Neuroscience
+
 - [A practical guide to linking brain-wide gene expression and neuroimaging data](https://www.sciencedirect.com/science/article/abs/pii/S1053811919300114)
+(2019). NeuroImage
 
 
 ### other connectome model:
@@ -791,7 +849,7 @@ Cited by 6966
 
 
 
-### 
+###  
 - [Are we really making much progress? Revisiting, benchmarking, and refining heterogeneous graph neural networks](https://arxiv.org/abs/2112.14936)
 we construct the Heterogeneous Graph Benchmark (HGB), consisting of 11 diverse datasets with three tasks.
 ```
@@ -888,8 +946,11 @@ Review, Current Opinion in Neurobiology, 2019
 
 
 ### Connectome & ANN
+
+
 [connectome inspired neural network](<connectome inspired neural network.md>)    
 html [connectome inspired neural network](https://lengyuner.github.io/blog/connectome%20inspired%20neural%20network.html)
+
 
 - [Deep Connectomics Networks: Neural Network Architectures Inspired by Neuronal Networks](https://arxiv.org/abs/1912.08986)
 
@@ -898,7 +959,7 @@ html [connectome inspired neural network](https://lengyuner.github.io/blog/conne
 ZAPBench
  
 - [Foundation model of neural activity predicts response to new stimulus types](https://www.nature.com/articles/s41586-025-08829-y) 
-
+Eric Y. Wang, ... , Xaq Pitkow, Fabian H. Sinz & Andreas S. Tolias, 2025, Nature
 
 ### geometry
 - [Modelling brain connectomes networks: Solv is a worthy competitor to hyperbolic geometry!](https://openreview.net/forum?id=dqWobzlAGb)
