@@ -261,6 +261,14 @@ perspective, Neural development and brain circuit evolution converged in birds a
 - [Developmental origins and evolution of pallial cell types and structures in birds](https://www.science.org/doi/10.1126/science.adp5182)
 
 
+#### RL and logical rule 
+- [Differentiable Learning of Logical Rules for Knowledge Base Reasoning](https://arxiv.org/abs/1702.08367)
+2017
+
+- [Finding Rule-Interpretable Non-Negative Data Representation](https://arxiv.org/abs/2206.01483)
+Matej Mihelčić, Pauli Miettinen
+
+
 #### gene data of Drosophila
 [gene data of Drosophila](gene_data.md)
 
@@ -425,6 +433,15 @@ Konrad P. Kording
 Eric Jonas, Konrad Kording   
 It combines the information traditionally used by biologists in a principled and probabilistically coherent manner, including connectivity, cell body location, and the spatial distribution of synapses. 
 
+
+- [Evidence from spatial transcriptomics for the mosaic hypothesis and pure cell types in the cortex](https://www.cell.com/cell-reports/fulltext/S2211-1247(25)01134-9)
+Uygar Sümbül
+Allen 
+
+Spatial transcriptomic data provide evidence for the mosaic hypothesis in the mouse cortex  
+Somata of neurons of the same type appear to avoid spatial proximity with each other
+
+
 - [Connectivity of single neurons classifies cell subtypes in mouse brains](https://www.nature.com/articles/s41592-024-01806-0)
 Neuronal Connectivity as a Determinant of Cell Types and Subtypes
 
@@ -452,7 +469,7 @@ https://arxiv.org/abs/2411.12091
 Konrad P Kording, Edward S Boyden
 
 
-### morphology
+### Morphology
 - [Mapping Function Onto Neuronal Morphology](https://journals.physiology.org/doi/full/10.1152/jn.00865.2006)
 Klaus M. Stiefel, Terrence J. Sejnowski  
 We used a Lindenmayer-system (L-system) (Lindenmayer 1968) for the algorithmic construction of model neuron morphologies. Simulations of electrophysiological dynamics were carried out in the neuronal simulation language NEURON (version 5.7) (Hines and Carnevale 1997, 2000).
@@ -1170,6 +1187,10 @@ CVPR, 2023
 
 
 ## behavior
+
+- [**LISBET**: a machine learning model for the automatic segmentation of social behavior motifs](https://arxiv.org/abs/2311.04069)
+
+
 - GLM-HMM: [Unsupervised identification of the internal states that shape natural behavior](https://www.nature.com/articles/s41593-019-0533-x)  
 - [Mice alternate between discrete strategies during perceptual decision-making](https://www.nature.com/articles/s41593-021-01007-z)
 Jonathan W. Pillow  
