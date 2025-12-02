@@ -185,6 +185,9 @@ The first demonstrated that somatic voltage fluctuations under an in vivo-like s
 
 A general problem of hierarchical systems like the cortex is that computational units must encode both ascending (bottom-up) and descending (top-down) information simultaneously, possibly even routing specific information to different target units. Recent theoretical models suggest that L2/3 and L5 pyramidal neurons can multiplex bottom-up and top-down information into a single output stream in the form of simple and burst spiking, respectively (Naud and Sprekeler, 2018, Ujfalussy et al., 2018, Payeur, et al., 2020) 
 
+
+
+
 - [The quest for multiscale brain modeling](https://www.cell.com/trends/neurosciences/fulltext/S0166-2236(22)00125-4)
 Egidio D’Angelo， Viktor Jirsa， 2022， 
 
@@ -214,6 +217,29 @@ One uses compartmental-neuron models and the other point-neuron models
 Nathan W. Gouwens, Jim Berg, David Feng, Staci A. Sorensen, Hongkui Zeng, Michael J. Hawrylycz, Christof Koch & Anton Arkhipov, 2018, Nature Communications  
 
 To address this challenge, several studies have described automated parameter fitting approaches with multicompartment conductance-based models 9,10,11,12,13,14,15,16,17.
+
+#### single neuron recording data
+[An adaptive optics module for deep tissue multiphoton imaging in vivo](https://www.nature.com/articles/s41592-021-01279-0)
+Na Ji 
+Nature Methods volume 18, pages1259–1264 (2021)
+
+
+[In vivo volumetric imaging of calcium and glutamate activity at synapses with high spatiotemporal resolution](https://www.nature.com/articles/s41467-021-26965-7)
+
+Na Ji,2021, nature communications 
+
+
+[High-resolution structural and functional deep brain imaging using adaptive optics three-photon microscopy](https://www.nature.com/articles/s41592-021-01257-6)
+
+Robert Prevedel 
+Nature Methods volume 18, pages1253–1258 (2021)
+
+
+[High-throughput volumetric mapping of synaptic transmission](https://www.nature.com/articles/s41592-024-02309-3)
+ Na Ji 
+Nature Methods volume 21, pages1298–1305 (2024)
+
+
 
 
 #### Multicompartment Hodgkin-Huxley model

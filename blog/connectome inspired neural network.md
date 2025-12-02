@@ -2438,8 +2438,25 @@ Research Goal
 - **Columbia (Litwin-Kumar, Pillow)**: Theory + worm/fly models
 - **Princeton (Leifer)**: C. elegans imaging + modeling
 
----
+<!-- ---
 
 **This concludes the comprehensive analysis of connectome-based neural network modeling. The field stands at an exciting juncture where complete connectomes, powerful computation, and rich functional data converge to enable unprecedented understanding of how brains work.**
 
-🧠 **The connectome is not the end — it's the beginning of truly mechanistic neuroscience.** 🚀
+🧠 **The connectome is not the end — it's the beginning of truly mechanistic neuroscience.** 🚀 -->
+
+
+
+## TODO
+
+
+Hebbian Learning based Orthogonal Projection for Continual Learning of Spiking Neural Networks
+https://openreview.net/forum?id=MeB86edZ1P
+
+https://github.com/pkuxmq/HLOP-SNN
+https://arxiv.org/abs/2402.11984
+
+
+
+[Learning using switching synaptic plasticity rules](https://openreview.net/forum?id=UjcBzPHSYV)
+
+

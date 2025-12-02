@@ -1,6 +1,111 @@
 # paper reading list
 
+## Table of Contents
+- [paper reading list](#paper-reading-list)
+  - [Table of Contents](#table-of-contents)
+  - [Connectome](#connectome)
+    - [connectome dataset](#connectome-dataset)
+    - [technology of connectome](#technology-of-connectome)
+      - [connection reconsturction](#connection-reconsturction)
+    - [connectome analysis](#connectome-analysis)
+    - [gap junction](#gap-junction)
+    - [connectome and gene](#connectome-and-gene)
+      - [RL and logical rule](#rl-and-logical-rule)
+      - [gene data of Drosophila](#gene-data-of-drosophila)
+      - [other methods to reconstruct connectome](#other-methods-to-reconstruct-connectome)
+      - [human connectome](#human-connectome)
+      - [experiment support](#experiment-support)
+      - [GeneWeave application](#geneweave-application)
+    - [cell-cell communication and interaction](#cell-cell-communication-and-interaction)
+    - [protein interaction](#protein-interaction)
+      - [experiment support](#experiment-support-1)
+      - [deep learning methods](#deep-learning-methods)
+      - [result verification](#result-verification)
+    - [data mapping between transcriptome and connectome](#data-mapping-between-transcriptome-and-connectome)
+      - [neural type](#neural-type)
+      - [neural activity and connectivity](#neural-activity-and-connectivity)
+    - [Morphology](#morphology)
+      - [morphology data](#morphology-data)
+      - [maximum weighted independent set (MWIS)](#maximum-weighted-independent-set-mwis)
+      - [Maximum Dispersion](#maximum-dispersion)
+    - [connectome visualization](#connectome-visualization)
+    - [gene data](#gene-data)
+      - [gene data for Drosophila](#gene-data-for-drosophila)
+      - [other gene dataset](#other-gene-dataset)
+      - [review](#review)
+      - [analysis](#analysis)
+      - [logical gene for connectome](#logical-gene-for-connectome)
+      - [gene regulatory network](#gene-regulatory-network)
+      - [review paper](#review-paper)
+      - [sota models](#sota-models)
+      - [application](#application)
+    - [gene normalization](#gene-normalization)
+    - [functional and structure conenctome](#functional-and-structure-conenctome)
+    - [other connectome model:](#other-connectome-model)
+  - [Reinforcement learning (RL)](#reinforcement-learning-rl)
+  - [graph](#graph)
+    - [Link prediction](#link-prediction)
+      - [review](#review-1)
+    - [Graph Embedding](#graph-embedding)
+    - [review](#review-2)
+    - [](#)
+    - [disease gene](#disease-gene)
+    - [graph and connectome](#graph-and-connectome)
+    - [other](#other)
+    - [olfactory system](#olfactory-system)
+    - [mean field](#mean-field)
+  - [NeuroAI](#neuroai)
+    - [Connectome \& ANN](#connectome--ann)
+    - [geometry](#geometry)
+    - [Brain simulation / activity prediction](#brain-simulation--activity-prediction)
+      - [model](#model)
+    - [Network analysis](#network-analysis)
+    - [synapse plasticity](#synapse-plasticity)
+      - [STDP](#stdp)
+      - [BTSP](#btsp)
+  - [neural data recording](#neural-data-recording)
+    - [whole brain imaging](#whole-brain-imaging)
+      - [drosophila data](#drosophila-data)
+      - [other data](#other-data)
+    - [cell tracking](#cell-tracking)
+    - [wormid](#wormid)
+  - [neural data analysis \& modeling](#neural-data-analysis--modeling)
+    - [reivew](#reivew)
+    - [high dimensional data](#high-dimensional-data)
+    - [dimensional reduction](#dimensional-reduction)
+    - [manifold reconstriction](#manifold-reconstriction)
+    - [activity analysis](#activity-analysis)
+    - [head direction](#head-direction)
+  - [encoding and decoding](#encoding-and-decoding)
+    - [deep learning method](#deep-learning-method)
+      - [fundation model](#fundation-model)
+      - [diffusion model/ visual Stimulus](#diffusion-model-visual-stimulus)
+  - [behavior](#behavior)
+    - [oscilation](#oscilation)
+    - [place cell and grid cell](#place-cell-and-grid-cell)
+  - [vision](#vision)
+    - [drosophila](#drosophila)
+  - [others](#others)
+    - [diffusion model](#diffusion-model)
+    - [ML](#ml)
+    - [hippocamus](#hippocamus)
+    - [gene](#gene)
+    - [cognition](#cognition)
+      - [attention](#attention)
+      - [learning and memory](#learning-and-memory)
+      - [decision making](#decision-making)
+    - [DS \& OR](#ds--or)
+      - [Quadratic assignment problem](#quadratic-assignment-problem)
+      - [similarity matrix](#similarity-matrix)
+    - [ML](#ml-1)
+      - [NAS](#nas)
+      - [CNN kernel](#cnn-kernel)
+    - [sparse decoding](#sparse-decoding)
+    - [others](#others-1)
+    - [wiki](#wiki)
+- [TODO](#todo)
 
+---
 
 wiki of drosophila:
 https://www.sdbonline.org/sites/fly/aimorph/brain3.htm
@@ -106,6 +211,7 @@ Machine learning identifies synaptic transmitters from electron micrographs
 
 
 ### connectome analysis
+
 - [Network statistics of the whole-brain connectome of Drosophila](https://www.nature.com/articles/s41586-024-07968-y)
 **Mala Murthy, Nature**
 
@@ -148,6 +254,14 @@ $$
 
 - [Visual Columns Map](https://codex.flywire.ai/app/visual_columns_map?dataset=fafb)
 A comprehensive mapping of the 31 columnar cell types in the compound eye has been achieved using a computational optimization technique based on synaptic connectivity. A manuscript describing the resource and methodology is currently in preparation. The quality of this mapping can be evaluated through specially developed visualizations available below.
+
+
+- [The Connectome Interpreter Toolkit](https://www.biorxiv.org/content/10.1101/2025.09.29.679410v2.full.pdf)
+https://www.biorxiv.org/content/10.1101/2025.09.29.679410v2
+
+### gap junction
+- [Intercellular Communication: the Drosophila Innexin Multiprotein Family of Gap Junction Proteins](https://www.cell.com/article/S1074-5521(05)00072-4/fulltext)
+Review, 2005
 
 
 ### connectome and gene
@@ -272,10 +386,6 @@ Matej Mihelčić, Pauli Miettinen
 #### gene data of Drosophila
 [gene data of Drosophila](gene_data.md)
 
-#### GeneWeave application 
-- [Stochastic Wiring of Cell Types Enhances Fitness by Generating Phenotypic Variability](https://www.biorxiv.org/content/10.1101/2024.08.07.606541v1) Anthony Zador  
-connection probabilities between discrete cell types are genetically specified, to investigate
-the benefits of stochasticity in the development of neural wiring
 
 
 #### other methods to reconstruct connectome
@@ -348,6 +458,17 @@ S. Lawrence Zipursky 2015, Cell
 
 - [The developmental emergence of reliable cortical representations](https://www.nature.com/articles/s41593-024-01857-3)
 we examined this ‘nature–nurture transform’ at the single-trial level using chronic in vivo calcium imaging in **ferret** visual cortex.
+
+
+
+#### GeneWeave application 
+- [Stochastic Wiring of Cell Types Enhances Fitness by Generating Phenotypic Variability](https://www.biorxiv.org/content/10.1101/2024.08.07.606541v1) 
+Divyansha Lachi, Ann Huang, Augustine N. Mavor-Parker, Arna Ghosh, Blake Richards, Anthony Zador
+
+connection probabilities between discrete cell types are genetically specified, to investigate
+the benefits of stochasticity in the development of neural wiring 
+ 
+
 
 ### cell-cell communication and interaction
 - [CellPhoneDB: inferring **cell–cell communication** from combined expression of multi-subunit ligand–receptor complexes](https://www.nature.com/articles/s41596-020-0292-x)
@@ -1399,3 +1520,25 @@ S. Lawrence Zipursky & Gwyneth M. Card
 
 
 - [viewpoint Your Students are Your legacy](https://dl.acm.org/doi/pdf/10.1145/1467247.1467259#page=1.25)
+
+
+
+- [The central complex of the larval fruit fly brain](https://www.biorxiv.org/content/10.1101/2025.09.30.679510v1.full.pdf)
+- [A data-driven biophysical network model reproduces C. elegans premotor neural dynamics](https://arxiv.org/abs/2501.00278)
+- [Synchronization of two non-identical Chialvo neurons](https://arxiv.org/pdf/2404.07783)
+- [Christopher Rozell](https://siplab.gatech.edu/people.html) 
+- Quantitative understanding of brain activity, the connection between the brain and the body, and the effects of neural stimulation are grand challenges with the potential for enormous societal impact. Simultaneous advances in neural interfacing and data science have created a remarkable opportunity to reshape the way we think about the brain in health and disease 
+- [Outlier exposure with confidence control for out-of-distribution detection](https://www.sciencedirect.com/science/article/abs/pii/S0925231221002393)
+- [Drosophila as a model system for neurotransmitter measurements](https://pmc.ncbi.nlm.nih.gov/articles/PMC6093779/)
+- [Episodic and associative memory from spatial scaffolds in the hippocampus](https://www.nature.com/articles/s41586-024-08392-y)
+- [Universality in the Evolution of Orientation Columns in the Visual Cortex](https://www.science.org/doi/10.1126/science.1194869)
+- [Mapping Individual Differences in the Topological Landscape of Naturalistic Brain Dynamics](https://www.biorxiv.org/content/10.1101/2024.06.20.599966v1)
+- [A synthetic oscillatory network of transcriptional regulators](https://www.nature.com/articles/35002125)
+- [The emergence of NeuroAI: bridging neuroscience and artificial intelligence](https://www.nature.com/articles/s41583-025-00954-x)
+- [Dimensionality reduction simplifies synaptic partner matching in an olfactory circuit](https://www.science.org/doi/abs/10.1126/science.ads7633)
+- [Enhanced whole-brain calcium imaging and cell identification in C. elegans reveal AWCOFF neuronal responses to 2-nonanone](https://link.springer.com/article/10.1007/s12038-025-00518-2)
+- [Aligning Neural Population Patterns Facilitates Motor Learning Transfer](https://www.biorxiv.org/content/biorxiv/early/2025/05/21/2025.05.16.654614.1.full.pdf)
+
+- [Denoising Diffusion Probabilistic Models](https://arxiv.org/pdf/2006.11239) 
+- [Reverse Diffusion Sequential Monte Carlo Samplers](https://arxiv.org/pdf/2508.05926) 
+- [STATE-SWITCHING NAVIGATION STRATEGIES IN C. elegans ARE BENEFICIAL FOR CHEMOTAXIS](https://arxiv.org/pdf/2508.00191)
