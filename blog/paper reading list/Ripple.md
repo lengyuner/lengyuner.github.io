@@ -392,3 +392,15 @@ Jaxley: Differentiable simulation enables large-scale training of detailed bioph
  View ORCID ProfileMichael Deistler,  View ORCID ProfileKyra L. Kadhim,  View ORCID ProfileMatthijs Pals,  View ORCID ProfileJonas Beck,  View ORCID ProfileZiwei Huang,  View ORCID ProfileManuel Gloeckler,  View ORCID ProfileJanne K. Lappalainen,  View ORCID ProfileCornelius Schröder,  View ORCID ProfilePhilipp Berens,  View ORCID ProfilePedro J. Gonçalves,  View ORCID ProfileJakob H. Macke
 doi: https://doi.org/10.1101/2024.08.21.608979  
 
+
+
+## TODO
+
+Bounds on the computational complexity of neurons due to dendritic morphology
+
+
+paper from RIKEN and Allen:
+[Microscopic-Level Mouse Whole Cortex Simulation Composed of 9 Million Biophysical Neurons and 26 Billion Synapses on the Supercomputer Fugaku](https://dl.acm.org/doi/full/10.1145/3712285.3759819)
+
+
+High performance, large-scale multi-compartment Hodgkin-Huxley simulation of Drosophila’s whole-brain neural circuit model
