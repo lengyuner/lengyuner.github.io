@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title></title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <!-- English version exported from literature_review.md. One unified table with four rows per method: LLM+general, LLM+clinical, MLLM+general, MLLM+clinical. -->
+<p>MIA methods × model type × data domain (LLM / MLLM)</p>
+<table>
+<thead>
+<tr>
+<th>Method category / subclass</th>
+<th>Core signal / feature</th>
+<th>Access / threat model</th>
+<th>Model / modality</th>
+<th>Data domain</th>
+<th>Public evidence / notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(1a) Logit / Loss-based — basic shadow / reference</td>
+<td>loss / log-prob; target vs reference gap</td>
+<td>Needs logits / likelihood (gray/white-box or limited black-box + reference)</td>
+<td>LLM (text-only)</td>
+<td>General data</td>
+<td>Classic score-based / reference-based MIA; large-scale eval on pretrained LLMs shows many settings are near-random, esp. “big data + few epochs” (<a href="https://openreview.net/forum?id=av0D19pSkU">Do Membership Inference Attacks Work on Large Language Models?</a>).</td>
+</tr>
+<tr>
+<td>(1a)</td>
+<td>--</td>
+<td>--</td>
+<td>LLM (text-only)</td>
+<td>Clinical data</td>
+<td>Strong evidence: masked LM on medical notes with likelihood-ratio reaches AUC≈0.90 (<a href="https://aclanthology.org/2022.emnlp-main.570/">Quantifying Privacy Risks of Masked Language Models Using Membership Inference Attacks</a>); clinical LM (ClinicalBERT/GPT-2, etc.) leak ~7% under white/black-box MIA (<a href="https://arxiv.org/abs/2104.08305">Membership Inference Attack Susceptibility of Clinical Language Models</a>); work-in-progress on EHR QA LLM with canonical loss + paraphrasing MIA (<a href="https://arxiv.org/abs/2510.18674">Exploring Membership Inference Vulnerabilities in Clinical Large Language Models</a>).</td>
+</tr>
+<tr>
+<td>(1a)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM (multimodal)</td>
+<td>General data</td>
+<td>Multimodal score-based MIA uses text-image similarity / confidence: cosine threshold on CLIP (<a href="https://arxiv.org/abs/2310.00108">Practical Membership Inference Attacks Against Large-Scale Multi-Modal Models: A Pilot Study</a>); NeurIPS 2024 benchmark for VLLMs with MaxRényi-K% confidence metric (<a href="https://arxiv.org/abs/2411.02902">Membership Inference Attacks against Large Vision-Language Models</a>).</td>
+</tr>
+<tr>
+<td>(1a)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM (multimodal)</td>
+<td>Clinical data</td>
+<td>No published systematic loss / log-prob MIA on “medical image + clinical text” multimodal models; clear gap.</td>
+</tr>
+<tr>
+<td>(1b) Quantile / score-distribution regression</td>
+<td>Model non-member score distribution via quantile regression</td>
+<td>Needs confidence / score (softmax prob, logit, etc.)</td>
+<td>LLM</td>
+<td>General data</td>
+<td>NeurIPS 2023 uses quantile regression to approximate non-member scores, avoiding multiple shadows; matches classic shadow attacks with far less compute (<a href="https://arxiv.org/abs/2307.03694">Scalable Membership Inference Attacks via Quantile Regression</a>).</td>
+</tr>
+<tr>
+<td>(1b)</td>
+<td>--</td>
+<td>--</td>
+<td>LLM</td>
+<td>Clinical data</td>
+<td>No specific reports on clinical LLM / EHR; clinical work mostly uses simple threshold / likelihood-ratio.</td>
+</tr>
+<tr>
+<td>(1b)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>General data</td>
+<td>In principle extendable to multimodal confidence / similarity, but published experiments focus on single-modal classification/regression; no explicit MLLM results yet.</td>
+</tr>
+<tr>
+<td>(1b)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>Clinical data</td>
+<td>No public evidence.</td>
+</tr>
+<tr>
+<td>(1c) Self-calibrated / reference-free (SPV-MIA)</td>
+<td>Model self-generates reference via self-prompt; compare loss / probabilistic variation</td>
+<td>Needs token-level probs / NLL (gray-box or black-box that returns per-token scores)</td>
+<td>LLM</td>
+<td>General data</td>
+<td>Self-prompt Calibration (SPV-MIA, NeurIPS 2024) reaches AUC ≈0.9 on fine-tuned LLMs without real shadow data (<a href="https://arxiv.org/abs/2311.06062">Practical Membership Inference Attacks against Fine-tuned Large Language Models via Self-prompt Calibration</a>).</td>
+</tr>
+<tr>
+<td>(1c)</td>
+<td>--</td>
+<td>--</td>
+<td>LLM</td>
+<td>Clinical data</td>
+<td>No open replication of SPV-MIA on clinical LLM / EHR; clinical setups still use canonical loss-based.</td>
+</tr>
+<tr>
+<td>(1c)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>General data</td>
+<td>If API exposes token-level probs, can be extended, but VLLM work mostly uses confidence / similarity; no direct experiments reported.</td>
+</tr>
+<tr>
+<td>(1c)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>Clinical data</td>
+<td>No public evidence.</td>
+</tr>
+<tr>
+<td>(1d) Neighbourhood / neighbour-text</td>
+<td>Generate paraphrase / local-perturb neighbours and compare score gaps</td>
+<td>Needs logits / prob or at least loss / score (black-box + scores)</td>
+<td>LLM</td>
+<td>General data</td>
+<td>Neighbourhood comparison (ACL 2023) replaces shadow data with synthetic neighbours; reference-free and matches or exceeds reference-based MIA on benchmarks (<a href="https://aclanthology.org/2023.findings-acl.719/">Membership Inference Attacks against Language Models via Neighbourhood Comparison</a>).</td>
+</tr>
+<tr>
+<td>(1d)</td>
+<td>--</td>
+<td>--</td>
+<td>LLM</td>
+<td>Clinical data</td>
+<td>Clinical LLMs haven’t used neighbourhood MIA systematically; Nemecek et al. tried paraphrasing-based perturbation for clinical QA LLM (still canonical loss, not full neighbourhood) (<a href="https://arxiv.org/abs/2510.18674">Exploring Membership Inference Vulnerabilities in Clinical Large Language Models</a>).</td>
+</tr>
+<tr>
+<td>(1d)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>General data</td>
+<td>Could form multi-neighbour via augmentations/prompts for same image/text and combine with cross-modal consistency (see (3) &amp; VL-MIA). Most multimodal work still relies on cosine / MaxRényi-K%, not explicit neighbourhood framework.</td>
+</tr>
+<tr>
+<td>(1d)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>Clinical data</td>
+<td>No public evidence.</td>
+</tr>
+<tr>
+<td>(2) Representation-based (embedding / activation)</td>
+<td>Geometry of embeddings/activations (distance, density, clusters, layer patterns)</td>
+<td>Needs internal features (gray/white-box)</td>
+<td>LLM</td>
+<td>General data</td>
+<td>Standard class in MIA surveys; also covered in recent large-model surveys (<a href="https://arxiv.org/abs/2503.19338">Membership Inference Attacks on Large-Scale Models: A Survey</a>). Useful when logits are defended.</td>
+</tr>
+<tr>
+<td>(2)</td>
+<td>--</td>
+<td>--</td>
+<td>LLM</td>
+<td>Clinical data</td>
+<td>ClinicalBERT privacy eval shows state-of-the-art reference-based MIA had limited ability to distinguish pseudonymized vs non-pseudonymized text, implying embedding/reference MIA may understate clinical PII leakage (<a href="https://aclanthology.org/2023.nodalida-1.33/">Using Membership Inference Attacks to Evaluate Privacy-Preserving Language Modeling Fails for Pseudonymizing Data</a>; see also <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11197357/">End-to-end pseudonymization of fine-tuned clinical BERT models</a>).</td>
+</tr>
+<tr>
+<td>(2)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>General data</td>
+<td>LUMIA uses layer-wise linear probes on internal states across unimodal and multimodal tasks: single-modal avg AUC +15.7%, and 85.9% of multimodal settings AUC&gt;60% (<a href="https://arxiv.org/abs/2411.19876">LUMIA: Linear Probing for Unimodal and MultiModal Membership Inference Attacks leveraging internal LLM states</a>).</td>
+</tr>
+<tr>
+<td>(2)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>Clinical data</td>
+<td>No LUMIA-like probing published for medical image+text models; if internal layers are accessible in medical VLMs, this is a natural attack path.</td>
+</tr>
+<tr>
+<td>(3) Cross-modal / cross-query consistency</td>
+<td>Multiple queries / modalities / augmentations of same content; check output consistency, similarity, stability</td>
+<td>Black-box, can rely only on generated output; logits not required</td>
+<td>LLM</td>
+<td>General data</td>
+<td>For APIs returning only text, attackers can use multi-paraphrase / prompt robustness gaps to infer membership; statistical analyses warn outcomes are highly sensitive to thresholds and query design (<a href="https://openreview.net/forum?id=av0D19pSkU">Do Membership Inference Attacks Work on Large Language Models?</a>).</td>
+</tr>
+<tr>
+<td>(3)</td>
+<td>--</td>
+<td>--</td>
+<td>LLM</td>
+<td>Clinical data</td>
+<td>Nemecek et al. added paraphrasing-based MIA for clinical QA LLM, observing limited but measurable leakage—early exploration of multi-query consistency in clinical settings (<a href="https://arxiv.org/abs/2510.18674">Exploring Membership Inference Vulnerabilities in Clinical Large Language Models</a>).</td>
+</tr>
+<tr>
+<td>(3)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>General data</td>
+<td>VLLM benchmarks emphasize text/image consistency and confidence (VL-MIA pipeline + MaxRényi-K% metric) (<a href="https://arxiv.org/abs/2411.02902">Membership Inference Attacks against Large Vision-Language Models</a>); some papers note text log-prob alone may fail in multimodal due to modality interaction (e.g., LLAVA analyses).</td>
+</tr>
+<tr>
+<td>(3)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>Clinical data</td>
+<td>No system-level studies; medical multimodal (image report + image) would be well-suited for cross-modal consistency MIA, but remains open.</td>
+</tr>
+<tr>
+<td>(4) Decoding / Perplexity / token dynamics</td>
+<td>Token-level loss / perplexity / decoding trajectory (top-k flips, entropy, stepwise change)</td>
+<td>Needs token-level output (may not need full logits)</td>
+<td>LLM</td>
+<td>General data</td>
+<td>If token NLL / perplexity is exposed, many classic MIAs can be approximated in a label-only manner; recent statistics show AUC often barely above random in realistic LLM settings and is threshold-sensitive (<a href="https://openreview.net/forum?id=av0D19pSkU">Do Membership Inference Attacks Work on Large Language Models?</a> and related SoK).</td>
+</tr>
+<tr>
+<td>(4)</td>
+<td>--</td>
+<td>--</td>
+<td>LLM</td>
+<td>Clinical data</td>
+<td>Clinical LLMs: token-NLL / perplexity black-box MIA on EHR QA (model Llemr) with canonical loss + paraphrasing shows limited but detectable leakage (<a href="https://arxiv.org/abs/2510.18674">Exploring Membership Inference Vulnerabilities in Clinical Large Language Models</a>); masked LM setting also aligns with token-level likelihood stats (<a href="https://aclanthology.org/2022.emnlp-main.570/">Quantifying Privacy Risks of Masked Language Models Using Membership Inference Attacks</a>).</td>
+</tr>
+<tr>
+<td>(4)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>General data</td>
+<td>If text-side token probs are exposed (caption/QA), LLM MIA applies; VL-MIA includes token-level MIA on LLAVA pretraining data (<a href="https://arxiv.org/abs/2411.02902">Membership Inference Attacks against Large Vision-Language Models</a>). Few works study “multimodal token dynamics” explicitly.</td>
+</tr>
+<tr>
+<td>(4)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>Clinical data</td>
+<td>No public evidence.</td>
+</tr>
+<tr>
+<td>(5) Label-only MIA</td>
+<td>Only generated tokens (semantic similarity, rewritten perplexity proxy, output stability)</td>
+<td>Pure black-box (text output only, no logits)</td>
+<td>LLM</td>
+<td>General data</td>
+<td>PETAL (USENIX Sec 2025) uses per-token semantic similarity to approximate perplexity; label-only MIA can match some logits-based attacks on pretrained LLMs (<a href="https://arxiv.org/abs/2502.18943">Towards Label-Only Membership Inference Attack against Pre-trained Large Language Models</a>); SoK notes gains are limited in many realistic settings.</td>
+</tr>
+<tr>
+<td>(5)</td>
+<td>--</td>
+<td>--</td>
+<td>LLM</td>
+<td>Clinical data</td>
+<td>Clinical LLM MIA mostly relies on token-NLL (needs probs); truly “text-only, no probability” label-only MIA is nearly absent in clinical literature.</td>
+</tr>
+<tr>
+<td>(5)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>General data</td>
+<td>In VLLMs one can query multiple prompts/views and use answer consistency or semantic distance; published work usually still needs some confidence/similarity (cosine or MaxRényi-K%), so strong label-only evidence is scarce.</td>
+</tr>
+<tr>
+<td>(5)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>Clinical data</td>
+<td>No public evidence.</td>
+</tr>
+<tr>
+<td>(6) Multimodal / vision-language MIA</td>
+<td>Image+text similarity, multimodal logits, token-level image detection, internal feature combos</td>
+<td>Needs access to multimodal encoder/decoder logits / features or generated output (black/gray-box)</td>
+<td>LLM</td>
+<td>General data</td>
+<td>Not applicable (needs multimodal).</td>
+</tr>
+<tr>
+<td>(6)</td>
+<td>--</td>
+<td>--</td>
+<td>LLM</td>
+<td>Clinical data</td>
+<td>Not applicable.</td>
+</tr>
+<tr>
+<td>(6)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>General data</td>
+<td>Main line of multimodal MIA: ICCV 2023 CLIP cosine + augmentation aggregation (<a href="https://arxiv.org/abs/2310.00108">Practical Membership Inference Attacks Against Large-Scale Multi-Modal Models: A Pilot Study</a>); NeurIPS 2024 VLLM benchmark with token-level image detection pipeline and unified MaxRényi-K% metric (<a href="https://arxiv.org/abs/2411.02902">Membership Inference Attacks against Large Vision-Language Models</a>).</td>
+</tr>
+<tr>
+<td>(6)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>Clinical data</td>
+<td>No published system-level MIA on medical image + text multimodal models; major gap for healthcare multimodal privacy.</td>
+</tr>
+<tr>
+<td>(7) Distillation-based MIA</td>
+<td>Use knowledge distillation to build reference + attack features (loss/entropy/embedding, etc.)</td>
+<td>Needs trainable reference model (attacker has compute and approximate data)</td>
+<td>LLM</td>
+<td>General data</td>
+<td>Recent work brings distillation to LLM-based recommender MIA, fusing multi-source signals to boost attacks—shows “distill + MIA” is viable for complex systems (<a href="https://arxiv.org/abs/2511.14763">Distillation-based Membership Inference Attacks for LLM-based Recommender Systems</a>).</td>
+</tr>
+<tr>
+<td>(7)</td>
+<td>--</td>
+<td>--</td>
+<td>LLM</td>
+<td>Clinical data</td>
+<td>No public reports in clinical LLM settings.</td>
+</tr>
+<tr>
+<td>(7)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>General data</td>
+<td>Could distill multimodal encoder/decoder to a small model for probing, but current multimodal privacy work targets the large model directly; no explicit “distillation-based MLLM MIA” papers yet.</td>
+</tr>
+<tr>
+<td>(7)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>Clinical data</td>
+<td>No public evidence.</td>
+</tr>
+<tr>
+<td>(8) Internal-states / layerwise probing</td>
+<td>Train linear probe/classifier on intermediate activations to separate member vs non-member</td>
+<td>Needs internal states (gray/white-box; feasible for open LLM/MLLM)</td>
+<td>LLM</td>
+<td>General data</td>
+<td>LUMIA trains layer-wise probes and gains notable AUC (+15.7% avg) across many LLMs, analyzing which layers leak most (<a href="https://arxiv.org/abs/2411.19876">LUMIA: Linear Probing for Unimodal and MultiModal Membership Inference Attacks leveraging internal LLM states</a>).</td>
+</tr>
+<tr>
+<td>(8)</td>
+<td>--</td>
+<td>--</td>
+<td>LLM</td>
+<td>Clinical data</td>
+<td>No public LUMIA-style probing on clinical-tuned LLMs; technically feasible for open clinical-adapted LLMs (ClinicalBERT, ClinicalGPT, etc.).</td>
+</tr>
+<tr>
+<td>(8)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>General data</td>
+<td>LUMIA shows vision inputs can amplify leakage: ~85.9% of vision-related settings have AUC&gt;60%, indicating the vision channel can be a leakage amplifier (<a href="https://arxiv.org/abs/2411.19876">LUMIA: Linear Probing for Unimodal and MultiModal Membership Inference Attacks leveraging internal LLM states</a>).</td>
+</tr>
+<tr>
+<td>(8)</td>
+<td>--</td>
+<td>--</td>
+<td>MLLM</td>
+<td>Clinical data</td>
+<td>No published LUMIA-style probing for medical vision+text models; if hospital-internal diagnostic VLMs expose intermediate layers, this attack would be highly relevant, but remains “theoretically feasible” only.</td>
+</tr>
+</tbody>
+</table>
+<p>Ranking (clinical focus)</p>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Most effective attack type (clinical)</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>Loss / NLL-based MIA</td>
+<td>Medical text is structured + small-data → overfitting detectable</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>Token-level perplexity / decoding MIA</td>
+<td>Clinical models often expose token-level scores</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Representation-based</td>
+<td>Has evidence but weaker separability</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Consistency-based / Label-only</td>
+<td>Clinical text space is narrow; signal weaker</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Quantile / SPV / Neighbourhood / Distillation</td>
+<td>No clinical evidence</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Multimodal MIA (medical)</td>
+<td>Major gap; unstudied</td>
+</tr>
+</tbody>
+</table>
+
+            
+            
+        </body>
+        </html>
