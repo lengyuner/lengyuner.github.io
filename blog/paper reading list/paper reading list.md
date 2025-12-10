@@ -1213,6 +1213,10 @@ ICCV, 2019
 - [Analysis methods for large-scale neuronal recordings](https://www.science.org/doi/full/10.1126/science.adp7429)
 Carsen Stringer, Marius Pachitariu  
 
+
+- [How distributed is the brain-wide network that is recruited for cognition?](https://www.nature.com/articles/s41583-025-00992-5)
+- 
+
 ### high dimensional data 
 - [Spontaneous behaviors drive multidimensional, brainwide activity](https://www.science.org/doi/10.1126/science.aav7893)
 Carsen Stringer

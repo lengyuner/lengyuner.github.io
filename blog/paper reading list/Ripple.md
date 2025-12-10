@@ -365,7 +365,7 @@ PMID: 32142648 DOI: 10.1016/j.neuron.2020.01.040
 
 ### Deistler 2024 bioRxiv（Jaxley）
 Jaxley: Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics
- View ORCID ProfileMichael Deistler,  View ORCID ProfileKyra L. Kadhim,  View ORCID ProfileMatthijs Pals,  View ORCID ProfileJonas Beck,  View ORCID ProfileZiwei Huang,  View ORCID ProfileManuel Gloeckler,  View ORCID ProfileJanne K. Lappalainen,  View ORCID ProfileCornelius Schröder,  View ORCID ProfilePhilipp Berens,  View ORCID ProfilePedro J. Gonçalves,  View ORCID ProfileJakob H. Macke
+ Michael Deistler,  Kyra L. Kadhim,  Matthijs Pals,  Jonas Beck,  Ziwei Huang,  Manuel Gloeckler,  Janne K. Lappalainen,  Cornelius Schröder,  Philipp Berens,  Pedro J. Gonçalves,  Jakob H. Macke
 doi: https://doi.org/10.1101/2024.08.21.608979
 
 ### jun2017neuropixels
@@ -389,7 +389,7 @@ PMID: 34755599 PMCID: PMC8616581 DOI: 10.7554/eLife.62567
 
 ### deistler2024differentiable
 Jaxley: Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics
- View ORCID ProfileMichael Deistler,  View ORCID ProfileKyra L. Kadhim,  View ORCID ProfileMatthijs Pals,  View ORCID ProfileJonas Beck,  View ORCID ProfileZiwei Huang,  View ORCID ProfileManuel Gloeckler,  View ORCID ProfileJanne K. Lappalainen,  View ORCID ProfileCornelius Schröder,  View ORCID ProfilePhilipp Berens,  View ORCID ProfilePedro J. Gonçalves,  View ORCID ProfileJakob H. Macke
+ Michael Deistler,  Kyra L. Kadhim,  Matthijs Pals,  Jonas Beck,  Ziwei Huang,  Manuel Gloeckler,  Janne K. Lappalainen,  Cornelius Schröder,  Philipp Berens,  Pedro J. Gonçalves,  Jakob H. Macke
 doi: https://doi.org/10.1101/2024.08.21.608979  
 
 
@@ -403,4 +403,9 @@ paper from RIKEN and Allen:
 [Microscopic-Level Mouse Whole Cortex Simulation Composed of 9 Million Biophysical Neurons and 26 Billion Synapses on the Supercomputer Fugaku](https://dl.acm.org/doi/full/10.1145/3712285.3759819)
 
 
-High performance, large-scale multi-compartment Hodgkin-Huxley simulation of Drosophila’s whole-brain neural circuit model
+[High performance, large-scale multi-compartment Hodgkin-Huxley simulation of Drosophila’s whole-brain neural circuit model](https://www.biorxiv.org/content/10.1101/2022.11.01.512969v1)
+Kaoruko Higuchi, Tomoki Kazawa, Buntaro Sakai,  Shigehiro Namiki,  Stephan Shuichi Haupt, Ryohei Kanzaki
+November 01, 2022.
+
+[Microscopic-Level Mouse Whole Cortex Simulation Composed of 9 Million Biophysical Neurons and 26 Billion Synapses on the Supercomputer Fugaku](https://dl.acm.org/doi/full/10.1145/3712285.3759819)
+Rin Kuriyama, Kaaya Akira, Laura Green, Beatriz Herrera, Kael Dai, Mari Iura, Gilles Gouaillardet, Asako Terasawa, Taira Kobayashi, Jun Igarashi, Anton Arkhipov, Tadashi Yamazaki
