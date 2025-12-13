@@ -1243,6 +1243,9 @@ Phate
 - [Parameterization-free Projection for Geometry Reconstruction](https://www.cs.tau.ac.il/~dcor/articles/2007/Parameterization-free-Projection.pdf)
 
 ### activity analysis 
+- Meta Neural Band: [A generic non-invasive neuromotor interface for human-computer interaction](https://www.nature.com/articles/s41586-025-09255-w) Meta, 2025, Nature
+  surface electromyography (sEMG)
+  
 - [Neural signal propagation atlas of Caenorhabditis elegans](https://www.nature.com/articles/s41586-023-06683-4) Andrew M. Leifer
 
 - [Dynamical constraints on neural population activity](https://www.nature.com/articles/s41593-024-01845-7)
