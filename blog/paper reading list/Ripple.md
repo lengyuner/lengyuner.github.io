@@ -165,11 +165,25 @@ dentrits level voltage recording for in vivo
 Kai Du, ..., Jeanette Hellgren Kotaleski, 2017, PNAS 
 
 
+- [Spike transmission failures in axons from cortical neurons in vivo](https://www.cell.com/iscience/fulltext/S2589-0042(24)02109-6)
+- Netanel Ofer2,4 netanelofer@gmail.com ∙ Victor Hugo Cornejo3 ∙ Rafael Yuste, 2024, iScience
+Calcium accumulations are higher in axonal boutons than in axonal shafts  
+In most axons, action potentials propagate reliably across branch points  
+In some axons, higher frequency spike trains fail at branch points  
+Spike filtering correlates with the geometry of the axonal branch point
+
 
 
 
 ### Blue Brain Project
-Reconstruction and Simulation of Neocortical Microcircuitry 
+[Reconstruction and Simulation of Neocortical Microcircuitry](https://www.cell.com/fulltext/S0092-8674(15)01191-5)
+Henry Markram, Eilif Muller,
+Srikanth Ramaswamy,
+Michael W. Reimann, ..., Javier DeFelipe,
+Sean L. Hill, Idan Segev, Felix Schurmann
+
+
+
 
 ### experiment support
 - [**Voltage compartmentalization in dendritic spines in vivo**](https://www.science.org/doi/10.1126/science.abg0501)
@@ -409,3 +423,6 @@ November 01, 2022.
 
 [Microscopic-Level Mouse Whole Cortex Simulation Composed of 9 Million Biophysical Neurons and 26 Billion Synapses on the Supercomputer Fugaku](https://dl.acm.org/doi/full/10.1145/3712285.3759819)
 Rin Kuriyama, Kaaya Akira, Laura Green, Beatriz Herrera, Kael Dai, Mari Iura, Gilles Gouaillardet, Asako Terasawa, Taira Kobayashi, Jun Igarashi, Anton Arkhipov, Tadashi Yamazaki
+
+- [A genetic, genomic, and computational resource for exploring neural circuit function](https://elifesciences.org/articles/50901)
+Janelia, gene data
