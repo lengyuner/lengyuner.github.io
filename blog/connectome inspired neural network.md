@@ -133,6 +133,10 @@ Indirect pathways differentially shape functional correlations across the brain
 Here we create a leaky integrate-and-fire computational model of the entire Drosophila brain, on the basis of neural connectivity and neurotransmitter identity.  
 Limitation: We assume each neuron is either exclusively inhibitory or excitatory. We ignore neural morphology and receptor dynamics. The underlying synapses or neurotransmitter predictions may not be fully accurate. Gap junctions cannot be identified in the electron microscopy dataset, so we ignore their possibility. 
 
+- [Connectome simulations identify a central pattern generator circuit for fly walking](https://www.biorxiv.org/content/10.1101/2025.09.12.675944v1)
+
+John C. Tuthill, Bingni W. Brunton
+- 
 - [From Synapses to Dynamics: Obtaining Function from Structure in a Connectome Constrained Model of the Head Direction Circuit](https://www.biorxiv.org/content/10.1101/2025.05.26.655406v1.abstract)
 Ila Fiete, 2025
 $$
@@ -301,7 +305,7 @@ Matthew S. Creamer, Andrew M. Leifer, Jonathan W. Pillow, 2024
 
 - [TopoNets: High performing vision and language models with brain-like topography](https://arxiv.org/abs/2501.16396)
 - 
-**the following arecollected by Ruizhe Zhou**
+**the following are collected by Ruizhe Zhou**
 - [Bridging the data gap between children and large language models](https://www.sciencedirect.com/science/article/pii/S1364661323002036)   
    Frank, M. C. (2023)
 

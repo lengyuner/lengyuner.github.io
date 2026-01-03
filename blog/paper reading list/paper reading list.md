@@ -163,6 +163,9 @@ FlyWire
 - [Synaptic architecture of leg and wing premotor control networks in Drosophila](https://www.nature.com/articles/s41586-024-07600-z)  John C. Tuthill
 **motor**
 
+- [Connectomic reconstruction of a female Drosophila ventral nerve cord](https://www.nature.com/articles/s41586-024-07389-x)
+Wei-Chung Allen Lee & John C. Tuthill
+
 - [Mapping of neuronal and glial primary cilia contactome and connectome in the human cerebral cortex](https://www.cell.com/neuron/fulltext/S0896-6273(23)00719-5)
 human
 
@@ -211,6 +214,8 @@ Machine learning identifies synaptic transmitters from electron micrographs
 
 
 ### connectome analysis
+
+- [Distributed control circuits across a brain-and-cord connectome](https://www.biorxiv.org/content/10.1101/2025.07.31.667571v2)
 
 - [Network statistics of the whole-brain connectome of Drosophila](https://www.nature.com/articles/s41586-024-07968-y)
 **Mala Murthy, Nature**
