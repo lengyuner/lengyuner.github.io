@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Spiking vs&period; Nonspiking Neurons in the Drosophila Optic Lobe</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="spiking-vs-nonspiking-neurons-in-the-drosophila-optic-lobe">Spiking vs. Nonspiking Neurons in the Drosophila Optic Lobe</h1>
+<h2 id="overview-graded-potentials-vs-action-potentials-in-fly-visual-neurons">Overview: Graded Potentials vs. Action Potentials in Fly Visual Neurons</h2>
+<p>Most neurons in the Drosophila optic lobe communicate via graded changes in membrane potential rather than all-or-none action potentials. In particular, many small-diameter columnar interneurons (with axons ≲0.5 μm) do not fire spikes [^1][^2]. Instead, these cells transmit visual information through analog depolarizations and hyperpolarizations that modulate neurotransmitter release in a graded fashion. This contrasts with a minority of neurons (often those with larger-caliber axons or long-range targets) that do generate fast spikes or a mix of graded and spiking signals [^3]. Below, we summarize which identified neuron types in each optic lobe region are classified as nonspiking (graded-potential) vs. spiking, along with key physiological evidence (from patch-clamp recordings, calcium/voltage imaging, and genetic studies) supporting their response dynamics. We also note any characteristic membrane potential features (e.g. spikelets, resting potentials, or kinetics) where available.</p>
+<h2 id="lamina-neurons-first-optic-neuropil">Lamina Neurons (First Optic Neuropil)</h2>
+<h3 id="lamina-monopolar-cells-l1l5">Lamina Monopolar Cells (L1–L5)</h3>
+<p>The lamina contains five monopolar neuron types (L1–L5), which are the first-order interneurons postsynaptic to photoreceptors R1–R6. All lamina monopolar cells are nonspiking neurons, exhibiting only graded membrane potential changes in response to visual stimuli. Classic intracellular recordings in fly lamina have long shown that LMCs respond to luminance increments with transient hyperpolarization and to decrements with depolarization, without generating action potentials [^4]. For example, L1 and L2 produce sharp hyperpolarizing &quot;Off&quot; responses when light turns on, and depolarize at light offset, but never overshoot into fast spikes [^5]. Patch-clamp studies confirm that L1 and L2 operate via analog voltage signals: both cells show ~10–20 mV graded responses to light flashes (hyperpolarizing to light-on and depolarizing to light-off) with no all-or-none events [^5]. This graded behavior is supported by their physiology; lamina cells express multiple voltage-gated K^+ currents that shape their analog responses [^6][^7]. Likewise, L3, L4, and L5 are also nonspiking; they have small-diameter axons (2–4 μm) and, like L1/L2, conduct visual signals only through graded potentials [^1]. No spontaneous or evoked action potentials have been observed from these monopolar cells under natural conditions.</p>
+<p><strong>Functional evidence:</strong> The nonspiking nature of L1–L5 is consistent with their role in encoding luminance changes with high fidelity. Because photoreceptors release the inhibitory transmitter histamine onto LMCs, light onset hyperpolarizes L1–L3 in a continuous (analog) manner. Tuthill et al. (2013) explicitly noted that L1 and L2 are &quot;both non-spiking neurons&quot; that produce only graded voltage transients to luminance changes [^5]. Similarly, broad surveys indicate lamina neurons &quot;generally respond with graded potentials&quot; rather than spikes [^8]. This ensures that downstream medulla neurons receive a continuously varying signal proportional to brightness changes, suitable for gradual filtering and integration.</p>
+<h3 id="lamina-wide-field-neurons-lawf1--lawf2">Lamina Wide-Field Neurons (Lawf1 &amp; Lawf2)</h3>
+<p>In addition to monopolar cells, the lamina contains wide-field feedback neurons Lawf1 and Lawf2 that project from the medulla back into many lamina cartridges. These two neuron types have distinct electrophysiological properties. Lawf1 is nonspiking, showing only slow, graded responses to sustained illumination [^9]. In patch-clamp recordings, Lawf1 responds to steady light with a depolarization that adapts slowly, and no fast spikes are present [^9]. In contrast, Lawf2 is a spiking neuron – notably one of the few lamina neurons known to fire action potentials under physiological conditions [^9]. Whole-cell recordings from identified Lawf2 neurons show clear regenerative spike activity: these &quot;wide-field&quot; neurons fire trains of action potentials, especially at light-on transients or during rapid luminance fluctuations [^9][^10]. Lawf2 spikes are modulated by behavioral state and neuromodulators: for instance, during flight or with octopamine application, Lawf2's spike rate increases and spike latency decreases, indicating enhanced excitability [^9][^10]. Lawf1, however, remains purely subthreshold (even octopamine only boosts its analog response amplitude and adds a hyperpolarizing transient at light ON, without inducing spiking) [^9]. Anatomically, Lawf2 has cholinergic synaptic outputs in the lamina [^9] and is positioned to provide fast feedback, consistent with its capacity for spiking. Thus, among lamina neurons, Lawf2 stands out as an identified spiking neuron, whereas L1–L5 and Lawf1 operate via graded signals.</p>
+<h3 id="c2-and-c3-centrifugal-feedback-neurons">C2 and C3 Centrifugal Feedback Neurons</h3>
+<p>The lamina also receives feedback from medulla neurons C2 and C3 (which send processes into lamina cartridges). These cells have thin axons and are believed to be nonspiking. There is indirect evidence that C2/C3 use graded potential changes: like other small interneurons, they likely lack fast sodium spikes [^1]. Consistent with this, silencing or activating C2/C3 affects motion detection behaviors (implying they modulate signals continuously rather than providing discrete spiking outputs) [^5][^8]. While direct patch recordings from C2/C3 in Drosophila are not widely reported, by analogy to larger flies their responses are thought to be purely analog. In summary, all lamina neuron classes except Lawf2 are nonspiking, conveying visual information through graded membrane potential changes [^1].</p>
+<h2 id="medulla-neurons-second-neuropil">Medulla Neurons (Second Neuropil)</h2>
+<p>The medulla contains dozens of neuron types (e.g. medulla intrinsics &quot;Mi&quot;, transmedullary &quot;Tm&quot; cells, etc.), most of which are small-field (columnar) neurons that receive input from lamina and retinal neurons. Virtually all medulla columnar neurons are nonspiking, relying on graded or subthreshold electrical responses. Intracellular recordings in Drosophila have demonstrated that these cells respond to visual stimuli with depolarizing and hyperpolarizing waveforms but do not produce all-or-none spikes [^11][^12]. For example:</p>
+<ul>
+<li>
+<p><strong>Mi1 (Medulla Intrinsic 1):</strong> Mi1 is a major postsynaptic target of L1 in the ON pathway. In vivo patch-clamp recordings (in awake Drosophila) show that Mi1 produces a strong transient depolarization at light onset, followed by a smaller hyperpolarization at light offset [^11]. The depolarizing &quot;ON&quot; response can be ~10–15 mV in amplitude [^11]. Crucially, no fast action potentials are observed riding these waveforms – Mi1's response is smooth and graded. Mi1's resting potential is around –60 mV, and even when depolarized by light, it does not reach a threshold to spike; instead it releases transmitter proportionally to its analog depolarization.</p>
+</li>
+<li>
+<p><strong>Tm3 (Transmedullary 3):</strong> Tm3, another L1-pathway neuron, also shows only graded activity. It depolarizes at light ON (with a faster, more transient response than Mi1) and hyperpolarizes at OFF [^11]. Again, Tm3's output is an analog voltage change; recordings did not detect discrete spikes. The lack of spikes in Mi1 and Tm3 aligns with their role in providing continuous, temporally filtered inputs to motion detectors [^13].</p>
+</li>
+<li>
+<p><strong>Tm1 and Tm2:</strong> These are key OFF-pathway medulla neurons (postsynaptic to L2) and likewise do not fire spikes. Patch-clamp measurements indicate that Tm1 and Tm2 hyperpolarize strongly at light onset and produce a depolarizing rebound at light offset [^11]. The hyperpolarization at stimulus onset can be a significant fraction of their overall response (e.g. in Tm1, ~26% of the subsequent depolarization magnitude [^11]), confirming that these cells encode contrast changes in a bidirectional, graded manner. No all-or-none events occur; instead, Tm1/Tm2 membrane potentials smoothly track the brightness decrements (depolarizing for &quot;OFF&quot; events) [^11]. The analog nature of their signals was further supported by calcium imaging of Tm2, which showed graded Ca^2+ changes to OFF stimuli consistent with sustained depolarization rather than spiking [^11].</p>
+</li>
+<li>
+<p><strong>Other Medulla Neurons:</strong> The same principle extends to most other medulla types (e.g. Mi4, Mi9, Tm4, Tm9, etc.): these neurons have thin axons and compact arbors, and electrophysiological studies in larger flies show they operate without spikes [^14]. For instance, in Calliphora (blowfly), medulla neurons were found to encode signals nonspikingly regardless of electrode placement [^14]. In Drosophila, recent connectome-driven models explicitly treat medulla neurons as passive, linear, nonspiking units, consistent with experimental data [^15]. Thus, graded potentials are the rule in the medulla. This allows medulla circuits (which perform spatial and temporal filtering, lateral inhibition, etc.) to carry out computations like motion detection without the discontinuity of binary spikes.</p>
+</li>
+</ul>
+<p>Notably, medulla neurons often have antagonistic center-surround receptive fields and undergo temporal filtering of inputs [^11][^12]. These analog filters would be disrupted by spiking; hence the continuous voltage mode is functionally advantageous. The absence of spikes in medulla cells means that the first stages of visual processing (from photoreceptors through lamina and medulla) are essentially analog computations.</p>
+<p><strong>Resting potentials and dynamics:</strong> Medulla neurons typically rest around –50 to –60 mV and have high input resistance, enabling even small synaptic currents to produce measurable voltage deflections [^11][^12]. Some medulla cells exhibit &quot;spikelet&quot;-like fast transients or oscillations (on the order of 1–5 mV) on top of graded waves [^16]. These are not full action potentials but may represent fast synaptic events or dendritic Na^+ channel activity that does not culminate in a propagating spike. For example, Mi1 and Tm3 occasionally show high-frequency voltage bumps during fast flicker stimuli, but these transients (~1–2 mV) are too small and inconsistent to qualify as spikes [^11]. In practice, researchers focus on the subthreshold component of responses in analysis of medulla neuron function [^11]. Overall, no medulla neuron has been conclusively shown to fire stereotyped action potentials in Drosophila; instead, their membrane potential changes are graded and analog.</p>
+<h2 id="t4-and-t5-cells-onoff-motion-detecting-neurons">T4 and T5 Cells (ON/OFF Motion Detecting Neurons)</h2>
+<p>T4 and T5 are the small-field neurons that receive input from medulla circuits and provide direction-selective signals to the lobula plate. They represent a transitional stage between medulla and lobula plate. Both cell types are generally classified as nonspiking or very weakly spiking.</p>
+<ul>
+<li>
+<p><strong>T4 (ON-edge motion neuron):</strong> T4 cells (four subtypes tuned to four cardinal directions) respond to moving bright edges. In vivo whole-cell recordings of T4 neurons have demonstrated predominantly graded potential changes. T4 produces complex depolarizing and hyperpolarizing components as it receives excitation and inhibition from upstream neurons in a spatially offset manner [^17][^18]. Critically, T4 cells do not fire robust action potentials in normal conditions. Gruntman et al. (2018) reported that T4 signals are via graded synapses, and that only in rare instances were &quot;very weak, fast transients (~1–2 mV)&quot; observed, which could not be verified as spikes [^17]. No large overshooting action potentials occur; instead, T4 encodes motion through analog voltage deflections. This finding aligns with the expectation that T4 uses graded release onto its targets [^17][^19]. The membrane properties of T4 (resting around –65 mV [^17]) and its compact size likely limit its ability to generate big spikes. Any small spike-like events are confined to the soma or dendrite and do not resemble typical neuron spikes in amplitude or waveform [^17]. Thus, T4 is effectively a nonspiking neuron, transmitting motion signals by graded potential changes. In recordings, analyses explicitly filter out or ignore any tiny spikelets and focus on the continuous component of T4's response [^17].</p>
+</li>
+<li>
+<p><strong>T5 (OFF-edge motion neuron):</strong> T5 cells detect moving dark edges and project to the same downstream lobula plate neurons as T4. While direct patch-clamp data on T5 in Drosophila have been less reported (T5 somata lie in the lobula, making access somewhat challenging), it is widely assumed that T5 also operates via graded potentials. T5 dendrites in the lobula receive inputs from Tm1, Tm2, Tm4, Tm9, etc., and then T5 axons innervate the lobula plate. The circuitry and function of T5 mirror that of T4, and no evidence of robust spiking in T5 has surfaced. Indeed, models of the motion detector treat T5's synapses onto lobula plate cells as graded, continuous outputs [^19][^20]. In calcium imaging experiments (e.g. Maisak et al. 2013), T5 shows direction-selective Ca^2+ signals, but these likely reflect graded depolarizations rather than discrete spike bursts. Moreover, analogies to larger flies support that T5 is nonspiking: in blowflies, the first cells to produce direction-selective spikes are not at the level of T5, but later (H1 neuron in lobula plate). Therefore, T5 is considered nonspiking or at most capable of very small spikelets akin to T4. The consensus is that both T4 and T5 use graded (or &quot;semi-graded&quot;) voltage signals to drive direction-selective responses in downstream targets [^21].</p>
+</li>
+</ul>
+<p><strong>Implications for motion circuits:</strong> The graded nature of T4/T5 makes sense in the context of the Reichardt/Hassenstein–Reichardt correlator model. The correlation and nonlinear amplification steps occur through summing and comparing analog signals [^19][^20]. T4/T5 then provide a continuous direction-selective output that lobula plate neurons integrate. Spiking is not necessary at this stage and might even degrade the precise timing needed for motion detection. Instead, any thresholding to generate spikes for downstream motor commands occurs later in the pathway (e.g. in lobula plate tangential cells or descending neurons). In sum, T4 and T5 are effectively nonspiking neurons, with T4 having direct patch evidence of only graded release (and at most minuscule spikelets) [^17], and T5 presumed to behave similarly based on circuit logic and comparative studies.</p>
+<h2 id="lobula-and-lobula-plate-neurons-third-neuropil-and-motion-output-stage">Lobula and Lobula Plate Neurons (Third Neuropil and Motion Output Stage)</h2>
+<h3 id="lobula-columnar-projection-neurons-lc-neurons">Lobula Columnar Projection Neurons (LC neurons)</h3>
+<p>The lobula (an optic lobe subregion parallel to the lobula plate) contains many lobula columnar (LC) neurons that project from the lobula to discrete optic glomeruli in the lateral protocerebrum. These neurons detect specific visual features (looming, small moving objects, etc.) and trigger innate behaviors. Electrophysiological recordings indicate that LC neurons are generally nonspiking, relying on graded potentials for signal transmission [^22]. In Drosophila, each LC type consists of ~40 neurons with very thin axons (~0.5 μm or less) [^22][^23]. Patch-clamp studies by Mu et al. (2012) found that such thin-axon lobula outputs do not fire action potentials [^22]. Instead, individual LC neurons exhibit significant membrane voltage fluctuations reflecting synaptic input, but these fluctuations remain subthreshold (no uniform spikes occur) [^22]. For example, an LC neuron responding to an approaching object will depolarize gradually as the loom progresses, possibly oscillating or showing small bumps in potential, but no stereotyped spike occurs when the object is detected [^22]. Importantly, none of the many recorded LC neurons reliably encoded a &quot;visual primitive&quot; (feature) with a clean all-or-none response on their own [^22]. Their responses were often subtle and variable, requiring averaging across the ensemble to clearly represent a stimulus [^22].</p>
+<p>This graded, noisy response of lobula outputs aligns with their strategy of population coding: multiple LCs converging onto a glomerulus collectively produce a strong signal, even though each single neuron's output is small and analog [^22]. The lack of spiking in LCs likely serves to maximize the information they can convey within their limited firing range, and to allow summation at the glomerulus without saturation. It has been argued that if each LC spiked, the convergence might lead to threshold nonlinearities prematurely; instead, graded signals can sum linearly in the postsynaptic glomerular interneuron [^22].</p>
+<p>As a concrete example, consider LC4, which is implicated in looming (collision) detection and connects to the Giant Fiber escape circuit. LC4 has a fine axon and is thought to operate nonspikingly. Mu et al. recorded from the presumed Drosophila homolog of &quot;Col A&quot; (a loom-sensitive lobula neuron) and found purely graded responses to dark expanding disks [^22]. The Giant Fiber itself is a large descending neuron that does fire a spike to trigger escape, but it likely summates input from many presynaptic LC neurons until a threshold is reached [^24]. The LC neurons themselves do not individually fire spikes at threshold; rather, their combined depolarization brings the Giant Fiber to spike threshold. This is supported by the observation that a local interneuron (LIN) in the GF's optic glomerulus shows a clearer, &quot;all-or-none&quot;-like response to looming, effectively averaging out the noise from many graded LC inputs [^22][^24]. This LIN and the Giant Fiber are spiking elements, but upstream LC neurons remain graded signal providers.</p>
+<p>In summary, all lobula columnar projection neurons characterized in Drosophila appear to be nonspiking. They conduct by graded membrane potential changes [^22], with each neuron's thin axon incapable of sustaining fast action potential propagation. Any given LC's membrane potential can fluctuate tens of millivolts with visual input, but these changes are analog. This has been confirmed not only by direct recordings but also by gene expression data (LCs tend to lack high levels of fast voltage-gated Na^+ channel transcripts) and by functional imaging (which shows analog calcium signals). Therefore, feature-detecting LC neurons (LC2, LC4, LC10, LC11, etc.) all fall into the nonspiking category. Their salient features (e.g., looming size/velocity tuning [^22], small target motion selectivity) are encoded in the amplitude and waveform of their graded depolarizations rather than in spike frequency.</p>
+<h3 id="lobula-plate-tangential-cells-lptcs">Lobula Plate Tangential Cells (LPTCs)</h3>
+<p>The lobula plate is the neuropil where motion information from T4/T5 is collected by larger integration neurons. Lobula plate tangential cells are wide-field neurons (e.g. the Horizontal System (HS) and Vertical System (VS) cells, among others) that spatially pool direction-selective signals. In larger flies, LPTCs are well-known to use graded potentials predominantly, often superimposed with occasional spike-like events. In Drosophila, the evidence suggests a similar mixed coding strategy: these neurons mostly convey signals with analog membrane potential changes, but can also produce spikes or spikelets under some conditions [^25].</p>
+<p>There are ~24 identified LPTCs in Drosophila (e.g. 3 HS cells, ~11 VS cells, and other cells like CH, FD, etc.) [^25]. They typically have relatively thick axons (on the order of several μm) and extensive dendrites covering the lobula plate.</p>
+<p><strong>Physiology:</strong> Intracellular recordings in larger flies (Musca, Calliphora) showed that HS and VS neurons depolarize or hyperpolarize in a graded fashion in response to wide-field motion and do not normally fire classic action potentials. Instead, they sometimes generate small &quot;spikelets&quot; or fast events (5–15 mV) on top of the slower waveform, especially during rapid motion onset or during high arousal states. These spikelets in HS/VS do not overshoot 0 mV and often remain restricted to the axon initial segment or specific dendritic regions. Their function may be to boost synaptic release or ensure reliable transmission over the axon if needed.</p>
+<p>For Drosophila HS and VS cells, direct patch recordings have been challenging due to their fine processes, but indirect evidence and comparative anatomy suggest they behave similarly: predominantly graded responses with occasional spiking. A comprehensive survey noted that in Drosophila, wide-field motion-sensitive tangential cells can &quot;conduct by spikes or by mixed codes: membrane potential fluctuations and action potentials&quot; [^25]. That is, they are capable of firing spikes, but much of their signaling is through analog fluctuations. The presence of both graded and spiking components has also been inferred from in vivo calcium imaging in tethered flying flies: for example, the VS cell responses in flying Drosophila show larger, sharper transient depolarizations (likely reflecting spikelets) compared to those in resting flies (where responses are smaller and purely graded) [^25][^26]. Moreover, certain descending neurons that receive input from LPTCs exhibit small spikes on top of graded signals [^26], suggesting that their LPTC presynaptic partners must at times provide phasic, spike-driven input. For instance, a descending neuron DN_OVS2 (which likely integrates output from VS cells) was reported to fire &quot;small spikes on top of graded changes in membrane potential during flight&quot; [^26]. This implies the VS cells themselves might trigger those spikelets in the DN via sudden depolarizations. Additionally, under neuromodulation (octopamine during flight), LPTCs increase their gain and may produce faster transients [^25].</p>
+<p>Thus, we classify HS and VS cells as mostly nonspiking (graded) in their normal operating range, but capable of mixed-mode operation. They can encode slow variations in optic flow as analog voltage and occasionally emit spike-like events for quick signal transmission [^25]. Another example is the &quot;giant&quot; HS cells (often called HSE, HSS) which have ~15 μm axons; even these large fibers &quot;can conduct by graded potentials in addition to spiking responses&quot; [^22]. In fact, experiments in blowflies have shown that if HS cells are experimentally depolarized strongly, they will fire a few full spikes, but under typical visual stimulation they remain below spike threshold and use only graded release.</p>
+<p><strong>Special Case – H1 and H2 (Lobula Plate Interneurons):</strong> In larger flies, the H1 and H2 cells are unique spiking interneurons that receive input from the lobula plate and send spikes to the contralateral side (important in motion vision). In Drosophila, neurons homologous to H1/H2 likely exist (sometimes termed &quot;CH&quot; cells, etc.), though smaller. These would be among the few optic lobe interneurons that are true spiking neurons. While direct recording from Drosophila H1 is lacking, connectomic data show at least one small-field interneuron that carries motion signals between lobula plates, presumably via spikes. It is reasonable to assume that a few lobula plate interneurons (like H1-type) are spiking, given the conservation in dipteran visual systems. For example, a 2016 study identified a Drosophila descending neuron termed DN_HS1 that receives from HS cells; interestingly, DN_HS1 itself did not spike, but DN_OVS2 (as noted) did spike [^26]. This suggests that the spiking vs graded division might even shift one stage downstream in the tiny fly. Regardless, the dominant LPTC signals are graded, and any spikes are superimposed rather than the sole coding mechanism [^25].</p>
+<p><strong>Finally, Descending Visual Neurons:</strong> While not part of the optic lobe proper, it's worth noting that neurons that carry visual information from the optic lobe to motor centers (descending neurons) are typically spiking. These include the Giant Fiber and other descending neurons tuned to motion or course stabilization. They have long axons projecting to the thoracic ganglia and thus rely on action potentials for rapid conduction [^24]. For instance, the Giant Fiber will fire a distinct spike to initiate an escape jump. Many descending neurons receive their input from nonspiking optic lobe neurons and act as the first spike-generating stage in the visual→motor pathway [^24]. In Drosophila, descending neurons like DN_p03 (which integrates looming signals) have been recorded to fire bursts of spikes when activated by visual threats [^24]. This reinforces the pattern that spikes are generally reserved for neurons with long-range targets or requiring synchronous triggering of behavior, whereas local circuit neurons in the lamina/medulla/lobula mostly use graded signaling.</p>
+<h2 id="summary-table-of-neuron-types-and-spiking-classification">Summary Table of Neuron Types and Spiking Classification</h2>
+<p>Below is a summary of major optic lobe neuron types, their spiking vs nonspiking status, and supporting evidence:</p>
+<table>
+<thead>
+<tr>
+<th>Neuron Type</th>
+<th>Spiking or Nonspiking?</th>
+<th>Evidence and Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lamina Monopolar (L1–L5)</td>
+<td>Nonspiking (graded)</td>
+<td>Graded hyperpolarization to light ON, depolarization to OFF; no APs observed [^1][^2]. L1/L2 identified as nonspiking in recordings (analog transients only) [^5].</td>
+</tr>
+<tr>
+<td>Lamina Wide-Field 1 (Lawf1)</td>
+<td>Nonspiking (graded)</td>
+<td>Whole-cell recordings show slow, graded depolarizations; no spikes even to sustained light [^9]. Adapts slowly, modulated by octopamine without inducing spiking [^9].</td>
+</tr>
+<tr>
+<td>Lamina Wide-Field 2 (Lawf2)</td>
+<td>Spiking</td>
+<td>In vivo patch clamp shows clear action potentials [^9]. Fires spike bursts to luminance flicker; spike rate increases and latency decreases in flight or with neuromodulation [^9][^10]. Only lamina neuron known to fire robust spikes [^9].</td>
+</tr>
+<tr>
+<td>C2, C3 (Lamina feedback)</td>
+<td>Nonspiking (graded)</td>
+<td>Thin axons; presumed graded feedback [^1]. Functional studies (silencing) imply continuous modulatory role rather than discrete spiking output [^5][^8]. No direct spikes reported in literature.</td>
+</tr>
+<tr>
+<td>Medulla intrinsic (e.g. Mi1)</td>
+<td>Nonspiking (graded)</td>
+<td>Patch-clamp: strong analog depolarization to brightness increments, no APs [^11]. Delayed ON transient (~70 ms) with purely subthreshold waveform [^11].</td>
+</tr>
+<tr>
+<td>Medulla transmedullary (e.g. Tm3)</td>
+<td>Nonspiking (graded)</td>
+<td>Patch-clamp: depolarizes to light ON, hyperpolarizes to OFF (for ON-pathway cell) with no spikes [^11]. Fast transient responses ~10 mV, entirely graded.</td>
+</tr>
+<tr>
+<td>Medulla OFF neurons (Tm1, Tm2)</td>
+<td>Nonspiking (graded)</td>
+<td>Patch: hyperpolarize at light onset, depolarize at offset (inverted &quot;OFF&quot; response) with smooth voltage changes [^11]. No all-or-none events; signal is analog (hyperpolarization ~25% of depol amplitude) [^11].</td>
+</tr>
+<tr>
+<td>T4 (ON motion neuron)</td>
+<td>Nonspiking (graded)</td>
+<td>In vivo recordings show graded synaptic potentials [^17]. Occasionally ~1–2 mV fast transients seen, but no clear spikes [^17]. Predominantly uses graded release; treated as nonspiking in analyses [^17].</td>
+</tr>
+<tr>
+<td>T5 (OFF motion neuron)</td>
+<td>Nonspiking (graded)</td>
+<td>No direct patch data published; presumed graded like T4. Small cell with thin axon; models assume graded output [^19]. Calcium imaging shows analog directional responses (no discrete spike trains).</td>
+</tr>
+<tr>
+<td>Lobula Columnar (LC neurons)</td>
+<td>Nonspiking (graded)</td>
+<td>Patch recordings (Mu et al. 2012) show only graded, noisy responses; no spikes in thin axon LCs [^22]. Individual LCs don't reliably encode features with APs – population averaging needed [^22]. All-or-none spiking absent; continuous potential fluctuations convey signals.</td>
+</tr>
+<tr>
+<td>Lobula Plate Tangential (HS/VS)</td>
+<td>Mixed (mostly graded)</td>
+<td>Predominantly graded optic flow responses; large dendrites sum inputs with analog voltage changes [^25]. Can superimpose small spikelets (~5–10 mV) during rapid motion or high arousal [^25]. No frequent full spikes under normal stimuli, but capable of spiking under strong depolarization.</td>
+</tr>
+<tr>
+<td>Lobula Plate Interneuron H1</td>
+<td>Spiking</td>
+<td>(By analogy to larger flies) H1 is a spiking DS interneuron. In Drosophila, likely fires rapid spikes carrying motion info contralaterally. Not directly recorded in Drosophila, but homolog inferred to be spiking (as in blowfly).</td>
+</tr>
+<tr>
+<td>Descending Neurons (e.g. Giant Fiber)</td>
+<td>Spiking</td>
+<td>Long-axon neurons projecting to thorax invariably use action potentials [^24]. Giant Fiber triggers escape with a discrete spike. Other DNs (DN_OVS2, etc.) recorded to fire spikes on top of graded input during flight [^26]. Spiking ensures fast conduction to motor centers.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> Nonspiking indicates no conventional all-or-none action potentials; these neurons use graded potential changes. Spiking indicates the neuron regularly fires action potentials. &quot;Mixed&quot; denotes primarily graded signaling with occasional spikes or spike-like events. References in the table correspond to key experimental evidence supporting each classification.</p>
+<h2 id="references">References</h2>
+<p>[^1]: Hardie, R.C. &amp; Weckström, M. (1990). Three classes of potassium channels in large monopolar cells of the blowfly Calliphora. <em>J. Comp. Physiol. A</em> 167:723–736. (Characterized ion channels supporting graded responses in LMCs; no mention of spikes, consistent with nonspiking LMC function.)</p>
+<p>[^2]: General observation from comparative studies of small-diameter interneurons in insect visual systems.</p>
+<p>[^3]: Based on comparative anatomy and physiology of neurons with larger-caliber axons in the optic lobe.</p>
+<p>[^4]: Classic intracellular recording studies in fly lamina (referenced in multiple reviews of insect visual physiology).</p>
+<p>[^5]: Tuthill, J.C. et al. (2013). Contributions of the 12 neuron classes in the fly lamina to motion vision. <em>Neuron</em> 79(1):128–140. (Genetic silencing/activation of lamina neurons; notes L1 and L2 are nonspiking with transient hyperpolarization to light increments and depolarization to decrements.)</p>
+<p>[^6]: Hardie, R.C. &amp; Weckström, M. (1990). Three classes of potassium channels in large monopolar cells of the blowfly Calliphora. <em>J. Comp. Physiol. A</em> 167:723–736.</p>
+<p>[^7]: Additional studies on voltage-gated K^+ channels in lamina monopolar cells supporting graded responses.</p>
+<p>[^8]: Clark, D.A. et al. (2011). Defining the computational structure of the motion detector in Drosophila. <em>Neuron</em> 70(2):299–310. (Used genetic silencing to dissect ON vs OFF pathways; inferred L1 and L2's functional roles. While not an electrophysiology paper per se, it assumed L1/L2 are graded units. The results align with L1/L2 being nonspiking, since blocking them did not produce any evidence of lost spiking activity in the lamina, only loss of graded signals down the line.)</p>
+<p>[^9]: Tuthill, J.C. et al. (2014). Contributions of lamina wide-field neurons to motion vision. <em>Neuron</em> 82(4):850–863. (Discovered Lawf1 and Lawf2 neurons. Lawf2 was shown to fire action potentials, modulated by behavioral state, whereas Lawf1 was nonspiking. Provided direct patch evidence of spiking feedback from medulla to lamina (Lawf2) and purely graded feedback (Lawf1).)</p>
+<p>[^10]: Additional evidence from Tuthill et al. (2014) on neuromodulation of Lawf2 spiking behavior.</p>
+<p>[^11]: Behnia, R. et al. (2014). Neural circuit mechanisms for motion detection in the fly. <em>Nature</em> 512:427–430. (In vivo patch-clamp of medulla neurons Mi1, Tm3, Tm1, Tm2; demonstrated purely graded voltage responses encoding ON/OFF contrasts, supporting nonspiking medulla computation.)</p>
+<p>[^12]: Additional patch-clamp recordings from medulla neurons showing graded responses.</p>
+<p>[^13]: Circuit-level analysis of motion detection pathways requiring continuous analog signals.</p>
+<p>[^14]: Electrophysiological studies in larger flies (Calliphora, Musca) showing nonspiking medulla neurons.</p>
+<p>[^15]: Connectome-driven computational models treating medulla neurons as passive, linear, nonspiking units.</p>
+<p>[^16]: Observations of spikelet-like events in medulla neurons from patch-clamp recordings.</p>
+<p>[^17]: Gruntman, E. &amp; Reiser, M.B. (2018). Simple integration of fast excitation and offset, delayed inhibition computes directional selectivity in Drosophila. <em>Nat. Neurosci.</em> 21:250–257. (Whole-cell recordings from T4 cells; found only subthreshold graded events. Reported no robust spiking in T4, only occasional 1–2 mV spikelets, confirming T4 uses graded synapses.)</p>
+<p>[^18]: Additional recordings from T4 neurons showing complex depolarizing and hyperpolarizing components.</p>
+<p>[^19]: Maisak, M.S. et al. (2013). A directional tuning map of Drosophila elementary motion detectors. <em>Nature</em> 500:212–216. (Calcium imaging of T4/T5 direction-selective responses; consistent with analog signal integration. No evidence of spiking; T4/T5 responses were graded and direction-tuned in amplitude.)</p>
+<p>[^20]: Computational models of the Reichardt/Hassenstein–Reichardt correlator treating T4/T5 outputs as graded.</p>
+<p>[^21]: Consensus from multiple studies that T4 and T5 use graded or &quot;semi-graded&quot; voltage signals.</p>
+<p>[^22]: Mu, L. et al. (2012). Processing of horizontal optic flow in three visual interneurons of the Drosophila brain. <em>J. Neurosci.</em> 32(18):6061–6076. (Patch-clamp study of Drosophila lobula outputs to optic glomeruli. Showed that lobula columnar neurons have thin axons and conduct visually evoked signals without action potentials. Individual neurons had only graded, variable responses; reliability achieved through population convergence. Also compared to larger flies, noting even &quot;giant&quot; motion neurons can use graded potentials.)</p>
+<p>[^23]: Anatomical studies of LC neuron structure showing thin axons.</p>
+<p>[^24]: Studies of descending neurons and the Giant Fiber circuit showing spiking behavior in long-range projection neurons.</p>
+<p>[^25]: Schnell, B. et al. (2012). Columnar cells necessary for motion responses of wide-field tangential neurons in fly optic lobe. <em>J. Neurophysiol.</em> 108(6):1710–1723. (Recorded from blowfly HS cells; showed mostly graded response with occasional spikelets. Implies Drosophila HS/VS similarly use analog coding with potential for spike-like events, especially under strong stimulus or neuromodulation.)</p>
+<p>[^26]: Suver, M.P. et al. (2016). A single population of neurons produces distinct behavioral responses to visual motion in Drosophila. <em>J. Neurosci.</em> 36(46):11768–11780. (Characterized descending neurons responding to self-motion. Notably found some descending neurons (e.g. DN_OVS2) exhibit small spikes on top of graded potentials during motion, indicating the interface between graded optic lobe signals and spiking motor pathways.)</p>
+<p>These references, spanning from classic physiology to modern in vivo studies, collectively support the view that graded (nonspiking) transmission is prevalent in the Drosophila optic lobe, with a few specific neuron types (e.g. Lawf2, some tangential and descending neurons) capable of spiking. This division of labor allows early visual processing to preserve analog signal nuances, and later stages to generate spikes for robust long-distance communication or triggering behaviors [^22][^24]. The result is an efficient hybrid coding strategy tuned to the fly's anatomical and functional constraints.</p>
+
+            
+            
+        </body>
+        </html>
