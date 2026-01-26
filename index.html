@@ -102,8 +102,8 @@
           My research interests encompass a wide range of topics, including the analysis and modeling of animal behavior, neural activity, connectome, and transcriptome. Currently, I am working on a project that investigates the genetic basis for the neural connections of C. elegans and Drosophila.
       </p>
       <p class="w3-center">
-        <!-- <a href="pdf/CV/CV_2025_0313.pdf">CV</a> &nbsp/&nbsp -->
-          <a href="mailto:dongjizheng1998@gmail">Gmail</a> &nbsp/&nbsp
+          <a href="pdf/CV/CV_2026_0125/Jizheng_Dong_CV.pdf">CV</a> &nbsp/&nbsp
+          <a href="mailto:dongjizheng1998@gmail.com">Gmail</a> &nbsp/&nbsp
           <a href="https://github.com/lengyuner">Github</a> &nbsp/&nbsp
           <a href="https://twitter.com/Cloudwing7">Twitter</a> &nbsp/&nbsp
           <a href="https://www.instagram.com/wingsdong/">Instagram</a> 
@@ -173,13 +173,19 @@
               <li>3D Behavior Recording for Free-Behaving Fruit Fly</li>
           </h4>
                 <img style="display: block; margin-left: auto; margin-right: auto; width:70%; " src="images/fly_standing.jpg ">
-                <!-- <p align="center ">
-                    <a style="color: #447ec9; " href=" ">A fruit fly displays special standing</a>
-                </p>  -->
                 <p align="center ">
                     <a href=" ">A fruit fly displays special standing</a>
                 </p> 
 
+                <!-- <p align="center ">
+                    <a style="color: #447ec9; " href=" ">A fruit fly displays special standing</a>
+                </p>  -->
+                
+                <!-- <video style="display: block; margin-left: auto; margin-right: auto; width:70%; " controls>
+                    <source src="videos/fly_behavior.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> -->
+                
                 <p class="w3-justify ">
                     The project aims for the development of equipment for adaptive recording and analysis of 3D behavior in the free-behaving fruit fly.
                 </p>
@@ -319,35 +325,8 @@
   <div class="w3-container w3-light-green w3-padding-32" id="blogs">
     <h2>Blogs</h2> 
 
-    <p><li> <strong>Neuroscience Papers</strong></li></p>
- 
-      <p>
-        <a   href="blog/neuron_strucutre_and_function/The structure and function of the neuron.html">The structure and function of the neuron</a> 
-      </p>
-    
-      <p>
-        <a   href="blog/connectome inspired neural network.html">connectome inspired neural network</a>
-      </p>
-      
-      <p>
-        <a   href="blog\paper reading list\paper reading list.html">my paper reading list</a>
-      </p>
-      <!-- https://lengyuner.github.io/blog/paper%20reading%20list/paper%20reading%20list.html -->
-
-      <p>
-        <a   href="blog/expected_result.html">Some properties of Optic Lobe neurons for Drosophila, a summary of the paper: </a>
-        <a   href="https://www.nature.com/articles/s41586-024-07981-1">Neuronal parts list and wiring diagram for a visual system</a>
-
-      <p>
-        <a   href="https://docs.google.com/spreadsheets/d/1c7UO3auwha-We8rRa8Fus_IlSprgrrGrA0D7f7fNs48">An paper list for the beginners in computational neuroscience</a>
-      </p>
-
-      <p>
-        <a   href="blog/MIA/literature_review_en.html">A literature review on the MIA method</a>
-      </p> 
-
-    <p><li> <strong>Python</strong></li></p>
-    Python related blogs: <a   href="https://www.jianshu.com/u/0dbe3ae461a3">Jianshu</a>
+    <div id="homeBlogList"></div>
+    <p class="blog-muted">More: <a href="blog/index.html">Blog index</a></p>
 
   </div> 
 
@@ -374,6 +353,7 @@
   <!-- <div class="w3-center w3-padding-24"> -->
 
     Welcome to use this website's <a href="https://github.com/YunheWang/HomePage">source code</a>, just add a link back to here. <a href="https://www.wangyunhe.site/">&#10025;</a></br>
+    Last updated: <span id="siteLastUpdated"></span></br>
 
   <!-- Default Statcounter code for Yunhe Wang's Homepage
   https://www.wangyunhe.site -->
@@ -400,6 +380,7 @@
   <!-- !END PAGE CONTENT! -->
 </div>
 
+<script src="blog/posts.js"></script>
 <script>
 // Accordion 
 function myAccFunc() {
@@ -411,8 +392,9 @@ function myAccFunc() {
   }
 }
 
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
+// Avoid errors if the demo accordion button doesn't exist
+var _myBtn = document.getElementById("myBtn");
+if (_myBtn) _myBtn.click();
 
 
 // Open and close sidebar
@@ -425,6 +407,57 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
+
+// Last updated (best-effort for static sites)
+(function setSiteLastUpdated() {
+  var el = document.getElementById("siteLastUpdated");
+  if (!el) return;
+  var d = new Date(document.lastModified);
+  if (isNaN(d.getTime())) return;
+  el.textContent = d.toISOString().slice(0, 10);
+})();
+
+// Render Blogs section from the same curated list used by /blog/index.html
+(function renderHomeBlogList() {
+  function encodePath(path) {
+    return path.split("/").map(function (seg) { return encodeURIComponent(seg); }).join("/");
+  }
+
+  var root = document.getElementById("homeBlogList");
+  if (!root) return;
+  if (!window.BLOG_SECTIONS) return;
+
+  window.BLOG_SECTIONS.forEach(function (section) {
+    if (!section || !section.items || !section.items.length) return;
+
+    var p = document.createElement("p");
+    var li = document.createElement("li");
+    var strong = document.createElement("strong");
+    strong.textContent = section.title;
+    li.appendChild(strong);
+    p.appendChild(li);
+    root.appendChild(p);
+
+    section.items.forEach(function (item) {
+      var pp = document.createElement("p");
+      var a = document.createElement("a");
+      a.textContent = item.title;
+
+      if (item.url) {
+        a.href = item.url;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+      } else if (item.html) {
+        a.href = "blog/post.html?html=" + encodePath(item.html);
+      } else {
+        a.href = "#";
+      }
+
+      pp.appendChild(a);
+      root.appendChild(pp);
+    });
+  });
+})();
 </script>
 
 </body>

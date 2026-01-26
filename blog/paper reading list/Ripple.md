@@ -21,8 +21,8 @@ The MICrONS Project set out to create a massively dense reconstruction of the **
 
 ## modeling -- dynamics system & Ripple 
 
-[connectome inspired neural network](<connectome inspired neural network.md>)    
-html [connectome inspired neural network](https://lengyuner.github.io/blog/connectome%20inspired%20neural%20network.html)
+[Connectome Inspired Neural Network](<Connectome Inspired Neural Network.md>)    
+html [Connectome Inspired Neural Network](https://lengyuner.github.io/blog/connectome%20inspired%20neural%20network.html)
 
 
 
@@ -272,6 +272,8 @@ Tool for neuron dynamics simulation (like brian2, spikingjelly)
 - [NEURON](https://nrn.readthedocs.io/en/latest/install/install_instructions.html#windows)
 - [BrainPy](https://brainpy.readthedocs.io/en/latest/quickstart/simulation.html)
 
+- BrainTrace: [Model-agnostic linear-memory online learning in spiking neural networks](https://www.nature.com/articles/s41467-026-68453-w)
+
 
 - [neuron morphology](https://neuron-morphology.readthedocs.io/en/latest/index.html)
 is an open-source Python package for working with single-neuron morphological reconstruction data, such as those in the Allen Cell Types Database.
@@ -291,6 +293,23 @@ ModelDB
 
 ## parameter optimization
 [parameter optimization methods](parameter_optimization_methods.md)
+
+
+
+- [Combined statistical-biophysical modeling links ion channel genes to physiology of cortical neuron types](https://www.cell.com/patterns/fulltext/S2666-3899(25)00171-0)
+Jakob H. Macke, Dmitry Kobak, Philipp Berens, 2025   
+Gene expression predicts ion channel conductances in cortical neuron models    
+Biophysical models bridge transcriptomic data to electrophysiology    
+Robust simulation-based inference overcomes model-data mismatch
+
+
+- [Linking ion channel gene expression to neuronal firing patterns through a statistical-biophysical model](https://www.cell.com/patterns/fulltext/S2666-3899(25)00238-7)
+2025, Review
+
+
+- [Single-neuron models linking electrophysiology, morphology, and transcriptomics across cortical cell types](https://www.cell.com/cell-reports/fulltext/S2211-1247(22)00989-5)
+ Costas A. Anastassiou, Allen, 2022, Cell
+
 
 
 ## review

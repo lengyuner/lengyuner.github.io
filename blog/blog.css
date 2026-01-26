@@ -1,0 +1,148 @@
+/* Blog markdown styling (works with w3.css) */
+
+:root {
+  --blog-max-width: 900px;
+}
+
+.blog-container {
+  max-width: var(--blog-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-markdown {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.blog-markdown h1,
+.blog-markdown h2,
+.blog-markdown h3,
+.blog-markdown h4 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.blog-markdown h1 {
+  margin-top: 0;
+}
+
+.blog-markdown h2 {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+/* Alternating section blocks (applied by JS in post.html) */
+.blog-section {
+  margin: 22px 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border-left: 6px solid transparent;
+}
+
+.blog-section.section-purple {
+  border-left-color: #57068C;
+  background: #faf7fc;
+}
+
+.blog-section.section-green {
+  border-left-color: #2e7d32;
+  background: #f7fcf9;
+}
+
+.blog-section > :first-child {
+  margin-top: 0;
+}
+
+.blog-section > :last-child {
+  margin-bottom: 0;
+}
+
+.blog-markdown p {
+  margin: 10px 0;
+}
+
+.blog-markdown img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 12px auto;
+}
+
+.blog-markdown blockquote {
+  border-left: 4px solid #57068C;
+  background: #faf7fc;
+  margin: 16px 0;
+  padding: 10px 14px;
+}
+
+.blog-markdown pre,
+.blog-markdown code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+
+#content pre,
+.blog-markdown pre {
+  overflow-x: auto;
+  padding: 12px 14px;
+  background: #f1f1f1 !important;
+  color: #111 !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 10px;
+}
+
+#content pre code,
+.blog-markdown pre code {
+  color: inherit !important;
+}
+
+.blog-markdown code {
+  background: #f1f1f1;
+  padding: 2px 5px;
+  border-radius: 6px;
+}
+
+.blog-markdown pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.blog-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+}
+
+.blog-markdown th,
+.blog-markdown td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  vertical-align: top;
+}
+
+.blog-markdown tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.blog-breadcrumb a {
+  text-decoration: underline;
+}
+
+.blog-muted {
+  opacity: 0.75;
+}
+
+.debug-only {
+  display: none;
+}
+
+body.debug .debug-only {
+  display: inline;
+}
+
+body.debug .debug-only.block {
+  display: block;
+}
+
+

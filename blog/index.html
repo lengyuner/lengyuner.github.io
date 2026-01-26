@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>Jizheng's Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <link rel="stylesheet" href="../w3.css">
+  <link rel="stylesheet" href="./blog.css">
+  <link rel="icon" type="image/png" href="../images/icons.png">
+
+  <style>
+    .w3-sidebar a {font-family: "Roboto", sans-serif}
+    body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+</head>
+
+<body class="w3-content" style="max-width:1000px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-nyu-violet w3-collapse w3-top w3-right"
+    style="z-index:3;width:170px" id="mySidebar">
+    <div class="w3-container w3-bar-block w3-display-container w3-padding-16">
+      <h3><b>JIZHENG</b></h3>
+    </div>
+    <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+      <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="./index.html" class="w3-bar-item w3-button">Blog</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-nyu-violet w3-xlarge">
+    <div class="w3-bar-item w3-padding-24">JIZHENG</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"
+      style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:170px">
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <div class="w3-container w3-light-green w3-padding-32">
+      <div class="blog-container">
+        <h2>Blog</h2>
+        <p class="blog-muted">Curated posts (manually maintained)</p>
+        <p class="blog-muted debug-only block">
+          DEBUG: Supports loading <code>.md</code> (<code>post.html?md=...</code>) and pre-rendered <code>.html</code> (<code>post.html?html=...</code>, best for equations).
+        </p>
+        <p class="blog-muted">Last updated: <span id="lastUpdated"></span></p>
+      </div>
+    </div>
+
+    <div class="w3-container w3-light-purple w3-padding-32">
+      <div class="blog-container">
+        <div id="blogList"></div>
+      </div>
+    </div>
+
+    <div class="w3-light-purple w3-center w3-padding-24">
+      Back to <a href="../index.html">Homepage</a> · Powered by
+      <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+    </div>
+  </div>
+
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // DEBUG mode:
+    // - add ?debug=1 to the URL, OR
+    // - localStorage.setItem('DEBUG', '1') to persist
+    (function initDebugMode() {
+      const params = new URLSearchParams(window.location.search);
+      const fromQuery = params.get("debug");
+      const fromStorage = localStorage.getItem("DEBUG");
+
+      const debug = (fromQuery === "1" || fromQuery === "true" || fromStorage === "1");
+      if (debug) document.body.classList.add("debug");
+
+      // convenience: ?debug=0 clears localStorage
+      if (fromQuery === "0") localStorage.removeItem("DEBUG");
+      if (fromQuery === "1") localStorage.setItem("DEBUG", "1");
+    })();
+
+    (function setLastUpdated() {
+      const el = document.getElementById("lastUpdated");
+      if (!el) return;
+      // document.lastModified is best-effort for static pages
+      const d = new Date(document.lastModified);
+      if (isNaN(d.getTime())) {
+        el.textContent = "";
+        return;
+      }
+      el.textContent = d.toISOString().slice(0, 10);
+    })();
+  </script>
+
+  <script src="./posts.js"></script>
+  <script>
+    function encodePath(path) {
+      return path.split("/").map(seg => encodeURIComponent(seg)).join("/");
+    }
+
+    function renderBlogList() {
+      const root = document.getElementById("blogList");
+      if (!root) return;
+      const sections = window.BLOG_SECTIONS || [];
+
+      const debugOn = document.body.classList.contains("debug");
+
+      sections.forEach(section => {
+        const h3 = document.createElement("h3");
+        h3.textContent = section.title;
+        root.appendChild(h3);
+
+        const ul = document.createElement("ul");
+        ul.className = "w3-ul w3-card-4";
+
+        (section.items || []).forEach(item => {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.textContent = item.title;
+
+          if (item.url) {
+            a.href = item.url;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+          } else if (item.html) {
+            a.href = "./post.html?html=" + encodePath(item.html);
+          } else {
+            a.href = "#";
+          }
+
+          li.appendChild(a);
+
+          if (debugOn && item.html) {
+            const s = document.createElement("span");
+            s.className = "blog-muted debug-only";
+            s.textContent = " · blog/" + item.html;
+            li.appendChild(s);
+          }
+
+          ul.appendChild(li);
+        });
+
+        root.appendChild(ul);
+      });
+    }
+
+    renderBlogList();
+  </script>
+</body>
+
+</html>
+
+

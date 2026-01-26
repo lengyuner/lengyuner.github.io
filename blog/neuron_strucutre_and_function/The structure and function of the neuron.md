@@ -209,6 +209,10 @@ synapse plasticity
 
 # Others
 
+[Linking structure and function: biological insights from fly connectomes](https://www.nature.com/articles/s41592-025-02949-z)
+Albert Lin & Mala Murthy, 2025, Nature Methods  
+
+
 - [**Global and Multiplexed Dendritic Computations under In Vivo-like Conditions**](https://www.cell.com/neuron/fulltext/S0896-6273(18)30737-2)
 Balázs B. Ujfalussy, Judit K. Makara, Máté Lengyel, Tiago Branco 
 [Tiago Branco](https://scholar.google.com/citations?hl=en&user=PJ7kIFMAAAAJ)

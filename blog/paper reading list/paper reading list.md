@@ -29,7 +29,7 @@
       - [maximum weighted independent set (MWIS)](#maximum-weighted-independent-set-mwis)
       - [Maximum Dispersion](#maximum-dispersion)
     - [connectome visualization](#connectome-visualization)
-    - [gene data](#gene-data)
+    - [gene data / transcriptome](#gene-data--transcriptome)
       - [gene data for Drosophila](#gene-data-for-drosophila)
       - [other gene dataset](#other-gene-dataset)
       - [review](#review)
@@ -194,6 +194,11 @@ Developmental Biology
 
 - [A Complete Electron Microscopy Volume of the Brain of Adult Drosophila melanogaster](<https://www.cell.com/cell/pdf/S0092-8674(18)30787-6.pdf>)
 
+
+- [Integrative analysis of single-neuron projectomes links connectome, transcriptome, and function in the mouse cortex](https://www.cell.com/neuron/abstract/S0896-6273(25)00800-1)
+Xiaohong Xu, Chun Xu, Xiaofei Wang, Jun Yan, 2026, Neuron
+
+
 ### technology of connectome
 - [Bridging the Gap: Point Clouds for Merging Neurons in Connectomics](https://openreview.net/forum?id=lHDVYDy5S9l)  
 MIDL 2022
@@ -305,6 +310,10 @@ Teview, 2010, S. Lawrence Zipursky, Joshua R. Sanes
 reivew, 2021, Science, Liqun Luo
 ![alt text](<https://www.science.org/cms/10.1126/science.abg7285/asset/59d561d9-7d95-456d-97e5-1b811c05023f/assets/images/large/science.abg7285-f5.jpg>)
 
+- [Reconstructing the **human** brain’s wiring diagram from axons up](https://www.cell.com/trends/neurosciences/fulltext/S0166-2236(25)00238-3)  
+Review, 2026
+
+
 **computational methods**
 - **bilinear:** [Uncovering the genetic blueprint of the C. elegans nervous system](https://www.pnas.org/doi/full/10.1073/pnas.2009093117) 
 István A. Kovács, Dániel L. **Barabási**, and Albert-László **Barabási**  PNAS
@@ -332,6 +341,10 @@ Konrad P. Kording,
 
 - [A framework for modeling the growth and development of neurons and networks](https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/neuro.10.025.2009/full)
 Frederic Zubler and Rodney Douglas(ETH Zurich), 2009 
+
+
+- [Uncovering the molecular logic of cortical wiring between neuronal subtypes across development through ligand–receptor inference](https://www.nature.com/articles/s41467-025-68059-8)
+Ludovic Telley & Antoine de Chevigny, 2026, Nature Communications  
 
 
 **experimental test**
@@ -431,6 +444,11 @@ Here we use a library of **239 pairwise statistics** to benchmark canonical feat
 2023, Cell Reports
   - Side-IV binding to Beat-IIb regulates synaptic specificity in vivo
   - Side-IV/Beat-IIb forms complex with Kirre and Dsyd-1
+
+
+
+[Repulsions instruct synaptic partner matching in an olfactory circuit](https://www.nature.com/articles/s41586-025-09768-4)
+Zhuoran Li, Cheng Lyu, ..., Engin Özkan & Liqun Luo, 2026, Nature 
 
 
 - [DIP/Dpr interactions and the evolutionary design of specificity in protein families](https://www.nature.com/articles/s41467-020-15981-8)
@@ -697,19 +715,26 @@ new GraphVis: interactive visual graph mining and machine learning
 - [Visualizing the PHATE of Neural Networks](https://arxiv.org/abs/1908.02831)   
 [Table 1. A survey of neuroimaging connectomic software. ](https://direct.mit.edu/view-large/figure/1188158/00044fx01.tif)
 
-### gene data
+### gene data / transcriptome
 - [Opportunities and challenges of single-cell and spatially resolved genomics methods for neuroscience discovery](https://www.nature.com/articles/s41593-024-01806-0)  
 Nature Neuroscience volume 27, pages 2292-2309 (2024)  
 Review
 
 #### gene data for Drosophila 
 
+
+- [A high-resolution atlas of the brain predicts lineage and birth order underlying neuronal identity](https://www.sciencedirect.com/science/article/pii/S2666979X25003593)
+Cell Genomics, Dec 2025
+Stephen F. Goodwin 
+
+
 - [Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly](https://www.science.org/doi/abs/10.1126/science.abk2432)  
 2022, science 
 
 - [A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain](https://www.sciencedirect.com/science/article/pii/S0092867418307207)
-- [A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain](https://www.cell.com/cell/fulltext/S0092-8674(18)30720-7)
 Cell, 2018
+
+<!-- - [A Single-Cell Transcriptome Atlas of the Aging Drosophila Brain](https://www.cell.com/cell/fulltext/S0092-8674(18)30720-7) -->
 
 - [Transcriptional Programs of Circuit Assembly in the Drosophila Visual System](https://www.cell.com/neuron/fulltext/S0896-6273(20)30774-1) 
 **S. Lawrence Zipursky**
@@ -831,6 +856,8 @@ Briefings in Bioinformatics, 2021
 
 - LINGER: [Inferring gene regulatory networks from single-cell multiome data using atlas-scale external data](https://www.nature.com/articles/s41587-024-02182-7)
 
+-[Multimodal foundation transformer models for multiscale genomics](https://www.nature.com/articles/s41592-025-02918-6)  
+Nature Methods (2025)
 
 #### application
 - [Encoding innate ability through a genomic bottleneck](https://www.biorxiv.org/content/10.1101/2021.03.16.435261v2)
@@ -1154,11 +1181,20 @@ swept confocally-aligned planar excitation (SCAPE) microscopy,
 1419 ± 78 stable, single-cell ROIs per animal, contained nearly all neurons within 70 μm of the dorsal surface  
 https://springernature.figshare.com/articles/dataset/Flygenvectors_The_spatial_and_temporal_structure_of_neural_activity_across_the_fly_brain/23749074
 
+
+- [Mapping the neural dynamics of locomotion across the Drosophila brain](https://www.cell.com/current-biology/fulltext/S0960-9822(23)01763-3)
+
+Thomas R. Clandinin, 2024, Current Bilogy
+
+- [The connectome predicts resting-state functional connectivity across the Drosophila brain](https://www.cell.com/current-biology/fulltext/S0960-9822(21)00343-2)
+Thomas R. Clandinin, 2021, Current Bilogy
+
+
 - [Whole-Brain Calcium Imaging Reveals an Intrinsic Functional Network in Drosophila](https://www.cell.com/current-biology/fulltext/S0960-9822(17)30813-8) 
 Current Bilogy
 https://data.mendeley.com/datasets/8b6nw2xxhn/1
 
-- [Mapping the neural dynamics of locomotion across the Drosophila brain](https://www.cell.com/current-biology/fulltext/S0960-9822(23)01763-3)
+Thomas R. Clandinin, 2017, Current Bilogy
 
 
 #### other data
@@ -1166,7 +1202,9 @@ https://data.mendeley.com/datasets/8b6nw2xxhn/1
 - [In vivo autofluorescence lifetime imaging of the Drosophila brain captures metabolic shifts associated with memory formation](https://www.biorxiv.org/content/10.1101/2025.01.27.635185v1.full)
 
 - [The spatial and temporal structure of neural activity across the fly brain](https://www.nature.com/articles/s41467-023-41261-2)
-Evan S. Schaffer ... L. F. Abbott & Richard Axel 
+Evan S. Schaffer ... L. F. Abbott & Richard Axel, 2023, Nature Communications 
+
+We used swept, confocally-aligned planar excitation (SCAPE) microscopy to image all cells in a large volume of the brain of adult Drosophila with high spatiotemporal resolution while flies engaged in a variety of spontaneous behaviors.
 
 - [Imaging whole-brain activity to understand behaviour](https://www.nature.com/articles/s42254-022-00430-w?fromPaywallRec=false)
 Review Article
@@ -1196,6 +1234,10 @@ Na Ji jina@berkeley.edu, 2024
 
 ### wormid
 
+- [Cycle-Consistent Multi-Graph Matching for Self-Supervised Annotation of C.Elegans](https://arxiv.org/abs/2503.07348) 
+2025
+
+
 - [Unifying community whole-brain imaging datasets enables robust neuron identification and reveals determinants of neuron position in C. elegans](https://www.sciencedirect.com/science/article/pii/S2667237524003540)
 Daniel Y. Sprague,..., Saul Kato
 
@@ -1214,6 +1256,11 @@ Nature (2025)
 ### reivew 
 - [Neural data science: accelerating the experiment-analysis-theory cycle in large-scale neuroscience ](https://www.sciencedirect.com/science/article/pii/S0959438817302428)
 ICCV, 2019
+
+
+- [Recording single neurons at scale in the primate brain](https://www.nature.com/articles/s41583-025-00991-6)
+Frank F. Lanfranchi, 2025, Nature Reviews Neuroscience  
+
 
 - [Analysis methods for large-scale neuronal recordings](https://www.science.org/doi/full/10.1126/science.adp7429)
 Carsen Stringer, Marius Pachitariu  
@@ -1345,6 +1392,10 @@ Sandeep Robert Datta
  
 - [The spinal premotor network driving scratching flexor and extensor alternation](https://www.biorxiv.org/content/10.1101/2025.01.08.631866v1.abstract)
 
+
+- [Lightning Pose: improved animal pose estimation via semi-supervised learning, Bayesian ensembling and cloud-native open-source tools](https://www.nature.com/articles/s41592-024-02319-1)
+Liam Paninski, 2024, Nature Methods  
+
 ### oscilation
 - [Brain rhythms have come of age](https://www.sciencedirect.com/science/article/pii/S0896627323002143)
 
@@ -1367,6 +1418,9 @@ T4 and T5 neuron
 
 - [Social state alters vision using three circuit mechanisms in Drosophila](https://www.nature.com/articles/s41586-024-08255-6) 
 Vanessa Ruta & Gerald M. Rubin 
+
+
+- [Deep learning-driven characterization of single cell tuning in primate visual area V4 supports topological organization](https://www.biorxiv.org/content/10.1101/2023.05.12.540591v2)
 
 ### drosophila
 - [The Neural Substrate of Spectral Preference in Drosophila](https://www.sciencedirect.com/science/article/pii/S0896627308007058)
@@ -1459,6 +1513,8 @@ Lyndon R. Duong, Jingyang Zhou, Josue Nassar, Jules Berman, Jeroen Olieslagers, 
 - [Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting](https://arxiv.org/abs/1506.04214)
 recurrent CNN
 
+- [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747) 2022
+- 
 
 #### NAS
 - [NAS-Bench-101: Towards Reproducible Neural Architecture Search](https://arxiv.org/abs/1902.09635)
@@ -1554,3 +1610,7 @@ S. Lawrence Zipursky & Gwyneth M. Card
 - [Denoising Diffusion Probabilistic Models](https://arxiv.org/pdf/2006.11239) 
 - [Reverse Diffusion Sequential Monte Carlo Samplers](https://arxiv.org/pdf/2508.05926) 
 - [STATE-SWITCHING NAVIGATION STRATEGIES IN C. elegans ARE BENEFICIAL FOR CHEMOTAXIS](https://arxiv.org/pdf/2508.00191)
+
+
+
+[NeuroXiv: AI-powered open databasing and dynamic mining of brain-wide neuron morphometry](https://www.nature.com/articles/s41592-025-02687-2)

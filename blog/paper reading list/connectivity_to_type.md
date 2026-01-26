@@ -130,3 +130,4 @@ Hanchuan Peng, Hongkui Zeng, nature 2021
 ### TO BE ADDED
 
 
+Connectivity Is All You Need: Inferring Neuronal Types with NTAC

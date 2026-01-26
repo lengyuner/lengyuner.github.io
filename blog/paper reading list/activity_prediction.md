@@ -5,3 +5,6 @@ while the snn is applied to the whole brain, the detail parameter need to be tun
 
 
 @YuDuan
+
+
+[POCO: Scalable Neural Forecasting through Population Conditioning](https://arxiv.org/abs/2506.14957)

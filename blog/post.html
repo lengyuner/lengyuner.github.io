@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <link rel="stylesheet" href="../w3.css">
+  <link rel="stylesheet" href="./blog.css">
+  <link rel="icon" type="image/png" href="../images/icons.png">
+  <!-- KaTeX CSS: needed to properly hide the MathML fallback inside KaTeX output HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css">
+
+  <style>
+    .w3-sidebar a {font-family: "Roboto", sans-serif}
+    body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+</head>
+
+<body class="w3-content" style="max-width:1000px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-nyu-violet w3-collapse w3-top w3-right"
+    style="z-index:3;width:170px" id="mySidebar">
+    <div class="w3-container w3-bar-block w3-display-container w3-padding-16">
+      <h3><b>JIZHENG</b></h3>
+    </div>
+    <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+      <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="./index.html" class="w3-bar-item w3-button">Blog</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-nyu-violet w3-xlarge">
+    <div class="w3-bar-item w3-padding-24">JIZHENG</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"
+      style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:170px">
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <div class="w3-container w3-light-purple w3-padding-32">
+      <div class="blog-container">
+        <div class="blog-breadcrumb blog-muted">
+          <a href="./index.html">Blog</a>
+          <span id="breadcrumbTail"></span>
+        </div>
+        <h2 id="pageTitle" style="margin-top:10px">Loading...</h2>
+        <p class="blog-muted" style="margin-top:-6px">
+          Last updated: <span id="pageUpdated"></span>
+          <span id="pageMeta" class="debug-only"></span>
+        </p>
+        <hr>
+        <div id="content" class="blog-markdown"></div>
+      </div>
+    </div>
+
+    <div class="w3-light-green w3-center w3-padding-24">
+      Back to <a href="./index.html">Blog</a> · Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+        title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+    </div>
+  </div>
+
+  <script>
+    // MathJax config (supports \( \), \[ \], $$ $$)
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']],
+        processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    function getQueryParams() {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        md: params.get("md"),
+        html: params.get("html"),
+        title: params.get("title"),
+        debug: params.get("debug"),
+      };
+    }
+
+    function encodePath(path) {
+      // Encode each path segment; keeps slashes.
+      return path.split("/").map(seg => encodeURIComponent(seg)).join("/");
+    }
+
+    function encodeRelativeUrl(u) {
+      // Encode only the path part, keep query/hash as-is.
+      // Examples:
+      //  - "figs/a b.png" -> "figs/a%20b.png"
+      //  - "page.md#sec" -> "page.md#sec"
+      //  - "page.md?x=1#sec" -> "page.md?x=1#sec"
+      const hashIdx = u.indexOf("#");
+      const qIdx = u.indexOf("?");
+      const cutIdx = (qIdx === -1) ? hashIdx : (hashIdx === -1 ? qIdx : Math.min(qIdx, hashIdx));
+
+      const pathPart = cutIdx === -1 ? u : u.slice(0, cutIdx);
+      const suffix = cutIdx === -1 ? "" : u.slice(cutIdx);
+
+      return encodePath(pathPart) + suffix;
+    }
+
+    function dirname(path) {
+      const idx = path.lastIndexOf("/");
+      return idx === -1 ? "" : path.slice(0, idx + 1);
+    }
+
+    function isRelativeUrl(u) {
+      if (!u) return false;
+      if (u.startsWith("#")) return false;
+      if (u.startsWith("/")) return false;
+      if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(u)) return false; // scheme: http:, mailto:, etc.
+      return true;
+    }
+
+    function fixRelativeUrls(rootEl, mdPath) {
+      const baseDirDecoded = dirname(mdPath);
+      const baseDirEncoded = encodePath(baseDirDecoded);
+
+      rootEl.querySelectorAll("img").forEach(img => {
+        const src = img.getAttribute("src");
+        if (isRelativeUrl(src)) img.setAttribute("src", baseDirEncoded + encodeRelativeUrl(src));
+      });
+
+      rootEl.querySelectorAll("a").forEach(a => {
+        const href = a.getAttribute("href");
+        if (isRelativeUrl(href)) a.setAttribute("href", baseDirEncoded + encodeRelativeUrl(href));
+      });
+    }
+
+    function pickHtmlMain(doc) {
+      // Prefer semantic containers if present, else fallback to body.
+      const candidates = ["main", "article", ".markdown-body", "#content", ".content"];
+      for (const sel of candidates) {
+        const el = doc.querySelector(sel);
+        if (el) return el;
+      }
+      return doc.body;
+    }
+
+    async function typesetMath(rootEl) {
+      // If the imported HTML is already KaTeX-rendered, do NOT run MathJax again.
+      if (rootEl && (rootEl.querySelector(".katex") || rootEl.querySelector("mjx-container"))) return;
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        try {
+          await window.MathJax.typesetPromise([rootEl]);
+        } catch (_) {
+          // ignore
+        }
+      }
+    }
+
+    function wrapH2Sections(rootEl) {
+      // Wrap each H2 and its following siblings (until next H2) into a block.
+      const h2s = Array.from(rootEl.querySelectorAll("h2"));
+      if (!h2s.length) return;
+
+      for (let i = 0; i < h2s.length; i++) {
+        const h2 = h2s[i];
+        // Skip if already wrapped
+        if (h2.parentElement && h2.parentElement.classList && h2.parentElement.classList.contains("blog-section")) {
+          continue;
+        }
+
+        const section = document.createElement("div");
+        section.className = "blog-section " + (i % 2 === 1 ? "section-green" : "section-purple");
+
+        h2.parentNode.insertBefore(section, h2);
+        section.appendChild(h2);
+
+        // Move nodes until next H2 (or end)
+        while (section.nextSibling) {
+          const n = section.nextSibling;
+          if (n.nodeType === Node.ELEMENT_NODE && n.tagName && n.tagName.toLowerCase() === "h2") break;
+          section.appendChild(n);
+        }
+      }
+    }
+
+    async function loadContent() {
+      const { md, html, title, debug } = getQueryParams();
+      const titleEl = document.getElementById("pageTitle");
+      const metaEl = document.getElementById("pageMeta");
+      const updatedEl = document.getElementById("pageUpdated");
+      const contentEl = document.getElementById("content");
+      const breadcrumbTailEl = document.getElementById("breadcrumbTail");
+
+      const debugOn = (debug === "1" || debug === "true" || localStorage.getItem("DEBUG") === "1");
+      if (debugOn) document.body.classList.add("debug");
+
+      if (!md && !html) {
+        titleEl.textContent = "No content specified";
+        metaEl.textContent = "Usage: post.html?md=RELATIVE/PATH/TO/FILE.md  OR  post.html?html=RELATIVE/PATH/TO/FILE.html";
+        contentEl.innerHTML = "<p>Please provide <code>md</code> or <code>html</code> query parameter.</p>";
+        return;
+      }
+
+      const mode = html ? "html" : "md";
+      const rawPath = mode === "html" ? html : md;
+      const decodedPath = decodeURIComponent(rawPath);
+      const urlPath = encodePath(decodedPath);
+
+      // Breadcrumb tail will be set to the final title (avoid showing raw filename by default)
+      breadcrumbTailEl.textContent = "";
+      titleEl.textContent = title ? title : "Loading...";
+      metaEl.textContent = " · " + decodedPath;
+      if (updatedEl) updatedEl.textContent = "";
+
+      if (window.location.protocol === "file:") {
+        titleEl.textContent = "Cannot load content from file://";
+        contentEl.innerHTML =
+          "<p>你现在是用 <code>file://</code> 方式打开网页，浏览器会禁止 <code>fetch()</code> 读取本地文件。</p>" +
+          "<p>解决方法：</p>" +
+          "<ul>" +
+          "<li>用本地静态服务器打开（推荐）：<code>cd lengyuner.github.io && python3 -m http.server 4173</code>，然后访问 <code>http://127.0.0.1:4173/blog/index.html</code></li>" +
+          "<li>或者发布到 GitHub Pages 后用线上域名访问</li>" +
+          "</ul>";
+        return;
+      }
+
+      try {
+        const res = await fetch(urlPath, { cache: "no-cache" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const text = await res.text();
+        const lastModified = res.headers.get("Last-Modified");
+        if (updatedEl) {
+          if (lastModified) {
+            const d = new Date(lastModified);
+            updatedEl.textContent = isNaN(d.getTime()) ? lastModified : d.toISOString().slice(0, 10);
+          } else {
+            // fallback: page itself
+            const d = new Date(document.lastModified);
+            updatedEl.textContent = isNaN(d.getTime()) ? "" : d.toISOString().slice(0, 10);
+          }
+        }
+
+        if (mode === "html") {
+          const doc = new DOMParser().parseFromString(text, "text/html");
+          const main = pickHtmlMain(doc);
+          // Drop scripts from imported HTML; we control scripts (e.g. MathJax) at template level.
+          main.querySelectorAll("script").forEach(s => s.remove());
+          contentEl.innerHTML = main.innerHTML;
+          fixRelativeUrls(contentEl, decodedPath);
+
+          // Use original HTML title / first h1, and avoid duplicate titles in content.
+          let derivedTitle = (doc.title || "").trim();
+          const firstH1 = contentEl.querySelector("h1");
+          if (firstH1 && firstH1.textContent.trim()) {
+            derivedTitle = firstH1.textContent.trim();
+            firstH1.remove();
+          }
+          if (!title) titleEl.textContent = derivedTitle || decodedPath.split("/").pop();
+        } else {
+          if (typeof marked === "undefined") {
+            titleEl.textContent = "Markdown renderer not loaded";
+            contentEl.innerHTML = "<p>Failed to load <code>marked</code>. Please check your network/CDN access.</p>";
+            return;
+          }
+          const rendered = marked.parse(text, { gfm: true, breaks: false });
+          contentEl.innerHTML = rendered;
+          fixRelativeUrls(contentEl, decodedPath);
+
+          // Use first h1 as page title and remove it from content to avoid duplicates.
+          const firstH1 = contentEl.querySelector("h1");
+          if (!title && firstH1 && firstH1.textContent.trim()) {
+            titleEl.textContent = firstH1.textContent.trim();
+            firstH1.remove();
+          }
+        }
+
+        // Final fallback title
+        if (!title && (!titleEl.textContent || titleEl.textContent === "Loading...")) {
+          titleEl.textContent = decodedPath.split("/").pop();
+        }
+
+        breadcrumbTailEl.textContent = " / " + titleEl.textContent;
+        document.title = titleEl.textContent + " · Blog";
+        wrapH2Sections(contentEl);
+        await typesetMath(contentEl);
+      } catch (e) {
+        titleEl.textContent = "Failed to load content";
+        contentEl.innerHTML =
+          "<p>Could not fetch: <code>" + decodedPath + "</code></p>" +
+          "<p class='blog-muted'>Error: <code>" + String(e) + "</code></p>";
+      }
+    }
+
+    loadContent();
+  </script>
+</body>
+
+</html>
+
+
