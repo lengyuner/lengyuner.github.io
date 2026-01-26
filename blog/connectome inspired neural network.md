@@ -133,10 +133,9 @@ Indirect pathways differentially shape functional correlations across the brain
 Here we create a leaky integrate-and-fire computational model of the entire Drosophila brain, on the basis of neural connectivity and neurotransmitter identity.  
 Limitation: We assume each neuron is either exclusively inhibitory or excitatory. We ignore neural morphology and receptor dynamics. The underlying synapses or neurotransmitter predictions may not be fully accurate. Gap junctions cannot be identified in the electron microscopy dataset, so we ignore their possibility. 
 
-- [Connectome simulations identify a central pattern generator circuit for fly walking](https://www.biorxiv.org/content/10.1101/2025.09.12.675944v1)
-
+- [Connectome simulations identify a central pattern generator circuit for fly walking](https://www.biorxiv.org/content/10.1101/2025.09.12.675944v1)  
 John C. Tuthill, Bingni W. Brunton
-- 
+
 - [From Synapses to Dynamics: Obtaining Function from Structure in a Connectome Constrained Model of the Head Direction Circuit](https://www.biorxiv.org/content/10.1101/2025.05.26.655406v1.abstract)
 Ila Fiete, 2025
 $$
@@ -164,15 +163,14 @@ Roman Vaxenburg, Igor Siwanowicz, Josh Merel, Alice A. Robie, Carmen Morrow, Gui
 Flies use an algorithmic neuronal strategy to sense and categorize odors. Dasgupta et al. applied insights from the fly system to come up with a solution to a computer science problem. On the basis of the algorithm that flies use to tag an odor and categorize similar ones, the authors generated a new solution to the nearest-neighbor search problem that underlies tasks such as searching for similar images on the web.
 
 - [Predicting modular functions and neural coding of behavior from a synaptic wiring diagram](https://www.nature.com/articles/s41593-024-01784-3)
-Ashwin Vishwanathan, Alex Sood, Jingpeng Wu, Alexandro D. Ramirez, Runzhe Yang, Nico Kemnitz, Dodam Ih, Nicholas Turner, Kisuk Lee, Ignacio Tartavull, William M. Silversmith, Chris S. Jordan, Celia David, Doug Bland, Amy Sterling, H. Sebastian Seung, Mark S. Goldman, Emre R. F. Aksay & the Eyewirers
-
+Ashwin Vishwanathan, Alex Sood, Jingpeng Wu, Alexandro D. Ramirez, Runzhe Yang, Nico Kemnitz, Dodam Ih, Nicholas Turner, Kisuk Lee, Ignacio Tartavull, William M. Silversmith, Chris S. Jordan, Celia David, Doug Bland, Amy Sterling, H. Sebastian Seung, Mark S. Goldman, Emre R. F. Aksay & the Eyewirers   
 Nature Neuroscience volume 27, pages2443–2454 (2024)
 
 - [Infrequent strong connections constrain connectomic predictions of neuronal function](https://www.cell.com/cell/fulltext/S0092-8674(25)00518-5)
 Timothy A. Currier, Thomas R. Clandinin
 
 
-Raw imaging data, relevant connectome data, and partially processed visual responses for all 571 ROIs are available on Dryad:
+- Raw imaging data, relevant connectome data, and partially processed visual responses for all 571 ROIs are available on Dryad:
 https://datadryad.org/dataset/doi:10.5061/dryad.pg4f4qs1j  
 https://datadryad.org/dataset/doi:10.5061/dryad.bnzs7h4ns
 https://datadryad.org/dataset/doi:10.5061/dryad.kh18932k1  
@@ -301,7 +299,7 @@ Matthew S. Creamer, Andrew M. Leifer, Jonathan W. Pillow, 2024
 
 
 
-### cognitive inspired 
+### Cognitive inspired 
 
 - [TopoNets: High performing vision and language models with brain-like topography](https://arxiv.org/abs/2501.16396)
 - 
@@ -383,9 +381,9 @@ https://www.nature.com/articles/s41467-021-27653-2
 
 ---
 
-# Detailed Analysis of Connectome-Based Modeling Approaches
+## Detailed Analysis of Connectome-Based Modeling Approaches
 
-## Overview
+### Overview
 
 This section provides in-depth analysis of key papers that leverage connectome data to build computational models of neural circuits and whole brains. We focus on three model organisms with complete or near-complete connectomes: **Drosophila melanogaster**, **Caenorhabditis elegans**, and **Mouse**, examining how structural connectivity constrains and predicts neural dynamics and behavior.
 

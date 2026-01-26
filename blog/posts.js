@@ -11,8 +11,8 @@ window.BLOG_SECTIONS = [
     items: [
       { title: "Connectome Inspired Neural Network", html: "connectome inspired neural network.html" },
       { title: "The structure and function of the neuron", html: "neuron_strucutre_and_function/The structure and function of the neuron.html" },
-      { title: "Spiking and non spiking neurons", html: "NonSpiking/spiking and non spiking.html" },
-      { title: "Some properties of Optic Lobe neurons (expected_result)", html: "expected_result.html" },
+      { title: "Spiking and nonspiking neurons", html: "NonSpiking/spiking and non spiking.html" },
+      { title: "Some properties of Optic Lobe neurons", html: "expected_result.html" },
     ],
   },
   {
@@ -28,6 +28,13 @@ window.BLOG_SECTIONS = [
     title: "Computer Science",
     items: [
       { title: "A literature review on the MIA method", html: "MIA/literature_review_en.html" },
+    ],
+  },
+  {
+    id: "python",
+    title: "Python",
+    items: [
+      { title: "Python related blogs: Jianshu (简书)", url: "https://www.jianshu.com/u/0dbe3ae461a3" },
     ],
   },
   {
