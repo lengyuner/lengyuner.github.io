@@ -1503,6 +1503,18 @@ Simon Kornblith, Mohammad Norouzi, Honglak Lee, Geoffrey Hinton
 Lyndon R. Duong, Jingyang Zhou, Josue Nassar, Jules Berman, Jeroen Olieslagers, Alex H. Williams
 
 ### ML
+
+
+- [Hebbian Learning based Orthogonal Projection for Continual Learning of Spiking Neural Networks](https://openreview.net/forum?id=MeB86edZ1P)  2024, ICLR   
+[github code](https://github.com/pkuxmq/HLOP-SNN), [arxiv](https://arxiv.org/abs/2402.11984)
+
+
+
+
+
+- [Learning using switching synaptic plasticity rules](https://openreview.net/forum?id=UjcBzPHSYV)
+
+
 - [Inverse Reinforcement Learning with the Average Reward Criterion](https://arxiv.org/abs/2305.14608)
 
 - [Artificial Neural Networks for Neuroscientists: A Primer](https://www.cell.com/neuron/fulltext/S0896-6273(20)30705-4)

@@ -302,7 +302,7 @@ Matthew S. Creamer, Andrew M. Leifer, Jonathan W. Pillow, 2024
 ### Cognitive inspired 
 
 - [TopoNets: High performing vision and language models with brain-like topography](https://arxiv.org/abs/2501.16396)
-- 
+ 
 **the following are collected by Ruizhe Zhou**
 - [Bridging the data gap between children and large language models](https://www.sciencedirect.com/science/article/pii/S1364661323002036)   
    Frank, M. C. (2023)
@@ -2423,7 +2423,7 @@ Research Goal
 - **NEURON**: Multi-compartmental neuron simulation
 - **BluePyOpt**: Parameter optimization framework
 - **BMTK/SONATA**: Large-scale network simulation
-- **JAX**: GPU-accelerated neural simulation
+- **Jaxley**: GPU-accelerated neural simulation
 - **NetPyNE**: Network modeling in Python
 
 ### Databases:
@@ -2450,15 +2450,5 @@ Research Goal
 
 ## TODO
 
-
-Hebbian Learning based Orthogonal Projection for Continual Learning of Spiking Neural Networks
-https://openreview.net/forum?id=MeB86edZ1P
-
-https://github.com/pkuxmq/HLOP-SNN
-https://arxiv.org/abs/2402.11984
-
-
-
-[Learning using switching synaptic plasticity rules](https://openreview.net/forum?id=UjcBzPHSYV)
 
 
