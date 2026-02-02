@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>ConVis - Interactive Large-scale Neuron Network Visualization</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <link rel="stylesheet" href="../w3.css">
+  <link rel="stylesheet" href="./project.css">
+  <link rel="icon" type="image/png" href="../images/icons.png">
+
+  <style>
+    .w3-sidebar a {font-family: "Roboto", sans-serif}
+    body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+</head>
+
+<body class="w3-content" style="max-width:1000px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-nyu-violet w3-collapse w3-top w3-right"
+    style="z-index:3;width:170px" id="mySidebar">
+    <div class="w3-container w3-bar-block w3-display-container w3-padding-16">
+      <h3><b>JIZHENG</b></h3>
+    </div>
+    <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+      <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="../index.html#news" class="w3-bar-item w3-button">News</a>
+      <a href="../index.html#research" class="w3-bar-item w3-button">Research</a>
+      <a href="../index.html#publications" class="w3-bar-item w3-button">Publications</a>
+      <a href="../index.html#awards" class="w3-bar-item w3-button">Awards</a>
+      <a href="../index.html#activities" class="w3-bar-item w3-button">Activities</a>
+      <a href="../index.html#hobbies" class="w3-bar-item w3-button">Hobbies</a>
+      <a href="../index.html#blogs" class="w3-bar-item w3-button">Blogs</a>
+      <a href="../index.html#jc" class="w3-bar-item w3-button">JC</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-nyu-violet w3-xlarge">
+    <div class="w3-bar-item w3-padding-24">JIZHENG</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"
+      style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:170px">
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <div class="w3-container w3-light-purple w3-padding-32">
+      <div class="project-container">
+        <div class="project-breadcrumb project-muted">
+          <a href="../index.html#research">Research</a> / ConVis
+        </div>
+        <h2 style="margin-top:10px">ConVis - Interactive Large-scale Neuron Network Visualization</h2>
+        <hr>
+        <div class="project-markdown">
+          <img style="width:70%;" src="../images/ConVis.png" alt="ConVis Visualization">
+          
+          <div class="project-section section-purple">
+            <h2>Overview</h2>
+            <p>ConVis: a web-based visualization system for large-scale connectome exploration that supports identity-preserving semantic zooming across organizational levels. The system enables seamless navigation between neuron populations and individual neurons while maintaining biological context, integrating hierarchical organization, 2D semantic overview, and 3D morphology visualization.</p>
+          </div>
+
+          <div class="project-section section-green">
+            <h2>Features</h2>
+            <ul>
+              <li>Identity-preserving semantic zooming</li>
+              <li>Hierarchical organization visualization</li>
+              <li>2D semantic overview</li>
+              <li>3D morphology visualization</li>
+              <li>Seamless navigation between different organizational levels</li>
+            </ul>
+          </div>
+
+          <div class="project-section section-purple">
+            <h2>Applications</h2>
+            <p>ConVis is designed to help researchers explore and understand large-scale connectome data, making it easier to navigate complex neural networks and identify patterns in connectivity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-light-green w3-center w3-padding-24">
+      Back to <a href="../index.html#research">Research</a> · Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+        title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+    </div>
+  </div>
+
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
