@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>未来城市构想</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700;900&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --forest: #1a3a2a;
+    --moss: #2d5a3d;
+    --leaf: #4a8c5c;
+    --mint: #7aba8a;
+    --pale: #c8e6d0;
+    --cream: #f4f0e8;
+    --sand: #e8e0d0;
+    --ink: #1a1a18;
+    --mist: #8a9a8e;
+    --gold: #c8a84b;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  /* ── DECORATIVE BACKGROUND ── */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background:
+      radial-gradient(ellipse 60% 40% at 10% 20%, rgba(74,140,92,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 60% at 90% 80%, rgba(45,90,61,0.05) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── COVER (same width as .content) ── */
+  .page-wrapper--cover {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 6%;
+  }
+
+  .cover {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 0 80px 0;
+    position: relative;
+    border-bottom: 1px solid rgba(74,140,92,0.2);
+  }
+
+  .cover-eyebrow {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    color: var(--leaf);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards 0.2s;
+  }
+
+  .cover-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: clamp(52px, 8vw, 96px);
+    font-weight: 900;
+    color: var(--forest);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 0.4s;
+  }
+
+  .cover-title span {
+    display: block;
+    color: var(--leaf);
+  }
+
+  .cover-sub {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--mist);
+    line-height: 1.8;
+    max-width: 560px;
+    margin-bottom: 60px;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 0.6s;
+  }
+
+  .cover-line {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--leaf), transparent);
+    margin-bottom: 60px;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 0.8s;
+  }
+
+  .cover-tag {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid var(--leaf);
+    color: var(--leaf);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 1s;
+  }
+
+  .cover-deco {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 200px;
+    opacity: 0.04;
+    color: var(--forest);
+    font-family: serif;
+    user-select: none;
+    animation: fadeIn 2s ease forwards 1s;
+  }
+
+  /* ── CONTENT WRAPPER ── */
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 6%;
+  }
+
+  /* ── SECTION ── */
+  section {
+    padding: 80px 0 60px;
+    border-bottom: 1px solid rgba(74,140,92,0.12);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .section-number {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--mint);
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 700;
+    color: var(--forest);
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+
+  .section-title .en {
+    display: block;
+    font-size: 0.45em;
+    font-weight: 300;
+    color: var(--mist);
+    letter-spacing: 0.05em;
+    margin-top: 6px;
+    font-family: 'Noto Sans SC', sans-serif;
+  }
+
+  /* ── LAYER CARDS ── */
+  .layer-grid {
+    display: grid;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .layer-card {
+    background: white;
+    border-left: 4px solid var(--leaf);
+    padding: 32px 36px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .layer-card:hover {
+    transform: translateX(4px);
+    box-shadow: -4px 0 20px rgba(74,140,92,0.1);
+  }
+
+  .layer-card::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 120px; height: 100%;
+    background: linear-gradient(270deg, rgba(200,230,208,0.15), transparent);
+  }
+
+  .layer-card.sky { border-color: #6baed6; }
+  .layer-card.sky .layer-icon { color: #6baed6; }
+  .layer-card.ground { border-color: var(--leaf); }
+  .layer-card.underground { border-color: #8c6d4a; }
+  .layer-card.underground .layer-icon { color: #8c6d4a; }
+
+  .layer-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+    display: block;
+    color: var(--leaf);
+  }
+
+  .layer-name {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--forest);
+    margin-bottom: 6px;
+  }
+
+  .layer-en {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--mist);
+    margin-bottom: 16px;
+  }
+
+  .layer-desc {
+    font-size: 14px;
+    line-height: 1.9;
+    color: #4a4a46;
+  }
+
+  .layer-points {
+    margin-top: 16px;
+    list-style: none;
+  }
+
+  .layer-points li {
+    font-size: 13px;
+    color: var(--mist);
+    padding: 4px 0 4px 16px;
+    position: relative;
+    line-height: 1.7;
+  }
+
+  .layer-points li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--mint);
+    font-size: 11px;
+  }
+
+  /* ── DIAGRAM ── */
+  .diagram {
+    background: var(--forest);
+    color: white;
+    padding: 48px;
+    margin: 40px 0;
+    font-family: 'Noto Sans SC', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .diagram::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 39px,
+      rgba(255,255,255,0.03) 39px,
+      rgba(255,255,255,0.03) 40px
+    );
+  }
+
+  .diagram-title {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--mint);
+    margin-bottom: 32px;
+    position: relative;
+  }
+
+  .diagram-layer {
+    display: flex;
+    align-items: center;
+    padding: 18px 24px;
+    margin-bottom: 4px;
+    position: relative;
+    z-index: 1;
+    cursor: default;
+    transition: background 0.2s;
+  }
+
+  .diagram-layer:hover { background: rgba(255,255,255,0.04); }
+
+  .diagram-layer.sky-layer { background: rgba(107,174,214,0.1); }
+  .diagram-layer.ground-layer { background: rgba(74,140,92,0.15); }
+  .diagram-layer.under-layer { background: rgba(140,109,74,0.1); }
+
+  .d-icon { font-size: 22px; margin-right: 20px; }
+  .d-label { font-size: 15px; font-weight: 500; flex: 1; }
+  .d-items { font-size: 12px; color: rgba(255,255,255,0.5); }
+
+  .diagram-arrow {
+    text-align: center;
+    color: var(--mint);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 8px 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── TABLE ── */
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 32px 0;
+    font-size: 13px;
+  }
+
+  .compare-table th {
+    background: var(--forest);
+    color: white;
+    padding: 14px 20px;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+  }
+
+  .compare-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(74,140,92,0.1);
+    color: #4a4a46;
+    line-height: 1.6;
+    vertical-align: top;
+  }
+
+  .compare-table tr:nth-child(even) td { background: rgba(200,230,208,0.12); }
+  .compare-table tr:hover td { background: rgba(74,140,92,0.06); }
+
+  .compare-table td:first-child {
+    font-weight: 500;
+    color: var(--moss);
+    white-space: nowrap;
+  }
+
+  /* ── HIGHLIGHT BOX ── */
+  .highlight {
+    background: white;
+    border: 1px solid rgba(74,140,92,0.2);
+    padding: 32px 40px;
+    margin: 32px 0;
+    position: relative;
+  }
+
+  .highlight::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--leaf), var(--mint));
+  }
+
+  .highlight p {
+    font-size: 15px;
+    line-height: 2;
+    color: #3a3a36;
+  }
+
+  /* ── CHALLENGE LIST ── */
+  .challenge-list {
+    list-style: none;
+    margin-top: 24px;
+  }
+
+  .challenge-list li {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(74,140,92,0.1);
+    align-items: flex-start;
+  }
+
+  .challenge-num {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--pale);
+    line-height: 1;
+    min-width: 40px;
+  }
+
+  .challenge-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #4a4a46;
+    padding-top: 4px;
+  }
+
+  .challenge-title {
+    font-weight: 500;
+    color: var(--moss);
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* ── CLOSING ── */
+  .closing {
+    padding: 120px 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .closing.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .closing-quote {
+    font-family: 'Noto Serif SC', serif;
+    font-size: clamp(24px, 3.5vw, 38px);
+    font-weight: 700;
+    color: var(--forest);
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .closing-sub {
+    font-size: 14px;
+    color: var(--mist);
+    font-style: italic;
+    letter-spacing: 0.05em;
+  }
+
+  .closing-deco {
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 0.04; }
+  }
+
+  /* ── NAV DOT ── */
+  .progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--leaf), var(--mint));
+    z-index: 100;
+    transition: width 0.1s;
+  }
+
+  /* ── BODY TEXT ── */
+  .body-text {
+    font-size: 15px;
+    line-height: 2;
+    color: #3a3a36;
+    margin-bottom: 20px;
+  }
+
+  .body-text + .body-text { margin-top: -4px; }
+
+  /* ── SECTION DIVIDER ── */
+  .sec-divider {
+    width: 40px;
+    height: 1px;
+    background: var(--mint);
+    margin: 20px 0 28px;
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progress"></div>
+
+<!-- COVER -->
+<div class="page-wrapper page-wrapper--cover">
+<div class="cover">
+  <div class="cover-eyebrow">城市设想 · 概念文稿 · 2026</div>
+  <h1 class="cover-title">
+    未来<br>
+    <span>城市</span>
+  </h1>
+  <p class="cover-sub">
+    一个关于人、自然与机器如何在三个维度上共存的城市愿景。<br>
+    道路消失，动物回归，机器沉入地下。
+  </p>
+  <div class="cover-line"></div>
+  <div class="cover-tag">三层立体城市 · 共生建筑 · 自动交通</div>
+  <div class="cover-deco">城</div>
+</div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="content">
+
+  <!-- 一、核心理念 -->
+  <section>
+    <div class="section-number">一 / 07</div>
+    <h2 class="section-title">
+      核心理念
+      <span class="en">Core Concept</span>
+    </h2>
+    <div class="sec-divider"></div>
+    <p class="body-text">
+      这座未来城市的根本逻辑，是通过垂直空间的彻底分层，解决当代城市最核心的三重矛盾：<strong>人与车的冲突、人与自然的割裂、建筑与生态的对立。</strong>
+    </p>
+    <p class="body-text">
+      城市不再是被道路切割的碎片，而是一个连续的、有机的、三层立体生命体。机器沉入地下，自然占据地面，人类在天地之间自由生活。
+    </p>
+    <div class="highlight">
+      <p>
+        这不是对现有城市的改良，而是对城市逻辑的根本颠覆——<strong>建筑不再为道路让步，自然不再被道路切割，人类不再与车辆共享地面</strong>。三者各归其位，城市因此获得前所未有的自由度。
+      </p>
+    </div>
+  </section>
+
+  <!-- 二、三层结构 -->
+  <section>
+    <div class="section-number">二 / 07</div>
+    <h2 class="section-title">
+      三层立体结构
+      <span class="en">Three-Layer Vertical Structure</span>
+    </h2>
+    <div class="sec-divider"></div>
+
+    <div class="diagram">
+      <div class="diagram-title">VERTICAL CITY DIAGRAM · 垂直城市结构示意</div>
+      <div class="diagram-layer sky-layer">
+        <span class="d-icon">🚁</span>
+        <span class="d-label">空中层 · Sky Layer</span>
+        <span class="d-items">eVTOL · 无人机 · UTM系统</span>
+      </div>
+      <div class="diagram-arrow">↕ Vertical Mobility Hub · 垂直交通枢纽</div>
+      <div class="diagram-layer ground-layer">
+        <span class="d-icon">🌳</span>
+        <span class="d-label">地面层 · Ground Layer</span>
+        <span class="d-items">公园 · 动物 · 建筑 · 慢行区</span>
+      </div>
+      <div class="diagram-arrow">↕ Transit Portal · 地下入口广场</div>
+      <div class="diagram-layer under-layer">
+        <span class="d-icon">🚗</span>
+        <span class="d-label">地下层 · Underground Layer</span>
+        <span class="d-items">自动驾驶 · 地下无人机廊道 · 轨道交通</span>
+      </div>
+    </div>
+
+    <div class="layer-grid">
+      <div class="layer-card sky">
+        <span class="layer-icon">🚁</span>
+        <div class="layer-name">空中层——低空经济</div>
+        <div class="layer-en">SKY LAYER · LOW-ALTITUDE ECONOMY</div>
+        <p class="layer-desc">
+          无人机与eVTOL飞行器在城市上空自由穿梭，全部接入UTM无人机交通管理系统，由中央智能系统实时调度，无需人工操控。
+        </p>
+        <ul class="layer-points">
+          <li>eVTOL空中出租车：点对点短途出行</li>
+          <li>无人机物流：包裹直达建筑屋顶接收点</li>
+          <li>城市管理无人机：安防巡检与生态监测</li>
+          <li>每栋建筑屋顶设Vertiport，兼顾无人机与鸟类栖息</li>
+        </ul>
+      </div>
+
+      <div class="layer-card ground">
+        <span class="layer-icon">🌳</span>
+        <div class="layer-name">地面层——城市生态系统</div>
+        <div class="layer-en">GROUND LAYER · LIVING ECOSYSTEM</div>
+        <p class="layer-desc">
+          道路彻底消失。地面成为一个不被切割的连续整体——无车、无围墙、无退缩红线。建筑之间自由连通，人与动物共享这片土地。
+        </p>
+        <ul class="layer-points">
+          <li>大面积生态绿地、树林、水系</li>
+          <li>开放式城市动物栖息区：人走进动物领地</li>
+          <li>慢行共享区：步行、婴儿车、滑板</li>
+          <li>Transit Portal广场：通往地下的入口枢纽</li>
+        </ul>
+      </div>
+
+      <div class="layer-card underground">
+        <span class="layer-icon">🚗</span>
+        <div class="layer-name">地下层——自动交通网络</div>
+        <div class="layer-en">UNDERGROUND · AUTOMATED TRANSPORT</div>
+        <p class="layer-desc">
+          所有机动交通移入地下，全自动驾驶，无需人工。地下无人机廊道是全球首创——密闭隧道中无风无雨，无人机稳定飞行，承担全城货物配送。
+        </p>
+        <ul class="layer-points">
+          <li>全自动驾驶汽车与巴士</li>
+          <li>地下无人机物流廊道（Sub-Surface UAV Corridor）</li>
+          <li>地铁与快速轨道系统</li>
+          <li>城外保留地面高速，用于城际出行</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 三、自动驾驶与安全 -->
+  <section>
+    <div class="section-number">三 / 07</div>
+    <h2 class="section-title">
+      自动驾驶的核心难题
+      <span class="en">Solving the Core Challenge of Autonomous Driving</span>
+    </h2>
+    <div class="sec-divider"></div>
+    <p class="body-text">
+      自动驾驶至今未能完全解决的最大难题，是<strong>行人行为的不可预测性</strong>——人会突然转向、分心、乱穿马路。再先进的算法，也难以完美预测人类下一步的动作。
+    </p>
+    <p class="body-text">
+      这座城市用一个极为优雅的方式绕开了这个问题：<strong>物理隔离</strong>。
+    </p>
+    <div class="highlight">
+      <p>
+        地面层只有人，地下层只有机器。两者永不相遇。地下系统只需协调机器与机器之间的互动，不确定性降至最低，效率与安全性大幅提升。这不是技术突破，而是空间设计的智慧。
+      </p>
+    </div>
+    <p class="body-text">
+      所有车辆与无人机均接入中央控制系统（类似UTM），统一调度，杜绝碰撞。用户只需打开APP，叫一辆车或一架无人机，系统自动完成一切。
+    </p>
+  </section>
+
+  <!-- 四、动物与建筑 -->
+  <section>
+    <div class="section-number">四 / 07</div>
+    <h2 class="section-title">
+      动物共存与共生建筑
+      <span class="en">Animal Coexistence & Symbiotic Architecture</span>
+    </h2>
+    <div class="sec-divider"></div>
+    <p class="body-text">
+      这座城市不是"有动物的公园"，而是"有人类的自然栖息地"。<strong>人类是客人，动物才是主人。</strong>这一理念彻底颠覆了传统动物园的权力逻辑——类似南京红山动物园"动物是主人，游客是尊重它们的客人"的理念，但更为彻底：无围栏，无边界，整座城市就是动物园。
+    </p>
+    <p class="body-text">
+      建筑不是"附带绿化的房子"，而是生态系统本身的一部分。外墙由活体植物构成，鸟类与昆虫可在墙体内筑巢，建筑形态模仿树根、蜂巢与珊瑚礁的有机结构。
+    </p>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>楼层位置</th>
+          <th>设计特征</th>
+          <th>与自然的关系</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>屋顶层</td><td>Vertiport + 大型鸟类栖息地 + 屋顶农场</td><td>大型鸟类的高空领地</td></tr>
+        <tr><td>高层</td><td>人类居住/办公，大面积开窗融入树冠</td><td>与树冠层平行共存</td></tr>
+        <tr><td>中层</td><td>开放式露台、植物廊道、动物空中通道</td><td>动物迁徙路径</td></tr>
+        <tr><td>底层</td><td>完全开放，无实体墙，动物自由穿行</td><td>人与动物共存区</td></tr>
+        <tr><td>地下层</td><td>直连自动驾驶车道与无人机廊道</td><td>城市循环系统</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 五、与现实案例的对比 -->
+  <section>
+    <div class="section-number">五 / 07</div>
+    <h2 class="section-title">
+      与现实案例的对比
+      <span class="en">Comparison with Real-World Precedents</span>
+    </h2>
+    <div class="sec-divider"></div>
+    <p class="body-text">
+      这个设想并非凭空而来——波士顿大挖掘、新加坡地下城市规划、中国低空经济战略，都是其现实原型。但本设想在每一个维度上都更进一步。
+    </p>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>对比维度</th>
+          <th>波士顿大挖掘</th>
+          <th>新加坡地下规划</th>
+          <th>本设想</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>核心目标</td><td>解决拥堵</td><td>向地下要空间</td><td>垂直生态分层</td></tr>
+        <tr><td>驾驶方式</td><td>人工驾驶</td><td>人工驾驶</td><td>全自动驾驶</td></tr>
+        <tr><td>地面设计</td><td>变为公园绿道</td><td>无车镇中心</td><td>完整生态系统</td></tr>
+        <tr><td>建筑理念</td><td>现有建筑改造</td><td>地下空间整合</td><td>建筑即栖息地</td></tr>
+        <tr><td>空中维度</td><td>无</td><td>无</td><td>低空经济体系</td></tr>
+        <tr><td>动物共存</td><td>无</td><td>无</td><td>开放式城市生态</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 六、现实挑战 -->
+  <section>
+    <div class="section-number">六 / 07</div>
+    <h2 class="section-title">
+      现实挑战
+      <span class="en">Key Challenges & Considerations</span>
+    </h2>
+    <div class="sec-divider"></div>
+    <p class="body-text">任何伟大的设想都必须直视其挑战。以下是这座城市需要认真解答的问题：</p>
+
+    <ul class="challenge-list">
+      <li>
+        <span class="challenge-num">01</span>
+        <div class="challenge-text">
+          <span class="challenge-title">网络安全风险</span>
+          中央控制系统若遭黑客攻击，全城交通将陷入瘫痪。需要去中心化备用机制与多重冗余设计。
+        </div>
+      </li>
+      <li>
+        <span class="challenge-num">02</span>
+        <div class="challenge-text">
+          <span class="challenge-title">建设成本</span>
+          波士顿大挖掘超支97%，达146亿美元。全城地下化工程规模更大，需要全新的融资与建设模式。
+        </div>
+      </li>
+      <li>
+        <span class="challenge-num">03</span>
+        <div class="challenge-text">
+          <span class="challenge-title">卫生与疾病风险</span>
+          人与动物高度混居历史上是疫病传播渠道，需实时生态健康监测系统。
+        </div>
+      </li>
+      <li>
+        <span class="challenge-num">04</span>
+        <div class="challenge-text">
+          <span class="challenge-title">动物物种筛选</span>
+          大型捕食性动物无法与人共存，需科学筛选适合城市的动物种群与生态结构。
+        </div>
+      </li>
+      <li>
+        <span class="challenge-num">05</span>
+        <div class="challenge-text">
+          <span class="challenge-title">地下无人机廊道</span>
+          全球尚无先例，通风、电磁干扰、维护等技术问题需进一步论证与实验。
+        </div>
+      </li>
+      <li>
+        <span class="challenge-num">06</span>
+        <div class="challenge-text">
+          <span class="challenge-title">社会公平性</span>
+          如此高科技的城市，如何确保不同收入阶层都能平等受益？
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 七、完整陈述 -->
+  <section>
+    <div class="section-number">七 / 07</div>
+    <h2 class="section-title">
+      完整概念陈述
+      <span class="en">Full Concept Statement</span>
+    </h2>
+    <div class="sec-divider"></div>
+    <div class="highlight">
+      <p>
+        这座城市在三个垂直层次上运作。<strong>空中层</strong>，低空经济的无人机与eVTOL飞行器由UTM系统统一调度，无需人工操控，承担配送与短途出行。<strong>地面层</strong>，道路彻底消失，地面成为连续的生态系统——树林、水系、开放式动物栖息地与建筑共同构成一个有机整体，人类是这片土地上的客人而非主宰；建筑外墙由活体植物构成，形态模仿自然，底层完全开放，动物自由穿行，屋顶是无人机坪与鸟类栖息地。<strong>地下层</strong>，所有机动交通沉入地下，全自动运行，并创新性地引入地下无人机物流廊道——密闭隧道中稳定飞行，承担全城货物配送。三层之间由垂直交通枢纽无缝连接，建筑地下室直连车道，用户一键叫车，系统自动完成一切。城外保留地面高速，用于城际出行。
+      </p>
+    </div>
+    <p class="body-text" style="margin-top:24px; font-size:13px; color: var(--mist);">
+      这座城市的伟大之处，不在于某一项技术的突破，而在于<strong>空间逻辑的重新设计</strong>——通过垂直分层，让人、自然与机器各得其所，城市因此成为一个真正的共生体。
+    </p>
+  </section>
+
+</div>
+
+<!-- CLOSING -->
+<div class="content">
+  <div class="closing">
+    <div class="closing-deco">🌿</div>
+    <div class="closing-quote">未来城市，不是科幻——是选择。</div>
+    <div class="closing-sub">The future city is not science fiction. It is a choice.</div>
+  </div>
+</div>
+
+<script>
+  // Progress bar
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    const total = document.body.scrollHeight - window.innerHeight;
+    document.getElementById('progress').style.width = (scrolled / total * 100) + '%';
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible');
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+  document.querySelectorAll('section, .closing').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

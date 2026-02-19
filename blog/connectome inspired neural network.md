@@ -2450,5 +2450,6 @@ Research Goal
 
 ## TODO
 
+[A data and task-constrained mechanistic model of the mouse outer retina shows robustness to contrast variations](https://www.biorxiv.org/content/10.1101/2025.10.20.683356v1.abstract)
 
 

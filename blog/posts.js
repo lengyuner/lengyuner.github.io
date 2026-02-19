@@ -38,6 +38,14 @@ window.BLOG_SECTIONS = [
     ],
   },
   {
+    id: "future-city",
+    title: "Future City / 未来城市",
+    items: [
+      { title: "Future City Concept (EN)", url: "/blog/Future_City/Future_City_Concept_EN.html" },
+      { title: "未来城市构想（中文）", url: "/blog/Future_City/未来城市构想_中文版.html" },
+    ],
+  },
+  {
     id: "external",
     title: "External",
     items: [

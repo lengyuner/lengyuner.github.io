@@ -287,6 +287,8 @@ Review, 2018, from Thomas C. Südhof
 
 - [The Dynamic Synapse](https://www.cell.com/neuron/fulltext/S0896-6273(13)00916-1) Review, 2013, Neuron, Daniel Choquet, Antoine Triller
 
+- [Synaptic Specificity, Recognition Molecules, and Assembly of Neural Circuits](https://www.cell.com/cell/fulltext/S0092-8674(20)30403-7)  
+Joshua R. Sanes, S. Lawrence Zipursky 
 
 - [Making Connections in the Fly Visual System](https://www.sciencedirect.com/science/article/pii/S0896627302008760)
 Review, 2002, [Thomas R Clandinin](https://flyvisionlab.weebly.com/), S.Lawrence Zipursky 
@@ -1284,6 +1286,11 @@ Phate
 
 - [LFADS - Latent Factor Analysis via Dynamical Systems](https://arxiv.org/abs/1608.06315)
   
+- [The unbearable slowness of being: Why do we live at 10 bits/s?](https://www.cell.com/neuron/fulltext/S0896-6273(24)00808-0)
+
+- [The low-rank hypothesis of complex systems](https://www.nature.com/articles/s41567-023-02303-0)
+Vincent Thibeault, Antoine Allard & Patrick Desrosiers, 2024, Nature Physics  
+
 
 ### manifold reconstriction
 - [Approximation of Functions on Manifolds in High Dimension from Noisy Scattered Data](https://arxiv.org/abs/2012.13804)
