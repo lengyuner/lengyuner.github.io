@@ -2453,3 +2453,7 @@ Research Goal
 [A data and task-constrained mechanistic model of the mouse outer retina shows robustness to contrast variations](https://www.biorxiv.org/content/10.1101/2025.10.20.683356v1.abstract)
 
 
+
+[A Network of Biologically Inspired Rectified Spectral Units (ReSUs) Learns Hierarchical Features Without Error Backpropagation](https://arxiv.org/abs/2512.23146)
+
+we trained a two-layer ReSU network in a self-supervised regime on translating natural scenes. First-layer units, each driven by a single pixel, developed temporal filters resembling those of Drosophila post-photoreceptor neurons (L1/L2 and L3), including their empirically observed adaptation to signal-to-noise ratio (SNR). Second-layer units, which pooled spatially over the first layer, became direction-selective -- analogous to T4 motion-detecting cells -- with learned synaptic weight patterns approximating those derived from connectomic reconstructions.
