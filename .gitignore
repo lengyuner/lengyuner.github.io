@@ -1,16 +1,13 @@
-# new/
-# ./new/*
-/old/*
 .DS_Store 
-**/.DS_Store
 .DS_Store?
+**/.DS_Store
 
+/old/*
 /.new
 /untitled folder
 /pdf/CV/old
-blog/Future_City/~$城市构想_Future_City_Vision.docx
-blog/Future_City/19700121_0705_6997a7a8f7848191b64d665adddaccd7.mp4
-blog/Future_City/20260219_2308_01khwkdjeke7x8x05k64kkj59k.mp4
+
+blog/Future_City/~$城市构想_Future_City_Vision.docx 
 blog/Others/Future_City/19700121_0705_6997a7a8f7848191b64d665adddaccd7.mp4
 blog/Others/Future_City/20260219_2308_01khwkdjeke7x8x05k64kkj59k.mp4
 /blog/Optic_Lobe/T4T5_Neuron/expected_result/webp
