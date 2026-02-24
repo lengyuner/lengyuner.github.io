@@ -239,3 +239,6 @@ Simone Holler, German Köstinger, Kevan A. C. Martin, Gregor F. P. Schuhknecht &
 
 
 
+
+
+- [Predicting modular functions and neural coding of behavior from a synaptic wiring diagram](https://www.nature.com/articles/s41593-024-01784-3)

@@ -80,6 +80,7 @@
     - [deep learning method](#deep-learning-method)
       - [fundation model](#fundation-model)
       - [diffusion model/ visual Stimulus](#diffusion-model-visual-stimulus)
+  - [Gene / Transcriptome](#gene--transcriptome)
   - [behavior](#behavior)
     - [oscilation](#oscilation)
     - [place cell and grid cell](#place-cell-and-grid-cell)
@@ -219,6 +220,9 @@ Machine learning identifies synaptic transmitters from electron micrographs
 
 
 ### connectome analysis
+
+
+- [Predicting modular functions and neural coding of behavior from a synaptic wiring diagram](https://www.nature.com/articles/s41593-024-01784-3)
 
 - [Distributed control circuits across a brain-and-cord connectome](https://www.biorxiv.org/content/10.1101/2025.07.31.667571v2)
 
@@ -441,6 +445,8 @@ Here we use a library of **239 pairwise statistics** to benchmark canonical feat
 
 
 #### experiment support
+
+- [Population Morphology Implies a Common Developmental Blueprint for Drosophila Motion Detectors](https://www.biorxiv.org/content/10.1101/2025.11.15.688637v3.abstract)
 
 - [Complex formation of immunoglobulin superfamily molecules Side-IV and Beat-IIb regulates synaptic specificity](https://www.sciencedirect.com/science/article/pii/S2211124724001268)  
 2023, Cell Reports
@@ -1201,6 +1207,8 @@ Thomas R. Clandinin, 2017, Current Bilogy
 
 #### other data
 
+- [TRAINING SESSION INTERVALS SHAPE FUNCTIONAL CONNECTIVITY IN SPATIAL LEARNING: A BRAIN-WIDE ANALYSIS](https://www.biorxiv.org/content/10.64898/2026.02.12.705541v1)
+
 - [In vivo autofluorescence lifetime imaging of the Drosophila brain captures metabolic shifts associated with memory formation](https://www.biorxiv.org/content/10.1101/2025.01.27.635185v1.full)
 
 - [The spatial and temporal structure of neural activity across the fly brain](https://www.nature.com/articles/s41467-023-41261-2)
@@ -1373,7 +1381,22 @@ CVPR, 2023
 
 
 
+## Gene / Transcriptome
+- [Identifying 3D signal overlaps in spatial transcriptomics data with ovrlpy](https://www.nature.com/articles/s41587-026-03004-8)
+
+
+- [A Multimodal Single-Cell Epigenomic and 3D Genome Atlas of1the Human Basal Ganglia](https://www.biorxiv.org/content/10.64898/2026.02.12.705594v1) **Human Basal Ganglia**
+
+- [Whole brain alignment of spatial transcriptomics between humans and mice with BrainAlign](https://www.nature.com/articles/s41467-024-50608-2)
+
+- [Slingshot: cell lineage and pseudotime inference for single-cell transcriptomics](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4772-0)
+
+
+
 ## behavior
+Topics in Sensorimotor Control
+https://zuckermaninstitute.columbia.edu/course-topics-sensorimotor-control
+
 
 - [**LISBET**: a machine learning model for the automatic segmentation of social behavior motifs](https://arxiv.org/abs/2311.04069)
 
@@ -1386,8 +1409,6 @@ Jonathan W. Pillow
 Thomas L. Griffiths
 
 - [Spatial vision in insects is facilitated by shaping the dynamics of visual input through behavioral action](https://www.frontiersin.org/articles/10.3389/fncir.2012.00108/full)
-
-- [Arithmetic and local circuitry underlying dopamine prediction errors](https://www.nature.com/articles/nature14855)
 
 - [A Neural Substrate of Prediction and Reward](https://www.science.org/doi/10.1126/science.275.5306.1593)
 
@@ -1402,6 +1423,13 @@ Sandeep Robert Datta
 
 - [Lightning Pose: improved animal pose estimation via semi-supervised learning, Bayesian ensembling and cloud-native open-source tools](https://www.nature.com/articles/s41592-024-02319-1)
 Liam Paninski, 2024, Nature Methods  
+
+
+- [Disentangled multi-subject and social behavioral representations through a constrained subspace variational autoencoder (CS-VAE)](https://elifesciences.org/reviewed-preprints/88602v1)
+
+- [Unveiling the latent dynamics in social cognition with multi-agent inverse reinforcement learning](https://www.biorxiv.org/content/10.1101/2024.10.09.617461v1)
+
+Inverse reinforcement learning
 
 ### oscilation
 - [Brain rhythms have come of age](https://www.sciencedirect.com/science/article/pii/S0896627323002143)
@@ -1481,6 +1509,12 @@ Review, 2023
 - [Bounded Integration in Parietal Cortex Underlies Decisions Even When Viewing Duration Is Dictated by the Environment](https://www.jneurosci.org/content/28/12/3017)
 
 - [Dopamine pathways mediating affective state transitions after sleep loss](https://www.cell.com/neuron/fulltext/S0896-6273(23)00758-4)
+
+dopamine
+[Striatum-wide dopamine encodes trajectory errors separated from value](https://www.nature.com/articles/s41586-025-10083-1)
+ 
+
+- [Arithmetic and local circuitry underlying dopamine prediction errors](https://www.nature.com/articles/nature14855)
 
 ### DS & OR
 - [Association rule learning](https://en.wikipedia.org/wiki/Association_rule_learning)
@@ -1597,13 +1631,9 @@ gene
 S. Lawrence Zipursky & Gwyneth M. Card 
  
 
-- [Whole brain alignment of spatial transcriptomics between humans and mice with BrainAlign](https://www.nature.com/articles/s41467-024-50608-2)
-
 - [Cell2Sentence: Teaching Large Language Models the Language of Biology](https://www.biorxiv.org/content/10.1101/2023.09.11.557287v3)
 
 - [Reversed graph embedding resolves complex single-cell trajectories](https://www.nature.com/articles/nmeth.4402)
-
-- [Slingshot: cell lineage and pseudotime inference for single-cell transcriptomics](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4772-0)
 
 
 - [viewpoint Your Students are Your legacy](https://dl.acm.org/doi/pdf/10.1145/1467247.1467259#page=1.25)
@@ -1633,3 +1663,5 @@ S. Lawrence Zipursky & Gwyneth M. Card
 
 
 [NeuroXiv: AI-powered open databasing and dynamic mining of brain-wide neuron morphometry](https://www.nature.com/articles/s41592-025-02687-2)
+
+

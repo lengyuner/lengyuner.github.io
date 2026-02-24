@@ -21,8 +21,8 @@ The MICrONS Project set out to create a massively dense reconstruction of the **
 
 ## modeling -- dynamics system & Ripple 
 
-[connectome inspired neural network](<connectome inspired neural network.md>)    
-html [connectome inspired neural network](https://lengyuner.github.io/blog/connectome%20inspired%20neural%20network.html)
+[Connectome Inspired Neural Network](<Connectome Inspired Neural Network.md>)    
+html [Connectome Inspired Neural Network](https://lengyuner.github.io/blog/connectome%20inspired%20neural%20network.html)
 
 
 
@@ -165,11 +165,25 @@ dentrits level voltage recording for in vivo
 Kai Du, ..., Jeanette Hellgren Kotaleski, 2017, PNAS 
 
 
+- [Spike transmission failures in axons from cortical neurons in vivo](https://www.cell.com/iscience/fulltext/S2589-0042(24)02109-6)
+- Netanel Ofer2,4 netanelofer@gmail.com ∙ Victor Hugo Cornejo3 ∙ Rafael Yuste, 2024, iScience
+Calcium accumulations are higher in axonal boutons than in axonal shafts  
+In most axons, action potentials propagate reliably across branch points  
+In some axons, higher frequency spike trains fail at branch points  
+Spike filtering correlates with the geometry of the axonal branch point
+
 
 
 
 ### Blue Brain Project
-Reconstruction and Simulation of Neocortical Microcircuitry 
+[Reconstruction and Simulation of Neocortical Microcircuitry](https://www.cell.com/fulltext/S0092-8674(15)01191-5)
+Henry Markram, Eilif Muller,
+Srikanth Ramaswamy,
+Michael W. Reimann, ..., Javier DeFelipe,
+Sean L. Hill, Idan Segev, Felix Schurmann
+
+
+
 
 ### experiment support
 - [**Voltage compartmentalization in dendritic spines in vivo**](https://www.science.org/doi/10.1126/science.abg0501)
@@ -184,6 +198,9 @@ multiple recent studies indicate that dendritic activity in vivo is much less co
 The first demonstrated that somatic voltage fluctuations under an in vivo-like synaptic regime are well described by a global dendritic nonlinearity that can capture up to 90% of explained variance (Ujfalussy et al., 2018).
 
 A general problem of hierarchical systems like the cortex is that computational units must encode both ascending (bottom-up) and descending (top-down) information simultaneously, possibly even routing specific information to different target units. Recent theoretical models suggest that L2/3 and L5 pyramidal neurons can multiplex bottom-up and top-down information into a single output stream in the form of simple and burst spiking, respectively (Naud and Sprekeler, 2018, Ujfalussy et al., 2018, Payeur, et al., 2020) 
+
+
+
 
 - [The quest for multiscale brain modeling](https://www.cell.com/trends/neurosciences/fulltext/S0166-2236(22)00125-4)
 Egidio D’Angelo， Viktor Jirsa， 2022， 
@@ -215,6 +232,29 @@ Nathan W. Gouwens, Jim Berg, David Feng, Staci A. Sorensen, Hongkui Zeng, Michae
 
 To address this challenge, several studies have described automated parameter fitting approaches with multicompartment conductance-based models 9,10,11,12,13,14,15,16,17.
 
+#### single neuron recording data
+[An adaptive optics module for deep tissue multiphoton imaging in vivo](https://www.nature.com/articles/s41592-021-01279-0)
+Na Ji 
+Nature Methods volume 18, pages1259–1264 (2021)
+
+
+[In vivo volumetric imaging of calcium and glutamate activity at synapses with high spatiotemporal resolution](https://www.nature.com/articles/s41467-021-26965-7)
+
+Na Ji,2021, nature communications 
+
+
+[High-resolution structural and functional deep brain imaging using adaptive optics three-photon microscopy](https://www.nature.com/articles/s41592-021-01257-6)
+
+Robert Prevedel 
+Nature Methods volume 18, pages1253–1258 (2021)
+
+
+[High-throughput volumetric mapping of synaptic transmission](https://www.nature.com/articles/s41592-024-02309-3)
+ Na Ji 
+Nature Methods volume 21, pages1298–1305 (2024)
+
+
+
 
 #### Multicompartment Hodgkin-Huxley model
 - [Real-time **multicompartment Hodgkin-Huxley** neuron emulation on SoC FPGA](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2024.1457774/full)
@@ -226,11 +266,16 @@ To address this challenge, several studies have described automated parameter fi
 ### tool
 - **Jaxley**: [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v2)   [jaxley_experiments](https://github.com/mackelab/jaxley_experiments)
 
+
+https://jaxley.readthedocs.io/en/latest/reference/_autosummary/jaxley.synapses.IonotropicSynapse.html
+
 - [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v2)
 
 Tool for neuron dynamics simulation (like brian2, spikingjelly)  
 - [NEURON](https://nrn.readthedocs.io/en/latest/install/install_instructions.html#windows)
 - [BrainPy](https://brainpy.readthedocs.io/en/latest/quickstart/simulation.html)
+
+- BrainTrace: [Model-agnostic linear-memory online learning in spiking neural networks](https://www.nature.com/articles/s41467-026-68453-w)
 
 
 - [neuron morphology](https://neuron-morphology.readthedocs.io/en/latest/index.html)
@@ -251,6 +296,23 @@ ModelDB
 
 ## parameter optimization
 [parameter optimization methods](parameter_optimization_methods.md)
+
+
+
+- [Combined statistical-biophysical modeling links ion channel genes to physiology of cortical neuron types](https://www.cell.com/patterns/fulltext/S2666-3899(25)00171-0)
+Jakob H. Macke, Dmitry Kobak, Philipp Berens, 2025   
+Gene expression predicts ion channel conductances in cortical neuron models    
+Biophysical models bridge transcriptomic data to electrophysiology    
+Robust simulation-based inference overcomes model-data mismatch
+
+
+- [Linking ion channel gene expression to neuronal firing patterns through a statistical-biophysical model](https://www.cell.com/patterns/fulltext/S2666-3899(25)00238-7)
+2025, Review
+
+
+- [Single-neuron models linking electrophysiology, morphology, and transcriptomics across cortical cell types](https://www.cell.com/cell-reports/fulltext/S2211-1247(22)00989-5)
+ Costas A. Anastassiou, Allen, 2022, Cell
+
 
 
 ## review
@@ -339,7 +401,7 @@ PMID: 32142648 DOI: 10.1016/j.neuron.2020.01.040
 
 ### Deistler 2024 bioRxiv（Jaxley）
 Jaxley: Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics
- View ORCID ProfileMichael Deistler,  View ORCID ProfileKyra L. Kadhim,  View ORCID ProfileMatthijs Pals,  View ORCID ProfileJonas Beck,  View ORCID ProfileZiwei Huang,  View ORCID ProfileManuel Gloeckler,  View ORCID ProfileJanne K. Lappalainen,  View ORCID ProfileCornelius Schröder,  View ORCID ProfilePhilipp Berens,  View ORCID ProfilePedro J. Gonçalves,  View ORCID ProfileJakob H. Macke
+ Michael Deistler,  Kyra L. Kadhim,  Matthijs Pals,  Jonas Beck,  Ziwei Huang,  Manuel Gloeckler,  Janne K. Lappalainen,  Cornelius Schröder,  Philipp Berens,  Pedro J. Gonçalves,  Jakob H. Macke
 doi: https://doi.org/10.1101/2024.08.21.608979
 
 ### jun2017neuropixels
@@ -363,6 +425,26 @@ PMID: 34755599 PMCID: PMC8616581 DOI: 10.7554/eLife.62567
 
 ### deistler2024differentiable
 Jaxley: Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics
- View ORCID ProfileMichael Deistler,  View ORCID ProfileKyra L. Kadhim,  View ORCID ProfileMatthijs Pals,  View ORCID ProfileJonas Beck,  View ORCID ProfileZiwei Huang,  View ORCID ProfileManuel Gloeckler,  View ORCID ProfileJanne K. Lappalainen,  View ORCID ProfileCornelius Schröder,  View ORCID ProfilePhilipp Berens,  View ORCID ProfilePedro J. Gonçalves,  View ORCID ProfileJakob H. Macke
+ Michael Deistler,  Kyra L. Kadhim,  Matthijs Pals,  Jonas Beck,  Ziwei Huang,  Manuel Gloeckler,  Janne K. Lappalainen,  Cornelius Schröder,  Philipp Berens,  Pedro J. Gonçalves,  Jakob H. Macke
 doi: https://doi.org/10.1101/2024.08.21.608979  
 
+
+
+## TODO
+
+Bounds on the computational complexity of neurons due to dendritic morphology
+
+
+paper from RIKEN and Allen:
+[Microscopic-Level Mouse Whole Cortex Simulation Composed of 9 Million Biophysical Neurons and 26 Billion Synapses on the Supercomputer Fugaku](https://dl.acm.org/doi/full/10.1145/3712285.3759819)
+
+
+[High performance, large-scale multi-compartment Hodgkin-Huxley simulation of Drosophila’s whole-brain neural circuit model](https://www.biorxiv.org/content/10.1101/2022.11.01.512969v1)
+Kaoruko Higuchi, Tomoki Kazawa, Buntaro Sakai,  Shigehiro Namiki,  Stephan Shuichi Haupt, Ryohei Kanzaki
+November 01, 2022.
+
+[Microscopic-Level Mouse Whole Cortex Simulation Composed of 9 Million Biophysical Neurons and 26 Billion Synapses on the Supercomputer Fugaku](https://dl.acm.org/doi/full/10.1145/3712285.3759819)
+Rin Kuriyama, Kaaya Akira, Laura Green, Beatriz Herrera, Kael Dai, Mari Iura, Gilles Gouaillardet, Asako Terasawa, Taira Kobayashi, Jun Igarashi, Anton Arkhipov, Tadashi Yamazaki
+
+- [A genetic, genomic, and computational resource for exploring neural circuit function](https://elifesciences.org/articles/50901)
+Janelia, gene data

@@ -2457,3 +2457,12 @@ Research Goal
 [A Network of Biologically Inspired Rectified Spectral Units (ReSUs) Learns Hierarchical Features Without Error Backpropagation](https://arxiv.org/abs/2512.23146)
 
 we trained a two-layer ReSU network in a self-supervised regime on translating natural scenes. First-layer units, each driven by a single pixel, developed temporal filters resembling those of Drosophila post-photoreceptor neurons (L1/L2 and L3), including their empirically observed adaptation to signal-to-noise ratio (SNR). Second-layer units, which pooled spatially over the first layer, became direction-selective -- analogous to T4 motion-detecting cells -- with learned synaptic weight patterns approximating those derived from connectomic reconstructions.
+
+
+[A Spatiotemporal Perspective on Dynamical Computation in Neural Information Processing Systems](https://arxiv.org/abs/2409.13669)
+
+Spatiotemporal flows of neural activity, such as traveling waves  
+
+recurrent traveling-wave-like dynamics are not just useful but necessary for accurate and stable processing of any signal undergoing such motion
+
+for any non-trivial recurrent neural network

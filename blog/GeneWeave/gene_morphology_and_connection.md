@@ -94,8 +94,9 @@ https://www.sciencedirect.com/science/article/pii/S0070215320300363
 
 ## The cell biology of synapse formation
 Thomas C. Südhof
-https://rupress.org/jcb/article/220/7/e202103052/212258/The-cell-biology-of-synapse-formationMechanisms-of
 
+
+[The cell biology of synapse formation: Mechanisms of synaptic specificity”（J. Cell Biology, 220: e202103052）](https://rupress.org/jcb/article/220/7/e202103052/212258/The-cell-biology-of-synapse-formationMechanisms-of)
 
 <!-- 好的，我查到并阅读了这篇文章 “The cell biology of synapse formation: Mechanisms of synaptic specificity”（J. Cell Biology, 220: e202103052）的一些公开内容和综述资料，下面是我整理的“基因 /分子机制如何作用于突触（synapse）形成 /神经元连接”的解读，希望能帮助你理解。
 
@@ -154,7 +155,7 @@ Activity-dependent genes及 Ca²⁺ / cAMP 信号通路	活动驱动突触强化
  
 ### 一、文章总体概况与主旨
 
-- 题目：**The cell biology of synapse formation: Mechanisms of synaptic specificity**（J. Cell Biol. 2021）  [oai_citation:0‡PubMed](https://pubmed.ncbi.nlm.nih.gov/34086051/?utm_source=chatgpt.com)  
+- 题目：**The cell biology of synapse formation: Mechanisms of synaptic specificity**（J. Cell Biol. 2021）  [oai_citation:0‡PubMed](https://pubmed.ncbi.nlm.nih.gov/34086051/)  
 - 作者：Thomas C. Südhof  
 - 核心问题：在神经回路中，**突触**不仅要快速传递信息，还要具备多样化的计算性质（如兴奋 / 抑制 /可塑性）。然而，突触是如何被组装、如何实现连接的特异性（哪个神经元连哪个神经元、以怎样的强度 /属性）这一调控机制仍然未知。作者在这篇综述中主张：**突触黏附分子（SAMs, synaptic adhesion molecules）** 在突触的形成、成熟与特性塑造中起“组织者（organizer）”角色。  [oai_citation:1‡PubMed](https://pubmed.ncbi.nlm.nih.gov/34086051/?utm_source=chatgpt.com)  
 - 文章提出：
@@ -308,8 +309,9 @@ Südhof 把突触生命周期（synapse lifecycle）分为若干阶段：从 nas
 <!-- # 解读 — *Principles of synaptogenesis: Insights from Caenorhabditis elegans*（Frankel & Kurshan, 2025） -->
 Frankel & Kurshan, 2025
 
-https://www.sciencedirect.com/science/article/pii/S095943882500087X
+[*Principles of synaptogenesis: Insights from Caenorhabditis elegans*（Frankel & Kurshan, 2025）](https://www.sciencedirect.com/science/article/pii/S095943882500087X)
 
+ 
 
 **文章类型**：综述 (Review)  [oai_citation:0‡PubMed](https://pubmed.ncbi.nlm.nih.gov/40483740/?utm_source=chatgpt.com)  
 **焦点**：总结线虫（C. elegans）体系中的突触发生 (synaptogenesis)、组织 (organization) 与重塑 /精细调控 (refinement / remodeling) 的基因 /分子机制。 [oai_citation:1‡PubMed](https://pubmed.ncbi.nlm.nih.gov/40483740/?utm_source=chatgpt.com)  
