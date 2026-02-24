@@ -9,10 +9,10 @@ window.BLOG_SECTIONS = [
     id: "neuroscience",
     title: "Neuroscience",
     items: [
-      { title: "Connectome Inspired Neural Network", html: "connectome inspired neural network.html" },
-      { title: "The structure and function of the neuron", html: "neuron_strucutre_and_function/The structure and function of the neuron.html" },
-      { title: "Spiking and nonspiking neurons", html: "NonSpiking/spiking and non spiking.html" },
-      { title: "Some properties of Optic Lobe neurons", html: "expected_result.html" },
+      { title: "Connectome Inspired Neural Network", html: "Connectome/Connectome_inspired_neural_network/Connectome Inspired Neural Network.html" },
+      { title: "The structure and function of the neuron", html: "Ripple/neuron_strucutre_and_function/The structure and function of the neuron.html" },
+      { title: "Spiking and nonspiking neurons", html: "Optic_Lobe/NonSpiking/spiking and non spiking.html" },
+      { title: "Some properties of Optic Lobe neurons", html: "Optic_Lobe/T4T5_Neuron/expected_result.html" },
     ],
   },
   {
@@ -27,7 +27,7 @@ window.BLOG_SECTIONS = [
     id: "computer-science",
     title: "Computer Science",
     items: [
-      { title: "A literature review on the MIA method", html: "MIA/literature_review_en.html" },
+      { title: "A literature review on the MIA method", html: "Others/MIA/literature_review_en.html" },
     ],
   },
   {
@@ -41,8 +41,8 @@ window.BLOG_SECTIONS = [
     id: "future-city",
     title: "Future City / 未来城市",
     items: [
-      { title: "Future City Concept (EN)", url: "/blog/Future_City/Future_City_Concept_EN.html" },
-      { title: "未来城市构想（中文）", url: "/blog/Future_City/未来城市构想_中文版.html" },
+      { title: "Future City Concept (EN)", html: "Others/Future_City/Future_City_Concept_EN.html" },
+      { title: "未来城市构想（中文）", html: "Others/Future_City/未来城市构想_中文版.html" },
     ],
   },
   {
