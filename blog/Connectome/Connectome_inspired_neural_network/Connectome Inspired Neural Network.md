@@ -2450,8 +2450,15 @@ Research Goal
 
 ## TODO
 
+The First Multi-Behavior Brain Upload
+https://theinnermostloop.substack.com/p/the-first-multi-behavior-brain-upload
+
+
+
 [A data and task-constrained mechanistic model of the mouse outer retina shows robustness to contrast variations](https://www.biorxiv.org/content/10.1101/2025.10.20.683356v1.abstract)
 
+- [Whole-Brain Connectomic Graph Model Enables Whole-Body Locomotion Control in Fruit Fly](https://arxiv.org/abs/2602.17997)
+Zehao Jin, Yaoye Zhu, Chen Zhang, Yanan Sui
 
 
 [A Network of Biologically Inspired Rectified Spectral Units (ReSUs) Learns Hierarchical Features Without Error Backpropagation](https://arxiv.org/abs/2512.23146)

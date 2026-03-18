@@ -145,6 +145,8 @@
             a.href = item.url;
             a.target = "_blank";
             a.rel = "noopener noreferrer";
+          } else if (item.md) {
+            a.href = "./post.html?md=" + encodePath(item.md);
           } else if (item.html) {
             a.href = "./post.html?html=" + encodePath(item.html);
           } else {
@@ -153,10 +155,10 @@
 
           li.appendChild(a);
 
-          if (debugOn && item.html) {
+          if (debugOn && (item.html || item.md)) {
             const s = document.createElement("span");
             s.className = "blog-muted debug-only";
-            s.textContent = " · blog/" + item.html;
+            s.textContent = " · blog/" + (item.html || item.md);
             li.appendChild(s);
           }
 

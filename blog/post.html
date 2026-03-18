@@ -184,6 +184,18 @@
       }
     }
 
+    function scrollToCurrentHash() {
+      if (!window.location.hash) return;
+      const rawId = window.location.hash.slice(1);
+      if (!rawId) return;
+
+      const id = decodeURIComponent(rawId);
+      const target = document.getElementById(id);
+      if (!target) return;
+
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
     function wrapH2Sections(rootEl) {
       // Wrap each H2 and its following siblings (until next H2) into a block.
       const h2s = Array.from(rootEl.querySelectorAll("h2"));
@@ -311,6 +323,9 @@
         document.title = titleEl.textContent + " · Blog";
         wrapH2Sections(contentEl);
         await typesetMath(contentEl);
+        requestAnimationFrame(function () {
+          setTimeout(scrollToCurrentHash, 0);
+        });
       } catch (e) {
         titleEl.textContent = "Failed to load content";
         contentEl.innerHTML =
@@ -319,6 +334,7 @@
       }
     }
 
+    window.addEventListener("hashchange", scrollToCurrentHash);
     loadContent();
   </script>
 </body>

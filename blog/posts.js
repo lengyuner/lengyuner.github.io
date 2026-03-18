@@ -9,6 +9,7 @@ window.BLOG_SECTIONS = [
     id: "neuroscience",
     title: "Neuroscience",
     items: [
+      { title: "How Genes Shape Neuronal Morphology, Synapse Formation, and Neural Connectivity", md: "GeneWeave/geneweave.md" },
       { title: "Connectome Inspired Neural Network", html: "Connectome/Connectome_inspired_neural_network/Connectome Inspired Neural Network.html" },
       { title: "The structure and function of the neuron", html: "Ripple/neuron_strucutre_and_function/The structure and function of the neuron.html" },
       { title: "Spiking and nonspiking neurons", html: "Optic_Lobe/NonSpiking/spiking and non spiking.html" },

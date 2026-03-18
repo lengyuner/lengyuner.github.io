@@ -467,6 +467,8 @@ function w3_close() {
         a.href = item.url;
         a.target = "_blank";
         a.rel = "noopener noreferrer";
+      } else if (item.md) {
+        a.href = "blog/post.html?md=" + encodePath(item.md);
       } else if (item.html) {
         a.href = "blog/post.html?html=" + encodePath(item.html);
       } else {

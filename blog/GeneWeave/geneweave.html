@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>How Genes Shape Neuronal Morphology&comma; Synapse Formation&comma; and Neural Connectivity</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="how-genes-shape-neuronal-morphology-synapse-formation-and-neural-connectivity">How Genes Shape Neuronal Morphology, Synapse Formation, and Neural Connectivity</h1>
+<!-- ## Presentation Outline -->
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#background">1. Background: From Gene Expression to Circuit Wiring</a></li>
+<li><a href="#biological-case-studies">2. Biological Case Studies</a></li>
+<li><a href="#simple-modeling-frameworks">3. Simple Modeling Frameworks</a></li>
+<li><a href="#potential-applications">4. Potential Applications</a></li>
+<li><a href="#take-home-messages">5. Take-Home Messages</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+<hr>
+<p><a id="background"></a></p>
+<h2 id="1-background-from-gene-expression-to-circuit-wiring">1. Background: From Gene Expression to Circuit Wiring</h2>
+<h3 id="11-a-minimal-conceptual-framework">1.1 A Minimal Conceptual Framework</h3>
+<p>Neural wiring is not random. Across development, gene-regulatory programs constrain:</p>
+<ul>
+<li>neuronal polarity and axon specification</li>
+<li>axon pathfinding toward appropriate target regions</li>
+<li>target recognition and synaptic partner selection</li>
+<li>synapse maturation, refinement, and stabilization</li>
+</ul>
+<p>At a coarse level, the logic can be summarized as:</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Developmental signals</mtext><mo>→</mo><mtext>gene regulation</mtext><mo>→</mo><mtext>cell-surface and cytoskeletal programs</mtext><mo>→</mo><mtext>wiring outcomes</mtext></mrow><annotation encoding="application/x-tex">\text{Developmental signals} \rightarrow \text{gene regulation} \rightarrow \text{cell-surface and cytoskeletal programs} \rightarrow \text{wiring outcomes}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">Developmental signals</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">gene regulation</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">cell-surface and cytoskeletal programs</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8623em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">wiring outcomes</span></span></span></span></span></span></p>
+<h3 id="12-axon-specification-and-outgrowth">1.2 Axon Specification and Outgrowth</h3>
+<p>During early neuronal development, one neurite is specified as the axon, whereas the remaining neurites adopt dendritic identity.</p>
+<p>Key molecular layers include:</p>
+<ul>
+<li><strong>Polarity signaling</strong>: PI3K/PTEN, Par complex, LKB1, and small GTPases such as Rac, Rho, and Cdc42.</li>
+<li><strong>Cytoskeletal remodeling</strong>: localized regulation of actin and microtubule dynamics biases one neurite toward axonal fate.</li>
+<li><strong>Transcriptional control</strong>: transcription factors induce downstream programs for adhesion molecules, guidance receptors, motor proteins, and structural components.</li>
+</ul>
+<!-- ![Establishment of polarity and stages of neuronal development in hippocampal neurons](https://www.researchgate.net/profile/Sarah-Newey/publication/8101025/figure/fig2/AS:669154151505929@1536550190723/Establishment-of-polarity-and-stages-of-neuronal-development-in-hippocampal-neurons.png) -->
+<!-- ![](<fig_geneweave/Stages of development of hippocampal neurons in culture.png>) -->
+<!-- Figure 9. Stages of development of hippocampal neurons in culture. The approximate times at which cells enter each of the stages is indicated. -->
+<p><img src="file:////Users/lengyuner/Desktop/lengyuner.github.io/blog/GeneWeave/fig_geneweave/Establishment-of-polarity-and-stages-of-neuronal-development-in-hippocampal-neurons.webp" alt=""><br>
+The establishment of polarity by hippocampal neurons in culture</p>
+<!-- image.png -->
+<h3 id="13-axon-guidance">1.3 Axon Guidance</h3>
+<p>Once specified, the axon navigates through molecular gradients and intermediate guidepost environments.</p>
+<p>Major guidance systems include:</p>
+<table>
+<thead>
+<tr>
+<th>Cue family</th>
+<th>Receptors</th>
+<th>Canonical function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Netrin</strong></td>
+<td>DCC, UNC5</td>
+<td>Attraction / repulsion</td>
+</tr>
+<tr>
+<td><strong>Slit</strong></td>
+<td>Robo</td>
+<td>Midline repulsion</td>
+</tr>
+<tr>
+<td><strong>Semaphorin</strong></td>
+<td>Plexin, Neuropilin</td>
+<td>Repulsion / context-dependent attraction</td>
+</tr>
+<tr>
+<td><strong>Eph/Ephrin</strong></td>
+<td>Eph receptors</td>
+<td>Topographic mapping, mostly repulsive signaling</td>
+</tr>
+</tbody>
+</table>
+<p>The growth cone converts extracellular cues into directional movement through intracellular signaling and cytoskeletal reorganization.</p>
+<h3 id="14-synapse-formation-and-synaptic-specificity">1.4 Synapse Formation and Synaptic Specificity</h3>
+<p>After reaching a target region, axons still need to identify the correct postsynaptic partners.</p>
+<p>This process depends heavily on <strong>synaptic adhesion molecules (SAMs)</strong> and related recognition systems:</p>
+<ul>
+<li><strong>Neurexin / Neuroligin</strong></li>
+<li><strong>Protocadherins</strong></li>
+<li><strong>Ig superfamily recognition molecules</strong></li>
+<li>additional cell-surface organizers and scaffold-associated proteins</li>
+</ul>
+<p>These molecules do not merely glue cells together; they help define:</p>
+<ul>
+<li>who connects to whom</li>
+<li>where the connection is placed</li>
+<li>how the synapse matures functionally</li>
+</ul>
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0896627318308420-gr4_lrg.jpg" alt=""></p>
+<h3 id="15-activity-dependent-refinement">1.5 Activity-Dependent Refinement</h3>
+<p>Initial wiring is subsequently refined by neural activity.</p>
+<p>Activity-dependent signaling regulates:</p>
+<ul>
+<li>synapse stabilization</li>
+<li>synapse elimination and pruning</li>
+<li>synaptic efficacy and plasticity</li>
+</ul>
+<p>Thus, final connectivity reflects both <strong>genetically encoded developmental programs</strong> and <strong>activity-dependent refinement</strong>.</p>
+<p><img src="https://www.science.org/cms/10.1126/science.adh7814/asset/ccddc2f6-b9bc-4d9d-a8ca-2d20b977f7b4/assets/images/large/science.adh7814-fa.jpg" alt="Hebbian instruction of axonal connectivity by endogenous correlated spontaneous activity"></p>
+<p>From <a href="https://www.science.org/doi/10.1126/science.adh7814">Hebbian instruction of axonal connectivity by endogenous correlated spontaneous activity</a></p>
+<!-- Hebbian instruction of axonal connectivity by endogenous correlated spontaneous activity -->
+<hr>
+<p><a id="biological-case-studies"></a></p>
+<h2 id="2-biological-case-studies">2. Biological Case Studies</h2>
+<h3 id="21-ephephrin-signaling-and-topographic-mapping">2.1 Eph/Ephrin Signaling and Topographic Mapping</h3>
+<h4 id="canonical-example-retinotectal-mapping">Canonical Example: Retinotectal Mapping</h4>
+<p><strong>Reference</strong>: Brown et al., <em>Cell</em> (2000)<br>
+<strong>Related references</strong>: Koike et al., <em>PNAS</em> (2025); <em>Journal of Neuroscience</em> (2024)</p>
+<!-- Brown et al., Cell 2000 ("Topographic Mapping from the Retina to the Midbrain") -->
+<p>In the vertebrate visual system, retinal ganglion cell (RGC) axons must map onto the superior colliculus / tectum in a topographically ordered manner.</p>
+<p>Core logic:</p>
+<ol>
+<li>
+<p><strong>Environmental gradient</strong><br>
+Ephrin-A is expressed in a graded fashion across the target field.</p>
+</li>
+<li>
+<p><strong>Receptor gradient</strong><br>
+EphA receptors are expressed at different levels across retinal neurons.</p>
+</li>
+<li>
+<p><strong>Repulsion-based mapping</strong><br>
+Axons with higher EphA levels are more sensitive to ephrin-A-mediated repulsion and terminate more anteriorly, whereas axons with lower EphA levels extend further posteriorly.</p>
+</li>
+</ol>
+<p>This can be summarized conceptually as:</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Projection coordinate</mtext><mo>∝</mo><mfrac><mtext>EphA receptor level</mtext><mtext>local ephrin-A landscape</mtext></mfrac></mrow><annotation encoding="application/x-tex">\text{Projection coordinate} \propto \frac{\text{EphA receptor level}}{\text{local ephrin-A landscape}}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">Projection coordinate</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∝</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.2519em;vertical-align:-0.8804em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">local ephrin-A landscape</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">EphA receptor level</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<h4 id="key-message">Key Message</h4>
+<p>Eph/Ephrin signaling provides a classic example of how <strong>graded gene expression is translated into spatially ordered connectivity</strong>.</p>
+<p>Target-Independent EphrinA/EphA-Mediated Axon-Axon Repulsion as a Novel Element in Retinocollicular Mapping</p>
+<p><strong>Topographic Mapping: Retina to Superior Colliculus (SC)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Source (Retina)</strong></th>
+<th style="text-align:left"><strong>Target (Superior Colliculus / Tectum)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>EphA Gradient</strong></td>
+<td style="text-align:left"><strong>Ephrin-A Gradient</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">Low <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> High</td>
+<td style="text-align:left">Low <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span> High (<strong>Posterior</strong>)</td>
+</tr>
+</tbody>
+</table>
+<!-- | **EphA Gradient:** ░░▒▒▓▓ | **Ephrin-A Gradient:** ░░▒▒▓▓ | -->
+<hr>
+<h4 id="the-logic-of-repulsive-guidance"><strong>The Logic of Repulsive Guidance</strong></h4>
+<ul>
+<li><strong>High EphA Axons</strong> (Temporal Retina)
+<ul>
+<li><strong>Mechanism:</strong> Strongly repelled by even low concentrations of Ephrin-A.</li>
+<li><strong>Termination:</strong> Restricted to the <strong>Anterior</strong> region (where Ephrin-A levels are lowest).</li>
+</ul>
+</li>
+<li><strong>Low EphA Axons</strong> (Nasal Retina)
+<ul>
+<li><strong>Mechanism:</strong> Minimal sensitivity to Ephrin-A-mediated repulsion.</li>
+<li><strong>Termination:</strong> Permitted to extend further into the <strong>Posterior</strong> region (where Ephrin-A levels are highest).</li>
+</ul>
+</li>
+</ul>
+<!-- #### Suggested Figures
+
+- schematic of retinotectal topographic mapping
+- EphA and ephrin-A gradients
+- wild-type versus mutant projection patterns -->
+<p><img src="https://www.cell.com/cms/10.1016/j.neuron.2014.09.023/asset/ce25e687-6a20-497f-9816-0ec0f645ed81/main.assets/gr1_lrg.jpg" alt="Target-Independent EphrinA/EphA-Mediated Axon-Axon Repulsion as a Novel Element in Retinocollicular Mapping"></p>
+<!-- ![Sperry versus Hebb: Topographic mapping in Isl2/EphA3 mutant mice](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2F1471-2202-11-155/MediaObjects/12868_2010_Article_1932_Fig1_HTML.jpg?as=webp)
+Sperry versus Hebb: Topographic mapping in Isl2/EphA3 mutant mice -->
+<hr>
+<h3 id="22-beatside-recognition-in-the-drosophila-visual-system">2.2 Beat/Side Recognition in the Drosophila Visual System</h3>
+<h4 id="connectome--transcriptome-integration">Connectome + Transcriptome Integration</h4>
+<p><strong>References</strong>:<br>
+Yoo et al., <em>Current Biology</em> (2023)<br>
+Carrier et al., <em>Developmental Cell</em> (2025)<br>
+Tan et al., <em>Cell</em> (2015)</p>
+<p>This system provides a strong example of how gene expression helps define <strong>layer-specific synaptic wiring</strong>.</p>
+<p>The relevant circuit includes:</p>
+<ul>
+<li><strong>T4/T5 neurons</strong>, which encode motion direction</li>
+<li><strong>LPLC neurons</strong>, which act as downstream partners</li>
+</ul>
+<p>Yoo et al. combined connectomics and transcriptomics to identify candidate determinants of selective connectivity. A central result was the association between <strong>Side</strong> ligands and <strong>Beat</strong> receptors.</p>
+<p>Conceptually:</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Subtype-specific ligand expression</mtext><mo>+</mo><mtext>partner-specific receptor expression</mtext><mo>→</mo><mtext>biased connectivity</mtext></mrow><annotation encoding="application/x-tex">\text{Subtype-specific ligand expression} + \text{partner-specific receptor expression} \rightarrow \text{biased connectivity}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">Subtype-specific ligand expression</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">partner-specific receptor expression</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">biased connectivity</span></span></span></span></span></span></p>
+<p>One illustrative example is the selective association between <strong>Side-II</strong> and <strong>Beat-VI</strong>, which helps explain why particular T4/T5 subtypes preferentially connect to specific downstream partners.</p>
+<h4 id="what-carrier-et-al-added">What Carrier et al. Added</h4>
+<p>Carrier et al. refined the interpretation:</p>
+<ul>
+<li>Beat/Side interactions are <strong>not strictly required</strong> for synapse formation itself.</li>
+<li>Instead, they bias <strong>cellular adjacency</strong> before synaptogenesis.</li>
+<li>In other words, these molecules help organize the spatial preconditions for specific wiring.</li>
+</ul>
+<p>This leads to a useful developmental model:</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Adhesion bias</mtext><mo>→</mo><mtext>spatial proximity</mtext><mo>→</mo><mtext>increased probability of specific synapse formation</mtext></mrow><annotation encoding="application/x-tex">\text{Adhesion bias} \rightarrow \text{spatial proximity} \rightarrow \text{increased probability of specific synapse formation}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord text"><span class="mord">Adhesion bias</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">spatial proximity</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">increased probability of specific synapse formation</span></span></span></span></span></span></p>
+<h4 id="broader-significance">Broader Significance</h4>
+<p>This work shifts the framing from a simplistic &quot;one molecule = one synapse&quot; view toward a more realistic developmental interpretation:</p>
+<ul>
+<li>some molecules specify direct partner recognition</li>
+<li>others bias geometry, layer targeting, or cellular neighborhood structure</li>
+</ul>
+<!-- #### Suggested Figures
+
+- T4/T5 subtype projections across layers
+- Side / Beat expression patterns
+- connectivity matrix between T4/T5 and downstream cell types
+- wild-type versus perturbation phenotypes -->
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0960982223010631-gr1_lrg.jpg" alt=""></p>
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0960982223010631-gr2_lrg.jpg" alt="Figure 2. Matching expression of Beat and Side proteins correlates with synaptic specificity"></p>
+<h2 id=""><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0960982223010631-gr3_lrg.jpg" alt=""></h2>
+<h3 id="23-rewiring-an-olfactory-circuit-by-altering-cell-surface-codes">2.3 Rewiring an Olfactory Circuit by Altering Cell-Surface Codes</h3>
+<p><strong>References</strong>:</p>
+<p><a href="https://www.science.org/doi/10.1126/science.ads7633">Dimensionality reduction simplifies synaptic partner matching in an olfactory circuit</a>
+Lyu et al., <em>Science</em> (2025)</p>
+<p><a href="https://www.nature.com/articles/s41586-025-09769-3">Rewiring an olfactory circuit by altering cell-surface combinatorial code</a>
+Zhu et al., <em>Nature</em> (2025)</p>
+<p>This study from the Liqun Luo group addresses a powerful causal question:</p>
+<blockquote>
+<p>Can neural connectivity be reprogrammed by modifying the combinatorial code of cell-surface molecules?</p>
+</blockquote>
+<h4 id="system">System</h4>
+<p>In the Drosophila olfactory system:</p>
+<ul>
+<li>olfactory receptor neurons (ORNs) project to defined glomeruli</li>
+<li>within each glomerulus, ORNs interact with specific partner neurons</li>
+</ul>
+<h4 id="main-idea">Main Idea</h4>
+<p>The study integrates two levels of developmental logic:</p>
+<ol>
+<li>
+<p><strong>Axon targeting</strong><br>
+transcriptional programs regulate expression of guidance and surface molecules, influencing glomerular targeting</p>
+</li>
+<li>
+<p><strong>Partner matching</strong><br>
+local cell-surface recognition systems shape which neurons form synapses with one another</p>
+</li>
+</ol>
+<p>By experimentally altering the surface-molecule combination expressed by a given ORN class, the authors were able to alter:</p>
+<ul>
+<li>axonal targeting patterns</li>
+<li>aspects of postsynaptic partner selection</li>
+</ul>
+<h4 id="significance">Significance</h4>
+<p>This is a strong demonstration that combinatorial surface identity is not merely correlated with connectivity, but can be <strong>causally instructive</strong>.</p>
+<p>It also provides one of the clearest bridges between:</p>
+<ul>
+<li>developmental gene regulation</li>
+<li>cell-surface molecular codes</li>
+<li>circuit-level wiring specificity</li>
+</ul>
+<!-- #### Suggested Figures
+
+- organization of the Drosophila olfactory pathway
+- wild-type versus rewired ORN projection patterns
+- altered surface-molecule expression profiles
+- changes in downstream partner matching -->
+<p><img src="https://www.science.org/cms/10.1126/science.ads7633/asset/0bd2ff3a-3c47-4b4c-9ea4-b4c4137dcb21/assets/images/large/science.ads7633-f1.jpg" alt=""></p>
+<p><img src="https://www.science.org/cms/10.1126/science.ads7633/asset/c28bd2d4-0fd6-46d0-b8ef-9d819fd3b8c8/assets/images/large/science.ads7633-f3.jpg" alt=""></p>
+<hr>
+<p><a id="simple-modeling-frameworks"></a></p>
+<h2 id="3-simple-modeling-frameworks">3. Simple Modeling Frameworks</h2>
+<h3 id="31-bilinear-models-of-connectivity">3.1 Bilinear Models of Connectivity</h3>
+<h4 id="core-idea">Core Idea</h4>
+<p>If connectivity depends on interactions between presynaptic and postsynaptic gene-expression profiles, a natural first model is bilinear:</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>i</mi><mo>→</mo><mi>j</mi><mo stretchy="false">)</mo><mo>=</mo><mi>σ</mi><mrow><mo fence="true">(</mo><msubsup><mi>g</mi><mi>i</mi><mi>T</mi></msubsup><mi>W</mi><msub><mi>g</mi><mi>j</mi></msub><mo>+</mo><mi>b</mi><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">P(i \rightarrow j) = \sigma \left(g_i^{T} W g_j + b\right)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.2413em;vertical-align:-0.35em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size1">(</span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8913em;"><span style="top:-2.453em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal">b</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size1">)</span></span></span></span></span></span></span></p>
+<p>where:</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">g_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is the gene-expression vector of presynaptic neuron <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">g_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7167em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> is the gene-expression vector of postsynaptic neuron <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.854em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi></mrow><annotation encoding="application/x-tex">W</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span></span></span></span> is a learned gene-gene interaction matrix</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span></span></span></span> is a nonlinear link function, typically sigmoid</li>
+</ul>
+<p>Expanded form:</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>i</mi><mo>→</mo><mi>j</mi><mo stretchy="false">)</mo><mo>=</mo><mi>σ</mi><mrow><mo fence="true">(</mo><munder><mo>∑</mo><mi>α</mi></munder><munder><mo>∑</mo><mi>β</mi></munder><msub><mi>W</mi><mrow><mi>α</mi><mi>β</mi></mrow></msub><msubsup><mi>g</mi><mi>i</mi><mi>α</mi></msubsup><msubsup><mi>g</mi><mi>j</mi><mi>β</mi></msubsup><mo>+</mo><mi>b</mi><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">P(i \rightarrow j) = \sigma \left(\sum_{\alpha}\sum_{\beta} W_{\alpha\beta} g_i^\alpha g_j^\beta + b\right)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:3.6em;vertical-align:-1.55em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.05em;"><span class="pstrut" style="height:5.6em;"></span><span style="width:0.875em;height:3.600em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.875em" height="3.600em" viewBox="0 0 875 3600"><path d="M863,9c0,-2,-2,-5,-6,-9c0,0,-17,0,-17,0c-12.7,0,-19.3,0.3,-20,1
+c-5.3,5.3,-10.3,11,-15,17c-242.7,294.7,-395.3,682,-458,1162c-21.3,163.3,-33.3,349,
+-36,557 l0,84c0.2,6,0,26,0,60c2,159.3,10,310.7,24,454c53.3,528,210,
+949.7,470,1265c4.7,6,9.7,11.7,15,17c0.7,0.7,7,1,19,1c0,0,18,0,18,0c4,-4,6,-7,6,-9
+c0,-2.7,-3.3,-8.7,-10,-18c-135.3,-192.7,-235.5,-414.3,-300.5,-665c-65,-250.7,-102.5,
+-544.7,-112.5,-882c-2,-104,-3,-167,-3,-189
+l0,-92c0,-162.7,5.7,-314,17,-454c20.7,-272,63.7,-513,129,-723c65.3,
+-210,155.3,-396.3,270,-559c6.7,-9.3,10,-15.3,10,-18z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.9em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0037em;">α</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.25em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8479em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05278em;">β</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4382em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0037em;">α</span><span class="mord mathnormal mtight" style="margin-right:0.05278em;">β</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7144em;"><span style="top:-2.453em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0037em;">α</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.967em;"><span style="top:-2.4231em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span><span style="top:-3.1809em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05278em;">β</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.413em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal">b</span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.05em;"><span class="pstrut" style="height:5.6em;"></span><span style="width:0.875em;height:3.600em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.875em" height="3.600em" viewBox="0 0 875 3600"><path d="M76,0c-16.7,0,-25,3,-25,9c0,2,2,6.3,6,13c21.3,28.7,42.3,60.3,
+63,95c96.7,156.7,172.8,332.5,228.5,527.5c55.7,195,92.8,416.5,111.5,664.5
+c11.3,139.3,17,290.7,17,454c0,28,1.7,43,3.3,45l0,9
+c-3,4,-3.3,16.7,-3.3,38c0,162,-5.7,313.7,-17,455c-18.7,248,-55.8,469.3,-111.5,664
+c-55.7,194.7,-131.8,370.3,-228.5,527c-20.7,34.7,-41.7,66.3,-63,95c-2,3.3,-4,7,-6,11
+c0,7.3,5.7,11,17,11c0,0,11,0,11,0c9.3,0,14.3,-0.3,15,-1c5.3,-5.3,10.3,-11,15,-17
+c242.7,-294.7,395.3,-681.7,458,-1161c21.3,-164.7,33.3,-350.7,36,-558
+l0,-144c-2,-159.3,-10,-310.7,-24,-454c-53.3,-528,-210,-949.7,
+-470,-1265c-4.7,-6,-9.7,-11.7,-15,-17c-0.7,-0.7,-6.7,-1,-18,-1z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span></span></span></span></span></span></span></p>
+<h4 id="interpretation">Interpretation</h4>
+<p>Each entry <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mrow><mi>α</mi><mi>β</mi></mrow></msub></mrow><annotation encoding="application/x-tex">W_{\alpha\beta}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0037em;">α</span><span class="mord mathnormal mtight" style="margin-right:0.05278em;">β</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> represents the contribution of a presynaptic gene <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">α</span></span></span></span> interacting with a postsynaptic gene <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05278em;">β</span></span></span></span>.</p>
+<ul>
+<li>positive values favor connectivity</li>
+<li>negative values disfavor connectivity</li>
+</ul>
+<h4 id="representative-studies">Representative Studies</h4>
+<p><strong>Kovács et al., PNAS (2020)</strong><br>
+<em>Uncovering the genetic blueprint of the C. elegans nervous system</em></p>
+<p>Key point:</p>
+<ul>
+<li>a relatively small subset of gene-gene interactions explains a substantial fraction of observed connectivity</li>
+</ul>
+<p><img src="https://www.pnas.org/cms/10.1073/pnas.2009093117/asset/7a047265-e84e-4df8-98e6-ea2726bd944b/assets/images/large/pnas.2009093117fig01.jpg" alt=""></p>
+<p><img src="https://www.pnas.org/cms/10.1073/pnas.2009093117/asset/86c3d090-8b64-4f22-b18f-46d524f60db1/assets/images/large/pnas.2009093117fig03.jpg" alt=""></p>
+<p><strong>Qiao, eLife Reviewed Preprint (2023)</strong><br>
+<em>Deciphering the Genetic Code of Neuronal Type Connectivity: A Bilinear Modeling Approach</em></p>
+<p>Key point:</p>
+<ul>
+<li>bilinear structure can be extended to type-level connectivity and more structured inference</li>
+</ul>
+<h4 id="why-this-model-matters">Why This Model Matters</h4>
+<ul>
+<li>biologically interpretable</li>
+<li>naturally aligned with ligand-receptor-like logic</li>
+<li>simple enough to serve as a first mechanistic model</li>
+</ul>
+<!-- #### Suggested Figures
+
+- schematic of bilinear gene-to-connection inference
+- heatmap of the learned interaction matrix
+- performance curve or example recovered gene pairs -->
+<p>Method:
+<img src="https://iiif.elifesciences.org/lax:91532%2Felife-91532-fig1-v1.tif/full/,1500/0/default.jpg" alt=""></p>
+<p>Result:
+<img src="https://iiif.elifesciences.org/lax:91532%2Felife-91532-fig3-v1.tif/full/1500,/0/default.jpg" alt=""></p>
+<hr>
+<h3 id="32-biclique--modular-wiring-models">3.2 Biclique / Modular Wiring Models</h3>
+<p><strong>Reference</strong>: Barabási et al., <em>Neuron</em> (2019)<br>
+<a href="https://www.cell.com/neuron/fulltext/S0896-6273(19)30926-2"><em>A Genetic Model of the Connectome</em></a></p>
+<p>This framework emphasizes <strong>modular structure</strong> rather than isolated pairwise edges.</p>
+<p>Suppose:</p>
+<ul>
+<li>a presynaptic group <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></li>
+<li>a postsynaptic group <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span></li>
+<li>many neurons in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> connect broadly to many neurons in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span></li>
+</ul>
+<p>This forms a <strong>biclique-like motif</strong>, suggesting that shared gene programs may specify connectivity at the level of cell groups or modules.</p>
+<p>Conceptually:</p>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Connectivity module</mtext><mo>↔</mo><mtext>shared molecular program</mtext></mrow><annotation encoding="application/x-tex">\text{Connectivity module} \leftrightarrow \text{shared molecular program}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">Connectivity module</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">↔</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">shared molecular program</span></span></span></span></span></span></p>
+<p>This is useful because real circuits are often organized by:</p>
+<ul>
+<li>cell types</li>
+<li>layers</li>
+<li>developmental lineages</li>
+<li>recurrent modular motifs</li>
+</ul>
+<!-- #### Suggested Figures
+
+- schematic of a biclique motif
+- module-level connectivity pattern
+- mapping from gene modules to connectivity modules -->
+<p><img src="https://www.cell.com/cms/10.1016/j.neuron.2019.10.031/asset/a5220372-48b3-47b0-b577-4a74dd6780ae/main.assets/gr3_lrg.jpg" alt=""></p>
+<hr>
+<p><a id="potential-applications"></a></p>
+<h2 id="4-potential-applications">4. Potential Applications</h2>
+<h3 id="41-interpreting-developmental-variability">4.1 Interpreting Developmental Variability</h3>
+<p><strong>Reference</strong>: Lachi et al., bioRxiv (2024)<br>
+<em>Stochastic Wiring of Cell Types Enhances Fitness by Generating Phenotypic Variability</em></p>
+<p>This work raises an important conceptual point:</p>
+<blockquote>
+<p>genetically specified wiring rules do not necessarily imply fully deterministic wiring outcomes</p>
+</blockquote>
+<p>Instead, development may combine:</p>
+<ul>
+<li>genetically encoded connection probabilities</li>
+<li>stochastic realization at the circuit level</li>
+</ul>
+<p>This can generate phenotypic variability that may be beneficial under changing environments.</p>
+<h3 id="42-broader-relevance">4.2 Broader Relevance</h3>
+<p>Potential application domains include:</p>
+<ul>
+<li><strong>neurodevelopmental disorders</strong>: linking synaptic adhesion and wiring defects to disease</li>
+<li><strong>regenerative neuroscience</strong>: re-establishing correct connectivity after injury</li>
+<li><strong>brain-machine interfaces</strong>: improving integration with biological circuits</li>
+<li><strong>artificial intelligence</strong>: extracting structured wiring principles for efficient architectures</li>
+<li><strong>synthetic neurobiology</strong>: reprogramming or engineering circuit-level specificity</li>
+</ul>
+<hr>
+<p><a id="take-home-messages"></a></p>
+<h2 id="5-take-home-messages">5. Take-Home Messages</h2>
+<ol>
+<li><strong>Genes influence neural wiring at multiple levels</strong>: polarity, axon guidance, target recognition, synaptogenesis, and refinement.</li>
+<li><strong>Cell-surface recognition systems are central</strong> to synaptic specificity, but often act together with geometry, timing, and activity.</li>
+<li><strong>Eph/Ephrin, Beat/Side, and olfactory rewiring experiments</strong> provide complementary examples of how gene expression shapes connectivity.</li>
+<li><strong>Bilinear and modular models</strong> offer interpretable ways to connect transcriptomic data with connectomic structure.</li>
+<li><strong>The long-term goal</strong> is to move from descriptive molecular atlases toward predictive and eventually programmable theories of circuit assembly.</li>
+</ol>
+<hr>
+<p><a id="references"></a></p>
+<h2 id="references">References</h2>
+<h3 id="background-papers">Background Papers</h3>
+<ol>
+<li>Südhof, T. C. <em>The cell biology of synapse formation: mechanisms of synaptic specificity.</em> <em>J Cell Biol</em> (2021).</li>
+<li>Sanes, J. R. and Zipursky, S. L. <em>Synaptic specificity, recognition molecules, and assembly of neural circuits.</em> <em>Cell</em> (2020).</li>
+</ol>
+<h3 id="case-studies">Case Studies</h3>
+<ol start="3">
+<li>Brown, A. et al. <em>Topographic Mapping from the Retina to the Midbrain Is Controlled by Relative but Not Absolute Levels of EphA Receptor Signaling.</em> <em>Cell</em> (2000).</li>
+<li>Koike, J. et al. <em>A data-driven framework linking the connectome to spatial gene expression gradients inspired by chemoaffinity theory.</em> <em>PNAS</em> (2025).</li>
+<li>Yoo, J. et al. <em>Brain wiring determinants uncovered by integrating connectomes and transcriptomes.</em> <em>Current Biology</em> (2023).</li>
+<li>Carrier, Y. et al. <em>Biased cell adhesion organizes the Drosophila visual motion integration circuit.</em> <em>Developmental Cell</em> (2025).</li>
+<li>Tan, L. et al. <em>Ig superfamily ligand and receptor pairs expressed in synaptic partners in Drosophila.</em> <em>Cell</em> (2015).</li>
+<li>Zhu, Z. et al. <em>Rewiring an olfactory circuit by altering the combinatorial code of cell-surface proteins.</em> <em>Nature</em> (2026).</li>
+</ol>
+<h3 id="modeling">Modeling</h3>
+<ol start="9">
+<li>Kovács, I. A. et al. <em>Uncovering the genetic blueprint of the C. elegans nervous system.</em> <em>PNAS</em> (2020).</li>
+<li>Qiao, M. et al. <em>Deciphering the Genetic Code of Neuronal Type Connectivity: A Bilinear Modeling Approach.</em> <em>eLife Reviewed Preprint</em> (2023).</li>
+<li>Barabási, D. L. et al. <em>A Genetic Model of the Connectome.</em> <em>Neuron</em> (2019).</li>
+</ol>
+<h3 id="applications">Applications</h3>
+<ol start="12">
+<li>Lachi, D. et al. <em>Stochastic Wiring of Cell Types Enhances Fitness by Generating Phenotypic Variability.</em> bioRxiv (2024).</li>
+</ol>
+<hr>
+<!-- *English presentation draft v1*   -->
+<!-- *Refined from the Chinese outline and background notes* -->
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>

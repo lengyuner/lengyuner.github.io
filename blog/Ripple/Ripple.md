@@ -435,6 +435,18 @@ doi: https://doi.org/10.1101/2024.08.21.608979
 Bounds on the computational complexity of neurons due to dendritic morphology
 
 
+[State of Brain Emulation Report 2025](https://arxiv.org/abs/2510.15745)
+Niccolò Zanichelli, Maximilian Schons, Isaak Freeman, Philip Shiu, Anton Arkhipov
+
+
+[Whole-brain, bottom-up neuroscience: The time for it is now](https://www.thetransmitter.org/computational-neuroscience/whole-brain-bottom-up-neuroscience-the-time-for-it-is-now/)
+By Edward Boyden, Konrad Körding
+
+Applying new tools to entire brains, starting with C. elegans, offers the opportunity to uncover how molecules work together to generate neural physiology and how neurons work together to generate behavior.
+
+
+
+
 paper from RIKEN and Allen:
 [Microscopic-Level Mouse Whole Cortex Simulation Composed of 9 Million Biophysical Neurons and 26 Billion Synapses on the Supercomputer Fugaku](https://dl.acm.org/doi/full/10.1145/3712285.3759819)
 
@@ -448,3 +460,7 @@ Rin Kuriyama, Kaaya Akira, Laura Green, Beatriz Herrera, Kael Dai, Mari Iura, Gi
 
 - [A genetic, genomic, and computational resource for exploring neural circuit function](https://elifesciences.org/articles/50901)
 Janelia, gene data
+
+
+- [Whole-Brain Connectomic Graph Model Enables Whole-Body Locomotion Control in Fruit Fly](https://arxiv.org/abs/2602.17997)
+Zehao Jin, Yaoye Zhu, Chen Zhang, Yanan Sui

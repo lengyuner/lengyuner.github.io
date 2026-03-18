@@ -1,15 +1,12 @@
 # Neuron Morphology and Connection Formation -- The Genetic and Molecular Foundation
 
-## Chapter Four - Gene regulatory networks during the development of the Drosophila visual system
+## Chapter Four - [Gene regulatory networks during the development of the Drosophila visual system](https://www.sciencedirect.com/science/article/pii/S0070215320300363)
  
 Yen-Chung Chen, Claude Desplan
-
-https://www.sciencedirect.com/science/article/pii/S0070215320300363
-<!-- 这篇题为 “Axon Formation, Extension, and Navigation”（或与之类似主题的综述 /研究文章）主要回顾／研究了神经元中基因（特别是调控基因 /信号通路 /转录因子 /细胞外指导分子等）如何作用于轴突（axon）的形成、生长和连接（导航 /指导）。以下是我对文章中 “gene 怎么对 neuron axon 的形成 / neuron connection（即突触 /连通性）” 起作用的机制的总结与解释——结合这篇文章的内容与整个领域已有的知识。
-
-如果你有文章某几段文字或具体基因 /机制部分，我可以针对性地更细致解释。
-
-⸻ -->
+ 
+这篇题为 “Axon Formation, Extension, and Navigation”（或与之类似主题的综述 /研究文章）主要回顾／研究了神经元中基因（特别是调控基因 /信号通路 /转录因子 /细胞外指导分子等）如何作用于轴突（axon）的形成、生长和连接（导航 /指导）。 
+ 
+⸻
 
 一、神经元极性 & 轴突形成 (Axon specification / formation)
 
@@ -84,12 +81,7 @@ https://www.sciencedirect.com/science/article/pii/S0070215320300363
 到达目标区 /细胞 → 分支 /靶标识别 /突触形成
    ↓
 活动依赖性基因调控连接稳定性 /塑性 /修剪 /成熟
-
-<!-- 
-⸻
-
-如果你愿意的话，我可以帮你针对那篇文章（S0070215320300363）里提到的具体基因 /机制（假设它有特定章节讲到）做精准注释：告诉你“文章里这个基因 X 是怎么作用于轴突 /连接的”。要我帮你找那篇的具体段落 /基因名字吗？你要的话我可以尽力检索更具体信息。 -->
-
+ 
 
 
 ## The cell biology of synapse formation
@@ -97,61 +89,7 @@ Thomas C. Südhof
 
 
 [The cell biology of synapse formation: Mechanisms of synaptic specificity”（J. Cell Biology, 220: e202103052）](https://rupress.org/jcb/article/220/7/e202103052/212258/The-cell-biology-of-synapse-formationMechanisms-of)
-
-<!-- 好的，我查到并阅读了这篇文章 “The cell biology of synapse formation: Mechanisms of synaptic specificity”（J. Cell Biology, 220: e202103052）的一些公开内容和综述资料，下面是我整理的“基因 /分子机制如何作用于突触（synapse）形成 /神经元连接”的解读，希望能帮助你理解。
-
-⸻
-
-一、文章背景 &核心观点
-
-这篇文章是 Thomas Südhof 的综述，主要讨论突触如何在神经元之间建立、突触连接如何具有特异性（即哪个神经元与哪个神经元连接），以及在这个过程中哪些分子 /基因起作用。作者强调 突触黏附分子（synaptic adhesion molecules, SAMs） 在突触成立与特异性连通性中的中心角色。 ￼
-
-突触不是随机连接，而是需要很多层的选择性 / 调控：神经元之间需要首先形成接触 /识别，再建立前突触 /后突触结构，最后维持 /塑造连接。作者把这些步骤拆解开来，讨论哪些基因 /分子参与在哪些环节。
-
-下面我依照 “突触成立” 的时间 /空间过程，按阶段讲这些分子 /基因是怎么起作用的。
-
-⸻
-
-二、分阶段看 “基因 /分子机制如何作用于突触形成 /连接”
-
-下面分几个阶段，从神经元接触、识别、突触组装到维系 /重塑，来看基因 /分子机制如何参与。
-
-阶段	关键生物过程 /挑战	主要基因 / 分子 /机制	功能 /作用机制
-1. 细胞接触 /识别 /初步接近	两个神经元突起相互靠近，接触对方膜	细胞黏附分子（adhesion molecules, CAMs） / 细胞外糖蛋白 /跨膜黏附因子	这些黏附分子（比如 Cadherins, Ig 族 CAMs, SynCAM, Sidekick, Dscam, Neurexin / Neuroligin 配对等）使得突触前后膜能够靠近并稳定接触，同时提供初步选择性（只有表达互补组合的神经元才能更好结合）。 SÜDHOF 认为 SAMs 是组织突触形成的关键。 ￼
-2. 突触前 / 突触后结构组装	在接触处组装囊泡释放机制、膜蛋白、突触后受体 /支架蛋白	突触前蛋白（如突触囊泡蛋白、突触前活跃区蛋白 active zone proteins, Ca²⁺ 通道蛋白等） + 突触后受体 /支架蛋白 (AMPA / NMDA 受体, PSD-95, scaffolding 蛋白等) + 黏附 /连接分子	接触稳定后，突触前需要将囊泡 /释放机制引入到该位置，突触后需要把受体 /支架蛋白定向到这个点。黏附分子的信号可以激活下游信号通路，引导这些蛋白质聚集 /锚定。
-3. 特异性 /配对 /连接选择	在许多神经元之间选择正确的连接对象与位置（避免错误连接）	特定配对的黏附分子 /受体 - 配体系统（例如 Neurexin–Neuroligin, Latrophilin–FLRT / Teneurins, SALMs, LRRTMs 等）	这些配对分子提供“分子码”或“分子识别”能力：一个神经元表达一种组合，另一个表达配对组合，中间通过结合 /识别促使它们连接。Südhof 在该文章中就强调这种分子配对在确定哪两个神经元可以连接中起重要作用。 ￼
-4. 稳定 /修剪 /塑性	建立初步连接后，还要维持该连接、修剪错误连接、根据活动调整连接强度	活动依赖的基因表达 (activity-dependent genes), 信号通路 (Ca²⁺/CaM, cAMP / PKA / CaMK, MAPK 等), 细胞骨架调控基因, 调控蛋白降解途径 /修饰途径 (如 ubiquitin ligases)	一旦连接形成，神经活动（如频繁发放或同步发放）会激发 Ca²⁺、cAMP 等信号通道，引起下游基因表达 /蛋白修饰 /重塑细胞骨架 /膜蛋白分布变化，从而强化 /削弱 /重塑该突触连接。黏附分子还可能参与维持连接稳定性 /锚定结构。
-
-下面我针对几个在这篇综述中被重点提及或在领域里广泛被研究的基因 /分子做具体解释。
-
-⸻
-
-三、几个重点基因 /分子的具体作用机制
-
-以下是这篇文章或相关综述 /研究中经常被提及、在突触形成 /连接中特别关键的基因 /分子，以及它们是怎么工作的：
-
-分子 /基因	在突触形成 /连接中的作用	机制 /实验证据（来自综述 /相关研究）
-Synaptic Adhesion Molecules (SAMs)	在突触前后膜之间建立黏附 /桥接，并启动下游信号	Südhof 在这篇文章就强调：SAMs“组织”突触形成，并协作达成特异性与可塑性。 ￼
-Neurexin – Neuroligin	最经典的突触黏附对（pre 与 post）	Neurexin（突触前）与 Neuroligin（突触后）是一个广泛研究的对：它们通过跨膜结合，将前后膜拉近，并通过它们的胞内结构域连接到各自的下游信号 /支架网络，从而引导突触前 /后结构的配对与组装。
-Latrophilin + FLRT / Teneurin 系统	提供更高一级的连接特异性 /识别	在最近研究中，Latrophilin（一个黏附 G-蛋白偶联受体）可以同时结合 FLRT 和 Teneurin分子，作为“ coincidence binding” 机制参与突触连接规格选择。
-Wnt 信号通路	调控突触形成与稳定	Wnt 信号（包括经典 / 非经典通路）在突触发育 /稳定 /可塑性中被广泛研究，是许多神经发育 /形态调控基因的一部分，在综述 /相关文献里也被提作为调控突触形成 /塑性的通路。 ￼
-Semaphorin / Plexin / Eph /Ephrin	路径引导 +突触定位 /抑制 /促进	虽然这些分子的经典作用是轴突 /中继路径引导 (axon guidance)，但在突触形成 /修剪 /抑制过度连接中也被用作信号分子（即某些神经元要避免连接某些目标，就表达排斥性分子）。综述中提及一些 semaphorin 在突触发育 /抑制连接方面的例子。 ￼
-Activity-dependent genes及 Ca²⁺ / cAMP 信号通路	活动驱动突触强化 /重塑 /维持	一旦突触初步连接就绪，神经元活动（例如突触前释放 /突触后电流 / Ca²⁺ 内流）会触发信号（CaM, CaMKII, PKA, cAMP 等），这些信号进一步驱动下游基因表达、蛋白修饰 / 重塑，调整连接强度、稳定性、修剪非优突触。
-支架 /骨架 /膜蛋白 /囊泡运输相关基因	支持突触结构稳定 /材料供应 /囊泡释放 /膜蛋白定位	突触需要大量蛋白 /囊泡 /膜成分进入、锚定、跨膜运输，很多基因控制这些过程，如微管 /肌动蛋白调控蛋白、马达蛋白 (kinesin / dynein) 、囊泡运输蛋白、膜融合 /回收蛋白 (SNARE 复合物等) 等。
-
-
-⸻
-
-四、总结／一句话归纳 +要注意点
-	•	一句话总结：基因 /分子通过多层机制（黏附分子识别 /桥接、突触前 /后结构组装、信号转导驱动蛋白聚集 /重塑、活动依赖性强化 /修剪）协同作用，决定了神经元之间的突触连接是否能建立、连接的精确性和最终稳定性。
-	•	要注意的点 /挑战：
-	1.	虽然许多 SAMs /黏附分子已经被鉴定，但在实际神经回路中，不同系统 /物种之间其“组合 /冗余 /交互作用”很复杂。
-	2.	预测一个给定神经元对是否会连接，仅凭表达一个黏附分子还不够——调控、可及性、下游信号环境、时空表达很重要。
-	3.	活动依赖性调控使得突触形成后还可能继续塑形 /修剪，最终连接结构往往与最初连接状态不同。
-	4.	很多机制是在模型生物 /体外 /培养神经元中研究得出，如何扩展 /验证到体内复杂电路仍有挑战。
-
-如果你愿意的话，我可以给你这篇文章里某一个具体基因（比如 Neurexin / Neuroligin /Latrophilin 等）那几段文字，我可以逐字解释它是怎么作用的。要我帮你做这个吗？ -->
-
+ 
  
 ### 一、文章总体概况与主旨
 
@@ -270,7 +208,7 @@ Südhof 把突触生命周期（synapse lifecycle）分为若干阶段：从 nas
 
 ---
 
-### 五、对这篇综述 /机制模型的评价 & 对你研究的启发
+### 五、对这篇综述 /机制模型的评价  
 
 #### 强项 /亮点
 
@@ -285,15 +223,7 @@ Südhof 把突触生命周期（synapse lifecycle）分为若干阶段：从 nas
 - 大部分已有实验证据偏向于某些经典 SAM（如 Neurexin / Neuroligin），对于 Latrophilin /其他新型 SAM 在多种神经系统 /体内条件下的作用还需更多研究  
 - 突触形成 /连接受发育时间、空间定位、神经活动、竞争 /可塑性影响极大，SAM 模型可能只是“骨架 /骨干”层面；在具体系统 /回路中还需要更多上下文 /修饰机制  
 - 此外，很多 SAM 的剪接异构体 /调控机制、配对网络、信号整合机制非常复杂，未来还需要解更多“配对规则 /代码 (molecular code)”  
-
-#### 对你研究 /模型设计的建议
-
-- 如果你在做神经连接 /突触预测模型 /实验设计，这些 SAM（Latrophilin / Neurexin / Neuroligin）是非常值得关注的特征 /基因组合  
-- 更进一步，你可以尝试在你数据里看这些 SAM 的表达 /可及性 /剪接异构体 /结合亲和性预测（如 motif /结构预测 /结合网络预测）  
-- 若做功能验证，可以考虑对其中某一对 SAM（例如 Neurexin / Neuroligin 或 Latrophilin + 配体）做突变 /过表达 /敲低 /异构体替换实验，看是否影响连接目标 /连接强度 /突触性质  
-- 在连接预测模型里，你可以把 SAM 之间的“互补 /匹配得分”（如结合亲和性预测 /表达联合）作为特征纳入，可能提高预测准确性  
-- 在考虑可塑性 /连接修剪 /连接稳定性时，需要加入活动依赖机制 /突触消除机制（SAM 亲和性弱化 /信号断开 /结构解开等）  
-
+ 
 ---
 
 ### 六、总结（概念梳理 & 核心要点速览）
@@ -306,7 +236,7 @@ Südhof 把突触生命周期（synapse lifecycle）分为若干阶段：从 nas
 
 
 ## Principles of synaptogenesis: Insights from Caenorhabditis elegans
-<!-- # 解读 — *Principles of synaptogenesis: Insights from Caenorhabditis elegans*（Frankel & Kurshan, 2025） -->
+ 
 Frankel & Kurshan, 2025
 
 [*Principles of synaptogenesis: Insights from Caenorhabditis elegans*（Frankel & Kurshan, 2025）](https://www.sciencedirect.com/science/article/pii/S095943882500087X)
@@ -391,7 +321,7 @@ Frankel & Kurshan, 2025
 
 ## CAM, SAM介绍，神经系统中的黏附 / 连接分子系统整理
 
-下面内容按照类别 + 分子 + 功能机制 的结构来整理，便于你理解这些分子在突触 /神经连接中的角色。
+下面内容按照类别 + 分子 + 功能机制 的结构来整理，便于理解这些分子在突触 /神经连接中的角色。
 
   
 ### 一、基本类别与术语
