@@ -1,15 +1,57 @@
 # How Genes Shape Neuronal Morphology, Synapse Formation, and Neural Connectivity
 
-<!-- ## Presentation Outline -->
+
 
 ## Table of Contents
 
-- [1. Background: From Gene Expression to Circuit Wiring](#background)
-- [2. Biological Case Studies](#biological-case-studies)
-- [3. Simple Modeling Frameworks](#simple-modeling-frameworks)
-- [4. Potential Applications](#potential-applications)
-- [5. Take-Home Messages](#take-home-messages)
-- [References](#references)
+- [How Genes Shape Neuronal Morphology, Synapse Formation, and Neural Connectivity](#how-genes-shape-neuronal-morphology-synapse-formation-and-neural-connectivity)
+  - [Table of Contents](#table-of-contents)
+  - [1. Background: From Gene Expression to Circuit Wiring](#1-background-from-gene-expression-to-circuit-wiring)
+    - [1.1 A Minimal Conceptual Framework](#11-a-minimal-conceptual-framework)
+    - [1.2 Axon Specification and Outgrowth](#12-axon-specification-and-outgrowth)
+    - [1.3 Axon Guidance](#13-axon-guidance)
+    - [1.4 Synapse Formation and Synaptic Specificity](#14-synapse-formation-and-synaptic-specificity)
+    - [1.5 Activity-Dependent Refinement](#15-activity-dependent-refinement)
+  - [2. Biological Case Studies](#2-biological-case-studies)
+    - [2.1 Eph/Ephrin Signaling and Topographic Mapping](#21-ephephrin-signaling-and-topographic-mapping)
+      - [Canonical Example: Retinotectal Mapping](#canonical-example-retinotectal-mapping)
+      - [Key Message](#key-message)
+      - [**The Logic of Repulsive Guidance**](#the-logic-of-repulsive-guidance)
+    - [2.2 Beat/Side Recognition in the Drosophila Visual System](#22-beatside-recognition-in-the-drosophila-visual-system)
+      - [Connectome + Transcriptome Integration](#connectome--transcriptome-integration)
+      - [What Carrier et al. Added](#what-carrier-et-al-added)
+      - [Broader Significance](#broader-significance)
+  - [](#)
+    - [2.3 Rewiring an Olfactory Circuit by Altering Cell-Surface Codes](#23-rewiring-an-olfactory-circuit-by-altering-cell-surface-codes)
+      - [System](#system)
+      - [Main Idea](#main-idea)
+      - [Significance](#significance)
+  - [3. Simple Modeling Frameworks](#3-simple-modeling-frameworks)
+    - [3.1 Bilinear Models of Connectivity](#31-bilinear-models-of-connectivity)
+      - [Core Idea](#core-idea)
+      - [Interpretation](#interpretation)
+      - [Representative Studies](#representative-studies)
+      - [Why This Model Matters](#why-this-model-matters)
+    - [3.2 Biclique / Modular Wiring Models](#32-biclique--modular-wiring-models)
+    - [3.3 Spatial and Developmental Inference Frameworks](#33-spatial-and-developmental-inference-frameworks)
+      - [Ligand-Receptor Inference Across Development](#ligand-receptor-inference-across-development)
+      - [Chemoaffinity-Inspired Spatial Gradient Models](#chemoaffinity-inspired-spatial-gradient-models)
+      - [Connectopic Axes and Genetic Topography](#connectopic-axes-and-genetic-topography)
+      - [Methodological Takeaway](#methodological-takeaway)
+  - [4. Potential Applications](#4-potential-applications)
+    - [4.1 Interpreting Developmental Variability](#41-interpreting-developmental-variability)
+      - [Why This Matters for GeneWeave](#why-this-matters-for-geneweave)
+    - [4.2 Broader Relevance](#42-broader-relevance)
+      - [Disease Mechanisms](#disease-mechanisms)
+      - [Regeneration and Repair](#regeneration-and-repair)
+      - [AI and Theoretical Neuroscience](#ai-and-theoretical-neuroscience)
+  - [5. Take-Home Messages](#5-take-home-messages)
+    - [A Practical Synthesis](#a-practical-synthesis)
+  - [References](#references)
+    - [Background Papers](#background-papers)
+    - [Case Studies](#case-studies)
+    - [Modeling](#modeling)
+    - [Applications](#applications)
 
 ---
 
@@ -47,7 +89,7 @@ Key molecular layers include:
 <!-- ![](<fig_geneweave/Stages of development of hippocampal neurons in culture.png>) -->
 <!-- Figure 9. Stages of development of hippocampal neurons in culture. The approximate times at which cells enter each of the stages is indicated. -->
 ![](fig_geneweave/Establishment-of-polarity-and-stages-of-neuronal-development-in-hippocampal-neurons.webp)  
-The establishment of polarity by hippocampal neurons in culture
+[The establishment of polarity by hippocampal neurons in culture](https://www.jneurosci.org/content/8/4/1454)
 <!-- image.png -->
 
 ### 1.3 Axon Guidance
@@ -107,6 +149,7 @@ From [Hebbian instruction of axonal connectivity by endogenous correlated sponta
 <a id="biological-case-studies"></a>
 ## 2. Biological Case Studies
 
+<a id="ephephrin-signaling-and-topographic-mapping"></a>
 ### 2.1 Eph/Ephrin Signaling and Topographic Mapping
 
 #### Canonical Example: Retinotectal Mapping
@@ -176,6 +219,7 @@ Sperry versus Hebb: Topographic mapping in Isl2/EphA3 mutant mice -->
 
 ---
 
+<a id="beatside-recognition-in-the-drosophila-visual-system"></a> 
 ### 2.2 Beat/Side Recognition in the Drosophila Visual System
 
 #### Connectome + Transcriptome Integration
@@ -238,6 +282,7 @@ This work shifts the framing from a simplistic "one molecule = one synapse" view
 ![](https://ars.els-cdn.com/content/image/1-s2.0-S0960982223010631-gr3_lrg.jpg)
 ---
 
+<a id="rewiring-an-olfactory-circuit-by-altering-cell-surface-codes"></a>  
 ### 2.3 Rewiring an Olfactory Circuit by Altering Cell-Surface Codes
 
 **References**:   
@@ -301,6 +346,7 @@ It also provides one of the clearest bridges between:
 <a id="simple-modeling-frameworks"></a>
 ## 3. Simple Modeling Frameworks
 
+<a id="bilinear-models-of-connectivity"></a>
 ### 3.1 Bilinear Models of Connectivity
 
 #### Core Idea
@@ -374,6 +420,7 @@ Result:
 ---
 
 ### 3.2 Biclique / Modular Wiring Models
+<a id="biclique--modular-wiring-models"></a>
 
 **Reference**: Barabási et al., *Neuron* (2019)  
 [*A Genetic Model of the Connectome*](https://www.cell.com/neuron/fulltext/S0896-6273(19)30926-2)
@@ -411,15 +458,121 @@ This is useful because real circuits are often organized by:
 ![](https://www.cell.com/cms/10.1016/j.neuron.2019.10.031/asset/a5220372-48b3-47b0-b577-4a74dd6780ae/main.assets/gr3_lrg.jpg)
 
 
+<a id="spatial-and-developmental-inference-frameworks"></a>
+### 3.3 Spatial and Developmental Inference Frameworks
+
+The previous two frameworks focus on **pairwise molecular interactions** or **module-level wiring rules**. A complementary line of work asks whether connectivity can be explained from:
+
+- **ligand-receptor communication**
+- **spatial gene-expression gradients**
+- **topographic axes of wiring space**
+
+These approaches are especially useful when the goal is not only to predict whether two neurons connect, but also to explain how wiring is constrained by developmental geometry and large-scale molecular organization.
+
+#### Ligand-Receptor Inference Across Development
+
+**Reference**: Telley and de Chevigny, *Nature Communications* (2026)  
+[*Uncovering the molecular logic of cortical wiring between neuronal subtypes across development through ligand-receptor inference*](https://www.nature.com/articles/s41467-025-68059-8)
+
+This framework starts from a biologically explicit assumption:
+
+$$
+\text{Wiring propensity} \sim \text{compatibility of ligand-receptor programs across cell types and developmental stages}
+$$
+
+At a high level, the method:
+
+1. quantifies ligand and receptor expression across neuronal subtypes
+2. aggregates candidate ligand-receptor interactions into subtype-pair scores
+3. tests whether these scores can explain developmental changes in cortical wiring
+
+Methodologically, this is attractive because it maps naturally onto known cell-cell communication biology. It also narrows the hypothesis space from all possible genes to a functionally interpretable subset.
+
+**Figure links**:
+
+- [Nature Communications Fig. 1](https://www.nature.com/articles/s41467-025-68059-8/figures/1): developmental transcriptomic atlas used as the basis for ligand-receptor inference
+- [Nature Communications Fig. 4](https://www.nature.com/articles/s41467-025-68059-8/figures/4): subtype wiring logic and inferred interaction structure
+- [Nature Communications Fig. 5](https://www.nature.com/articles/s41467-025-68059-8/figures/5): experimental support for inferred developmental wiring programs
+
+#### Chemoaffinity-Inspired Spatial Gradient Models
+
+**Reference**: Koike et al., *PNAS* (2026)  
+[*A data-driven framework linking the connectome to spatial gene expression gradients inspired by chemoaffinity theory*](https://www.pnas.org/doi/full/10.1073/pnas.2516572123)
+
+This work revisits the classical chemoaffinity idea in a modern data-driven form. Instead of treating connectivity as only a pairwise matching problem, it models wiring relative to **continuous spatial gene-expression gradients**.
+
+Conceptually:
+
+$$
+\text{Connectivity} \sim f(\text{position in gradient space}, \text{molecular compatibility})
+$$
+
+The central methodological move is to embed neurons or regions into a spatially organized molecular coordinate system, then ask whether connectivity is better explained by proximity or alignment in that gene-gradient space.
+
+This is important because many developmental wiring problems are fundamentally geometric:
+
+- target selection occurs in space
+- guidance cues are graded rather than binary
+- neighboring cells often share related molecular environments
+
+**Figure links**:
+
+- [PNAS article](https://www.pnas.org/doi/full/10.1073/pnas.2516572123): main paper page for figures and supplementary materials
+- [Related chemoaffinity preprint resource](https://www.biorxiv.org/content/10.1101/2025.04.30.651442v1): accessible figure source closely related to the same chemoaffinity-based modeling direction
+
+#### Connectopic Axes and Genetic Topography
+
+**Reference**: *Journal of Neuroscience* (2024)  
+[*Topographic Axes of Wiring Space Converge to Genetic Topography in Shaping the Human Cortical Layout*](https://www.jneurosci.org/content/45/7/e1510242024)
+
+This line of work moves to a more systems-level description. Rather than modeling individual molecular pairs, it constructs **topographic axes of wiring space** and compares them with large-scale **genetic topography**, including global connectopies.
+
+The underlying idea can be summarized as:
+
+$$
+\text{macroscopic wiring axes} \leftrightarrow \text{macroscopic transcriptional axes}
+$$
+
+Methodologically, this usually involves:
+
+- deriving low-dimensional axes from connectivity structure
+- deriving low-dimensional axes from transcriptomic organization
+- quantifying convergence between the two spaces
+
+This approach is especially useful for human or mesoscale data, where exact cell-to-cell synaptic wiring may be unavailable, but region-level organization is measurable.
+
+**Figure links**:
+
+- [PMC full article](https://pmc.ncbi.nlm.nih.gov/articles/PMC11823343/): accessible version with full figures
+- [JNeurosci figures/data page](https://www.jneurosci.org/content/45/7/e1510242024/tab-figures-data): official figure index
+- [Journal PDF](https://www.jneurosci.org/content/jneuro/45/7/e1510242024.full.pdf): convenient source for extracting figure panels
+
+#### Methodological Takeaway
+
+Together, these three papers expand the modeling landscape beyond bilinear inference:
+
+| Framework | Main unit of analysis | Core idea |
+|------|------|------|
+| **Ligand-receptor inference** | cell-type pairs | infer wiring from molecular communication programs |
+| **Chemoaffinity gradient model** | spatially embedded neurons or regions | infer wiring from alignment in gene-gradient space |
+| **Connectopic / topographic model** | large-scale cortical axes | relate wiring geometry to transcriptional geometry |
+
+In practice, these frameworks are complementary:
+
+- **bilinear models** are strongest when cell-level transcriptomes and connectivity are available
+- **ligand-receptor inference** adds mechanistic biological priors
+- **gradient and connectopic models** capture spatial organization that pairwise models may miss
+
 ---
 
 <a id="potential-applications"></a>
 ## 4. Potential Applications
 
+<a id="interpreting-developmental-variability"></a>
 ### 4.1 Interpreting Developmental Variability
 
 **Reference**: Lachi et al., bioRxiv (2024)  
-*Stochastic Wiring of Cell Types Enhances Fitness by Generating Phenotypic Variability*
+[*Stochastic Wiring of Cell Types Enhances Fitness by Generating Phenotypic Variability*](https://www.biorxiv.org/content/10.1101/2024.08.07.606541v1)
 
 This work raises an important conceptual point:
 
@@ -432,6 +585,28 @@ Instead, development may combine:
 
 This can generate phenotypic variability that may be beneficial under changing environments.
 
+Methodologically, this perspective is important because it changes what a successful model should predict. In some systems, the goal may not be a single deterministic adjacency matrix, but rather a **distribution over plausible circuit realizations**:
+
+$$
+\text{genetic program} \rightarrow \text{connection probability landscape} \rightarrow \text{individual circuit instance}
+$$
+
+This is especially relevant when comparing:
+
+- stereotyped systems such as *C. elegans*
+- partially stereotyped insect circuits
+- higher-variance mammalian circuits
+
+#### Why This Matters for GeneWeave
+
+If connectivity is partly probabilistic, then transcriptomic features may be most informative when used to predict:
+
+- connection probability
+- motif enrichment
+- subtype-specific biases
+- variance across individuals or developmental conditions
+
+<a id="broader-relevance"></a>
 ### 4.2 Broader Relevance
 
 Potential application domains include:
@@ -442,6 +617,38 @@ Potential application domains include:
 - **artificial intelligence**: extracting structured wiring principles for efficient architectures
 - **synthetic neurobiology**: reprogramming or engineering circuit-level specificity
 
+#### Disease Mechanisms
+
+Many neurodevelopmental and neuropsychiatric disorders are increasingly interpreted through the lens of circuit assembly defects. In that context, gene-to-connectivity frameworks can help bridge:
+
+- risk genes
+- altered developmental programs
+- abnormal connectivity phenotypes
+
+This is especially relevant for genes involved in:
+
+- synaptic adhesion
+- axon guidance
+- dendritic development
+- activity-dependent plasticity
+
+#### Regeneration and Repair
+
+A mechanistic understanding of wiring rules could eventually support strategies for:
+
+- rerouting regenerating axons
+- promoting correct target recognition after injury
+- biasing synapse formation toward functional reassembly rather than maladaptive rewiring
+
+#### AI and Theoretical Neuroscience
+
+These studies also suggest that biological circuits may be constrained by low-dimensional rules rather than arbitrary dense connectivity. That idea is attractive for machine learning because it points toward:
+
+- structured sparsity
+- modular architectures
+- developmental priors
+- probabilistic wiring rules instead of fully unconstrained parameterization
+
 ---
 
 <a id="take-home-messages"></a>
@@ -450,8 +657,20 @@ Potential application domains include:
 1. **Genes influence neural wiring at multiple levels**: polarity, axon guidance, target recognition, synaptogenesis, and refinement.
 2. **Cell-surface recognition systems are central** to synaptic specificity, but often act together with geometry, timing, and activity.
 3. **Eph/Ephrin, Beat/Side, and olfactory rewiring experiments** provide complementary examples of how gene expression shapes connectivity.
-4. **Bilinear and modular models** offer interpretable ways to connect transcriptomic data with connectomic structure.
-5. **The long-term goal** is to move from descriptive molecular atlases toward predictive and eventually programmable theories of circuit assembly.
+4. **Bilinear, modular, ligand-receptor, and gradient-based models** each capture different aspects of the same problem and should be viewed as complementary rather than competing.
+5. **The next step is not just description, but prediction**: from transcriptomic state to connection probability, spatial targeting, and circuit architecture.
+6. **The long-term goal** is to move from descriptive molecular atlases toward predictive and eventually programmable theories of circuit assembly.
+
+### A Practical Synthesis
+
+For a project such as GeneWeave, a useful working hierarchy may be:
+
+1. use **bilinear models** for interpretable pairwise inference
+2. use **ligand-receptor priors** to constrain biologically plausible interactions
+3. use **spatial-gradient and connectopic models** to capture geometry and topography
+4. use **stochastic formulations** when the biological system is not fully deterministic
+
+This synthesis makes it possible to connect developmental biology, connectomics, and computational modeling within one coherent framework.
 
 ---
 
@@ -477,10 +696,13 @@ Potential application domains include:
 9. Kovács, I. A. et al. *Uncovering the genetic blueprint of the C. elegans nervous system.* *PNAS* (2020).
 10. Qiao, M. et al. *Deciphering the Genetic Code of Neuronal Type Connectivity: A Bilinear Modeling Approach.* *eLife Reviewed Preprint* (2023).
 11. Barabási, D. L. et al. *A Genetic Model of the Connectome.* *Neuron* (2019).
+12. Telley, L. and de Chevigny, A. *Uncovering the molecular logic of cortical wiring between neuronal subtypes across development through ligand-receptor inference.* *Nature Communications* (2026).
+13. Koike, J. et al. *A data-driven framework linking the connectome to spatial gene expression gradients inspired by chemoaffinity theory.* *PNAS* (2026).
+14. *Topographic Axes of Wiring Space Converge to Genetic Topography in Shaping the Human Cortical Layout.* *Journal of Neuroscience* (2024).
 
 ### Applications
 
-12. Lachi, D. et al. *Stochastic Wiring of Cell Types Enhances Fitness by Generating Phenotypic Variability.* bioRxiv (2024).
+15. Lachi, D. et al. *Stochastic Wiring of Cell Types Enhances Fitness by Generating Phenotypic Variability.* bioRxiv (2024).
 
 ---
 

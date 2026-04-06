@@ -2473,3 +2473,9 @@ Spatiotemporal flows of neural activity, such as traveling waves
 recurrent traveling-wave-like dynamics are not just useful but necessary for accurate and stable processing of any signal undergoing such motion
 
 for any non-trivial recurrent neural network
+
+
+
+- [TRIBE: TRImodal Brain Encoder for whole-brain fMRI response prediction](https://arxiv.org/abs/2507.22229)
+- Meta
+TRIBE, the first deep neural network trained to predict brain responses to stimuli across multiple modalities, cortical areas and individuals

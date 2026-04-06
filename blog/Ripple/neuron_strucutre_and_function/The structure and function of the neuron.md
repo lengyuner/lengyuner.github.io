@@ -242,3 +242,11 @@ Simone Holler, German Köstinger, Kevan A. C. Martin, Gregor F. P. Schuhknecht &
 
 
 - [Predicting modular functions and neural coding of behavior from a synaptic wiring diagram](https://www.nature.com/articles/s41593-024-01784-3)
+
+
+
+
+- [Dendro-plexing of Single Input Spikes via Multiple Synaptic Contacts Can Enhance Cortical Neuron Computation and Reduce Axonal Wiring](https://www.jneurosci.org/content/early/2026/03/30/JNEUROSCI.0839-24.2026)
+
+A cortical neuron typically makes multiple synaptic contacts on the dendrites of its postsynaptic target neuron  
+a "Filter-and-Fire" (F&F) neuron model 

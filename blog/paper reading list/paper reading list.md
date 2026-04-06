@@ -9,12 +9,13 @@
       - [connection reconsturction](#connection-reconsturction)
     - [connectome analysis](#connectome-analysis)
     - [gap junction](#gap-junction)
-    - [connectome and gene / GeneWeave](#connectome-and-gene--geneweave)
+    - [GeneWeave / connectome and gene](#geneweave--connectome-and-gene)
       - [RL and logical rule](#rl-and-logical-rule)
       - [gene data of Drosophila](#gene-data-of-drosophila)
       - [other methods to reconstruct connectome](#other-methods-to-reconstruct-connectome)
       - [human connectome](#human-connectome)
       - [experiment support](#experiment-support)
+    - [review](#review)
       - [GeneWeave application](#geneweave-application)
     - [cell-cell communication and interaction](#cell-cell-communication-and-interaction)
     - [protein interaction](#protein-interaction)
@@ -32,7 +33,7 @@
     - [gene data / transcriptome](#gene-data--transcriptome)
       - [gene data for Drosophila](#gene-data-for-drosophila)
       - [other gene dataset](#other-gene-dataset)
-      - [review](#review)
+      - [review](#review-1)
       - [analysis](#analysis)
       - [logical gene for connectome](#logical-gene-for-connectome)
       - [gene regulatory network](#gene-regulatory-network)
@@ -45,9 +46,9 @@
   - [Reinforcement learning (RL)](#reinforcement-learning-rl)
   - [graph](#graph)
     - [Link prediction](#link-prediction)
-      - [review](#review-1)
+      - [review](#review-2)
     - [Graph Embedding](#graph-embedding)
-    - [review](#review-2)
+    - [review](#review-3)
     - [](#)
     - [disease gene](#disease-gene)
     - [graph and connectome](#graph-and-connectome)
@@ -82,6 +83,7 @@
       - [diffusion model/ visual Stimulus](#diffusion-model-visual-stimulus)
   - [Gene / Transcriptome](#gene--transcriptome)
   - [behavior](#behavior)
+    - [body model](#body-model)
     - [oscilation](#oscilation)
     - [place cell and grid cell](#place-cell-and-grid-cell)
   - [vision](#vision)
@@ -278,7 +280,7 @@ https://www.biorxiv.org/content/10.1101/2025.09.29.679410v2
 Review, 2005
 
 
-### connectome and gene / GeneWeave
+### GeneWeave / connectome and gene 
 
 **review**
 - [The cell biology of synapse formation](https://rupress.org/jcb/article/220/7/e202103052/212258/The-cell-biology-of-synapse-formationMechanisms-of) **SAM**  
@@ -349,13 +351,6 @@ Konrad P. Kording,
 Frederic Zubler and Rodney Douglas(ETH Zurich), 2009 
 
 
-- [Uncovering the molecular logic of cortical wiring between neuronal subtypes across development through ligand–receptor inference](https://www.nature.com/articles/s41467-025-68059-8) **ligand–receptor**   
-Ludovic Telley & Antoine de Chevigny, 2026, Nature Communications  
-
-- [A data-driven framework linking the connectome to spatial gene expression gradients inspired by chemoaffinity theory](https://www.pnas.org/doi/full/10.1073/pnas.2516572123)
-Jigen Koike, Ken Nakae, Riichiro Hira, and Honda Naoki, 2026, PNAS
-
-
 
 **experimental test**
 - [Rewiring an olfactory circuit by altering the combinatorial code of cell-surface proteins https://www.biorxiv.org/content/10.1101/2025.03.01.640986v1](https://www.nature.com/articles/s41586-025-09769-3)
@@ -395,9 +390,13 @@ data:
 
 **other spicies:**
 
-- [A data-driven framework linking the connectome to spatial gene expression gradients inspired by chemoaffinity theory](https://www.pnas.org/doi/10.1073/pnas.2516572123)  
-  
-Jigen Koike, Ken Nakae, Riichiro Hira, Honda Naoki
+- [Uncovering the molecular logic of cortical wiring between neuronal subtypes across development through ligand–receptor inference](https://www.nature.com/articles/s41467-025-68059-8) **ligand–receptor**   
+Ludovic Telley & Antoine de Chevigny, 2026, Nature Communications    
+**PCA**
+
+- [A data-driven framework linking the connectome to spatial gene expression gradients inspired by chemoaffinity theory](https://www.pnas.org/doi/full/10.1073/pnas.2516572123)
+Jigen Koike, Ken Nakae, Riichiro Hira, and Honda Naoki, 2026, PNAS   
+**CCA**
 
 - [Topographic Axes of Wiring Space Converge to Genetic Topography in Shaping the Human Cortical Layout](https://www.jneurosci.org/content/45/7/e1510242024)
 **3GCs(global connectopies)**
@@ -508,6 +507,11 @@ S. Lawrence Zipursky 2015, Cell
 - [The developmental emergence of reliable cortical representations](https://www.nature.com/articles/s41593-024-01857-3)
 we examined this ‘nature–nurture transform’ at the single-trial level using chronic in vivo calcium imaging in **ferret** visual cortex.
 
+
+### review
+
+- [Understanding the molecular diversity of synapses](https://www.nature.com/articles/s41583-024-00888-w)
+Marc van Oostrum & Erin M. Schuman, 2025, Nature Reviews Neuroscience  
 
 
 #### GeneWeave application 
@@ -1449,6 +1453,18 @@ Liam Paninski, 2024, Nature Methods
 
 Inverse reinforcement learning
 
+
+### body model
+[Precise kinematic and muscle recording in freely behaving flies enabled by closed-loop tracking and annotation-free pose estimation](https://www.biorxiv.org/content/10.64898/2026.03.11.711180v1)
+Sibo Wang-Chen, Victor Alfred Stimpfling, Maite Azcorra, Pavan Ramdya, EPFL,
+
+
+[The embodied brain: Bridging the brain, body, and behavior with neuromechanical digital twins]
+
+Pavan Ramdya
+Review
+
+
 ### oscilation
 - [Brain rhythms have come of age](https://www.sciencedirect.com/science/article/pii/S0896627323002143)
 
@@ -1683,3 +1699,8 @@ S. Lawrence Zipursky & Gwyneth M. Card
 [NeuroXiv: AI-powered open databasing and dynamic mining of brain-wide neuron morphometry](https://www.nature.com/articles/s41592-025-02687-2)
 
 
+Descending networks transform command signals into population motor control 
+https://www.nature.com/articles/s41586-024-07523-9 
+
+
+[Evolutionarily conserved neural dynamics across mice, monkeys, and humans](https://www.biorxiv.org/content/biorxiv/early/2026/03/06/2026.03.06.709637.full.pdf)

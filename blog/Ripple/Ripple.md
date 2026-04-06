@@ -464,3 +464,8 @@ Janelia, gene data
 
 - [Whole-Brain Connectomic Graph Model Enables Whole-Body Locomotion Control in Fruit Fly](https://arxiv.org/abs/2602.17997)
 Zehao Jin, Yaoye Zhu, Chen Zhang, Yanan Sui
+
+
+
+- [Connectome analysis reveals brainwide visual processing in Drosophila](https://www.biorxiv.org/content/10.64898/2026.02.02.700492v1)
+Sung Yong Kim, Anmo J Kim
