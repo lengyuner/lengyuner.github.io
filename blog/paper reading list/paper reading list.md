@@ -236,6 +236,14 @@ Machine learning identifies synaptic transmitters from electron micrographs
 
 - [A connectome and analysis of the adult Drosophila central brain](https://elifesciences.org/articles/57443) **hemibrain**
 
+
+[The organization of visual pathways in the Drosophila brain](https://www.biorxiv.org/content/10.64898/2025.12.22.696097v2)
+Michael B Reiser
+
+[Connectome analysis reveals brainwide visual processing in Drosophila](https://www.biorxiv.org/content/10.64898/2026.02.02.700492v1.full)
+Sung Yong Kim, Anmo J Kim
+
+
 - [Brain rewiring during developmental transitions: A Comparative Analysis of **Larva and Adult** Drosophila melanogaster](https://www.biorxiv.org/content/10.1101/2024.05.01.592061v1)
 
 - [Connectomic analysis of the Drosophila lateral neuron clock cells reveals the synaptic basis of functional pacemaker classes](https://elifesciences.org/articles/79139)
@@ -1704,3 +1712,18 @@ https://www.nature.com/articles/s41586-024-07523-9
 
 
 [Evolutionarily conserved neural dynamics across mice, monkeys, and humans](https://www.biorxiv.org/content/biorxiv/early/2026/03/06/2026.03.06.709637.full.pdf)
+
+
+
+[Whole-Brain Co-Mapping of Gene Expression and Neuronal Activity at Cellular Resolution in Behaving Zebrafish](https://www.biorxiv.org/content/10.64898/2026.02.07.704095v1.abstract)
+
+Janelia
+Misha B. Ahrens
+
+
+- [Extracting large-scale neural activity with Suite2p](https://www.biorxiv.org/content/10.64898/2026.02.04.703741v1.abstract)
+
+[A simplified minimodel of visual cortical neurons](https://www.nature.com/articles/s41467-025-61171-9)
+Fengtong Du,.., Marius Pachitariu & Carsen Stringer 
+
+
