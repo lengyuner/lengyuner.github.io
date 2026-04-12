@@ -3,10 +3,18 @@
 ## Table of Contents
 - [paper reading list](#paper-reading-list)
   - [Table of Contents](#table-of-contents)
-  - [Connectome](#connectome)
+  - [TODO](#todo)
+    - [Connectome](#connectome)
+    - [Neural data / activity](#neural-data--activity)
+    - [Gene / transcriptome](#gene--transcriptome)
+    - [NeuroAI](#neuroai)
+    - [Behavior / hippocampus / cognition](#behavior--hippocampus--cognition)
+    - [Methods / ML](#methods--ml)
+    - [Notes / non-paper](#notes--non-paper)
+  - [Connectome](#connectome-1)
     - [connectome dataset](#connectome-dataset)
     - [technology of connectome](#technology-of-connectome)
-      - [connection reconsturction](#connection-reconsturction)
+      - [connection reconstruction](#connection-reconstruction)
     - [connectome analysis](#connectome-analysis)
     - [gap junction](#gap-junction)
     - [GeneWeave / connectome and gene](#geneweave--connectome-and-gene)
@@ -22,7 +30,7 @@
       - [experiment support](#experiment-support-1)
       - [deep learning methods](#deep-learning-methods)
       - [result verification](#result-verification)
-    - [data mapping between transcriptome and connectome](#data-mapping-between-transcriptome-and-connectome)
+    - [bridge: transcriptome \<-\> connectome](#bridge-transcriptome---connectome)
       - [neural type](#neural-type)
       - [neural activity and connectivity](#neural-activity-and-connectivity)
     - [Morphology](#morphology)
@@ -41,7 +49,7 @@
       - [sota models](#sota-models)
       - [application](#application)
     - [gene normalization](#gene-normalization)
-    - [functional and structure conenctome](#functional-and-structure-conenctome)
+    - [functional and structural connectome](#functional-and-structural-connectome)
     - [other connectome model:](#other-connectome-model)
   - [Reinforcement learning (RL)](#reinforcement-learning-rl)
   - [graph](#graph)
@@ -49,13 +57,13 @@
       - [review](#review-2)
     - [Graph Embedding](#graph-embedding)
     - [review](#review-3)
-    - [](#)
+    - [heterogeneous graph benchmarks](#heterogeneous-graph-benchmarks)
     - [disease gene](#disease-gene)
     - [graph and connectome](#graph-and-connectome)
     - [other](#other)
     - [olfactory system](#olfactory-system)
     - [mean field](#mean-field)
-  - [NeuroAI](#neuroai)
+  - [NeuroAI](#neuroai-1)
     - [Connectome \& ANN](#connectome--ann)
     - [geometry](#geometry)
     - [Brain simulation / activity prediction](#brain-simulation--activity-prediction)
@@ -71,27 +79,30 @@
     - [cell tracking](#cell-tracking)
     - [wormid](#wormid)
   - [neural data analysis \& modeling](#neural-data-analysis--modeling)
-    - [reivew](#reivew)
+    - [review](#review-4)
     - [high dimensional data](#high-dimensional-data)
     - [dimensional reduction](#dimensional-reduction)
-    - [manifold reconstriction](#manifold-reconstriction)
+    - [manifold reconstruction](#manifold-reconstruction)
     - [activity analysis](#activity-analysis)
     - [head direction](#head-direction)
   - [encoding and decoding](#encoding-and-decoding)
     - [deep learning method](#deep-learning-method)
-      - [fundation model](#fundation-model)
+      - [foundation model](#foundation-model)
       - [diffusion model/ visual Stimulus](#diffusion-model-visual-stimulus)
-  - [Gene / Transcriptome](#gene--transcriptome)
+  - [Gene / Transcriptome](#gene--transcriptome-1)
   - [behavior](#behavior)
     - [body model](#body-model)
-    - [oscilation](#oscilation)
+    - [oscillation](#oscillation)
     - [place cell and grid cell](#place-cell-and-grid-cell)
   - [vision](#vision)
     - [drosophila](#drosophila)
   - [others](#others)
     - [diffusion model](#diffusion-model)
     - [ML](#ml)
-    - [hippocamus](#hippocamus)
+      - [additional ML methods](#additional-ml-methods)
+      - [NAS](#nas)
+      - [CNN kernel](#cnn-kernel)
+    - [hippocampus](#hippocampus)
     - [gene](#gene)
     - [cognition](#cognition)
       - [attention](#attention)
@@ -100,13 +111,50 @@
     - [DS \& OR](#ds--or)
       - [Quadratic assignment problem](#quadratic-assignment-problem)
       - [similarity matrix](#similarity-matrix)
-    - [ML](#ml-1)
-      - [NAS](#nas)
-      - [CNN kernel](#cnn-kernel)
     - [sparse decoding](#sparse-decoding)
     - [others](#others-1)
     - [wiki](#wiki)
-- [TODO](#todo)
+  - [TODO](#todo-1)
+
+## TODO
+
+### Connectome
+
+### Neural data / activity
+- [A data-driven biophysical network model reproduces C. elegans premotor neural dynamics](https://arxiv.org/abs/2501.00278)
+- [Evolutionarily conserved neural dynamics across mice, monkeys, and humans](https://www.biorxiv.org/content/biorxiv/early/2026/03/06/2026.03.06.709637.full.pdf)
+- [Aligning Neural Population Patterns Facilitates Motor Learning Transfer](https://www.biorxiv.org/content/biorxiv/early/2025/05/21/2025.05.16.654614.1.full.pdf)
+- [Extracting large-scale neural activity with Suite2p](https://www.biorxiv.org/content/10.64898/2026.02.04.703741v1.abstract)
+- [Mapping Individual Differences in the Topological Landscape of Naturalistic Brain Dynamics](https://www.biorxiv.org/content/10.1101/2024.06.20.599966v1)
+- [A simplified minimodel of visual cortical neurons](https://www.nature.com/articles/s41467-025-61171-9)
+  - Fengtong Du, Marius Pachitariu & Carsen Stringer
+
+### Gene / transcriptome
+- [Cell2Sentence: Teaching Large Language Models the Language of Biology](https://www.biorxiv.org/content/10.1101/2023.09.11.557287v3)
+- [Reversed graph embedding resolves complex single-cell trajectories](https://www.nature.com/articles/nmeth.4402)
+- [Whole-Brain Co-Mapping of Gene Expression and Neuronal Activity at Cellular Resolution in Behaving Zebrafish](https://www.biorxiv.org/content/10.64898/2026.02.07.704095v1.abstract)
+- [NeuroXiv: AI-powered open databasing and dynamic mining of brain-wide neuron morphometry](https://www.nature.com/articles/s41592-025-02687-2)
+
+### NeuroAI
+- [The emergence of NeuroAI: bridging neuroscience and artificial intelligence](https://www.nature.com/articles/s41583-025-00954-x)
+
+### Behavior / hippocampus / cognition
+- [Episodic and associative memory from spatial scaffolds in the hippocampus](https://www.nature.com/articles/s41586-024-08392-y)
+- [Enhanced whole-brain calcium imaging and cell identification in C. elegans reveal AWCOFF neuronal responses to 2-nonanone](https://link.springer.com/article/10.1007/s12038-025-00518-2)
+- [STATE-SWITCHING NAVIGATION STRATEGIES IN C. elegans ARE BENEFICIAL FOR CHEMOTAXIS](https://arxiv.org/pdf/2508.00191)
+
+### Methods / ML
+- [Denoising Diffusion Probabilistic Models](https://arxiv.org/pdf/2006.11239)
+- [Reverse Diffusion Sequential Monte Carlo Samplers](https://arxiv.org/pdf/2508.05926)
+- [Outlier exposure with confidence control for out-of-distribution detection](https://www.sciencedirect.com/science/article/abs/pii/S0925231221002393)
+- [Synchronization of two non-identical Chialvo neurons](https://arxiv.org/pdf/2404.07783)
+- [A synthetic oscillatory network of transcriptional regulators](https://www.nature.com/articles/35002125)
+- [Universality in the Evolution of Orientation Columns in the Visual Cortex](https://www.science.org/doi/10.1126/science.1194869)
+
+### Notes / non-paper
+- [viewpoint Your Students are Your legacy](https://dl.acm.org/doi/pdf/10.1145/1467247.1467259#page=1.25)
+- [Christopher Rozell](https://siplab.gatech.edu/people.html)
+- Quantitative understanding of brain activity, the connection between the brain and the body, and the effects of neural stimulation are grand challenges with the potential for enormous societal impact. Simultaneous advances in neural interfacing and data science have created a remarkable opportunity to reshape the way we think about the brain in health and disease
 
 ---
 
@@ -124,9 +172,6 @@ Genes involved in tissue and organ development
 - [Not everything, not everywhere, not all at once: a study of brain-wide encoding of movement](https://www.biorxiv.org/content/10.1101/2023.06.08.544257v1)
 
 
-
-
-
 - [Accelerating with FlyBrainLab the discovery of the functional logic of the Drosophila brain in the connectomic and synaptomic era](https://elifesciences.org/articles/62362)
 
 
@@ -135,7 +180,6 @@ bilinear + Mu Qiao
 
 
 - [How deep is the brain? The shallow brain hypothesis](https://www.nature.com/articles/s41583-023-00756-z)
-
 
 
 - [Generating brain-wide connectome using synthetic axonal morphologies](https://www.biorxiv.org/content/10.1101/2024.10.04.616605v2)
@@ -151,7 +195,6 @@ Blue Brain Project
 - [Fly connectome over the wire](https://www.nature.com/articles/s41583-024-00879-x)
 **Review, October 2024**
 
-
 ### connectome dataset
 - [Neuronal wiring diagram of an adult brain](https://www.nature.com/articles/s41586-024-07558-y)
 **flywire, female**
@@ -161,6 +204,8 @@ FlyWire
 
 - [The connectome of an insect brain](https://www.science.org/doi/10.1126/science.add9330)
 **larval brain**
+
+- [The central complex of the larval fruit fly brain](https://www.biorxiv.org/content/10.1101/2025.09.30.679510v1.full.pdf)
 
 
 - [Synaptic architecture of leg and wing premotor control networks in Drosophila](https://www.nature.com/articles/s41586-024-07600-z)  John C. Tuthill
@@ -214,7 +259,7 @@ MIDL 2022
 Machine learning identifies synaptic transmitters from electron micrographs
 
 
-#### connection reconsturction
+#### connection reconstruction
 - [Reconstruction of Sparse Circuits Using Multi-neuronal Excitation (RESCUME)](https://arxiv.org/abs/1210.1544)
 
 - [Light-microscopy-based connectomic reconstruction of mammalian brain tissue](https://www.nature.com/articles/s41586-025-08985-1)
@@ -222,6 +267,7 @@ Machine learning identifies synaptic transmitters from electron micrographs
 
 
 ### connectome analysis
+- [The central complex of the larval fruit fly brain](https://www.biorxiv.org/content/10.1101/2025.09.30.679510v1.full.pdf)
 
 
 - [Predicting modular functions and neural coding of behavior from a synaptic wiring diagram](https://www.nature.com/articles/s41593-024-01784-3)
@@ -318,12 +364,11 @@ Review, 2015, Bassem A. Hassan, P. Robin Hiesinger
 Elisa B. Frankel, Peri T. Kurshan, 2025, Current Opinion in Neurobiology
 
 
-
 - [Chemoaffinity Revisited: Dscams, Protocadherins, and Neural Circuit Assembly](<https://www.cell.com/fulltext/S0092-8674(10)01145-1>)
 Teview, 2010, S. Lawrence Zipursky, Joshua R. Sanes
 
 - [Architectures of neuronal circuits](https://www.science.org/doi/full/10.1126/science.abg7285)
-reivew, 2021, Science, Liqun Luo
+review, 2021, Science, Liqun Luo
 ![alt text](<https://www.science.org/cms/10.1126/science.abg7285/asset/59d561d9-7d95-456d-97e5-1b811c05023f/assets/images/large/science.abg7285-f5.jpg>)
 
 - [Reconstructing the **human** brain’s wiring diagram from axons up](https://www.cell.com/trends/neurosciences/fulltext/S0166-2236(25)00238-3)  
@@ -359,7 +404,6 @@ Konrad P. Kording,
 Frederic Zubler and Rodney Douglas(ETH Zurich), 2009 
 
 
-
 **experimental test**
 - [Rewiring an olfactory circuit by altering the combinatorial code of cell-surface proteins https://www.biorxiv.org/content/10.1101/2025.03.01.640986v1](https://www.nature.com/articles/s41586-025-09769-3)
 **application** Liqun Luo
@@ -381,7 +425,6 @@ Beat/Side interactions bias cellular adjacency prior to synaptogenesis
 
 - [Cell-type-Specific Patterned Stimulus-Independent Neuronal Activity in the Drosophila Visual System during Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627319300091)
 **S. Lawrence Zipursky** 
-
 
 
 - [Genome-wide identification of neuronal activity-regulated genes in Drosophila](https://elifesciences.org/articles/19942)
@@ -431,7 +474,6 @@ Matej Mihelčić, Pauli Miettinen
 [gene data of Drosophila](gene_data.md)
 
 
-
 #### other methods to reconstruct connectome
 
 
@@ -444,7 +486,6 @@ https://www.cell.com/cms/10.1016/j.cell.2024.03.016/asset/24723725-eb0b-40f7-b29
 Schematic of a neuron broken into its neuronal compartments. Inset, the proportion of presynapses in each of the four compartment types.
 
 
-
 #### human connectome
 
 - [A practical guide to linking brain-wide gene expression and neuroimaging data](https://www.sciencedirect.com/science/article/pii/S1053811919300114) 
@@ -453,8 +494,6 @@ seven major steps to link expression measures and neuroimaging data
 - [Molecular logic of neocortical projection neuron specification, development and diversity](https://www.nature.com/articles/nrn3586), Neocortical projection neurons  
 <!-- ![alt text|200pt](<figs/Neocortical projection neurons.png>) -->
 ![alt text|200pt](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnrn3586/MediaObjects/41583_2013_Article_BFnrn3586_Fig1_HTML.jpg?as=webp)
-
-
 
 
 - [**Benchmarking methods for mapping functional connectivity in the brain**](https://www.biorxiv.org/content/10.1101/2024.05.07.593018v1)
@@ -469,7 +508,6 @@ Here we use a library of **239 pairwise statistics** to benchmark canonical feat
 2023, Cell Reports
   - Side-IV binding to Beat-IIb regulates synaptic specificity in vivo
   - Side-IV/Beat-IIb forms complex with Kirre and Dsyd-1
-
 
 
 [Repulsions instruct synaptic partner matching in an olfactory circuit](https://www.nature.com/articles/s41586-025-09768-4)
@@ -496,7 +534,6 @@ retinal EphA receptors and collicular ephrin-A ligands.
 
 - [Whole-cortex in situ sequencing reveals input-dependent area identity](https://www.nature.com/articles/s41586-024-07221-6)
 Zador lab
-
 
 
 - [Cell-type-Specific Patterned Stimulus-Independent Neuronal Activity in the Drosophila Visual System during Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627319300091)
@@ -537,7 +574,6 @@ the benefits of stochasticity in the development of neural wiring
 - [Deciphering cell–cell interactions and communication from gene expression](https://www.nature.com/articles/s41576-020-00292-x)
 
 - [Deciphering cell–cell communication at single-cell resolution for spatial transcriptomics with subgraph-based graph attention network](https://www.nature.com/articles/s41467-024-51329-2)
-
 
 
 - [Cell2Cell: Explorative Cell Interaction Analysis in Multi-Volumetric Tissue Data](https://vcg.seas.harvard.edu/publications/cell2cell)
@@ -588,7 +624,11 @@ Growing dendrites are retracted or stalled by contacts with other dendrites.
 <!-- ![alt text|200pt](<figs/sperm and egg.png>) -->
 ![alt text|200pt](https://www.cell.com/cms/10.1016/j.cell.2024.09.035/asset/94c10a25-098f-4905-a883-7b118075f5de/main.assets/fx1_lrg.jpg)
 
-### data mapping between transcriptome and connectome
+### bridge: transcriptome <-> connectome
+data mapping between transcriptome and connectome
+
+
+Boundary note: this subsection is for papers that explicitly connect gene/transcriptome signals with connectome structure or connectivity.
 
 - [Integrated Morphoelectric and Transcriptomic Classification of Cortical GABAergic Cells](https://www.sciencedirect.com/science/article/pii/S009286742031254X)
 Cell2020, **all kinds of neurons!!!**
@@ -655,7 +695,6 @@ Konrad P Kording, Edward S Boyden
 - [Mapping Function Onto Neuronal Morphology](https://journals.physiology.org/doi/full/10.1152/jn.00865.2006)
 Klaus M. Stiefel, Terrence J. Sejnowski  
 We used a Lindenmayer-system (L-system) (Lindenmayer 1968) for the algorithmic construction of model neuron morphologies. Simulations of electrophysiological dynamics were carried out in the neuronal simulation language NEURON (version 5.7) (Hines and Carnevale 1997, 2000).
-
 
 
 - [Neuronal contact predicts connectivity in the C. elegans brain](<https://www.cell.com/current-biology/fulltext/S0960-9822(23)00553-5>)  
@@ -800,7 +839,6 @@ eLife, 2020
 We used these tools to build a resource of high-resolution transcriptomes for 100 driver lines covering 67 cell types
 
 
-
 #### other gene dataset
 
 
@@ -921,13 +959,11 @@ Nature Methods (2025)
 - [Integrating single-cell transcriptomic data across different conditions, technologies, and species](https://www.nature.com/articles/nbt.4096)
 
 
-### functional and structure conenctome
+### functional and structural connectome
 - [Integrating multimodal and multiscale connectivity blueprints of the human cerebral cortex in health and disease](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002314)
 
 
 - [The cell-type underpinnings of the human functional cortical connectome](https://www.nature.com/articles/s41593-024-01812-2)
-
-
 
 
 - [Complex brain networks: graph theoretical analysis of structural and functional systems](https://www.nature.com/articles/nrn2575)
@@ -982,7 +1018,6 @@ multi-GCN based GAN, AD (2022). Medical Image Analysis, 79, 102463.
 - [Interpretable Model-based Hierarchical Reinforcement Learning using Inductive Logic Programming](https://arxiv.org/abs/2106.11417)
 
 - [Reinforcement Logic Rule Learning for Temporal Point Processes](https://arxiv.org/abs/2308.06094)
-
 
 
 ## graph
@@ -1056,8 +1091,7 @@ Cited by 6966
 - [papers with code: Graph Models](https://paperswithcode.com/methods/category/graph-models) 
 
 
-
-###  
+### heterogeneous graph benchmarks
 - [Are we really making much progress? Revisiting, benchmarking, and refining heterogeneous graph neural networks](https://arxiv.org/abs/2112.14936)
 we construct the Heterogeneous Graph Benchmark (HGB), consisting of 11 diverse datasets with three tasks.
 ```
@@ -1091,7 +1125,6 @@ R. B. Stein and Alan Lloyd Hodgkin
 - [Fractional Spiking Neuron: Fractional Leaky Integrate-and-Fire Circuit Described with Dendritic Fractal Model](https://ieeexplore.ieee.org/abstract/document/9933612)
 
 - [A Dendritic Compartment Model Neuron](https://ieeexplore.ieee.org/abstract/document/4120609)
-
 
 
 ### olfactory system
@@ -1135,7 +1168,6 @@ Schwalger etal., 2017
 - [The Cell-Type Specific Cortical Microcircuit: Relating Structure and Activity in a Full-Scale Spiking Network Model](https://academic.oup.com/cercor/article/24/3/785/398560)
 Potjans & Diesmann, 2014, Cerebral Cortex  
 Mean field for Mesocsopic 
-
 
 
 ## NeuroAI
@@ -1222,17 +1254,17 @@ https://springernature.figshare.com/articles/dataset/Flygenvectors_The_spatial_a
 
 - [Mapping the neural dynamics of locomotion across the Drosophila brain](https://www.cell.com/current-biology/fulltext/S0960-9822(23)01763-3)
 
-Thomas R. Clandinin, 2024, Current Bilogy
+Thomas R. Clandinin, 2024, Current Biology
 
 - [The connectome predicts resting-state functional connectivity across the Drosophila brain](https://www.cell.com/current-biology/fulltext/S0960-9822(21)00343-2)
-Thomas R. Clandinin, 2021, Current Bilogy
+Thomas R. Clandinin, 2021, Current Biology
 
 
 - [Whole-Brain Calcium Imaging Reveals an Intrinsic Functional Network in Drosophila](https://www.cell.com/current-biology/fulltext/S0960-9822(17)30813-8) 
-Current Bilogy
+Current Biology
 https://data.mendeley.com/datasets/8b6nw2xxhn/1
 
-Thomas R. Clandinin, 2017, Current Bilogy
+Thomas R. Clandinin, 2017, Current Biology
 
 
 #### other data
@@ -1268,6 +1300,7 @@ Na Ji jina@berkeley.edu, 2024
 
 
 ### cell tracking
+- [Extracting large-scale neural activity with Suite2p](https://www.biorxiv.org/content/10.64898/2026.02.04.703741v1.abstract)
 - [EMC2: A versatile algorithm for robust tracking of calcium dynamics from individual neurons in behaving animals](https://www.biorxiv.org/content/10.1101/2020.06.22.165696v3.full)
 
 - [3DeeCellTracker, a deep learning-based pipeline for segmenting and tracking cells in 3D time lapse images](https://elifesciences.org/articles/59187)
@@ -1293,7 +1326,7 @@ Lin Zhong, Scott Baptista, Rachel Gattoni, Jon Arnold, Daniel Flickinger, Carsen
 Nature (2025)
 
 
-### reivew 
+### review 
 - [Neural data science: accelerating the experiment-analysis-theory cycle in large-scale neuroscience ](https://www.sciencedirect.com/science/article/pii/S0959438817302428)
 ICCV, 2019
 
@@ -1330,7 +1363,7 @@ Phate
 Vincent Thibeault, Antoine Allard & Patrick Desrosiers, 2024, Nature Physics  
 
 
-### manifold reconstriction
+### manifold reconstruction
 - [Approximation of Functions on Manifolds in High Dimension from Noisy Scattered Data](https://arxiv.org/abs/2012.13804)
 **Manifold Locally Optimal Projection (MLOP)**
 
@@ -1340,6 +1373,7 @@ Vincent Thibeault, Antoine Allard & Patrick Desrosiers, 2024, Nature Physics
 - [Parameterization-free Projection for Geometry Reconstruction](https://www.cs.tau.ac.il/~dcor/articles/2007/Parameterization-free-Projection.pdf)
 
 ### activity analysis 
+- [Evolutionarily conserved neural dynamics across mice, monkeys, and humans](https://www.biorxiv.org/content/biorxiv/early/2026/03/06/2026.03.06.709637.full.pdf)
 - Meta Neural Band: [A generic non-invasive neuromotor interface for human-computer interaction](https://www.nature.com/articles/s41586-025-09255-w) Meta, 2025, Nature
   surface electromyography (sEMG)
   
@@ -1388,7 +1422,7 @@ Fabian Kloosterman, Stuart P. Layton, Zhe Chen, and Matthew A. Wilson
 - [GUST: Combinatorial Generalization by Unsupervised Grouping with Neuronal Coherence](https://openreview.net/forum?id=90O5cvFZkZ)
 NeurIPS 2023 poster
 
-#### fundation model 
+#### foundation model 
 - LFADS:[Inferring single-trial neural population dynamics using sequential auto-encoders](https://www.nature.com/articles/s41592-018-0109-9) LFADS [(method part)](https://arxiv.org/abs/1608.06315)
 
 - MtM: [Towards a "Universal Translator" for Neural Dynamics at Single-Cell, Single-Spike Resolution](https://openreview.net/forum?id=nRRJsDahEg)
@@ -1410,8 +1444,10 @@ Science, 2013
 CVPR, 2023
 
 
-
 ## Gene / Transcriptome
+
+Boundary note: this section focuses on transcriptome/gene-centric methods and datasets; cross-modal connectome+gene papers are grouped in `Connectome -> bridge: transcriptome <-> connectome`.
+- [Whole-Brain Co-Mapping of Gene Expression and Neuronal Activity at Cellular Resolution in Behaving Zebrafish](https://www.biorxiv.org/content/10.64898/2026.02.07.704095v1.abstract)
 - [Identifying 3D signal overlaps in spatial transcriptomics data with ovrlpy](https://www.nature.com/articles/s41587-026-03004-8)
 
 
@@ -1420,7 +1456,6 @@ CVPR, 2023
 - [Whole brain alignment of spatial transcriptomics between humans and mice with BrainAlign](https://www.nature.com/articles/s41467-024-50608-2)
 
 - [Slingshot: cell lineage and pseudotime inference for single-cell transcriptomics](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4772-0)
-
 
 
 ## behavior
@@ -1473,7 +1508,7 @@ Pavan Ramdya
 Review
 
 
-### oscilation
+### oscillation
 - [Brain rhythms have come of age](https://www.sciencedirect.com/science/article/pii/S0896627323002143)
 
 ### place cell and grid cell 
@@ -1508,6 +1543,8 @@ Vanessa Ruta & Gerald M. Rubin
 
 ## others
 ### diffusion model
+- [Reverse Diffusion Sequential Monte Carlo Samplers](https://arxiv.org/pdf/2508.05926)
+- [Denoising Diffusion Probabilistic Models](https://arxiv.org/pdf/2006.11239)
 Diffusion and Score-Based Generative Models by Yang Song, Stanford University
 https://www.youtube.com/watch?v=wMmqCMwuM2Q&ab_channel=MITCBMM 
 - [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://arxiv.org/abs/1503.03585) Surya Ganguli
@@ -1526,8 +1563,44 @@ Review, 2023
 - [Neural Logic Reinforcement Learning](https://proceedings.mlr.press/v97/jiang19a.html)
 
 
+#### additional ML methods
 
-### hippocamus
+
+- [Hebbian Learning based Orthogonal Projection for Continual Learning of Spiking Neural Networks](https://openreview.net/forum?id=MeB86edZ1P)  2024, ICLR   
+[github code](https://github.com/pkuxmq/HLOP-SNN), [arxiv](https://arxiv.org/abs/2402.11984)
+
+
+- [Learning using switching synaptic plasticity rules](https://openreview.net/forum?id=UjcBzPHSYV)
+
+
+- [Inverse Reinforcement Learning with the Average Reward Criterion](https://arxiv.org/abs/2305.14608)
+
+- [Artificial Neural Networks for Neuroscientists: A Primer](https://www.cell.com/neuron/fulltext/S0896-6273(20)30705-4)
+
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+**Transformer**
+
+- [Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting](https://arxiv.org/abs/1506.04214)
+recurrent CNN
+
+- [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747) 2022
+- 
+
+#### NAS
+- [NAS-Bench-101: Towards Reproducible Neural Architecture Search](https://arxiv.org/abs/1902.09635)
+Chris Ying, Aaron Klein, Esteban Real, Eric Christiansen, Kevin Murphy, Frank Hutter
+
+#### CNN kernel
+Clustering convolutional kernels
+
+- [Framework for Automatic Selection of Kernels based on Convolutional Neural Networks and CkMeans Clustering Algorithm](https://www.worldscientific.com/doi/epdf/10.1142/S0219467819500190)
+
+- [How convolutional neural network see the world - A survey of convolutional neural network visualization methods](https://arxiv.org/abs/1804.11191)
+
+- [Visualizing and Understanding Convolutional Networks](https://arxiv.org/abs/1311.2901)
+
+
+### hippocampus
 - [Network Dynamics Underlying the Formation of Sparse, Informative Representations in the Hippocampus](https://www.jneurosci.org/content/28/52/14271.short)
 
 - [Sparse and distributed coding of episodic memory in neurons of the human hippocampus](https://www.pnas.org/doi/abs/10.1073/pnas.1408365111)
@@ -1585,45 +1658,6 @@ Simon Kornblith, Mohammad Norouzi, Honglak Lee, Geoffrey Hinton
 - [Representational dissimilarity metric spaces for stochastic neural networks](https://arxiv.org/abs/2211.11665)
 Lyndon R. Duong, Jingyang Zhou, Josue Nassar, Jules Berman, Jeroen Olieslagers, Alex H. Williams
 
-### ML
-
-
-- [Hebbian Learning based Orthogonal Projection for Continual Learning of Spiking Neural Networks](https://openreview.net/forum?id=MeB86edZ1P)  2024, ICLR   
-[github code](https://github.com/pkuxmq/HLOP-SNN), [arxiv](https://arxiv.org/abs/2402.11984)
-
-
-
-
-
-- [Learning using switching synaptic plasticity rules](https://openreview.net/forum?id=UjcBzPHSYV)
-
-
-- [Inverse Reinforcement Learning with the Average Reward Criterion](https://arxiv.org/abs/2305.14608)
-
-- [Artificial Neural Networks for Neuroscientists: A Primer](https://www.cell.com/neuron/fulltext/S0896-6273(20)30705-4)
-
-- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
-**Transformer**
-
-- [Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting](https://arxiv.org/abs/1506.04214)
-recurrent CNN
-
-- [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747) 2022
-- 
-
-#### NAS
-- [NAS-Bench-101: Towards Reproducible Neural Architecture Search](https://arxiv.org/abs/1902.09635)
-Chris Ying, Aaron Klein, Esteban Real, Eric Christiansen, Kevin Murphy, Frank Hutter
-
-#### CNN kernel
-Clustering convolutional kernels
-
-- [Framework for Automatic Selection of Kernels based on Convolutional Neural Networks and CkMeans Clustering Algorithm](https://www.worldscientific.com/doi/epdf/10.1142/S0219467819500190)
-
-- [How convolutional neural network see the world - A survey of convolutional neural network visualization methods](https://arxiv.org/abs/1804.11191)
-
-- [Visualizing and Understanding Convolutional Networks](https://arxiv.org/abs/1311.2901)
-
 ### sparse decoding 
 - [Identifiable Deep Generative Models via Sparse Decoding](https://arxiv.org/abs/2110.10804)
 
@@ -1668,62 +1702,11 @@ gene
 
 - wiki [Precision_and_recall](https://en.wikipedia.org/wiki/Precision_and_recall)
 
-# TODO
+## TODO
+
+
 - [Synaptic gradients transform object location to action](https://www.nature.com/articles/s41586-022-05562-8)
-S. Lawrence Zipursky & Gwyneth M. Card 
- 
-
-- [Cell2Sentence: Teaching Large Language Models the Language of Biology](https://www.biorxiv.org/content/10.1101/2023.09.11.557287v3)
-
-- [Reversed graph embedding resolves complex single-cell trajectories](https://www.nature.com/articles/nmeth.4402)
-
-
-- [viewpoint Your Students are Your legacy](https://dl.acm.org/doi/pdf/10.1145/1467247.1467259#page=1.25)
-
-
-
-- [The central complex of the larval fruit fly brain](https://www.biorxiv.org/content/10.1101/2025.09.30.679510v1.full.pdf)
-- [A data-driven biophysical network model reproduces C. elegans premotor neural dynamics](https://arxiv.org/abs/2501.00278)
-- [Synchronization of two non-identical Chialvo neurons](https://arxiv.org/pdf/2404.07783)
-- [Christopher Rozell](https://siplab.gatech.edu/people.html) 
-- Quantitative understanding of brain activity, the connection between the brain and the body, and the effects of neural stimulation are grand challenges with the potential for enormous societal impact. Simultaneous advances in neural interfacing and data science have created a remarkable opportunity to reshape the way we think about the brain in health and disease 
-- [Outlier exposure with confidence control for out-of-distribution detection](https://www.sciencedirect.com/science/article/abs/pii/S0925231221002393)
-- [Drosophila as a model system for neurotransmitter measurements](https://pmc.ncbi.nlm.nih.gov/articles/PMC6093779/)
-- [Episodic and associative memory from spatial scaffolds in the hippocampus](https://www.nature.com/articles/s41586-024-08392-y)
-- [Universality in the Evolution of Orientation Columns in the Visual Cortex](https://www.science.org/doi/10.1126/science.1194869)
-- [Mapping Individual Differences in the Topological Landscape of Naturalistic Brain Dynamics](https://www.biorxiv.org/content/10.1101/2024.06.20.599966v1)
-- [A synthetic oscillatory network of transcriptional regulators](https://www.nature.com/articles/35002125)
-- [The emergence of NeuroAI: bridging neuroscience and artificial intelligence](https://www.nature.com/articles/s41583-025-00954-x)
+  - S. Lawrence Zipursky & Gwyneth M. Card
 - [Dimensionality reduction simplifies synaptic partner matching in an olfactory circuit](https://www.science.org/doi/abs/10.1126/science.ads7633)
-- [Enhanced whole-brain calcium imaging and cell identification in C. elegans reveal AWCOFF neuronal responses to 2-nonanone](https://link.springer.com/article/10.1007/s12038-025-00518-2)
-- [Aligning Neural Population Patterns Facilitates Motor Learning Transfer](https://www.biorxiv.org/content/biorxiv/early/2025/05/21/2025.05.16.654614.1.full.pdf)
-
-- [Denoising Diffusion Probabilistic Models](https://arxiv.org/pdf/2006.11239) 
-- [Reverse Diffusion Sequential Monte Carlo Samplers](https://arxiv.org/pdf/2508.05926) 
-- [STATE-SWITCHING NAVIGATION STRATEGIES IN C. elegans ARE BENEFICIAL FOR CHEMOTAXIS](https://arxiv.org/pdf/2508.00191)
-
-
-
-[NeuroXiv: AI-powered open databasing and dynamic mining of brain-wide neuron morphometry](https://www.nature.com/articles/s41592-025-02687-2)
-
-
-Descending networks transform command signals into population motor control 
-https://www.nature.com/articles/s41586-024-07523-9 
-
-
-[Evolutionarily conserved neural dynamics across mice, monkeys, and humans](https://www.biorxiv.org/content/biorxiv/early/2026/03/06/2026.03.06.709637.full.pdf)
-
-
-
-[Whole-Brain Co-Mapping of Gene Expression and Neuronal Activity at Cellular Resolution in Behaving Zebrafish](https://www.biorxiv.org/content/10.64898/2026.02.07.704095v1.abstract)
-
-Janelia
-Misha B. Ahrens
-
-
-- [Extracting large-scale neural activity with Suite2p](https://www.biorxiv.org/content/10.64898/2026.02.04.703741v1.abstract)
-
-[A simplified minimodel of visual cortical neurons](https://www.nature.com/articles/s41467-025-61171-9)
-Fengtong Du,.., Marius Pachitariu & Carsen Stringer 
-
-
+- [Descending networks transform command signals into population motor control](https://www.nature.com/articles/s41586-024-07523-9)
+- 
