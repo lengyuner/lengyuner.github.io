@@ -453,6 +453,10 @@ Jigen Koike, Ken Nakae, Riichiro Hira, and Honda Naoki, 2026, PNAS
 **3GCs(global connectopies)**
 
 
+- [An opposing molecular gradient axis underlies primate cortical organization](https://www.science.org/doi/10.1126/science.aea2673)
+Cirong Liu,  2026,  Science
+
+
 - [Constrained roads to complex brains](https://www.science.org/doi/10.1126/science.adv2609)
 perspective, Neural development and brain circuit evolution converged in birds and **mammals**
 
@@ -498,7 +502,6 @@ seven major steps to link expression measures and neuroimaging data
 
 - [**Benchmarking methods for mapping functional connectivity in the brain**](https://www.biorxiv.org/content/10.1101/2024.05.07.593018v1)
 Here we use a library of **239 pairwise statistics** to benchmark canonical features of **FC networks**, including hub mapping, weight–distance trade-offs, structure–function coupling, correspondence with other neurophysiological networks, individual fingerprinting and brain–behavior prediction. 
-
 
 #### experiment support
 
