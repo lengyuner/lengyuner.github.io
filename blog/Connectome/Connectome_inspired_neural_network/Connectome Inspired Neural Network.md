@@ -2479,3 +2479,12 @@ for any non-trivial recurrent neural network
 - [TRIBE: TRImodal Brain Encoder for whole-brain fMRI response prediction](https://arxiv.org/abs/2507.22229)
 - Meta
 TRIBE, the first deep neural network trained to predict brain responses to stimuli across multiple modalities, cortical areas and individuals
+
+
+
+
+- [A critical initialization for biological neural networks](https://www.nature.com/articles/s41586-026-10528-1)
+
+
+[Generating whole-brain neural activity and behavior through unified latent dynamics](https://www.biorxiv.org/content/10.64898/2026.06.05.730482v1)
+

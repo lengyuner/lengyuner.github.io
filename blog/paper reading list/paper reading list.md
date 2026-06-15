@@ -3,15 +3,7 @@
 ## Table of Contents
 - [paper reading list](#paper-reading-list)
   - [Table of Contents](#table-of-contents)
-  - [TODO](#todo)
-    - [Connectome](#connectome)
-    - [Neural data / activity](#neural-data--activity)
-    - [Gene / transcriptome](#gene--transcriptome)
-    - [NeuroAI](#neuroai)
-    - [Behavior / hippocampus / cognition](#behavior--hippocampus--cognition)
-    - [Methods / ML](#methods--ml)
-    - [Notes / non-paper](#notes--non-paper)
-  - [Connectome](#connectome-1)
+  - [Connectome](#connectome)
     - [connectome dataset](#connectome-dataset)
     - [technology of connectome](#technology-of-connectome)
       - [connection reconstruction](#connection-reconstruction)
@@ -63,7 +55,7 @@
     - [other](#other)
     - [olfactory system](#olfactory-system)
     - [mean field](#mean-field)
-  - [NeuroAI](#neuroai-1)
+  - [NeuroAI](#neuroai)
     - [Connectome \& ANN](#connectome--ann)
     - [geometry](#geometry)
     - [Brain simulation / activity prediction](#brain-simulation--activity-prediction)
@@ -89,8 +81,9 @@
     - [deep learning method](#deep-learning-method)
       - [foundation model](#foundation-model)
       - [diffusion model/ visual Stimulus](#diffusion-model-visual-stimulus)
-  - [Gene / Transcriptome](#gene--transcriptome-1)
+  - [Gene / Transcriptome](#gene--transcriptome)
   - [behavior](#behavior)
+    - [animal pose estimation](#animal-pose-estimation)
     - [body model](#body-model)
     - [oscillation](#oscillation)
     - [place cell and grid cell](#place-cell-and-grid-cell)
@@ -114,55 +107,14 @@
     - [sparse decoding](#sparse-decoding)
     - [others](#others-1)
     - [wiki](#wiki)
-  - [TODO](#todo-1)
-
-## TODO
-
-### Connectome
-
-### Neural data / activity
-- [A data-driven biophysical network model reproduces C. elegans premotor neural dynamics](https://arxiv.org/abs/2501.00278)
-- [Evolutionarily conserved neural dynamics across mice, monkeys, and humans](https://www.biorxiv.org/content/biorxiv/early/2026/03/06/2026.03.06.709637.full.pdf)
-- [Aligning Neural Population Patterns Facilitates Motor Learning Transfer](https://www.biorxiv.org/content/biorxiv/early/2025/05/21/2025.05.16.654614.1.full.pdf)
-- [Extracting large-scale neural activity with Suite2p](https://www.biorxiv.org/content/10.64898/2026.02.04.703741v1.abstract)
-- [Mapping Individual Differences in the Topological Landscape of Naturalistic Brain Dynamics](https://www.biorxiv.org/content/10.1101/2024.06.20.599966v1)
-- [A simplified minimodel of visual cortical neurons](https://www.nature.com/articles/s41467-025-61171-9)
-  - Fengtong Du, Marius Pachitariu & Carsen Stringer
-
-### Gene / transcriptome
-- [Cell2Sentence: Teaching Large Language Models the Language of Biology](https://www.biorxiv.org/content/10.1101/2023.09.11.557287v3)
-- [Reversed graph embedding resolves complex single-cell trajectories](https://www.nature.com/articles/nmeth.4402)
-- [Whole-Brain Co-Mapping of Gene Expression and Neuronal Activity at Cellular Resolution in Behaving Zebrafish](https://www.biorxiv.org/content/10.64898/2026.02.07.704095v1.abstract)
-- [NeuroXiv: AI-powered open databasing and dynamic mining of brain-wide neuron morphometry](https://www.nature.com/articles/s41592-025-02687-2)
-
-### NeuroAI
-- [The emergence of NeuroAI: bridging neuroscience and artificial intelligence](https://www.nature.com/articles/s41583-025-00954-x)
-
-### Behavior / hippocampus / cognition
-- [Episodic and associative memory from spatial scaffolds in the hippocampus](https://www.nature.com/articles/s41586-024-08392-y)
-- [Enhanced whole-brain calcium imaging and cell identification in C. elegans reveal AWCOFF neuronal responses to 2-nonanone](https://link.springer.com/article/10.1007/s12038-025-00518-2)
-- [STATE-SWITCHING NAVIGATION STRATEGIES IN C. elegans ARE BENEFICIAL FOR CHEMOTAXIS](https://arxiv.org/pdf/2508.00191)
-
-### Methods / ML
-- [Denoising Diffusion Probabilistic Models](https://arxiv.org/pdf/2006.11239)
-- [Reverse Diffusion Sequential Monte Carlo Samplers](https://arxiv.org/pdf/2508.05926)
-- [Outlier exposure with confidence control for out-of-distribution detection](https://www.sciencedirect.com/science/article/abs/pii/S0925231221002393)
-- [Synchronization of two non-identical Chialvo neurons](https://arxiv.org/pdf/2404.07783)
-- [A synthetic oscillatory network of transcriptional regulators](https://www.nature.com/articles/35002125)
-- [Universality in the Evolution of Orientation Columns in the Visual Cortex](https://www.science.org/doi/10.1126/science.1194869)
-
-### Notes / non-paper
-- [viewpoint Your Students are Your legacy](https://dl.acm.org/doi/pdf/10.1145/1467247.1467259#page=1.25)
-- [Christopher Rozell](https://siplab.gatech.edu/people.html)
-- Quantitative understanding of brain activity, the connection between the brain and the body, and the effects of neural stimulation are grand challenges with the potential for enormous societal impact. Simultaneous advances in neural interfacing and data science have created a remarkable opportunity to reshape the way we think about the brain in health and disease
-
----
-
-wiki of drosophila:
-https://www.sdbonline.org/sites/fly/aimorph/brain3.htm
-The Interactive Fly
-
-Genes involved in tissue and organ development
+  - [TODO](#todo)
+    - [Connectome](#connectome-1)
+    - [Neural data / activity](#neural-data--activity)
+    - [Gene / transcriptome](#gene--transcriptome-1)
+    - [NeuroAI](#neuroai-1)
+    - [Behavior / hippocampus / cognition](#behavior--hippocampus--cognition)
+    - [Methods / ML](#methods--ml)
+    - [Notes / non-paper](#notes--non-paper)
 
 ## Connectome
 
@@ -206,6 +158,7 @@ FlyWire
 **larval brain**
 
 - [The central complex of the larval fruit fly brain](https://www.biorxiv.org/content/10.1101/2025.09.30.679510v1.full.pdf)
+<!-- - [The central complex of the larval fruit fly brain](https://www.biorxiv.org/content/10.1101/2025.09.30.679510v1.full.pdf) -->
 
 
 - [Synaptic architecture of leg and wing premotor control networks in Drosophila](https://www.nature.com/articles/s41586-024-07600-z)  John C. Tuthill
@@ -803,6 +756,9 @@ Review
 #### gene data for Drosophila 
 
 
+- [Transcription factor codes patterning neuronal groundplans of the cerebrum](https://www.nature.com/articles/s41586-026-10526-3)
+2026 Nature
+
 - [A high-resolution atlas of the brain predicts lineage and birth order underlying neuronal identity](https://www.sciencedirect.com/science/article/pii/S2666979X25003593)
 Cell Genomics, Dec 2025
 Stephen F. Goodwin 
@@ -851,6 +807,7 @@ We used these tools to build a resource of high-resolution transcriptomes for 10
 - [Cross-platform normalization enables machine learning model training on microarray and RNA-seq data simultaneously](https://www.nature.com/articles/s42003-023-04588-6)
 
 - [Science Forum: The Human Cell Atlas](https://elifesciences.org/articles/27041)
+
 
 
 #### review
@@ -1183,10 +1140,10 @@ Geoffrey Hinton
 
 - [Constraining computational models using electron microscopy wiring diagrams](https://www.sciencedirect.com/science/article/pii/S0959438818302174)
 Ashok Litwin-Kumar , Srinivas C Turaga  
-Review, Current Opinion in Neurobiology, 2019
+**Review**, Current Opinion in Neurobiology, 2019
 
 - [NeuroMechFly v2: simulating embodied **sensorimotor** control in adult Drosophila](https://www.nature.com/articles/s41592-024-02497-y)  Pavan Ramdya 
-
+ 
 
 ### Connectome & ANN
 
@@ -1489,9 +1446,6 @@ Sandeep Robert Datta
 - [The spinal premotor network driving scratching flexor and extensor alternation](https://www.biorxiv.org/content/10.1101/2025.01.08.631866v1.abstract)
 
 
-- [Lightning Pose: improved animal pose estimation via semi-supervised learning, Bayesian ensembling and cloud-native open-source tools](https://www.nature.com/articles/s41592-024-02319-1)
-Liam Paninski, 2024, Nature Methods  
-
 
 - [Disentangled multi-subject and social behavioral representations through a constrained subspace variational autoencoder (CS-VAE)](https://elifesciences.org/reviewed-preprints/88602v1)
 
@@ -1500,16 +1454,45 @@ Liam Paninski, 2024, Nature Methods
 Inverse reinforcement learning
 
 
+### animal pose estimation 
+- [Mapping the landscape of social behavior](https://www.cell.com/cell/fulltext/S0092-8674%2825%2900154-0) Bence P. Ölveczky, Timothy W. Dunn, 2025_04 
+
+
+- [LiftPose3D, a deep learning-based approach for transforming two-dimensional to three-dimensional poses in laboratory animals](https://www.nature.com/articles/s41592-021-01226-z) Pavan Ramdya, 2021_05
+
+- [Precise kinematic and muscle recording in freely behaving flies enabled by closed-loop tracking and annotation-free pose estimation](https://www.biorxiv.org/content/10.64898/2026.03.11.711180v1)
+Sibo Wang-Chen, Victor Alfred Stimpfling, Maite Azcorra, Pavan Ramdya, EPFL, 2026_03
+
+ 
+- [Lightning Pose: improved animal pose estimation via semi-supervised learning, Bayesian ensembling and cloud-native open-source tools](https://www.nature.com/articles/s41592-024-02319-1)
+Liam Paninski, 2024, Nature Methods  
+- [Lightning Pose 3D: an uncertainty-aware framework for data-efficient multi-view animal pose estimation](https://www.biorxiv.org/content/10.64898/2026.04.20.719731v1) Liam Paninski, 2026_04
+
+
+- [Whole-body 3D kinematics of freely behaving Drosophila](https://www.biorxiv.org/content/10.64898/2026.05.03.722293v1)
+Bingni W. Brunton, John C. Tuthill, Robert Evan Johnson, 2026_05
+https://www.biorxiv.org/content/10.64898/2026.05.03.722293v1.full.pdf
+
+
+
+
 ### body model
-[Precise kinematic and muscle recording in freely behaving flies enabled by closed-loop tracking and annotation-free pose estimation](https://www.biorxiv.org/content/10.64898/2026.03.11.711180v1)
-Sibo Wang-Chen, Victor Alfred Stimpfling, Maite Azcorra, Pavan Ramdya, EPFL,
+[The embodied brain: Bridging the brain, body, and behavior with neuromechanical digital twins](https://arxiv.org/abs/2601.08056) Pavan Ramdya, Review
 
 
-[The embodied brain: Bridging the brain, body, and behavior with neuromechanical digital twins]
+- [The Simons Collaboration on Ecological Neuroscience: Studying how the brain interacts with the world](https://www.cell.com/neuron/fulltext/S0896-6273(26)00331-4)
 
-Pavan Ramdya
-Review
+```
+body + environment + task goal
+        ↓
+available actions / affordances
+        ↓
+active sensing + decision + movement
+        ↓
+new sensory input
 
+大脑不是被动接收 stimulus，而是在一个闭环里主动采样世界、更新 belief、选择行动
+```
 
 ### oscillation
 - [Brain rhythms have come of age](https://www.sciencedirect.com/science/article/pii/S0896627323002143)
@@ -1712,4 +1695,89 @@ gene
   - S. Lawrence Zipursky & Gwyneth M. Card
 - [Dimensionality reduction simplifies synaptic partner matching in an olfactory circuit](https://www.science.org/doi/abs/10.1126/science.ads7633)
 - [Descending networks transform command signals into population motor control](https://www.nature.com/articles/s41586-024-07523-9)
-- 
+
+
+ 
+
+### Connectome
+
+### Neural data / activity
+- [A data-driven biophysical network model reproduces C. elegans premotor neural dynamics](https://arxiv.org/abs/2501.00278)
+- [Evolutionarily conserved neural dynamics across mice, monkeys, and humans](https://www.biorxiv.org/content/biorxiv/early/2026/03/06/2026.03.06.709637.full.pdf)
+- [Aligning Neural Population Patterns Facilitates Motor Learning Transfer](https://www.biorxiv.org/content/biorxiv/early/2025/05/21/2025.05.16.654614.1.full.pdf)
+- [Extracting large-scale neural activity with Suite2p](https://www.biorxiv.org/content/10.64898/2026.02.04.703741v1.abstract)
+- [Mapping Individual Differences in the Topological Landscape of Naturalistic Brain Dynamics](https://www.biorxiv.org/content/10.1101/2024.06.20.599966v1)
+- [A simplified minimodel of visual cortical neurons](https://www.nature.com/articles/s41467-025-61171-9)
+  - Fengtong Du, Marius Pachitariu & Carsen Stringer
+
+### Gene / transcriptome
+- [Cell2Sentence: Teaching Large Language Models the Language of Biology](https://www.biorxiv.org/content/10.1101/2023.09.11.557287v3)
+- [Reversed graph embedding resolves complex single-cell trajectories](https://www.nature.com/articles/nmeth.4402)
+- [Whole-Brain Co-Mapping of Gene Expression and Neuronal Activity at Cellular Resolution in Behaving Zebrafish](https://www.biorxiv.org/content/10.64898/2026.02.07.704095v1.abstract)
+- [NeuroXiv: AI-powered open databasing and dynamic mining of brain-wide neuron morphometry](https://www.nature.com/articles/s41592-025-02687-2)
+
+### NeuroAI
+- [The emergence of NeuroAI: bridging neuroscience and artificial intelligence](https://www.nature.com/articles/s41583-025-00954-x)
+
+### Behavior / hippocampus / cognition
+- [Episodic and associative memory from spatial scaffolds in the hippocampus](https://www.nature.com/articles/s41586-024-08392-y)
+- [Enhanced whole-brain calcium imaging and cell identification in C. elegans reveal AWCOFF neuronal responses to 2-nonanone](https://link.springer.com/article/10.1007/s12038-025-00518-2)
+- [STATE-SWITCHING NAVIGATION STRATEGIES IN C. elegans ARE BENEFICIAL FOR CHEMOTAXIS](https://arxiv.org/pdf/2508.00191)
+
+### Methods / ML
+- [Denoising Diffusion Probabilistic Models](https://arxiv.org/pdf/2006.11239)
+- [Reverse Diffusion Sequential Monte Carlo Samplers](https://arxiv.org/pdf/2508.05926)
+- [Outlier exposure with confidence control for out-of-distribution detection](https://www.sciencedirect.com/science/article/abs/pii/S0925231221002393)
+- [Synchronization of two non-identical Chialvo neurons](https://arxiv.org/pdf/2404.07783)
+- [A synthetic oscillatory network of transcriptional regulators](https://www.nature.com/articles/35002125)
+- [Universality in the Evolution of Orientation Columns in the Visual Cortex](https://www.science.org/doi/10.1126/science.1194869)
+
+### Notes / non-paper
+- [viewpoint Your Students are Your legacy](https://dl.acm.org/doi/pdf/10.1145/1467247.1467259#page=1.25)
+- [Christopher Rozell](https://siplab.gatech.edu/people.html)
+- Quantitative understanding of brain activity, the connection between the brain and the body, and the effects of neural stimulation are grand challenges with the potential for enormous societal impact. Simultaneous advances in neural interfacing and data science have created a remarkable opportunity to reshape the way we think about the brain in health and disease
+
+---
+
+wiki of drosophila:
+https://www.sdbonline.org/sites/fly/aimorph/brain3.htm
+The Interactive Fly
+
+Genes involved in tissue and organ development
+
+
+- [A data-driven biophysical network model reproduces C. elegans premotor neural dynamics](https://arxiv.org/abs/2501.00278)
+- [Synchronization of two non-identical Chialvo neurons](https://arxiv.org/pdf/2404.07783)
+- [Christopher Rozell](https://siplab.gatech.edu/people.html) 
+- Quantitative understanding of brain activity, the connection between the brain and the body, and the effects of neural stimulation are grand challenges with the potential for enormous societal impact. Simultaneous advances in neural interfacing and data science have created a remarkable opportunity to reshape the way we think about the brain in health and disease 
+- [Outlier exposure with confidence control for out-of-distribution detection](https://www.sciencedirect.com/science/article/abs/pii/S0925231221002393)
+- [Drosophila as a model system for neurotransmitter measurements](https://pmc.ncbi.nlm.nih.gov/articles/PMC6093779/)
+- [Episodic and associative memory from spatial scaffolds in the hippocampus](https://www.nature.com/articles/s41586-024-08392-y)
+- [Universality in the Evolution of Orientation Columns in the Visual Cortex](https://www.science.org/doi/10.1126/science.1194869)
+- [Mapping Individual Differences in the Topological Landscape of Naturalistic Brain Dynamics](https://www.biorxiv.org/content/10.1101/2024.06.20.599966v1)
+- [A synthetic oscillatory network of transcriptional regulators](https://www.nature.com/articles/35002125)
+- [The emergence of NeuroAI: bridging neuroscience and artificial intelligence](https://www.nature.com/articles/s41583-025-00954-x)
+- [Dimensionality reduction simplifies synaptic partner matching in an olfactory circuit](https://www.science.org/doi/abs/10.1126/science.ads7633)
+- [Enhanced whole-brain calcium imaging and cell identification in C. elegans reveal AWCOFF neuronal responses to 2-nonanone](https://link.springer.com/article/10.1007/s12038-025-00518-2)
+- [Aligning Neural Population Patterns Facilitates Motor Learning Transfer](https://www.biorxiv.org/content/biorxiv/early/2025/05/21/2025.05.16.654614.1.full.pdf)
+
+- [Denoising Diffusion Probabilistic Models](https://arxiv.org/pdf/2006.11239) 
+- [Reverse Diffusion Sequential Monte Carlo Samplers](https://arxiv.org/pdf/2508.05926) 
+- [STATE-SWITCHING NAVIGATION STRATEGIES IN C. elegans ARE BENEFICIAL FOR CHEMOTAXIS](https://arxiv.org/pdf/2508.00191)
+
+
+Dendro-plexing of Single Input Spikes via Multiple Synaptic Contacts Can Enhance Cortical Neuron Computation and Reduce Axonal Wiring
+David Beniaguev, Sapir Shapira, Idan Segev and Michael London
+https://www.jneurosci.org/content/46/17/e0839242026
+
+
+
+[The Power of Two: Watching Living Brain Cells With Two-Photon Microscopy](https://kids.frontiersin.org/articles/10.3389/frym.2026.1808199)
+
+
+
+[BiXformer: A Bidirectional Cross Attention Transformer for Disentangling Inter-Regional Neural Dynamics](https://www.biorxiv.org/content/biorxiv/early/2026/06/10/2026.06.05.730511.full.pdf)
+
+
+
+Generating whole-brain neural activity and behavior through unified latent dynamics

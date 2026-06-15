@@ -39,6 +39,13 @@ window.BLOG_SECTIONS = [
     ],
   },
   {
+    id: "life",
+    title: "Life",
+    items: [
+      { title: "生命不一定像我们：从地外生命到人工智能生命", md: "Others/Life/what_is_life.md" },
+    ],
+  },
+  {
     id: "future-city",
     title: "Future City / 未来城市",
     items: [
