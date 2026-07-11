@@ -77,6 +77,7 @@
     - [manifold reconstruction](#manifold-reconstruction)
     - [activity analysis](#activity-analysis)
     - [head direction](#head-direction)
+    - [Vision](#vision)
   - [encoding and decoding](#encoding-and-decoding)
     - [deep learning method](#deep-learning-method)
       - [foundation model](#foundation-model)
@@ -87,7 +88,7 @@
     - [body model](#body-model)
     - [oscillation](#oscillation)
     - [place cell and grid cell](#place-cell-and-grid-cell)
-  - [vision](#vision)
+  - [vision](#vision-1)
     - [drosophila](#drosophila)
   - [others](#others)
     - [diffusion model](#diffusion-model)
@@ -277,6 +278,10 @@ $$
 
 - [Visual Columns Map](https://codex.flywire.ai/app/visual_columns_map?dataset=fafb)
 A comprehensive mapping of the 31 columnar cell types in the compound eye has been achieved using a computational optimization technique based on synaptic connectivity. A manuscript describing the resource and methodology is currently in preparation. The quality of this mapping can be evaluated through specially developed visualizations available below.
+
+
+- [Connectome analysis reveals brainwide visual processing in Drosophila](https://www.biorxiv.org/content/10.64898/2026.02.02.700492v1)
+Sung Yong Kim, Anmo J Kim, 2026
 
 
 - [The Connectome Interpreter Toolkit](https://www.biorxiv.org/content/10.1101/2025.09.29.679410v2.full.pdf)
@@ -606,6 +611,12 @@ Konrad P. Kording
 #### neural type  
 
 [my blog on connectivity_to_type](../connectivity_to_type.md)
+
+
+- [Whole-neuron morphology and genetic identity define cell types and reveal principles of brain-wide connectivity](https://www.cell.com/cell-reports/fulltext/S2211-1247(26)00547-4) Allen, 2026, Cell Report
+<!-- https://chatgpt.com/g/g-p-699d0d6b4de08191b7748ab2ddefdfb5-papers/c/6a4f478a-f2f0-83ea-9c2d-82dcf5e609ad -->
+
+ 
 
 - [Automatic discovery of cell types and microcircuitry from neural connectomics](https://elifesciences.org/articles/04250)  
 Eric Jonas, Konrad Kording   
@@ -1276,6 +1287,13 @@ Daniel Y. Sprague,..., Saul Kato
 
 ## neural data analysis & modeling
 
+- SCA: [Sparse component analysis: A method that uncovers separable computations within neural population activity](https://www.cell.com/neuron/fulltext/S0896-6273(26)00414-9)
+John P. Cunningham, Liam Paninski, Mark M. Churchland, Joshua I. Glaser, Columbia, 2026, Neuron
+
+
+
+
+
 - [Spatiotemporal conditional inference and hypothesis tests for neural ensemble spiking precision](https://direct.mit.edu/neco/article/27/1/104/8035/Spatiotemporal-Conditional-Inference-and)
 
 - [Maximum entropy models as a tool for building precise neural controls](https://www.sciencedirect.com/science/article/pii/S0959438816302689)
@@ -1324,6 +1342,10 @@ Vincent Thibeault, Antoine Allard & Patrick Desrosiers, 2024, Nature Physics
 
 
 ### manifold reconstruction
+
+- [A neural manifold view of the brain](https://www.nature.com/articles/s41593-025-02031-z)
+Review
+
 - [Approximation of Functions on Manifolds in High Dimension from Noisy Scattered Data](https://arxiv.org/abs/2012.13804)
 **Manifold Locally Optimal Projection (MLOP)**
 
@@ -1357,6 +1379,12 @@ Rachael Stentiford ,James C. Knight,Thomas Nowotny,Andrew Philippides,Paul Graha
 
 - [From Synapses to Dynamics: Obtaining Function from Structure in a Connectome Constrained Model of the Head Direction Circuit](https://www.biorxiv.org/content/10.1101/2025.05.26.655406v1.abstract)
 Sunny Duan, Ling Liang Dong, Ila Fiete, 2025
+
+### Vision
+
+- [Map of spiking activity underlying change detection in the mouse visual system](https://www.cell.com/cell/fulltext/S0092-8674(26)00745-2)
+Cell
+
 
 ## encoding and decoding
 

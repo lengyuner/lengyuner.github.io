@@ -338,6 +338,11 @@ Modeling small networks. Methods in Neuronal Modeling: From Ions to Networks, Se
 
 
 
+## Drosophila Motion Detection
+
+- [Optimization Assisted Discovery of a Conductance Based Neuronal Network Model for the Elementary Motion Detector](https://www.biorxiv.org/content/10.1101/666149v1.full-text)
+Arunava Banerjee, 2019
+
 ## others
 Jun 2017 Nature Neuropixels: DOI 10.1038/nature24636
 Chen 2013 Nature GCaMP6: DOI 10.1038/nature12354
