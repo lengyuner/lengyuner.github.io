@@ -234,25 +234,23 @@ To address this challenge, several studies have described automated parameter fi
 
 #### single neuron recording data
 [An adaptive optics module for deep tissue multiphoton imaging in vivo](https://www.nature.com/articles/s41592-021-01279-0)
-Na Ji 
-Nature Methods volume 18, pages1259–1264 (2021)
+Na Ji, 2021, Nature Methods  
 
 
 [In vivo volumetric imaging of calcium and glutamate activity at synapses with high spatiotemporal resolution](https://www.nature.com/articles/s41467-021-26965-7)
-
 Na Ji,2021, nature communications 
 
 
 [High-resolution structural and functional deep brain imaging using adaptive optics three-photon microscopy](https://www.nature.com/articles/s41592-021-01257-6)
 
-Robert Prevedel 
-Nature Methods volume 18, pages1253–1258 (2021)
+Robert Prevedel, 2021, Nature Methods  
 
 
 [High-throughput volumetric mapping of synaptic transmission](https://www.nature.com/articles/s41592-024-02309-3)
- Na Ji 
-Nature Methods volume 21, pages1298–1305 (2024)
+ Na Ji, 2024, Nature Methods  
 
+
+- [Dendritic morphology and synaptic nonlinearities enhance functional complexity in human cortical neurons](https://www.pnas.org/doi/10.1073/pnas.2533168123) 2026, PNAS
 
 
 
