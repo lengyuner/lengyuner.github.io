@@ -131,6 +131,14 @@ https://www.sciencedirect.com/science/article/pii/S0896627321005018
 and then we use a uniform hLN model to get the kernel parameters from those training,
 this will lead to a uniform parameters across different neurons -->
 
+
+## Predicting visual function by interpreting a neuronal wiring diagram
+https://www.nature.com/articles/s41586-024-07953-5
+
+H Sebastian Seung, 2024 Nature   
+
+
+
 ## Emergence of robust global modules from local interactions and smooth gradients
 https://www.biorxiv.org/content/10.1101/2021.10.28.466284v6
 Mikail Khona, Sarthak Chandra, Ila Fiete
@@ -250,3 +258,5 @@ Simone Holler, German Köstinger, Kevan A. C. Martin, Gregor F. P. Schuhknecht &
 
 A cortical neuron typically makes multiple synaptic contacts on the dendrites of its postsynaptic target neuron  
 a "Filter-and-Fire" (F&F) neuron model 
+
+

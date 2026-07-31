@@ -71,9 +71,11 @@
     - [cell tracking](#cell-tracking)
     - [wormid](#wormid)
   - [neural data analysis \& modeling](#neural-data-analysis--modeling)
+    - [decoding](#decoding)
     - [review](#review-4)
     - [high dimensional data](#high-dimensional-data)
     - [dimensional reduction](#dimensional-reduction)
+    - [manifold](#manifold)
     - [manifold reconstruction](#manifold-reconstruction)
     - [activity analysis](#activity-analysis)
     - [head direction](#head-direction)
@@ -83,6 +85,7 @@
       - [foundation model](#foundation-model)
       - [diffusion model/ visual Stimulus](#diffusion-model-visual-stimulus)
   - [Gene / Transcriptome](#gene--transcriptome)
+    - [gene tool](#gene-tool)
   - [behavior](#behavior)
     - [animal pose estimation](#animal-pose-estimation)
     - [body model](#body-model)
@@ -97,7 +100,6 @@
       - [NAS](#nas)
       - [CNN kernel](#cnn-kernel)
     - [hippocampus](#hippocampus)
-    - [gene](#gene)
     - [cognition](#cognition)
       - [attention](#attention)
       - [learning and memory](#learning-and-memory)
@@ -415,13 +417,25 @@ Jigen Koike, Ken Nakae, Riichiro Hira, and Honda Naoki, 2026, PNAS
 Cirong Liu,  2026,  Science
 
 
+
 - [Constrained roads to complex brains](https://www.science.org/doi/10.1126/science.adv2609)
 perspective, Neural development and brain circuit evolution converged in birds and **mammals**
 
-- [Evolutionary convergence of sensory circuits in the pallium of amniotes](https://www.science.org/doi/10.1126/science.adp3411)
+- [Evolutionary convergence of sensory circuits in the pallium of **amniotes**](https://www.science.org/doi/10.1126/science.adp3411)
 
-- [Enhancer-driven cell type comparison reveals similarities between the mammalian and bird pallium](https://www.science.org/doi/10.1126/science.adp3957)
+- [Enhancer-driven cell type comparison reveals similarities between the **mammalian** and **bird** pallium](https://www.science.org/doi/10.1126/science.adp3957) 
+Rueda-Alaña et al., 2025, Science  
+
 - [Developmental origins and evolution of pallial cell types and structures in birds](https://www.science.org/doi/10.1126/science.adp5182)
+Zaremba et al., 2025, Science  
+
+ 
+- [Significant Neuroanatomical Variation Among Domestic **Dog** Breeds](https://www.jneurosci.org/content/39/39/7748)
+Hecht et al., 2019, Journal of Neuroscience
+
+- [Brain–Behavior Differences in Premodern and Modern Lineages of Domestic **Dogs**](https://www.jneurosci.org/content/45/27/e2032242025)
+2025, Journal of Neuroscience
+
 
 
 #### RL and logical rule 
@@ -1287,6 +1301,8 @@ Daniel Y. Sprague,..., Saul Kato
 
 ## neural data analysis & modeling
 
+
+
 - SCA: [Sparse component analysis: A method that uncovers separable computations within neural population activity](https://www.cell.com/neuron/fulltext/S0896-6273(26)00414-9)
 John P. Cunningham, Liam Paninski, Mark M. Churchland, Joshua I. Glaser, Columbia, 2026, Neuron
 
@@ -1302,6 +1318,13 @@ Cristina Savin, Gašper Tkačik
 - [Unsupervised pretraining in biological neural networks](https://www.nature.com/articles/s41586-025-09180-y)
 Lin Zhong, Scott Baptista, Rachel Gattoni, Jon Arnold, Daniel Flickinger, Carsen Stringer & Marius Pachitariu 
 Nature (2025)
+
+
+### decoding
+population decoding 
+
+- [Dynamic population coding of kinematic structure across executed and observed actions in primate premotor cortex](https://www.science.org/doi/10.1126/sciadv.aed9309)
+
 
 
 ### review 
@@ -1341,7 +1364,15 @@ Phate
 Vincent Thibeault, Antoine Allard & Patrick Desrosiers, 2024, Nature Physics  
 
 
+
+### manifold
+
+- [Subspace communication in the hippocampal–retrosplenial axis](https://www.nature.com/articles/s41586-026-10481-z)
+
+
 ### manifold reconstruction
+
+
 
 - [A neural manifold view of the brain](https://www.nature.com/articles/s41593-025-02031-z)
 Review
@@ -1445,6 +1476,14 @@ Boundary note: this section focuses on transcriptome/gene-centric methods and da
 
 - [Slingshot: cell lineage and pseudotime inference for single-cell transcriptomics](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4772-0)
 
+
+
+### gene tool
+
+
+- [HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution](https://arxiv.org/abs/2306.15794)   Transformer + gene
+
+- [Synaptic Pruning by Microglia Is Necessary for Normal Brain Development](https://www.science.org/doi/10.1126/science.1202529)
 
 ## behavior
 Topics in Sensorimotor Control
@@ -1621,12 +1660,6 @@ Clustering convolutional kernels
 
 - [Synaptic properties of newly generated granule cells support sparse coding in the adult hippocampus](https://www.sciencedirect.com/science/article/pii/S0166432819303936)
 
-### gene 
-
-
-- [HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution](https://arxiv.org/abs/2306.15794)   Transformer + gene
-
-- [Synaptic Pruning by Microglia Is Necessary for Normal Brain Development](https://www.science.org/doi/10.1126/science.1202529)
 
 ### cognition
 

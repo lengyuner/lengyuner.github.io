@@ -299,6 +299,9 @@ Zehao Jin, Yaoye Zhu, Chen Zhang, Yanan Sui
 Victor Hugo Cornejo, Netanel Ofer, Rafael Yuste,  2021, Science
 dentrits level voltage recording for in vivo
 
+[Parallel independent voltage computing along dendrites of CA3 pyramidal neurons](https://www.science.org/doi/10.1126/science.aeh9302)
+ Attila Losonczy 
+
 - [Rethinking Single Neuron Electrical Compartmentalization: Dendritic Contributions to Network Computation In Vivo](https://www.sciencedirect.com/science/article/pii/S0306452221002852)  
 Review; Valerio Francioni, Mark T. Harnett, 2022, Neuroscience
 
@@ -406,15 +409,69 @@ Biophysical models bridge transcriptomic data to electrophysiology
 Robust simulation-based inference overcomes model-data mismatch
 
 
-- [Linking ion channel gene expression to neuronal firing patterns through a statistical-biophysical model](https://www.cell.com/patterns/fulltext/S2666-3899(25)00238-7)
-2025, Review
-
-
 - [Single-neuron models linking electrophysiology, morphology, and transcriptomics across cortical cell types](https://www.cell.com/cell-reports/fulltext/S2211-1247(22)00989-5)
  Costas A. Anastassiou, Allen, 2022, Cell
 
 
+- [Linking ion channel gene expression to neuronal firing patterns through a statistical-biophysical model](https://www.cell.com/patterns/fulltext/S2666-3899(25)00238-7)
+2025, Review
 
+
+
+
+[Transcriptomically-measured gene expression predicts physiological variation across single neurons in humans and mice](https://www.biorxiv.org/content/10.1101/2024.08.26.609746v1.full)
+
+Scott F. Owen
+ 
+<!-- # Multimodal Neural Modeling & Transcriptomics-Electrophysiology Integration: Reference List -->
+
+### I. Patch-seq Multimodal Datasets (Data Foundations)
+Provides ground-truth single-cell tri-modal data ("electrophysiology + morphology + transcriptomics") serving as the physical benchmark for subsequent biophysical model fitting and validation.
+
+- [Integrated Morphoelectric and Transcriptomic Classification of Cortical Interneurons](https://www.cell.com/cell/fulltext/S0092-8674(20)31320-9)
+Nathan W. Gouwens, Federico Scala, Tripho B. Trounk, Philipp Berens, Andreas S. Tolias, Christof Koch et al., 2020, Cell  
+A landmark study from the Allen Institute providing an open dataset of thousands of cortical inhibitory neurons across all three modalities.
+
+- [Phenotypic variation within and across transcriptomic cell types in mouse motor cortex](https://www.nature.com/articles/s41586-019-1787-x)
+Federico Scala, Andreas S. Tolias et al., 2019, Nature  
+Reveals continuous variation between transcriptomic cell types (t-types) and electrophysiological phenotypes (e-types) in the mouse motor cortex, serving as the core dataset for subsequent modeling studies.
+ 
+
+### II. Biophysical Model Fitting & Inference Algorithms (Computational Engines)
+High-dimensional optimization and statistical frameworks to infer Hodgkin-Huxley (HH) model conductances and posterior parameter distributions from complex single-cell electrophysiological recordings.
+
+- [Training deep neural density estimators to identify biophysically realistic neuron models based on experimental data](https://elifesciences.org/articles/56261)
+Pedro J. Gonçalves, Jan-Matthis Lueckmann, Jakob H. Macke et al., 2020, eLife  
+Establishes the Simulation-Based Inference (SBI) framework using neural density estimators to identify parameter posteriors in biophysical models—the underlying computational engine for Macke et al. (2025).
+
+- [Novel automatic parameter fitting for physiological models of computational neuroscience](https://www.frontiersin.org/articles/10.3389/neuro.10.001.2007/full)
+Shaul Druckmann et al., 2007, Frontiers in Neuroscience  
+Introduces a classic feature-based multi-objective genetic algorithm for parameter optimization, widely adopted in active morpho-electric models such as Anastassiou et al. (2022).
+ 
+
+### III. Statistical Mapping & Linear Regression (Early Explorations)
+Early efforts attempting to build direct statistical correlations between ion channel mRNA expression levels and cellular electrophysiological properties (e.g., firing rates, thresholds).
+
+- [Transcriptomic correlates of electrophysiological diversity across cortical interneurons](https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-017-0426-0)
+Shreejoy J. Tripathy et al., 2017, BMC Biology  
+An early study using sparse linear models and Ridge regression to evaluate how well single-cell transcriptomic profiles predict electrophysiological diversity.
+
+- [Knowing which cell type is which: Interneuron diversity and information processing](https://www.frontiersin.org/articles/10.3389/fncir.2011.00006/full)
+Bernardo Rudy et al., 2011, Frontiers in Neural Circuits  
+Explains from a classical physiological perspective how cell-type-specific ion channel subtypes (e.g., $K_v3.1$, $Na_v1.1$) shape distinct fast-spiking and adaptive firing dynamics.
+ 
+
+### IV. Theoretical Foundations: Degeneracy & Conductance Variability (Neurobiological Principles)
+Establishes the theoretical framework explaining why distinct combinations of ion channel gene expressions can generate identical electrophysiological firing outputs.
+
+- [Parallel mRNAs encode functional ion channel currents in single identified neurons](https://www.nature.com/articles/nn1731)
+David J. Schulz, Eve Marder et al., 2006, Nature Neuroscience  
+Demonstrates that mRNA levels correlate with functional ion channel currents at the single-cell level while highlighting significant inter-cellular conductance compensation mechanisms.
+
+- [Multiple models to capture the variability in biological neurons and networks](https://www.nature.com/articles/nrn2958)
+Eve Marder, Adam L. Taylor, 2011, Nature Reviews Neuroscience  
+Articulates the concept of "degeneracy" in neural circuits, demonstrating that multiple distinct parameter sets can produce functionally equivalent electrical outputs.
+ 
 ## review
 - [Modeling Small Networks]()
 L F Abbott, Eve Marder, 1998
