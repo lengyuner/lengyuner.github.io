@@ -24,6 +24,15 @@ PMID: 40205214 PMCID: PMC11981939 DOI: 10.1038/s41586-025-08790-w
 
 ### function
 
+
+- [High-speed whole-brain imaging in Drosophila](https://www.nature.com/articles/s41467-026-72437-1)
+Wayan Gauthey, .., Andrew M. Leifer, Mala Murthy & Stephan Y. Thiberge 
+
+The raw data: https://doi.org/10.5281/zenodo.17613016
+The preprocessed data: https://doi.org/10.5281/zenodo.17618684.
+
+
+
 - [Infrequent strong connections constrain connectomic predictions of neuronal function](https://www.cell.com/cell/fulltext/S0092-8674(25)00518-5)
 Timothy A. Currier, Thomas R. Clandinin
 
@@ -37,6 +46,9 @@ https://datadryad.org/dataset/doi:10.5061/dryad.kh18932k1
 
 - neuropixels: [Fully integrated silicon probes for high-density recording of neural activity](https://www.nature.com/articles/nature24636) jun2017neuropixels
 James J Jun, ..., John O'Keefe, Timothy D Harris, 2017, Nature  
+
+- [Fast near-whole–brain imaging in adult Drosophila during responses to stimuli and behavior](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2006732)
+
 
 ### connectome
 #### Schlegel 2024 Nature（Whole-brain annotation…）
@@ -97,6 +109,15 @@ Calcium accumulations are higher in axonal boutons than in axonal shafts
 In most axons, action potentials propagate reliably across branch points  
 In some axons, higher frequency spike trains fail at branch points  
 Spike filtering correlates with the geometry of the axonal branch point
+
+
+
+
+[The Guide to Dendritic Spikes of the Mammalian Cortex In Vitro and In Vivo](https://www.sciencedirect.com/science/article/pii/S030645222200063X)
+Larkum, Wu, Duverdin & Gidon, 2022, JNeuro
+
+pyramidal neuron might do **coincidence detection**
+
 
 
 ## single neuron model
@@ -217,6 +238,11 @@ Sean L. Hill, Idan Segev, Felix Schurmann
 
 ### Drosophila Motion Detection
 
+
+- [Simple integration of fast excitation and offset, delayed inhibition computes directional selectivity in Drosophila](https://www.nature.com/articles/s41593-017-0046-4)
+Eyal Gruntman, Sandro Romani & Michael B. Reiser, 2018, Nature
+
+
 - [Optimization Assisted Discovery of a Conductance Based Neuronal Network Model for the Elementary Motion Detector](https://www.biorxiv.org/content/10.1101/666149v1.full-text)
 Arunava Banerjee, 2019
 
@@ -294,10 +320,21 @@ PMID: 38778103 PMCID: PMC11136655 DOI: 10.1038/s41586-024-07451-8
 Zehao Jin, Yaoye Zhu, Chen Zhang, Yanan Sui
 
 
+
+## body / muscle
+[Drosophila motor neuron boutons remodel through membrane blebbing coupled with muscle contraction](https://www.nature.com/articles/s41467-023-38421-9)
+2023, NC
+
+
+
 ## experiment support
 - [**Voltage compartmentalization in dendritic spines in vivo**](https://www.science.org/doi/10.1126/science.abg0501)
-Victor Hugo Cornejo, Netanel Ofer, Rafael Yuste,  2021, Science
-dentrits level voltage recording for in vivo
+Victor Hugo Cornejo, Netanel Ofer, Rafael Yuste, 2021, Science
+dentrits level voltage recording for in vivo  
+
+[The Guide to Dendritic Spikes of the Mammalian Cortex In Vitro and In Vivo](https://www.sciencedirect.com/science/article/pii/S030645222200063X) Larkum, Wu, Duverdin & Gidon, 2022, JNeuro  
+pyramidal neuron might do **coincidence detection**
+
 
 [Parallel independent voltage computing along dendrites of CA3 pyramidal neurons](https://www.science.org/doi/10.1126/science.aeh9302)
  Attila Losonczy 
@@ -397,6 +434,8 @@ ModelDB
 
  
 
+
+
 ## parameter optimization
 [parameter optimization methods](parameter_optimization_methods.md)
 
@@ -472,6 +511,18 @@ Demonstrates that mRNA levels correlate with functional ion channel currents at 
 Eve Marder, Adam L. Taylor, 2011, Nature Reviews Neuroscience  
 Articulates the concept of "degeneracy" in neural circuits, demonstrating that multiple distinct parameter sets can produce functionally equivalent electrical outputs.
  
+
+
+- [Learning Hybrid Biophysical Neuron Models with Neural ODEs](https://arxiv.org/html/2606.16693)
+
+
+
+gene & disease
+- [High-throughput tracking enables systematic phenotyping and drug repurposing in C. elegans disease models](https://elifesciences.org/articles/92491)
+
+
+
+
 ## review
 - [Modeling Small Networks]()
 L F Abbott, Eve Marder, 1998
@@ -506,6 +557,12 @@ By Edward Boyden, Konrad Körding
 Applying new tools to entire brains, starting with C. elegans, offers the opportunity to uncover how molecules work together to generate neural physiology and how neurons work together to generate behavior.
 
 
+
+- [Sejnowski’s Computational Two Tiers and Traveling Waves](https://loc.closertotruth.com/theory/sejnowski-s-computational-two-tiers-and-traveling-waves)
+
+Terrence J. Sejnowski
+> The brain is postdictive rather than predictive
+> 
 
 
 ## others

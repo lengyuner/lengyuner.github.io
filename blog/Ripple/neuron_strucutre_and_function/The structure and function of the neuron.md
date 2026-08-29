@@ -3,18 +3,30 @@
 It is a collection of papers about the structure and function.
 
 
+
+## Eye structure shapes neuron function in Drosophila motion vision
+https://www.nature.com/articles/s41586-025-09276-5 
+
+> Here we show that the organization of the compound eye shapes the systematic variation in the preferred directions of directionally selective neurons across the entire visual field. 
+> 
+
 ## Infrequent strong connections constrain connectomic predictions of neuronal function
 https://www.cell.com/cell/fulltext/S0092-8674(25)00518-5
 > Strong inputs exert a disproportionately large influence on postsynaptic responses
 
 
-## Hacking brain development to test models of sensory coding  
-https://www.biorxiv.org/content/10.1101/2023.01.25.525425v1   
+## Input density tunes Kenyon cell sensory responses in the Drosophila mushroom body
+https://www.cell.com/current-biology/fulltext/S0960-9822(23)00736-4
+
+biorxiv version: [Hacking brain development to test models of sensory coding](https://www.biorxiv.org/content/10.1101/2023.01.25.525425v1)  
+  
 E. Josephine Clowney  
 
 > By altering the number of expansion layer neurons (Kenyon cells) and their dendritic complexity,   
 we find that input number, but not cell number, tunes odor selectivity. 
 
+
+follow up paper: [Modular presynaptic assemblages scale to postsynaptic partner number](https://www.biorxiv.org/content/10.64898/2026.01.07.698224v1)
  
 ### comment: 
 It is interesting! 
@@ -260,3 +272,6 @@ A cortical neuron typically makes multiple synaptic contacts on the dendrites of
 a "Filter-and-Fire" (F&F) neuron model 
 
 
+
+- [Hippocampal CA3 connectomics reveals a gradient of mossy fiber inputs and selective feedforward inhibition onto pyramidal cells](https://www.nature.com/articles/s41593-026-02388-9)
+Zhihao Zheng, ..., H. Sebastian Seung & David W. Tank, 2026, Nature Neuroscience

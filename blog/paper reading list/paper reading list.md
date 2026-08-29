@@ -62,8 +62,11 @@
       - [model](#model)
     - [Network analysis](#network-analysis)
     - [synapse plasticity](#synapse-plasticity)
+      - [Hebbian rule](#hebbian-rule)
+- [\\dot W\_{ij}](#dot-w_ij)
       - [STDP](#stdp)
       - [BTSP](#btsp)
+  - [Path-Flow model](#path-flow-model)
   - [neural data recording](#neural-data-recording)
     - [whole brain imaging](#whole-brain-imaging)
       - [drosophila data](#drosophila-data)
@@ -201,6 +204,9 @@ Developmental Biology
 
 - [Integrative analysis of single-neuron projectomes links connectome, transcriptome, and function in the mouse cortex](https://www.cell.com/neuron/abstract/S0896-6273(25)00800-1)
 Xiaohong Xu, Chun Xu, Xiaofei Wang, Jun Yan, 2026, Neuron
+
+
+- [Single-neuron connectome of the **central amygdala** in the mouse brain](https://www.jneurosci.org/content/early/2026/07/20/JNEUROSCI.0393-26.2026.abstract) 2026, JNeurosci
 
 
 ### technology of connectome
@@ -385,6 +391,9 @@ Beat/Side interactions bias cellular adjacency prior to synaptogenesis
 
 - [Cell-type-Specific Patterned Stimulus-Independent Neuronal Activity in the Drosophila Visual System during Synapse Formation](https://www.sciencedirect.com/science/article/pii/S0896627319300091)
 **S. Lawrence Zipursky** 
+ 
+
+A data-driven framework linking the connectome to spatial gene expression gradients inspired by chemoaffinity theory
 
 
 - [Genome-wide identification of neuronal activity-regulated genes in Drosophila](https://elifesciences.org/articles/19942)
@@ -447,7 +456,12 @@ Matej Mihelčić, Pauli Miettinen
 
 
 #### gene data of Drosophila
-[gene data of Drosophila](gene_data.md)
+[gene data of Drosophila](../GeneWeave/gene_data.md)
+ 
+
+
+
+[Multi-scale modeling of human tissues from spatial transcriptomics with TERRA](https://www.biorxiv.org/content/10.64898/2026.07.29.741565v1) 
 
 
 #### other methods to reconstruct connectome
@@ -476,6 +490,11 @@ seven major steps to link expression measures and neuroimaging data
 Here we use a library of **239 pairwise statistics** to benchmark canonical features of **FC networks**, including hub mapping, weight–distance trade-offs, structure–function coupling, correspondence with other neurophysiological networks, individual fingerprinting and brain–behavior prediction. 
 
 #### experiment support
+
+- [A global molecular code for birth order and neuronal identity in Drosophila](https://www.nature.com/articles/s41586-026-10797-w)
+Erika Donà, 2026, nature
+
+
 
 - [Population Morphology Implies a Common Developmental Blueprint for Drosophila Motion Detectors](https://www.biorxiv.org/content/10.1101/2025.11.15.688637v3.abstract)
 
@@ -824,6 +843,9 @@ We used these tools to build a resource of high-resolution transcriptomes for 10
 
 
 #### other gene dataset
+
+
+- [Multi-scale modeling of human tissues from spatial transcriptomics with TERRA](https://www.biorxiv.org/content/10.64898/2026.07.29.741565v1)
 
 
 - [Isoforms of Terminal Selector Mamo Control Axon Guidance during Adult Drosophila Memory Center Construction via Semaphorin-1a](https://www.sciencedirect.com/science/article/abs/pii/S001216062400160X)
@@ -1210,6 +1232,33 @@ Review [Neural Networks With Motivation](https://www.frontiersin.org/articles/10
 1998, L F Abbott, Eve Marder
 
 ### synapse plasticity
+
+- [Parallel independent voltage computing along dendrites of CA3 pyramidal neurons](https://www.science.org/doi/10.1126/science.aeh9302) Attila Losonczy, 2026, Science
+  
+dendritic branches act as an independent functional unit that can be coupled or uncoupled from somatic compartments depending on behavioral conditions
+
+#### Hebbian rule
+
+- [Dendritic structure enables powerful plasticity](https://openreview.net/pdf?id=TtdqT3RlFw)
+
+$$
+\dot W_{ij}
+===========
+
+\eta_W e_i r_j 
+$$
+
+[Constrained Hebbian Learning Supports Efficient Representational Allocation under Structural Constraints](https://arxiv.org/abs/2607.16027)
+
+[Hebbian Learning based Orthogonal Projection for Continual Learning of Spiking Neural Networks](https://proceedings.iclr.cc/paper_files/paper/2024/hash/46b1be2b90c6addc84efdf5d7e90eebc-Abstract-Conference.html)
+Zhouchen Lin, 2024, ICLR
+
+[Learning efficient task-dependent representations with synaptic plasticity](https://proceedings.neurips.cc/paper/2020/hash/b599e8250e4481aaa405a715419c8179-Abstract.html)
+
+Eero P. Simoncelli, Cristina Savin, 2020, NeurIPS
+
+[A Hebbian/Anti-Hebbian Neural Network for Linear Subspace Learning: A Derivation from Multidimensional Scaling of Streaming Data](https://arxiv.org/abs/1503.00669) Dmitri B. Chklovskii
+
 #### STDP
 nearest neighbor STDP (Izhikevich, 2003)  
 - [Relating STDP to BCM](https://doi.org/10.1162/089976603321891783)
@@ -1224,6 +1273,15 @@ Excitatory and inhibitory inputs become bound together by postsynaptic spiking
 #### BTSP
 - [Behavioral time scale synaptic plasticity underlies CA1 place fields](https://www.science.org/doi/10.1126/science.aan3846)
 A different form of synaptic plasticity
+
+
+
+## Path-Flow model
+
+
+- [Dynamics of object coding in the inferotemporal cortex](https://openreview.net/pdf?id=ePtxH1SMCp)
+Conor McGrory, Janis Hesse, Doris Tsao, Tatiana Engel, 2026, CCN
+
 
 ## neural data recording
 
@@ -1301,7 +1359,8 @@ Daniel Y. Sprague,..., Saul Kato
 
 ## neural data analysis & modeling
 
-
+[Neural timescales from a computational perspective](https://www.nature.com/articles/s41593-026-02343-8)
+Jakob H. Macke & Richard Gao 
 
 - SCA: [Sparse component analysis: A method that uncovers separable computations within neural population activity](https://www.cell.com/neuron/fulltext/S0896-6273(26)00414-9)
 John P. Cunningham, Liam Paninski, Mark M. Churchland, Joshua I. Glaser, Columbia, 2026, Neuron
@@ -1842,3 +1901,12 @@ https://www.jneurosci.org/content/46/17/e0839242026
 
 
 Generating whole-brain neural activity and behavior through unified latent dynamics
+
+
+
+[T-World Virtual Human Cardiomyocyte. I. Development, Validation, and Cell Arrhythmogenesis](https://www.ahajournals.org/doi/10.1161/CIRCRESAHA.125.328073)
+
+
+[Human brain organoids record the passage of time over multiple years](https://www.nature.com/articles/s41586-026-10877-x)
+Neural precursor cells appear to retain their own 'memory of developmental age'
+

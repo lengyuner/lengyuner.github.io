@@ -1,3 +1,8 @@
+
+- [A global molecular code for birth order and neuronal identity in Drosophila](https://www.nature.com/articles/s41586-026-10797-w) 
+Gregory S. X. E. Jefferis & Erika Donà, 2026, Science
+
+
 - [Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly](https://www.science.org/doi/abs/10.1126/science.abk2432)  
 2022, science 
 
@@ -13,10 +18,10 @@ Mehmet Neset Özel & Claude Desplan, January 2025,Nature Communications
 Janelia, 2020
 
 
-
 - [Evidence from spatial transcriptomics for the mosaic hypothesis and pure cell types in the cortex](https://www.cell.com/cell-reports/fulltext/S2211-1247(25)01134-9)
 Yiliu Wang, Christof Koch & Uygar Sümbül, October 2025, Cell Reports
 • Spatial transcriptomic data provide evidence for the mosaic hypothesis in the mouse cortex
 • Somata of neurons of the same type appear to avoid spatial proximity with each other
 • This “homotypic avoidance” disappears when different cell types are merged
 • A point process analysis method offers an objective way to evaluate purity of cell types
+
