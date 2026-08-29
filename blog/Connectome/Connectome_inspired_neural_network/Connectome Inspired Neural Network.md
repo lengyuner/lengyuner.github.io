@@ -1,8 +1,10 @@
 
 # Connectome Inspired Neural Network
 
-> **A Comprehensive Guide to Connectome-Based Modeling (2015-2025)**  
+> **A Comprehensive Guide to Connectome-Based Modeling (2015-2026)**
 > From complete EM reconstructions to predictive mechanistic models bridging structure and function
+>
+> Related notes: [Ripple](../../Ripple/Ripple.md)
 
 ---
 
@@ -20,16 +22,16 @@
 ### 🔬 [Detailed Analysis of Connectome-Based Modeling](#detailed-analysis-of-connectome-based-modeling-approaches)
 
 #### 🪰 **Drosophila Models** (Full EM Connectome)
-1. [⭐️ Turaga et al., 2024 - Landmark Study](#1-turaga-et-al-2024---connectome-constrained-deep-mechanistic-networks-️-landmark-study)  
+1. [⭐️ Turaga et al., 2024 - Landmark Study](#1-turaga-et-al-2024---connectome-constrained-deep-mechanistic-networks-️-landmark-study)
    *Single-neuron prediction (r=0.7-0.9) from FlyWire connectome*
    
-2. [Fiete et al., 2025 - Massive Parameter Reduction](#2-fiete-et-al-2025---head-direction-circuit-with-massive-parameter-reduction)  
+2. [Fiete et al., 2025 - Massive Parameter Reduction](#2-fiete-et-al-2025---head-direction-circuit-with-massive-parameter-reduction)
    *439 neurons → 57 parameters via cell-type constraints*
    
-3. [Borst, 2024 - Temporal Filtering](#3-borst-2024---differential-temporal-filtering-in-optic-lobe)  
+3. [Borst, 2024 - Temporal Filtering](#3-borst-2024---differential-temporal-filtering-in-optic-lobe)
    *Conductance-based optic lobe model*
    
-4. [Full Brain LIF Model](#4-full-brain-lif-model-nature-2024)  
+4. [Full Brain LIF Model](#4-full-brain-lif-model-nature-2024)
    *140K neurons whole-brain sensorimotor processing*
 
 #### 🪱 **C. elegans Models** (First Complete Connectome)
@@ -88,14 +90,14 @@
 - [Theory & Principles Overview](#theory--principles)
 
 ### 🎯 [Synthesis & Future](#-synthesis-the-current-state-of-connectome-based-modeling)
-- [Current State (2025)](#where-we-are-2025)
+- [Current State (2026)](#where-we-are-2026)
 - [The "Connectome Equation"](#what-weve-learned-the-connectome-equation)
 - [Model Taxonomy Decision Tree](#the-connectome-taxonomy-what-type-of-model-do-you-need)
 - [Outstanding Challenges](#outstanding-questions--challenges)
-- [Emerging Trends (2024-2025)](#emerging-trends-2024-2025)
+- [Emerging Trends (2024-2026)](#emerging-trends-2024-2026)
 - [Practical Recommendations](#practical-recommendations-for-researchers)
 - [Why This Matters](#the-big-picture-why-this-matters)
-- [Future Vision (2025-2035)](#future-vision-2025-2035)
+- [Future Vision (2026-2035)](#future-vision-2026-2035)
 
 ### 📚 [Resources](#-additional-resources)
 - [Software & Tools](#software--tools)
@@ -106,7 +108,22 @@
 
 ## Paper Collections by Organism
 
-## Drosophila
+### Drosophila
+
+- [Neuronal wiring diagram of an adult brain](https://www.nature.com/articles/s41586-024-07558-y) — Dorkenwald et al., 2024, Nature.
+  *FlyWire · adult brain · ~140K neurons · ~54.5M synapses*
+
+- [Whole-brain annotation and multi-connectome cell typing of Drosophila](https://www.nature.com/articles/s41586-024-07686-5) — Schlegel et al., 2024, Nature.
+  *cell typing · neurotransmitter · afferent/intrinsic/efferent*
+
+- [Connectomic reconstruction of a female Drosophila ventral nerve cord](https://www.nature.com/articles/s41586-024-07389-x) — Azevedo et al., 2024, Nature.
+  *FANC · motor-neuron–muscle atlas*
+
+- [Comparative connectomics of Drosophila descending and ascending neurons](https://www.nature.com/articles/s41586-025-08925-z) — Stürner et al., 2025, Nature.
+  *brain–VNC bridge · descending/ascending neurons*
+
+- [Distributed control circuits across a brain-and-cord connectome](https://www.nature.com/articles/s41586-026-10735-w) — Bates, Phelps, Lee et al., 2026, Nature.
+  *BANC · unified adult brain + VNC · distributed control*
 
 - [Connectome-constrained deep mechanistic networks predict neural responses across the fly visual system at single-neuron resolution](https://doi.org/10.1101/2023.03.11.532232) 
 - https://www.nature.com/articles/s41586-024-07939-3 
@@ -129,10 +146,16 @@ Mesoscale networks in the Drosophila brain share topological features with corte
 •
 Indirect pathways differentially shape functional correlations across the brain
 
+- [High performance, large-scale multi-compartment Hodgkin–Huxley simulation of Drosophila's whole-brain neural circuit model](https://doi.org/10.1101/2022.11.01.512969) — Higuchi et al., 2022, bioRxiv.
+  *mcHH · FlyCircuit · inferred connectivity · Fugaku*
+
 - [A Drosophila computational brain model reveals sensorimotor processing](https://www.nature.com/articles/s41586-024-07763-9)
 LIF model  
 > sHere we create a leaky integrate-and-fire computational model of the entire Drosophila brain, on the basis of neural connectivity and neurotransmitter identity.  
 Limitation: We assume each neuron is either exclusively inhibitory or excitatory. We ignore neural morphology and receptor dynamics. The underlying synapses or neurotransmitter predictions may not be fully accurate. Gap junctions cannot be identified in the electron microscopy dataset, so we ignore their possibility. 
+
+- [Neuromorphic Simulation of Drosophila Melanogaster Brain Connectome on Loihi 2](https://arxiv.org/abs/2508.16792) — Wang et al., 2025, arXiv.
+  *whole-brain LIF · Loihi 2 · neuromorphic acceleration*
 
 
 - eon system
@@ -157,6 +180,15 @@ Total Loss: Linear Consistency Loss, Stability Loss, Minimum Speed Loss, Entropy
 Alexander Borst
 Taking advantage of the known connectome I simulate a network of five adjacent optical columns each comprising 65 different cell types. Each neuron is modeled as an electrically compact single compartment, conductance-based element that receives input from other neurons within its column and from its neighboring columns according to the intra- and inter-columnar connectivity matrix. 
 
+- [A competitive disinhibitory network for robust optic flow processing in Drosophila](https://www.nature.com/articles/s41593-025-01948-9) — Erginkaya et al., 2025, Nature Neuroscience.
+  *HS/H2 → DNp15 · optic flow · steering*
+
+- [Molecular gradients shape synaptic specificity of a visuomotor transformation](https://www.nature.com/articles/s41586-025-09037-4) — 2025, Nature.
+  *retinotopy · visual projection neurons · descending neurons*
+
+- [Eye structure shapes neuron function in Drosophila motion vision](https://www.nature.com/articles/s41586-025-09276-5) — Zhao et al., 2025, Nature.
+  *compound-eye geometry · T4/T5 tuning · morphological computation*
+
 
 - [NeuroMechFly v2: simulating embodied sensorimotor control in adult Drosophila](https://www.nature.com/articles/s41592-024-02497-y)
 Sibo Wang-Chen, Victor Alfred Stimpfling, Thomas Ka Chung Lam, Pembe Gizem Özdil, Louise Genoud, Femke Hurtak & Pavan Ramdya, 2024, Nature Methods 
@@ -164,8 +196,14 @@ Sibo Wang-Chen, Victor Alfred Stimpfling, Thomas Ka Chung Lam, Pembe Gizem Özdi
 - [Whole-body physics simulation of fruit fly locomotion](https://www.nature.com/articles/s41586-025-09029-4)
 Roman Vaxenburg, Igor Siwanowicz, Josh Merel, Alice A. Robie, Carmen Morrow, Guido Novati, Zinovia Stefanidi, Gert-Jan Both, Gwyneth M. Card, Michael B. Reiser, Matthew M. Botvinick, Kristin M. Branson, Yuval Tassa & Srinivas C. Turaga, 2025, Nature 
 
+- [Musculoskeletal simulation of limb movement biomechanics in Drosophila melanogaster](https://arxiv.org/abs/2509.06426) — Özdil et al., 2025, arXiv.
+  *Hill-type muscle · OpenSim + MuJoCo · muscle-actuated replay*
+
 - [Whole-body 3D kinematics of freely behaving Drosophila](https://www.biorxiv.org/content/10.64898/2026.05.03.722293v1.abstract)
 Bingni W. Brunton, John C. Tuthill, Robert Evan Johnson, 2026, biorxiv
+
+- [Whole-Brain Connectomic Graph Model Enables Whole-Body Locomotion Control in Fruit Fly](https://arxiv.org/abs/2602.17997)
+Zehao Jin, Yaoye Zhu, Chen Zhang, Yanan Sui
 
 
 - [Connectome simulations identify a central pattern generator circuit for fly walking](https://www.biorxiv.org/content/10.1101/2025.09.12.675944v2)
@@ -173,6 +211,12 @@ John C. Tuthill, Bingni W. Brunton
 
 **motif can generate the rhythm*
 *
+
+- [Selective presynaptic inhibition of leg proprioception in behaving Drosophila](https://www.nature.com/articles/s41586-025-09554-2) — Dallmann et al., 2025, Nature.
+  *proprioception · efference copy · sensory gating*
+
+- [Proprioceptive limit detectors contribute to sensorimotor control of the Drosophila leg](https://www.nature.com/articles/s41467-026-69333-z) — Pratt et al., 2026, Nature Communications.
+  *hair plates · joint limits · premotor–motor reflex*
 
 - [A neural algorithm for a fundamental computing problem](https://www.science.org/doi/10.1126/science.aam9868)
 **Fly brain inspires computing algorithm**
@@ -193,7 +237,7 @@ https://datadryad.org/dataset/doi:10.5061/dryad.bnzs7h4ns
 https://datadryad.org/dataset/doi:10.5061/dryad.kh18932k1  
 
 
-## Human
+### Human
 
 - [Learning Dynamic Graph Representation of Brain Connectome with Spatio-Temporal Attention](https://openreview.net/forum?id=X7GEA3KiJiH)  
   Byung-Hoon Kim, Jong Chul Ye, Jae-Jin Kim  
@@ -227,11 +271,11 @@ Daniel Rasmussen, 2012, Science
 - [Individualized **perturbation** of the human connectome reveals reproducible biomarkers of network dynamics relevant to cognition](https://www.pnas.org/doi/full/10.1073/pnas.1911240117)  
   TMS EEG
 
-## Monkey
+### Monkey
 - [Compact deep neural network models of visual cortex](https://www.biorxiv.org/content/10.1101/2023.11.22.568315v1)  
 Jonathan W. Pillow, Matthew A. Smith
 
-## Rodent
+### Rodent
 
 - [Inferring brain-wide interactions using data-constrained recurrent neural network models](https://www.biorxiv.org/content/10.1101/2020.12.18.423348v2)  
   Kanaka Rajan, Mount Sinai  
@@ -239,7 +283,7 @@ Jonathan W. Pillow, Matthew A. Smith
   - CURBD allows the total activity of each region to be decomposed into a set of source currents from all other regions
 
 
-### [MICrONS]()
+#### [MICrONS]()
 [Functional connectomics spanning multiple areas of mouse visual cortex](https://www.nature.com/articles/s41586-025-08790-w)  
 The MICrONS Consortium
 
@@ -251,7 +295,7 @@ Andreas S. Tolias
 
 
 
-## C. Elegans
+### C. Elegans
 
 - [Elegans-AI: How the connectome of a living organism could model artificial neural networks](https://www.sciencedirect.com/science/article/pii/S0925231224003692)  
   Francesco Bardozzo, Andrea Terlizzi, Claudio Simoncini, Pietro Lió, Roberto Tagliaferri
@@ -299,12 +343,12 @@ Matthew S. Creamer, Andrew M. Leifer, Jonathan W. Pillow, 2024
 
 - [Mechanosensory encoding of surface mechanics optimizes locomotion](https://www.nature.com/articles/s41467-026-75352-7)
 
-### Dataset
+#### Dataset
 
 - [Neural signal propagation atlas of Caenorhabditis elegans](https://www.nature.com/articles/s41586-023-06683-4)
 
 
-## Theory-Based
+### Theory-Based
 
 - [Learning to Learn with Feedback and Local Plasticity](https://openreview.net/forum?id=HklfNQFL8H)  
   Real Neurons & Hidden Units @ NeurIPS 2019 Oral  
@@ -330,7 +374,7 @@ Matthew S. Creamer, Andrew M. Leifer, Jonathan W. Pillow, 2024
 
 
 
-### Cognitive inspired 
+#### Cognitive inspired
 
 - [TopoNets: High performing vision and language models with brain-like topography](https://arxiv.org/abs/2501.16396)
  
@@ -365,7 +409,7 @@ Matthew S. Creamer, Andrew M. Leifer, Jonathan W. Pillow, 2024
 
 
 
-## Others
+### Others
 
 <!-- - [Single cortical neurons as deep artificial neural networks](https://www.sciencedirect.com/science/article/pii/S0896627321005018)
   - Cortical neurons are well approximated by a deep neural network (DNN) with 5–8 layers
@@ -383,16 +427,16 @@ NeurIPS 2021
 Brain-inspired global-local learning incorporated with **neuromorphic** computing
 https://www.nature.com/articles/s41467-021-27653-2
 
-### potential model
+#### potential model
 - [**Piecewise quadratic neuron model**: A tool for close-to-biology spiking neuronal network simulation on dedicated hardware](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2022.1069133/full)
 
-### Basic Architecture
+#### Basic Architecture
 - [Exploring Randomly Wired Neural Networks for Image Recognition](https://arxiv.org/abs/1904.01569)  
   Saining Xie, Alexander Kirillov, Ross Girshick, Kaiming He
 
 - [Optimal structure and parameter learning of **Ising** models](https://www.science.org/doi/10.1126/sciadv.1700791)
 
-### Review
+#### Review
 
 - [The digital sphinx: Can a worm brain control a fly body?](https://www.biorxiv.org/content/10.64898/2026.03.20.713233v1)
 Bingni W. Brunton, ..., John C. Tuthill
@@ -409,7 +453,7 @@ Bingni W. Brunton, ..., John C. Tuthill
 - [人类智能如何从大脑中涌现？大脑精细模拟重塑 NeuroAI 范式](https://swarma.org/?p=55123)
 
 
-### Researcher (TODO)
+#### Researcher (TODO)
 
 - [Andreas Horn](http://www.netstim.org/)
  
@@ -419,10 +463,6 @@ Bingni W. Brunton, ..., John C. Tuthill
 
 
 [A data and task-constrained mechanistic model of the mouse outer retina shows robustness to contrast variations](https://www.biorxiv.org/content/10.1101/2025.10.20.683356v1.abstract)
-
-- [Whole-Brain Connectomic Graph Model Enables Whole-Body Locomotion Control in Fruit Fly](https://arxiv.org/abs/2602.17997)
-Zehao Jin, Yaoye Zhu, Chen Zhang, Yanan Sui
-
 
 [A Network of Biologically Inspired Rectified Spectral Units (ReSUs) Learns Hierarchical Features Without Error Backpropagation](https://arxiv.org/abs/2512.23146)
 
@@ -450,4 +490,3 @@ TRIBE, the first deep neural network trained to predict brain responses to stimu
 
 
 [Generating whole-brain neural activity and behavior through unified latent dynamics](https://www.biorxiv.org/content/10.64898/2026.06.05.730482v1)
-
