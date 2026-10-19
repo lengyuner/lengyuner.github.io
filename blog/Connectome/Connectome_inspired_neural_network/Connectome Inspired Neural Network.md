@@ -259,6 +259,10 @@ https://datadryad.org/dataset/doi:10.5061/dryad.kh18932k1
 Daniel Rasmussen, 2012, Science
 
 
+- [TRIBE: TRImodal Brain Encoder for whole-brain fMRI response prediction](https://arxiv.org/abs/2507.22229)
+- Meta
+TRIBE, the first deep neural network trained to predict brain responses to stimuli across multiple modalities, cortical areas and individuals
+
 #### Perturbation
 
 - [Mapping effective connectivity by virtually **perturbing** a surrogate brain](https://arxiv.org/abs/2301.00148)  
@@ -277,7 +281,7 @@ Jonathan W. Pillow, Matthew A. Smith
 
 ### Rodent
 
-- [Inferring brain-wide interactions using data-constrained recurrent neural network models](https://www.biorxiv.org/content/10.1101/2020.12.18.423348v2)  
+- [Inferring brain-wide interactions using data-constrained recurrent neural network models](https://www.cell.com/neuron/fulltext/S0896-6273(26)00571-4)[biorxiv](https://www.biorxiv.org/content/10.1101/2020.12.18.423348v2)  
   Kanaka Rajan, Mount Sinai  
   RNN  
   - CURBD allows the total activity of each region to be decomposed into a set of source currents from all other regions
@@ -342,6 +346,14 @@ Matthew S. Creamer, Andrew M. Leifer, Jonathan W. Pillow, 2024
 - [Neural sequences underlying directed turning in Caenorhabditis elegans](https://www.nature.com/articles/s41593-026-02257-5)
 
 - [Mechanosensory encoding of surface mechanics optimizes locomotion](https://www.nature.com/articles/s41467-026-75352-7)
+
+
+
+
+- NEBULA: [Generating whole-brain neural activity and behavior through unified latent dynamics](https://www.biorxiv.org/content/10.64898/2026.06.05.730482v1)
+Davide Nuzzi, Maurizio Mattia, Giovanni Pezzulo， 2026
+
+
 
 #### Dataset
 
@@ -478,15 +490,8 @@ recurrent traveling-wave-like dynamics are not just useful but necessary for acc
 for any non-trivial recurrent neural network
 
 
-
-- [TRIBE: TRImodal Brain Encoder for whole-brain fMRI response prediction](https://arxiv.org/abs/2507.22229)
-- Meta
-TRIBE, the first deep neural network trained to predict brain responses to stimuli across multiple modalities, cortical areas and individuals
-
-
+ 
 
 
 - [A critical initialization for biological neural networks](https://www.nature.com/articles/s41586-026-10528-1)
 
-
-[Generating whole-brain neural activity and behavior through unified latent dynamics](https://www.biorxiv.org/content/10.64898/2026.06.05.730482v1)

@@ -4,6 +4,8 @@
 [Connectome Inspired Neural Network](<../Connectome/Connectome_inspired_neural_network/Connectome Inspired Neural Network.md>)
 html [Connectome Inspired Neural Network](https://lengyuner.github.io/blog/connectome%20inspired%20neural%20network.html)
 
+[果蝇连接组详细仿真与树突仿真问题](drosophila_connectome_and_dendrite_simulation.md)
+
 
 
 
@@ -235,6 +237,15 @@ Etay Hay ,Sean Hill,Felix Schürmann,Henry Markram,Idan Segev
 ![Models constrained only by BAC firing may fail to respond properly to perisomatic step current.|200pt](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1002107.g001)
 
 
+- [Distribution and voltage dependence of ion channels shape single-neuron computations](https://www.pnas.org/doi/full/10.1073/pnas.2610600123)
+ Jakob H. Macke, Alexander Borst, and Lukas N. Groschner 
+
+ 
+
+- [A Dendritic Voltage Surrogate-Based Synaptic Learning Framework for Biophysically Detailed Neurons and Networks](https://direct.mit.edu/neco/article/doi/10.1162/NECO.a.1583/139100)
+Gan He, Mengdi Zhao, Kai Du, Tiejun Huang
+
+
 ### LIF model
 
 - [Neuronal Spike Timing Adaptation Described with a **Fractional Leaky Integrate-and-Fire Model**](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003526)
@@ -358,6 +369,36 @@ PMID: 39261740 PMCID: PMC11525180 DOI: 10.1038/s41586-024-07939-3
 
 _DMN / continuous dynamics / connectome-constrained / task-optimized / optic flow_
 Its neural-activity prediction comes from the combination of wiring, mechanistic parameterization and task supervision.
+
+
+#### Wang et al. 2026 Nature Communications（BrainTrace whole-brain fitting）
+
+[Model-agnostic linear-memory online learning in spiking neural networks](https://www.nature.com/articles/s41467-026-68453-w)
+
+Chaoming Wang, Xingsi Dong, Zilong Ji, Mingqing Xiao, Jiedong Jiang, Xiao Liu, Yuxiang Huan, Si Wu
+
+_BrainTrace / whole-brain LIF / linear-memory online learning / resting-state calcium fitting_
+It makes long-horizon training of a >125K-neuron FlyWire SNN feasible on commodity accelerators. The target is neuropil-level calcium activity and the model includes a learned external-input encoder, so a successful fit is not single-cell biological validation.
+
+
+#### Li et al. 2026 bioRxiv（Resting-state dynamics and causal hubs）
+
+[Connectome-constrained modeling identifies neurons and synapses that sustain spontaneous activity in Drosophila](https://www.biorxiv.org/content/10.64898/2026.08.21.745055v1)
+
+Qianzhu Li, Wenhao Ping, Ke Zhang, Chaoming Wang
+
+_FlyWire / spontaneous activity / held-out functional connectivity / virtual ablation / inhibitory hubs_
+The fitted model predicts a 14-neuropil core and sparse inhibitory hub neurons that sustain resting-state dynamics. These are model-derived hypotheses from neuropil-averaged recordings and require cell-resolved in vivo perturbation.
+
+
+#### Liew et al. 2026 arXiv（Orientation maps in the optic lobe）
+
+[Connectome-Based Modelling Reveals Orientation Maps in the Drosophila Optic Lobe](https://arxiv.org/abs/2609.01330)
+
+Jia-Nuo Liew, Shenghan Lin, Bowen Chen, Wei Zhang, Xiaowei Zhu, Wei Zhang, Xiaolin Hu
+
+_whole-brain LIF / oriented-bar stimulus / medulla / orientation map / structural prediction_
+The model predicts spatially organized orientation preferences from connectome-constrained dynamics. It lacks in vivo validation and omits nonlinear firing and neurotransmitter effects; the pinwheel-like maps also depend on projection and spatial smoothing.
 
 
 #### Borst 2025 Journal of Computational Neuroscience（Temporal filtering）
@@ -534,6 +575,20 @@ Nathan W. Gouwens, Jim Berg, David Feng, Staci A. Sorensen, Hongkui Zeng, Michae
 To address this challenge, several studies have described automated parameter fitting approaches with multicompartment conductance-based models 9,10,11,12,13,14,15,16,17.
 
 
+- [A comparison of manual neuronal reconstruction from biocytin histology or 2-photon imaging: morphometry and computer modeling](https://www.frontiersin.org/journals/neuroanatomy/articles/10.3389/fnana.2014.00065/full)
+Arne V. Blackman, Stefan Grabuschnig, Robert Legenstein, P. Jesper Sjöström, 2014, Frontiers in Neuroanatomy
+
+_morphology reconstruction / diameter bias / EPSP propagation / output-dependent error_
+Reconstructions that look morphologically similar can produce substantially different EPSPs. Agreement for back-propagating action potentials does not validate the same morphology for forward synaptic integration.
+
+
+- [Dendritic diameters affect the spatial variability of intracellular calcium dynamics in computer models](https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2014.00168/full)
+Haroon Anwar, Christopher J. Roome, Hermina Nedelescu, Weiliang Chen, Bernd Kuhn, Erik De Schutter, 2014, Frontiers in Cellular Neuroscience
+
+_diameter / surface-to-volume ratio / calcium pool / compartment discretization / NEURON–STEPS_
+Incorrect calcium-pool volume or coarse compartments can create false calcium gradients or erase real ones. Numerical implementation details can therefore masquerade as dendritic biophysics.
+
+
 #### single neuron recording data
 [An adaptive optics module for deep tissue multiphoton imaging in vivo](https://www.nature.com/articles/s41592-021-01279-0)
 Na Ji, 2021, Nature Methods  
@@ -556,7 +611,7 @@ Robert Prevedel, 2021, Nature Methods
 
 
 ## tool
-- **Jaxley**: [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v2) Michael Deistler,  Kyra L. Kadhim,  Matthijs Pals,  Jonas Beck,  Ziwei Huang,  Manuel Gloeckler,  Janne K. Lappalainen,  Cornelius Schröder,  Philipp Berens,  Pedro J. Gonçalves,  Jakob H. Macke   
+- **Jaxley**: [Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics](https://www.biorxiv.org/content/10.1101/2024.08.21.608979v2) Michael Deistler,  Kyra L. Kadhim,  Matthijs Pals,  Jonas Beck,  Ziwei Huang,  Manuel Gloeckler,  Janne K. Lappalainen,  Cornelius Schröder,  Philipp Berens,  Pedro J. Gonçalves,  Jakob H. Macke
 
 [jaxley_experiments](https://github.com/mackelab/jaxley_experiments)
 
@@ -576,10 +631,25 @@ Tool for neuron dynamics simulation (like brian2, spikingjelly)
 - BrainTrace: [Model-agnostic linear-memory online learning in spiking neural networks](https://www.nature.com/articles/s41467-026-68453-w)
 
 
+- **Neuron_Reduce**: [An efficient analytical reduction of detailed nonlinear neuron models](https://www.nature.com/articles/s41467-019-13932-6) Oren Amsalem, Guy Eyal, Noa Rogozinski, Michael Gevaert, Pramod Kumbhar, Felix Schürmann, Idan Segev, 2020, Nature Communications
+
+_transfer impedance / morphology reduction / active dendrites / 40–250× speedup_
+It preserves selected electrical input–output properties rather than the original geometry; local spine voltage and biochemical dynamics still need separate validation.
+
+
+- **NEAT**: [The Neural Analysis Toolkit Unifies Semi-Analytical Techniques to Simplify, Understand, and Simulate Dendrites](https://link.springer.com/article/10.1007/s12021-025-09766-x) Willem A. M. Wybo, 2026, Neuroinformatics
+
+_resistance matrix / impedance / response kernels / concentration dynamics / NEURON + NEST_
+Electrical-response-based reduction is a more explicit bridge between detailed single-neuron models and network simulation than ad hoc geometric simplification.
+
+
 - [neuron morphology](https://neuron-morphology.readthedocs.io/en/latest/index.html)
 is an open-source Python package for working with single-neuron morphological reconstruction data, such as those in the Allen Cell Types Database.
 
-- [A GPU-based computational framework that bridges neuron simulation and artificial intelligence](https://www.nature.com/articles/s41467-023-41553-7)
+- **DeepDendrite**: [A GPU-based computational framework that bridges neuron simulation and artificial intelligence](https://www.nature.com/articles/s41467-023-41553-7) Yichen Zhang, Gan He, Lei Ma et al., 2023, Nature Communications
+
+_Dendritic Hierarchical Scheduling / Hines solver / GPU / exact parallelization / 2–3 orders of magnitude_
+It addresses the linear-solver bottleneck of detailed compartment models, not morphology error, parameter identifiability or biological validation.
 
 - [A Python toolbox for neural circuit parameter inference](https://www.nature.com/articles/s41540-025-00527-9)
 2025, npj Systems Biology and Applications 
@@ -678,6 +748,10 @@ gene & disease
 
 
 
+- [Compiling molecular ultrastructure into neural dynamics](https://arxiv.org/abs/2603.25713)
+Konrad P. Kording
+> High-resolution brain imaging 
+
 
 ## review
 - [Modeling Small Networks]()
@@ -722,95 +796,30 @@ Terrence J. Sejnowski
 
 
 ## others
-<!-- Jun 2017 Nature Neuropixels: DOI 10.1038/nature24636
-Chen 2013 Nature GCaMP6: DOI 10.1038/nature12354
-Logothetis 2008 Nature fMRI综述: DOI 10.1038/nature06976
-Hardie 1989 Nature（组胺Cl−通道）: DOI 10.1038/339704a0
-Haag 2017 eLife（T4/T5共同方向调谐）: DOI 10.7554/eLife.29044
-Gruntman 2019 eLife（OFF通路）: DOI 10.7554/eLife.50706
-下面这些需要从官方页精准确认（卷期页码/DOI或作者全名单），否则我不会改，以避免误引： -->
-<!-- ### Lappalainen 2024 Nature（Connectome-constrained networks…）
-Connectome-constrained networks predict neural activity across the fly visual system
-Janne K Lappalainen 1 2 3, Fabian D Tschopp 3, Sridhama Prakhya 3, Mason McGill 3 4, Aljoscha Nern 3, Kazunori Shinomiya 3, Shin-Ya Takemura 3, Eyal Gruntman 3 5, Jakob H Macke 1 2 6, Srinivas C Turaga 7
-Affiliations Expand
-PMID: 39261740 PMCID: PMC11525180 DOI: 10.1038/s41586-024-07939-3
+- [Multilevel visual motion opponency in Drosophila](https://www.nature.com/articles/s41593-023-01443-z)
+Alexander Borst， 2023， Nature Neuroscience 
 
-
-### Cowley 2024 Nature（Mapping model units…）
-Nature
-. 2024 May;629(8014):1100-1108. doi: 10.1038/s41586-024-07451-8. Epub 2024 May 22.
-Mapping model units to visual neurons reveals population code for social behaviour
-Benjamin R Cowley 1 2, Adam J Calhoun 3, Nivedita Rangarajan 3, Elise Ireland 3, Maxwell H Turner 4, Jonathan W Pillow 3, Mala Murthy 5
-Affiliations Expand
-PMID: 38778103 PMCID: PMC11136655 DOI: 10.1038/s41586-024-07451-8 -->
-
-<!-- ### Schlegel 2024 Nature（Whole-brain annotation…）
-Whole-brain annotation and multi-connectome cell typing of Drosophila
-Philipp Schlegel 1 2, Yijie Yin 2, Alexander S Bates 1 3 4, Sven Dorkenwald 5 6, Katharina Eichler 2, Paul Brooks 2, Daniel S Han 1 7, Marina Gkantia 2, Marcia Dos Santos 2, Eva J Munnelly 2, Griffin Badalamente 2, Laia Serratosa Capdevila 2, Varun A Sane 2, Alexandra M C Fragniere 2, Ladann Kiassat 2, Markus W Pleijzier 1, Tomke Stürner 1 2, Imaan F M Tamimi 2, Christopher R Dunne 2, Irene Salgarella 2, Alexandre Javier 2, Siqi Fang 2, Eric Perlman 8, Tom Kazimiers 9, Sridhar R Jagannathan 2, Arie Matsliah 6, Amy R Sterling 6 10, Szi-Chieh Yu 6, Claire E McKellar 6; FlyWire Consortium; Marta Costa 2, H Sebastian Seung 5 6, Mala Murthy 6, Volker Hartenstein 11, Davi D Bock 12, Gregory S X E Jefferis 13 14
-Collaborators, Affiliations Expand
-PMID: 39358521 PMCID: PMC11446831 DOI: 10.1038/s41586-024-07686-5 -->
-
-
-<!-- ### Eschbach 2024 Nature（A Drosophila computational brain model…）
-A Drosophila computational brain model reveals sensorimotor processing
-Philip K Shiu 1 2, Gabriella R Sterne 3 4, Nico Spiller 5, Romain Franconville 6, Andrea Sandoval 3, Joie Zhou 3, Neha Simha 3, Chan Hyuk Kang 7, Seongbong Yu 7, Jinseop S Kim 7, Sven Dorkenwald 8 9, Arie Matsliah 8, Philipp Schlegel 10 11, Szi-Chieh Yu 8, Claire E McKellar 8, Amy Sterling 8, Marta Costa 10, Katharina Eichler 9, Alexander Shakeel Bates 11 12 13, Nils Eckstein 6, Jan Funke 6, Gregory S X E Jefferis 10 11, Mala Murthy 8, Salil S Bidaye 5, Stefanie Hampel 14, Andrew M Seeds 14, Kristin Scott 3
-Affiliations Expand
-PMID: 39358519 PMCID: PMC11446845 DOI: 10.1038/s41586-024-07763-9 -->
+### NeuroAI / Connectome inspired model
+- [Connectome-to-Function: Conditional Generative Latent Representations for Reservoir Computing](https://arxiv.org/abs/2609.06093)
+Guozhang Chen
 
 
 
+- [Structure alone supports efficient visual computation in the Drosophila visual system](https://arxiv.org/abs/2610.10023)
+Eudald Correig-Fraga, Roger Guimerà, Marta Sales-Pardo 
 
-<!-- ### Groschner 2022 Nature（single neuron multiplication）
-A biophysical account of multiplication by a single neuron
-Lukas N Groschner # 1, Jonatan G Malis # 2, Birte Zuidinga 2, Alexander Borst 3
-Affiliations Expand
-PMID: 35197635 PMCID: PMC8891015 DOI: 10.1038/s41586-022-04428-3 -->
-
-<!-- ### Billeh 2020 Neuron（Allen V1）
-Systematic Integration of Structural and Functional Data into Multi-scale Models of Mouse Primary Visual Cortex
-Yazan N Billeh 1, Binghuang Cai 2, Sergey L Gratiy 2, Kael Dai 2, Ramakrishnan Iyer 2, Nathan W Gouwens 2, Reza Abbasi-Asl 3, Xiaoxuan Jia 2, Joshua H Siegle 2, Shawn R Olsen 2, Christof Koch 2, Stefan Mihalas 2, Anton Arkhipov 4
-Affiliations Expand
-PMID: 32142648 DOI: 10.1016/j.neuron.2020.01.040 -->
-<!-- 
-### Deistler 2024 bioRxiv（Jaxley）
-Jaxley: Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics
- Michael Deistler,  Kyra L. Kadhim,  Matthijs Pals,  Jonas Beck,  Ziwei Huang,  Manuel Gloeckler,  Janne K. Lappalainen,  Cornelius Schröder,  Philipp Berens,  Pedro J. Gonçalves,  Jakob H. Macke
-doi: https://doi.org/10.1101/2024.08.21.608979 -->
-<!-- 
-### jun2017neuropixels
-Fully integrated silicon probes for high-density recording of neural activity
-James J Jun 1, Nicholas A Steinmetz 2 3 4, Joshua H Siegle 5, Daniel J Denman 5, Marius Bauza 6 7, Brian Barbarits 1, Albert K Lee 1, Costas A Anastassiou 5 8, Alexandru Andrei 9, Çağatay Aydın 10 11, Mladen Barbic 1, Timothy J Blanche 5 12, Vincent Bonin 9 10 11 13, João Couto 10 11, Barundeb Dutta 9, Sergey L Gratiy 5, Diego A Gutnisky 1, Michael Häusser 3 14, Bill Karsh 1, Peter Ledochowitsch 5, Carolina Mora Lopez 9, Catalin Mitelut 5 8, Silke Musa 9, Michael Okun 2 3 15, Marius Pachitariu 2 3, Jan Putzeys 9, P Dylan Rich 1, Cyrille Rossant 2 3, Wei-Lung Sun 1, Karel Svoboda 1, Matteo Carandini 4, Kenneth D Harris 2 3, Christof Koch 5, John O'Keefe 6 7, Timothy D Harris 1
-Affiliations Expand
-PMID: 29120427 PMCID: PMC5955206 DOI: 10.1038/nature24636
- -->
-
-<!-- ### billeh2020systematic
-Systematic Integration of Structural and Functional Data into Multi-scale Models of Mouse Primary Visual Cortex
-Yazan N Billeh 1, Binghuang Cai 2, Sergey L Gratiy 2, Kael Dai 2, Ramakrishnan Iyer 2, Nathan W Gouwens 2, Reza Abbasi-Asl 3, Xiaoxuan Jia 2, Joshua H Siegle 2, Shawn R Olsen 2, Christof Koch 2, Stefan Mihalas 2, Anton Arkhipov 4
-Affiliations Expand
-PMID: 32142648 DOI: 10.1016/j.neuron.2020.01.040 -->
+??lots of detail in this paper is doubtful, but maybe we can do some similar experiments. the scientific question is, what kind of network structure will have better performance.
 
 
-<!-- 
-### deistler2024differentiable
-Jaxley: Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics
- Michael Deistler,  Kyra L. Kadhim,  Matthijs Pals,  Jonas Beck,  Ziwei Huang,  Manuel Gloeckler,  Janne K. Lappalainen,  Cornelius Schröder,  Philipp Berens,  Pedro J. Gonçalves,  Jakob H. Macke
-doi: https://doi.org/10.1101/2024.08.21.608979  
+
+[From the Drosophila Visual Connectome to General-Purpose Computer Vision](https://arxiv.org/abs/2610.08418)
+Jia Guo, Columbia
 
 
-### Deistler 2024 bioRxiv（Jaxley）
-Jaxley: Differentiable simulation enables large-scale training of detailed biophysical models of neural dynamics
- Michael Deistler,  Kyra L. Kadhim,  Matthijs Pals,  Jonas Beck,  Ziwei Huang,  Manuel Gloeckler,  Janne K. Lappalainen,  Cornelius Schröder,  Philipp Berens,  Pedro J. Gonçalves,  Jakob H. Macke
-doi: https://doi.org/10.1101/2024.08.21.608979 -->
+- [A Drosophila Whole-Connectome Network Can Learn Human-Designed Cognitive Tasks](https://arxiv.org/abs/2610.10014)
+KAIST 的 Joonghui Cho、Minchan Kang, Daeshik Kim
 
-<!-- 
-### Seung 2024 Nature（Predicting visual function…）
-Predicting visual function by interpreting a neuronal wiring diagram
-H Sebastian Seung 1
-Affiliations Expand
-PMID: 39358524 PMCID: PMC11446822 DOI: 10.1038/s41586-024-07953-5 -->
-<!-- ### eschbach2024drosophila
-Circuits for integrating learned and innate valences in the insect brain
-Claire Eschbach # 1 2 3, Akira Fushiki # 1 4, Michael Winding 1 2 3, Bruno Afonso 1, Ingrid V Andrade 1 5, Benjamin T Cocanougher 1 3, Katharina Eichler 1 3, Ruben Gepner 6, Guangwei Si 7 8, Javier Valdes-Aleman 1 3 5, Richard D Fetter 1, Marc Gershow 6 9 10, Gregory Sxe Jefferis 2 3, Aravinthan Dt Samuel 7 8, James W Truman 1 11, Albert Cardona 1 2 12, Marta Zlatic 1 2 3
-Affiliations Expand
-PMID: 34755599 PMCID: PMC8616581 DOI: 10.7554/eLife.62567 -->
+
+
+[Deconstructing viral fly sims](https://www.neuroai.science/p/are-flies-playing-beat-saber)
+Patrick Mineault

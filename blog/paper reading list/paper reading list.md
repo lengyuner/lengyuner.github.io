@@ -252,6 +252,15 @@ Michael B Reiser
 Sung Yong Kim, Anmo J Kim
 
 
+
+- [Sexual dimorphism in the complete Drosophila male central nervous system connectome](https://www.cell.com/cell/fulltext/S0092-8674(26)00942-6)
+Gregory S.X.E. Jefferis, 2026, Cell, **MaleCNS**
+
+- [The complete gustatory connectome of adult Drosophila reveals how taste guides feeding, foraging, and social behavior](https://www.cell.com/cell/fulltext/S0092-8674(26)00943-8)
+Gregory S.X.E. Jefferis, Carlos Ribeiro, 2026, Cell, **MaleCNS**
+
+
+
 - [Brain rewiring during developmental transitions: A Comparative Analysis of **Larva and Adult** Drosophila melanogaster](https://www.biorxiv.org/content/10.1101/2024.05.01.592061v1)
 
 - [Connectomic analysis of the Drosophila lateral neuron clock cells reveals the synaptic basis of functional pacemaker classes](https://elifesciences.org/articles/79139)
@@ -294,6 +303,19 @@ Sung Yong Kim, Anmo J Kim, 2026
 
 - [The Connectome Interpreter Toolkit](https://www.biorxiv.org/content/10.1101/2025.09.29.679410v2.full.pdf)
 https://www.biorxiv.org/content/10.1101/2025.09.29.679410v2
+
+
+[The Connectome and the Quest for the Functional Logic of the Drosophila Early Olfactory System](https://arxiv.org/abs/2608.19290)
+
+
+[NeuroGraphBench: Interacting with Drosophila Connectomes at Scale for Exploring the Functional Logic of Neural Circuits](https://www.biorxiv.org/content/10.64898/2026.08.22.746456v1.full)
+ View ORCID ProfileYiyin Zhou
+
+
+[Projection-defined modules reveal mouse motor cortex architecture](https://www.sciencedirect.com/science/article/pii/S0092867426010196)
+Allen， Cell
+
+
 
 ### gap junction
 - [Intercellular Communication: the Drosophila Innexin Multiprotein Family of Gap Junction Proteins](https://www.cell.com/article/S1074-5521(05)00072-4/fulltext)
@@ -545,6 +567,15 @@ S. Lawrence Zipursky 2015, Cell
 
 - [The developmental emergence of reliable cortical representations](https://www.nature.com/articles/s41593-024-01857-3)
 we examined this ‘nature–nurture transform’ at the single-trial level using chronic in vivo calcium imaging in **ferret** visual cortex.
+
+
+- [Beat- and Side-family cell-surface molecules are expressed combinatorially in the partner neurons of the olfactory circuit in Drosophila](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003955)
+
+Pelin Cayirlioglu Volkan 
+
+
+- [Projection-defined modules reveal mouse motor cortex architecture](https://www.sciencedirect.com/science/article/pii/S0092867426010196)
+
 
 
 ### review
@@ -1384,11 +1415,15 @@ population decoding
 
 - [Dynamic population coding of kinematic structure across executed and observed actions in primate premotor cortex](https://www.science.org/doi/10.1126/sciadv.aed9309)
 
-
+[Learning Generalizable Reconstruction of High-Dimensional Neural Dynamics](https://arxiv.org/pdf/2608.16569)
+Anima Kujur, Zahra Monfared
 
 ### review 
 - [Neural data science: accelerating the experiment-analysis-theory cycle in large-scale neuroscience ](https://www.sciencedirect.com/science/article/pii/S0959438817302428)
-ICCV, 2019
+Liam Paninski, JP Cunningham 
+
+<!-- - 
+ICCV, 2019 -->
 
 
 - [Recording single neurons at scale in the primate brain](https://www.nature.com/articles/s41583-025-00991-6)
@@ -1426,7 +1461,13 @@ Vincent Thibeault, Antoine Allard & Patrick Desrosiers, 2024, Nature Physics
 
 ### manifold
 
-- [Subspace communication in the hippocampal–retrosplenial axis](https://www.nature.com/articles/s41586-026-10481-z)
+- [**Subspace communication in the hippocampal–retrosplenial axis**](https://www.nature.com/articles/s41586-026-10481-z)
+Zhe Sage Chen & György Buzsáki, 2026, Nature
+
+
+- [Flows for simultaneous manifold learning and density estimation](https://arxiv.org/abs/2003.13913)
+Johann Brehmer, Kyle Cranmer, 2020, NeurIPS 
+
 
 
 ### manifold reconstruction
@@ -1490,6 +1531,19 @@ Fabian Kloosterman, Stuart P. Layton, Zhe Chen, and Matthew A. Wilson
 - [Hebbian instruction of axonal connectivity by endogenous correlated spontaneous activity](https://www.science.org/doi/10.1126/science.adh7814)
 
 
+
+[Whole-brain, all-optical interrogation of neuronal dynamics underlying gut and vascular interoception in zebrafish](https://www.nature.com/articles/s41467-026-76242-8)
+James E. Fitzgerald & Misha B. Ahrens 
+
+mixed selectivity
+
+
+
+- [Interactions across hemispheres in prefrontal cortex reflect global cognitive processing](https://www.nature.com/articles/s41467-026-71725-0)
+  Byron M. Yu, 2026, NC 
+
+
+
 ### deep learning method
 
 - NEMO: [In vivo cell-type and brain region classification via multimodal contrastive learning](https://www.biorxiv.org/content/10.1101/2024.11.05.622159v1)
@@ -1508,7 +1562,10 @@ Yizi, Liam, Cole
 
 - [POYO-1: A Unified, Scalable Framework for Neural Population Decoding](https://poyo-brain.github.io/)
 
- 
+- [OmniMouse: Scaling properties of multi-modal, multi-task Brain Models on 150B Neural Tokens](https://openreview.net/forum?id=mEw4lhAn0F)
+
+
+
 #### diffusion model/ visual Stimulus
 - [Decoding What People See from Where They Look: Predicting Visual Stimuli from Scanpaths](https://link.springer.com/chapter/10.1007/978-3-642-00582-4_2)
 
@@ -1573,6 +1630,8 @@ Sandeep Robert Datta
 
 
 
+
+
 - [Disentangled multi-subject and social behavioral representations through a constrained subspace variational autoencoder (CS-VAE)](https://elifesciences.org/reviewed-preprints/88602v1)
 
 - [Unveiling the latent dynamics in social cognition with multi-agent inverse reinforcement learning](https://www.biorxiv.org/content/10.1101/2024.10.09.617461v1)
@@ -1580,7 +1639,16 @@ Sandeep Robert Datta
 Inverse reinforcement learning
 
 
+
+
+[Neural Encoding and Decoding at Scale](https://arxiv.org/abs/2504.08201)
+Liam Paninski, Cole Hurwitz
+
 ### animal pose estimation 
+
+- [Sparse-View Interpretable 3D Animal Behavior Representations for Neural Encoding and Decoding](https://arxiv.org/abs/2609.36217)
+Liam Paninski, Yizi Zhang
+
 - [Mapping the landscape of social behavior](https://www.cell.com/cell/fulltext/S0092-8674%2825%2900154-0) Bence P. Ölveczky, Timothy W. Dunn, 2025_04 
 
 
@@ -1600,7 +1668,8 @@ Bingni W. Brunton, John C. Tuthill, Robert Evan Johnson, 2026_05
 https://www.biorxiv.org/content/10.64898/2026.05.03.722293v1.full.pdf
 
 
-
+[Learning fly pose from vision-language annotations](https://www.biorxiv.org/content/10.64898/2026.09.30.755712v1) 
+Princeton
 
 ### body model
 [The embodied brain: Bridging the brain, body, and behavior with neuromechanical digital twins](https://arxiv.org/abs/2601.08056) Pavan Ramdya, Review
@@ -1909,4 +1978,9 @@ Generating whole-brain neural activity and behavior through unified latent dynam
 
 [Human brain organoids record the passage of time over multiple years](https://www.nature.com/articles/s41586-026-10877-x)
 Neural precursor cells appear to retain their own 'memory of developmental age'
+
+
+[Developmentally defined subcircuits in the hippocampus support spatial learning](https://www.sciencedirect.com/science/article/abs/pii/S0896627326005787)
+
+Same-birthdate CA1, but not CA3, neurons coordinated to encode rewards
 
