@@ -144,11 +144,11 @@ Victor Hugo Cornejo, Netanel Ofer, Rafael Yuste,  2021, Science
 dentrits level voltage recording for in vivo
 
 
-- [Cell-type–specific inhibition of the dendritic plateau potential in striatal spiny projection neurons](https://www.pnas.org/doi/abs/10.1073/pnas.1704893114)
+- [Cell-type–specific inhibition of the dendritic plateau potential in striatal spiny projection neurons](https://www.pnas.org/doi/abs/10.1073/pnas.1704893114)  
 Kai Du, ..., Jeanette Hellgren Kotaleski, 2017, PNAS 
 
 
-- [Spike transmission failures in axons from cortical neurons in vivo](https://www.cell.com/iscience/fulltext/S2589-0042(24)02109-6)
+- [Spike transmission failures in axons from cortical neurons in vivo](https://www.cell.com/iscience/fulltext/S2589-0042(24)02109-6)  
 - Netanel Ofer2,4 netanelofer@gmail.com ∙ Victor Hugo Cornejo3 ∙ Rafael Yuste, 2024, iScience
 Calcium accumulations are higher in axonal boutons than in axonal shafts  
 In most axons, action potentials propagate reliably across branch points  
@@ -171,13 +171,13 @@ pyramidal neuron might do **coincidence detection**
  
 
 
--[A model of a CA3 hippocampal pyramidal neuron incorporating voltage-clamp data on intrinsic conductances](https://journals.physiology.org/doi/abs/10.1152/jn.1991.66.2.635)
+-[A model of a CA3 hippocampal pyramidal neuron incorporating voltage-clamp data on intrinsic conductances](https://journals.physiology.org/doi/abs/10.1152/jn.1991.66.2.635)  
 R. D. Traub,R. K. Wong,R. Miles, andH. Michelson, 1991
 
-- [Intrinsic and network rhythmogenesis in a reduced traub model for CA3 neurons](https://link.springer.com/article/10.1007/BF00962717)
+- [Intrinsic and network rhythmogenesis in a reduced traub model for CA3 neurons](https://link.springer.com/article/10.1007/BF00962717)  
 Paul F. Pinsky & John Rinzel, 1994
 
-- [A **two compartment model** of a CA1 pyramidal neuron](https://www.math.uwaterloo.ca/~sacampbe/preprints/FergusonCampbell_CAMQ2009.pdf)
+- [A **two compartment model** of a CA1 pyramidal neuron](https://www.math.uwaterloo.ca/~sacampbe/preprints/FergusonCampbell_CAMQ2009.pdf)  
 One compartment represents the soma and proximal dendrites, while the second represents the distal dendrites.
 
 - **Hodgkin-Huxley Model**
@@ -185,17 +185,17 @@ One compartment represents the soma and proximal dendrites, while the second rep
 
 
 
-- [A Multi-Compartment Model for Interneurons in the Dorsal Lateral Geniculate Nucleus](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002160#s2)
-Geir Halnes ,Sigita Augustinaite,Paul Heggelund,Gaute T. Einevoll,Michele Migliore, 2011, Plos Comp bio
+- [A Multi-Compartment Model for Interneurons in the Dorsal Lateral Geniculate Nucleus](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002160#s2)  
+Geir Halnes ,Sigita Augustinaite,Paul Heggelund,Gaute T. Einevoll,Michele Migliore, 2011, Plos Comp bio  
 
 GABAergic interneurons (INs) in the dorsal lateral geniculate nucleus (dLGN) 
 
 
 modeling:
-- [Dendritic computations captured by an effective point neuron model](https://www.bilibili.com/video/BV1S64y117m9)
+- [Dendritic computations captured by an effective point neuron model](https://www.bilibili.com/video/BV1S64y117m9)  
 Songting Li, 2019, PNAS
 
-- [An arithmetic rule for **spatial summation of excitatory and inhibitory inputs** in pyramidal neurons](https://www.pnas.org/doi/full/10.1073/pnas.0912022106)
+- [An arithmetic rule for **spatial summation of excitatory and inhibitory inputs** in pyramidal neurons](https://www.pnas.org/doi/full/10.1073/pnas.0912022106)  
 Xiaohui Zhang, bnu, 2009, PNAS
 
 
@@ -224,34 +224,34 @@ $$
 
 
 
-- [Impact of dendritic size and dendritic topology on burst firing in pyramidal cells](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000781)
+- [Impact of dendritic size and dendritic topology on burst firing in pyramidal cells](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000781)  
 E. van, A. J. Ronald and A. Ooyen,PLoS Comput. Biol., 2010    
 Morphologically simplified cells, the set of 23 neurons
 
-- [Distinguishing theoretical synaptic potentials computed for different soma-dendritic distributions of synaptic input](https://journals.physiology.org/doi/abs/10.1152/jn.1967.30.5.1138)
+- [Distinguishing theoretical synaptic potentials computed for different soma-dendritic distributions of synaptic input](https://journals.physiology.org/doi/abs/10.1152/jn.1967.30.5.1138)  
 W. Rall, J. Neurophysiol., 1967
 
-- [Models of Neocortical Layer 5b Pyramidal Cells Capturing a Wide Range of Dendritic and Perisomatic Active Properties](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002107)
+- [Models of Neocortical Layer 5b Pyramidal Cells Capturing a Wide Range of Dendritic and Perisomatic Active Properties](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002107)  
 Etay Hay ,Sean Hill,Felix Schürmann,Henry Markram,Idan Segev
 
 
-![Models constrained only by BAC firing may fail to respond properly to perisomatic step current.|200pt](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1002107.g001)
+![Models constrained only by BAC firing may fail to respond properly to perisomatic step current.|200pt](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1002107.g001)  
 
 
-- [Distribution and voltage dependence of ion channels shape single-neuron computations](https://www.pnas.org/doi/full/10.1073/pnas.2610600123)
- Jakob H. Macke, Alexander Borst, and Lukas N. Groschner 
+- [Distribution and voltage dependence of ion channels shape single-neuron computations](https://www.pnas.org/doi/full/10.1073/pnas.2610600123)  
+Jakob H. Macke, Alexander Borst, and Lukas N. Groschner 
 
  
 
-- [A Dendritic Voltage Surrogate-Based Synaptic Learning Framework for Biophysically Detailed Neurons and Networks](https://direct.mit.edu/neco/article/doi/10.1162/NECO.a.1583/139100)
+- [A Dendritic Voltage Surrogate-Based Synaptic Learning Framework for Biophysically Detailed Neurons and Networks](https://direct.mit.edu/neco/article/doi/10.1162/NECO.a.1583/139100)  
 Gan He, Mengdi Zhao, Kai Du, Tiejun Huang
 
 
-[Extreme Compartmentalization in a Drosophila Amacrine Cell](https://www.sciencedirect.com/science/article/pii/S0960982219303987)
-Matthias Meier, Alexander Borst, 2019, CB
-CT1 neuron  
-Biophysical modeling links morphology to signal compartmentalization  
-CT1 can thus support local motion detection
+[Extreme Compartmentalization in a Drosophila Amacrine Cell](https://www.sciencedirect.com/science/article/pii/S0960982219303987)  
+Matthias Meier, Alexander Borst, 2019, CB  
+CT1 neuron    
+Biophysical modeling links morphology to signal compartmentalization    
+CT1 can thus support local motion detection  
 
 
 ### LIF model
