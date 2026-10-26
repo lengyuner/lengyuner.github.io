@@ -2488,3 +2488,8 @@ TRIBE, the first deep neural network trained to predict brain responses to stimu
 
 [Generating whole-brain neural activity and behavior through unified latent dynamics](https://www.biorxiv.org/content/10.64898/2026.06.05.730482v1)
 
+
+- [FlyCNS: Connectome-Grounded Information Organization for Communication-Constrained Embodied Control](https://arxiv.org/abs/2609.28816)
+> We propose FlyCNS, an embodied information-organization framework inspired by the Drosophila brain--nerve-cord connectome. FlyCNS preserves local sensorimotor computation within each limb and enables selective long-range communication through separate ascending and descending routing pathways. 
+
+

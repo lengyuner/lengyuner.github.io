@@ -211,7 +211,8 @@ I_U^{\text {som }}(t)=g_{\mathrm{E}}(t)\left(E_{\mathrm{E}}-U\right)+g_{\mathrm{
 $$
 
 - [Sparse bursts optimize information transmission in a multiplexed neural code](https://www.pnas.org/doi/full/10.1073/pnas.1720995115)  
-Richard Naud, Henning Sprekeler
+Richard Naud, Henning Sprekeler  
+
 $$
 \begin{gathered}
 \frac{d}{d t} u_i^{(x)}=-\frac{u_i^{(x)}-E_L}{\tau_x}+\frac{g_x f\left(u_i^{(d)}\right)+c_x K\left(t-\hat{t}_i^{(s)}\right)+I_i^{(x)}+w_i^{(x)}}{C_x} \\
@@ -244,6 +245,13 @@ Etay Hay ,Sean Hill,Felix Schürmann,Henry Markram,Idan Segev
 
 - [A Dendritic Voltage Surrogate-Based Synaptic Learning Framework for Biophysically Detailed Neurons and Networks](https://direct.mit.edu/neco/article/doi/10.1162/NECO.a.1583/139100)
 Gan He, Mengdi Zhao, Kai Du, Tiejun Huang
+
+
+[Extreme Compartmentalization in a Drosophila Amacrine Cell](https://www.sciencedirect.com/science/article/pii/S0960982219303987)
+Matthias Meier, Alexander Borst, 2019, CB
+CT1 neuron  
+Biophysical modeling links morphology to signal compartmentalization  
+CT1 can thus support local motion detection
 
 
 ### LIF model
@@ -823,3 +831,10 @@ KAIST 的 Joonghui Cho、Minchan Kang, Daeshik Kim
 
 [Deconstructing viral fly sims](https://www.neuroai.science/p/are-flies-playing-beat-saber)
 Patrick Mineault
+
+
+[Ion Channels and Morphology Drive Widespread Resonance in Human Cortical Interneurons](https://www.researchsquare.com/article/rs-11136357/v1)
+
+
+> **HCN** blockade abolished resonance, while enhanced HCN-mediated sag increased resonance prevalence and strength.
+

@@ -511,6 +511,11 @@ seven major steps to link expression measures and neuroimaging data
 - [**Benchmarking methods for mapping functional connectivity in the brain**](https://www.biorxiv.org/content/10.1101/2024.05.07.593018v1)
 Here we use a library of **239 pairwise statistics** to benchmark canonical features of **FC networks**, including hub mapping, weight–distance trade-offs, structure–function coupling, correspondence with other neurophysiological networks, individual fingerprinting and brain–behavior prediction. 
 
+
+- [Systematic evaluation of structural connectome thresholding in whole-brain network modelling](https://www.biorxiv.org/content/10.64898/2026.09.01.748520v1)
+we investigate the impact of structural connectome thresholding on whole-brain model performance to advance precision individual modelling
+
+
 #### experiment support
 
 - [A global molecular code for birth order and neuronal identity in Drosophila](https://www.nature.com/articles/s41586-026-10797-w)
@@ -578,6 +583,7 @@ Pelin Cayirlioglu Volkan
 
 
 
+
 ### review
 
 - [Understanding the molecular diversity of synapses](https://www.nature.com/articles/s41583-024-00888-w)
@@ -591,6 +597,11 @@ Divyansha Lachi, Ann Huang, Augustine N. Mavor-Parker, Arna Ghosh, Blake Richard
 connection probabilities between discrete cell types are genetically specified, to investigate
 the benefits of stochasticity in the development of neural wiring 
  
+- [CCNB1IP1 regulatory evolution underlies gradual increases in cortical size and folding in primates](https://www.nature.com/articles/s41588-026-02773-x)
+Kunming, 2026, Nature Genetics
+> These findings reveal that evolutionary changes in CCNB1IP1 expression have contributed to the enlargement and folding of the primate cortex.
+
+
 
 
 ### cell-cell communication and interaction
@@ -1268,6 +1279,11 @@ Review [Neural Networks With Motivation](https://www.frontiersin.org/articles/10
   
 dendritic branches act as an independent functional unit that can be coupled or uncoupled from somatic compartments depending on behavioral conditions
 
+
+
+- [How biological synapses self-assemble gradient learning](https://www.pnas.org/doi/10.1073/pnas.2606245123)
+Tomaso Poggio
+
 #### Hebbian rule
 
 - [Dendritic structure enables powerful plasticity](https://openreview.net/pdf?id=TtdqT3RlFw)
@@ -1565,6 +1581,9 @@ Yizi, Liam, Cole
 - [OmniMouse: Scaling properties of multi-modal, multi-task Brain Models on 150B Neural Tokens](https://openreview.net/forum?id=mEw4lhAn0F)
 
 
+- [BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings](https://arxiv.org/abs/2609.22064)
+
+
 
 #### diffusion model/ visual Stimulus
 - [Decoding What People See from Where They Look: Predicting Visual Stimuli from Scanpaths](https://link.springer.com/chapter/10.1007/978-3-642-00582-4_2)
@@ -1645,6 +1664,11 @@ Inverse reinforcement learning
 Liam Paninski, Cole Hurwitz
 
 ### animal pose estimation 
+
+
+- [TERRA: Terrain-Aware Reconstruction, Retargeting and Control for Musculoskeletal Locomotion](https://arxiv.org/abs/2609.38653)
+- 
+
 
 - [Sparse-View Interpretable 3D Animal Behavior Representations for Neural Encoding and Decoding](https://arxiv.org/abs/2609.36217)
 Liam Paninski, Yizi Zhang
@@ -1790,6 +1814,10 @@ Clustering convolutional kernels
 
 
 ### cognition
+
+[A small cognitive core explains human behavior at scale](https://arxiv.org/abs/2610.13603)
+Marcel Binz, Eric Schulz
+
 
 #### attention
 #### learning and memory
