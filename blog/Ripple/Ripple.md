@@ -6,6 +6,8 @@ html [Connectome Inspired Neural Network](https://lengyuner.github.io/blog/conne
 
 [果蝇连接组详细仿真与树突仿真问题](drosophila_connectome_and_dendrite_simulation.md)
 
+[果蝇离子通道的细胞类型与亚细胞分布](ion_channel_distribution.md)
+
 
 
 
@@ -108,6 +110,7 @@ BANC is the most relevant anatomical substrate for replacing artificial brain–
 - [A genetic, genomic, and computational resource for exploring neural circuit function](https://elifesciences.org/articles/50901)
 Janelia, gene data
 
+
 ## synapse model
 
 - [A role for NMDA-receptor channels in working memory](https://www.nature.com/articles/nn0898_273)
@@ -170,6 +173,8 @@ pyramidal neuron might do **coincidence detection**
 - [HH model](https://en.wikipedia.org/wiki/Hodgkin%E2%80%93Huxley_model) Hodgkin & Huxley 1952
  
 
+- [Dendritic computation for abstract rule-based flexible decision-making](https://www.science.org/doi/10.1126/science.adz5323)
+Tsinghua 2026 Science
 
 -[A model of a CA3 hippocampal pyramidal neuron incorporating voltage-clamp data on intrinsic conductances](https://journals.physiology.org/doi/abs/10.1152/jn.1991.66.2.635)  
 R. D. Traub,R. K. Wong,R. Miles, andH. Michelson, 1991
@@ -237,11 +242,6 @@ Etay Hay ,Sean Hill,Felix Schürmann,Henry Markram,Idan Segev
 
 ![Models constrained only by BAC firing may fail to respond properly to perisomatic step current.|200pt](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1002107.g001)  
 
-
-- [Distribution and voltage dependence of ion channels shape single-neuron computations](https://www.pnas.org/doi/full/10.1073/pnas.2610600123)  
-Jakob H. Macke, Alexander Borst, and Lukas N. Groschner 
-
- 
 
 - [A Dendritic Voltage Surrogate-Based Synaptic Learning Framework for Biophysically Detailed Neurons and Networks](https://direct.mit.edu/neco/article/doi/10.1162/NECO.a.1583/139100)  
 Gan He, Mengdi Zhao, Kai Du, Tiejun Huang
@@ -500,6 +500,12 @@ _full-body kinematics / freely behaving fly / behavioral validation target_
 
 ### Sensorimotor feedback and interface
 
+
+
+- [Sensorimotor behaviour from an untrained brain-and-nerve-cord connectome](https://arxiv.org/abs/2610.33881) UCSC
+- 
+BANC Connectome, LIF model, 
+
 - [Selective presynaptic inhibition of leg proprioception in behaving Drosophila](https://www.nature.com/articles/s41586-025-09554-2)
 Chris J. Dallmann et al., 2025, Nature
 
@@ -534,7 +540,7 @@ Body morphology participates in defining neural computation rather than merely r
 
 ## experiment support
 - [**Voltage compartmentalization in dendritic spines in vivo**](https://www.science.org/doi/10.1126/science.abg0501)
-Victor Hugo Cornejo, Netanel Ofer, Rafael Yuste, 2021, Science
+Victor Hugo Cornejo, Netanel Ofer, Rafael Yuste, 2021, Science  
 dentrits level voltage recording for in vivo  
 
 [The Guide to Dendritic Spikes of the Mammalian Cortex In Vitro and In Vivo](https://www.sciencedirect.com/science/article/pii/S030645222200063X) Larkum, Wu, Duverdin & Gidon, 2022, JNeuro  
@@ -667,6 +673,128 @@ It addresses the linear-solver bottleneck of detailed compartment models, not mo
 ModelDB 
 
  
+
+
+
+## gene
+
+[离子通道分布专题整理：证据、论文与建模约束](ion_channel_distribution.md)
+
+
+For detailed conductance models, distinguish **transcript abundance**, **protein localization**, **functional current**, and **fitted maximal conductance**. They are related constraints, but they are not interchangeable.
+
+
+
+[Phenotypic variation of transcriptomic cell types in mouse motor cortex](https://www.nature.com/articles/s41586-020-2907-3)
+
+### Drosophila ion-channel localization
+
+- [Distribution and voltage dependence of ion channels shape single-neuron computations](https://www.pnas.org/doi/10.1073/pnas.2610600123)  
+Renée M. Vieira, Michael Deistler, Clémentine Guillemet, Tabea Schilling, Jakob H. Macke, Alexander Borst, Lukas N. Groschner, 2026, PNAS  
+_endogenous tagging / T5 neuron / subcellular localization / channel gating / biophysical model_  
+Combines channel localization and voltage-dependent activation/inactivation measurements in a morphologically detailed T5 model, and shows how channel placement shapes direction-selective computation.
+
+- [Conditional protein tagging methods reveal highly specific subcellular distribution of ion channels in motion-sensing neurons](https://elifesciences.org/articles/62953)  
+Sandra Fendl, Renée Marie Vieira, Alexander Borst, 2020, eLife  
+_FlpTag / endogenous protein / T4–T5 / compartment-specific localization_  
+Introduces conditional endogenous tagging and maps receptors and channels—including Para and Ih—to dendrites, axonal fibers, or terminals of identified motion-sensitive neurons.
+
+- [Drosophila Voltage-Gated Sodium Channels Are Only Expressed in Active Neurons and Are Localized to Distal Axonal Initial Segment-like Domains](https://www.jneurosci.org/content/40/42/7999)  
+Ravenscroft et al., 2020, Journal of Neuroscience  
+_Para / sodium channel / distal axonal segment / spike initiation_  
+Maps endogenous Para and identifies an axonal initial-segment-like enrichment distal to the dendritic integration region rather than immediately adjacent to the soma.
+
+- [Dendritic and Axonal L-Type Calcium Channels Cooperate to Enhance Motoneuron Firing Output during Drosophila Larval Locomotion](https://www.jneurosci.org/content/37/45/10971)  
+Kadas et al., 2017, Journal of Neuroscience  
+_Dmca1D / CaV1 / motoneuron / dendrite–axon cooperation_  
+Shows that dendritic CaV1 channels amplify cholinergic input and burst duration, whereas axonal CaV1 channels increase intraburst firing through BK-dependent afterhyperpolarization.
+
+- [Glial-dependent clustering of voltage-gated ion channels in Drosophila precedes myelin formation](https://elifesciences.org/articles/85752)  
+Rey et al., 2023, eLife  
+_Para / Shal / Shaker / Shab / glia / axonal clustering_  
+Compares several voltage-gated channels in motor axons and shows that wrapping glia selectively support local Para enrichment.
+
+- [The Voltage-Gated Sodium Channel in Drosophila, Para, Localizes to Dendrites As Well As Axons in Mechanosensitive Chordotonal Neurons](https://www.eneuro.org/content/10/6/ENEURO.0105-23.2023)  
+Ravenscroft et al., 2023, eNeuro  
+_Para / chordotonal neuron / dendritic spike-initiation zone_  
+Finds Para at both the distal sensory dendrite and an axonal initial-segment-like domain, demonstrating that a single global Para distribution is not valid across fly neuron classes.
+
+- [Coordination of Pickpocket ion channel delivery and dendrite growth in Drosophila sensory neurons](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1011025)  
+2023, PLOS Genetics  
+_Ppk1 / DEG-ENaC / dendritic growth / dynein / Rab11 trafficking_  
+Uses endogenous tagging to show that Ppk1 populates growing sensory dendrites and that channel abundance scales with arbor growth through regulated trafficking.
+
+- [Distinct expression of potassium channels regulates visual response properties of lamina neurons in Drosophila melanogaster](https://doi.org/10.1007/s00359-019-01385-7)  
+Burak Gür, Katja Sporar, Anne Lopez-Behling, Marion Silies, 2020, Journal of Comparative Physiology A  
+_Shaker / Shal / L2 neuron / temporal filtering_  
+Combines cell-type RNA sequencing, protein tagging, perturbations and in vivo imaging to show that Shaker and Shal sharpen the transient visual responses of L2 neurons.
+
+- [Distal Spike Initiation Zone Location Estimation by Morphological Simulation of Ionic Current Filtering Demonstrated in a Novel Model of an Identified Drosophila Motoneuron](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004189)  
+Cengiz Günay et al., 2015, PLOS Computational Biology  
+_motoneuron / spike-initiation zone / morphology / inverse inference_  
+Uses morphology, compartmental simulation and recordings to infer a spike-initiation zone roughly 70 μm beyond the most distal dendritic branch; this is model-based localization rather than direct protein quantification.
+
+
+### Quantitative compartment-distribution constraints
+
+- [K+ channel regulation of signal propagation in dendrites of hippocampal pyramidal neurons](https://www.nature.com/articles/43119)  
+Hoffman et al., 1997, Nature  
+_A-type K+ current / dendritic gradient / backpropagation_  
+Provides classic electrophysiological evidence for a high distal dendritic A-type potassium conductance that limits dendritic excitation.
+
+- [Dendritic Hyperpolarization-Activated Currents Modify the Integrative Properties of Hippocampal CA1 Pyramidal Neurons](https://www.jneurosci.org/content/18/19/7613)  
+Jeffrey C. Magee, 1998, Journal of Neuroscience  
+_Ih / CA1 / somatodendritic gradient / integration_  
+Reports a greater than sixfold increase in Ih density from the soma toward distal apical dendrites and analyzes its effects on temporal summation.
+
+- [Polarized and compartment-dependent distribution of HCN1 in pyramidal cell dendrites](https://www.nature.com/articles/nn962)  
+Lörincz et al., 2002, Nature Neuroscience  
+_HCN1 / immunogold / dendritic gradient / shaft–spine difference_  
+Quantifies a steep somatodendritic HCN1 gradient and a compartment difference between dendritic shafts and spines.
+
+- [Molecular identity of dendritic voltage-gated sodium channels](https://pubmed.ncbi.nlm.nih.gov/20466935/)  
+Lörincz and Nusser, 2010, Science  
+_Nav1.6 / CA1 dendrite / quantitative localization_  
+Identifies Nav1.6 in CA1 dendrites at much lower density than in the axon initial segment and with a decreasing proximodistal profile.
+
+- [Action potential generation requires a high sodium channel density in the axon initial segment](https://www.nature.com/articles/nn2040)  
+Kole et al., 2008, Nature Neuroscience  
+_AIS / sodium-channel density / spike initiation_  
+Combines electrophysiology, sodium imaging, immunolabeling and modeling to constrain a strong AIS-to-dendrite sodium-channel density contrast.
+
+
+### Transcriptomic priors and gene-to-conductance mapping
+
+
+
+- [A genetic, genomic, and computational resource for exploring neural circuit function](https://elifesciences.org/articles/50901)  
+Davis et al., 2020, eLife  
+_adult optic lobe / cell-type transcriptome / genetic drivers_  
+Provides cell-type-level expression priors for adult visual neurons, but does not directly measure subcellular membrane density.
+
+- [Neuronal diversity and convergence in a visual system developmental atlas](https://www.nature.com/articles/s41586-020-2879-3)  
+Konstantinides et al., 2021, Nature  
+_optic-lobe atlas / development / single-cell transcriptomics_  
+Maps gene-expression programs across nearly 200 visual-system cell types and developmental stages; useful for candidate-channel selection rather than compartment placement.
+
+- [Fly Cell Atlas: A single-nucleus transcriptomic atlas of the adult fruit fly](https://www.science.org/doi/10.1126/science.abk2432)  
+Fly Cell Atlas Consortium, 2022, Science  
+_whole-animal atlas / single-nucleus RNA-seq / cell-type prior_  
+Supports broad cell-type expression comparisons, while lacking the spatial resolution needed to assign dendritic or axonal conductance.
+
+- [Combined statistical-biophysical modeling links ion channel genes to physiology of cortical neuron types](https://www.cell.com/patterns/fulltext/S2666-3899(25)00171-0)  
+Yves Bernaerts et al., 2025, Patterns  
+_gene-to-conductance mapping / simulation-based inference / cortical neuron types_  
+Demonstrates a statistical-biophysical route from transcriptomic variation to conductance priors; it is a mammalian bridge method, not direct evidence for fly subcellular distributions.
+
+ 
+
+### Reviews
+
+- [Sculpting excitable membranes: voltage-gated ion channel delivery and distribution](https://www.nature.com/articles/s41583-025-00917-2), Tyagi et al., 2025, Nature Reviews Neuroscience  
+- [The distribution and targeting of neuronal voltage-gated ion channels](https://www.nature.com/articles/nrn1938), Lai and Jan, 2006, Nature Reviews Neuroscience  
+- [Subcellular Localization of K+ Channels in Mammalian Brain Neurons: Remarkable Precision in the Midst of Extraordinary Complexity](https://pmc.ncbi.nlm.nih.gov/articles/PMC4303806/), Trimmer, 2015, Neuron
+
 
 
 
@@ -837,4 +965,3 @@ Patrick Mineault
 
 
 > **HCN** blockade abolished resonance, while enhanced HCN-mediated sag increased resonance prevalence and strength.
-

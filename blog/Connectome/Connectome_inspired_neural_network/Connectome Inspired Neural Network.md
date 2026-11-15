@@ -207,7 +207,9 @@ Zehao Jin, Yaoye Zhu, Chen Zhang, Yanan Sui
 
 
 - [Connectome simulations identify a central pattern generator circuit for fly walking](https://www.biorxiv.org/content/10.1101/2025.09.12.675944v2)
-John C. Tuthill, Bingni W. Brunton
+Sarah M. Pugliese, ..., John C. Tuthill, Bingni W. Brunton
+
+published in Nature: [Connectome simulations identify a central pattern generator for fly walking](https://www.nature.com/articles/s41586-026-11195-y)
 
 **motif can generate the rhythm*
 *
@@ -235,6 +237,13 @@ Timothy A. Currier, Thomas R. Clandinin
 https://datadryad.org/dataset/doi:10.5061/dryad.pg4f4qs1j  
 https://datadryad.org/dataset/doi:10.5061/dryad.bnzs7h4ns
 https://datadryad.org/dataset/doi:10.5061/dryad.kh18932k1  
+
+
+
+
+
+- [FLYNN: Robust Neural Network for Robot Navigation using Fly Brain Topology](https://arxiv.org/abs/2607.00025)  
+Benquan Wang, Jingdao Chen
 
 
 ### Human
@@ -353,6 +362,9 @@ Matthew S. Creamer, Andrew M. Leifer, Jonathan W. Pillow, 2024
 - NEBULA: [Generating whole-brain neural activity and behavior through unified latent dynamics](https://www.biorxiv.org/content/10.64898/2026.06.05.730482v1)
 Davide Nuzzi, Maurizio Mattia, Giovanni Pezzulo， 2026
 
+
+- [A Biophysically Detailed C. elegans Circuit as a Task-Agnostic Dynamical Core for Visually Robust Robot Manipulation](https://arxiv.org/abs/2609.39322)
+DeepSoma, Linrui Qian, Jiajia Zhang, Gan He, ..., Mengdi Zhao, Kai Du
 
 
 #### Dataset

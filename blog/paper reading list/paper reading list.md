@@ -74,6 +74,7 @@
     - [cell tracking](#cell-tracking)
     - [wormid](#wormid)
   - [neural data analysis \& modeling](#neural-data-analysis--modeling)
+    - [perturbation](#perturbation)
     - [decoding](#decoding)
     - [review](#review-4)
     - [high dimensional data](#high-dimensional-data)
@@ -229,6 +230,14 @@ Machine learning identifies synaptic transmitters from electron micrographs
 
 
 ### connectome analysis
+
+
+- [Standardized FlyWire skeletons reveal neuropil-specific organization of synaptic topology](https://link.springer.com/article/10.1186/s40708-026-00344-8)
+Yuan, L., He, Z. & Peng, H. 2026, Brain Informatics 
+
+$\Delta = BO_{\mathrm{post}}-BO_{\mathrm{pre}}$
+
+
 - [The central complex of the larval fruit fly brain](https://www.biorxiv.org/content/10.1101/2025.09.30.679510v1.full.pdf)
 
 
@@ -309,12 +318,17 @@ https://www.biorxiv.org/content/10.1101/2025.09.29.679410v2
 
 
 [NeuroGraphBench: Interacting with Drosophila Connectomes at Scale for Exploring the Functional Logic of Neural Circuits](https://www.biorxiv.org/content/10.64898/2026.08.22.746456v1.full)
- View ORCID ProfileYiyin Zhou
+Yiyin Zhou
 
 
 [Projection-defined modules reveal mouse motor cortex architecture](https://www.sciencedirect.com/science/article/pii/S0092867426010196)
-Allen， Cell
+Allen, 2026, Cell
 
+
+
+- [Network approaches to community detection in nanoscale connectomics](https://www.nature.com/articles/s41583-026-01094-6)
+
+The off-diagonal blocks
 
 
 ### gap junction
@@ -1425,14 +1439,23 @@ Cristina Savin, Gašper Tkačik
 Lin Zhong, Scott Baptista, Rachel Gattoni, Jon Arnold, Daniel Flickinger, Carsen Stringer & Marius Pachitariu 
 Nature (2025)
 
+### perturbation
+
+- [Targeted stimulation of motor cortex ensembles drives learned movements](https://www.nature.com/articles/s41586-026-11174-3)
+Johnatan Aljadeff & Takaki Komiyama
 
 ### decoding
 population decoding 
 
 - [Dynamic population coding of kinematic structure across executed and observed actions in primate premotor cortex](https://www.science.org/doi/10.1126/sciadv.aed9309)
 
-[Learning Generalizable Reconstruction of High-Dimensional Neural Dynamics](https://arxiv.org/pdf/2608.16569)
+- [Learning Generalizable Reconstruction of High-Dimensional Neural Dynamics](https://arxiv.org/pdf/2608.16569)
 Anima Kujur, Zahra Monfared
+
+
+
+- [Realignment of representational drift in mouse visual cortex via flexible electrode arrays](https://www.nature.com/articles/s41551-026-01780-x)
+
 
 ### review 
 - [Neural data science: accelerating the experiment-analysis-theory cycle in large-scale neuroscience ](https://www.sciencedirect.com/science/article/pii/S0959438817302428)
@@ -1582,8 +1605,10 @@ Yizi, Liam, Cole
 
 
 - [BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings](https://arxiv.org/abs/2609.22064)
+Liam Paninski, Eva L. Dyer
 
 
+[Neuronal Identity as an Organizational Basis for Analyzing Neural Population Dynamics](https://arxiv.org/abs/2610.36745)
 
 #### diffusion model/ visual Stimulus
 - [Decoding What People See from Where They Look: Predicting Visual Stimuli from Scanpaths](https://link.springer.com/chapter/10.1007/978-3-642-00582-4_2)
@@ -1875,6 +1900,10 @@ UFLDL Tutorial
 
 ### others
 
+
+[Optogenetic neuromuscular actuation of a miniature electronic biohybrid robot](https://www.science.org/doi/10.1126/scirobotics.adu5830)
+we developed NMJ-based biohybrid crawling robots with optogenetic mouse motor neurons, skeletal muscles, 3D-printed hydrogel scaffolds 
+
 - [Mapping the developmental structure of stereotyped and individual-unique behavioral spaces in C. elegans](https://www.biorxiv.org/content/10.1101/2024.01.27.577215v1)
 
 - [A sparse semismooth Newton based augmented Lagrangian method for large-scale support vector machines](https://arxiv.org/abs/1910.01312) SVM
@@ -1914,6 +1943,9 @@ gene
 - [Descending networks transform command signals into population motor control](https://www.nature.com/articles/s41586-024-07523-9)
 
 
+
+[Attractor dynamics of a whole-cortex network model predicts emergence and structure of fMRI co-activation patterns in the mouse brain](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013995)
+Diego Fasoli et al., PLOS Computational Biology, 2026
  
 
 ### Connectome
