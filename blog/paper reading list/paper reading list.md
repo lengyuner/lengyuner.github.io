@@ -9,6 +9,7 @@
       - [connection reconstruction](#connection-reconstruction)
     - [connectome analysis](#connectome-analysis)
     - [gap junction](#gap-junction)
+    - [wireless connectome](#wireless-connectome)
     - [GeneWeave / connectome and gene](#geneweave--connectome-and-gene)
       - [RL and logical rule](#rl-and-logical-rule)
       - [gene data of Drosophila](#gene-data-of-drosophila)
@@ -335,6 +336,10 @@ The off-diagonal blocks
 - [Intercellular Communication: the Drosophila Innexin Multiprotein Family of Gap Junction Proteins](https://www.cell.com/article/S1074-5521(05)00072-4/fulltext)
 Review, 2005
 
+
+
+### wireless connectome
+[The neuropeptidergic connectome of C. elegans](https://www.cell.com/neuron/fulltext/S0896-6273(23)00756-0)
 
 ### GeneWeave / connectome and gene 
 
@@ -1721,6 +1726,11 @@ https://www.biorxiv.org/content/10.64898/2026.05.03.722293v1.full.pdf
 Princeton
 
 ### body model
+
+[MyoGen: unified biophysical modeling of human neuromotor activity and resulting signals](https://www.nature.com/articles/s41467-026-79273-3)
+
+
+
 [The embodied brain: Bridging the brain, body, and behavior with neuromechanical digital twins](https://arxiv.org/abs/2601.08056) Pavan Ramdya, Review
 
 
